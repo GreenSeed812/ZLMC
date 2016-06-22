@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "windows": {
     "main": {
       "x": -8,
@@ -12,53 +12,54 @@
             "docks": [
               {
                 "active": 0,
-                "height": 469.5,
+                "height": 397.5,
                 "panels": [
-                  "scene"
+                  "hierarchy"
                 ],
                 "type": "panel",
-                "width": 358
+                "width": 375
               },
               {
                 "active": 0,
-                "height": 320.5,
+                "height": 392.5,
                 "panels": [
-                  "console"
+                  "assets"
                 ],
                 "type": "panel",
-                "width": 358
+                "width": 375
               }
             ],
             "height": 793,
             "row": false,
             "type": "dock",
-            "width": 358
+            "width": 375
           },
           {
             "docks": [
               {
                 "active": 0,
-                "height": 405.875,
+                "height": 557.703125,
                 "panels": [
-                  "hierarchy"
+                  "scene"
                 ],
                 "type": "panel",
-                "width": 274
+                "width": 597
               },
               {
                 "active": 0,
-                "height": 384.125,
+                "height": 232.296875,
                 "panels": [
-                  "assets"
+                  "console",
+                  "timeline"
                 ],
                 "type": "panel",
-                "width": 274
+                "width": 597
               }
             ],
             "height": 793,
             "row": false,
             "type": "dock",
-            "width": 274
+            "width": 597
           },
           {
             "active": 0,
@@ -67,7 +68,7 @@
               "inspector"
             ],
             "type": "panel",
-            "width": 314
+            "width": 460
           }
         ],
         "no-collapse": true,
@@ -75,11 +76,11 @@
         "type": "dock"
       }
     },
-    "window-1465775336647": {
-      "x": -8,
-      "y": -8,
+    "window-1466555483398": {
+      "x": -11,
+      "y": 12,
       "width": 1456,
-      "height": 876
+      "height": 919
     },
     "worker": {
       "x": 520,

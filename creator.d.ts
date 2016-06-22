@@ -1,65 +1,55 @@
 
-/** The main namespace of Cocos2d-JS, all engine core classes, functions, properties and constants are defined in this namespace */
+/** !#en
+The main namespace of Cocos2d-JS, all engine core classes, functions, properties and constants are defined in this namespace.
+!#zh
+Cocos 引擎的主要命名空间，引擎代码中所有的类，函数，属性和常量都在这个命名空间中定义。 */
 declare module cc {	
-	/** Init Debug setting. 
+	/** !#en Init Debug setting.
+	!#zh 设置调试模式。 
 	*/
 	export function _initDebugSetting(mode : DebugMode) : void;	
-	/** Outputs an error message to the Cocos Creator Console (editor) or Web Console (runtime).
-	- In Cocos Creator, error is red.
-	- In Chrome, error have a red icon along with red message text.
+	/** !#en
+	Outputs an error message to the Cocos Creator Console (editor) or Web Console (runtime).<br/>
+	- In Cocos Creator, error is red.<br/>
+	- In Chrome, error have a red icon along with red message text.<br/>
+	!#zh
+	输出错误消息到 Cocos Creator 编辑器的 Console 或运行时页面端的 Console 中。<br/>
+	- 在 Cocos Creator 中，错误信息显示是红色的。<br/>
+	- 在 Chrome 中，错误信息有红色的图标以及红色的消息文本。<br/>
 	@param obj A JavaScript string containing zero or more substitution strings.
 	@param subst JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output. 
 	*/
-	export function error(obj : any, subst : any) : void;	
-	/** Outputs a warning message to the Cocos Creator Console (editor) or Web Console (runtime).
+	export function error(obj : Any, subst : Any) : void;	
+	/** !#en
+	Outputs a warning message to the Cocos Creator Console (editor) or Web Console (runtime).
 	- In Cocos Creator, warning is yellow.
 	- In Chrome, warning have a yellow warning icon with the message text.
+	!#zh
+	输出警告消息到 Cocos Creator 编辑器的 Console 或运行时 Web 端的 Console 中。<br/>
+	- 在 Cocos Creator 中，警告信息显示是黄色的。<br/>
+	- 在 Chrome 中，警告信息有着黄色的图标以及黄色的消息文本。<br/>
 	@param obj A JavaScript string containing zero or more substitution strings.
 	@param subst JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output. 
 	*/
-	export function warn(obj : any, subst : any) : void;	
-	/** Outputs a message to the Cocos Creator Console (editor) or Web Console (runtime).
+	export function warn(obj : Any, subst : Any) : void;	
+	/** !#en Outputs a message to the Cocos Creator Console (editor) or Web Console (runtime).
+	!#zh 输出一条消息到 Cocos Creator 编辑器的 Console 或运行时 Web 端的 Console 中。
 	@param obj A JavaScript string containing zero or more substitution strings.
 	@param subst JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output. 
 	*/
-	export function log(obj : any, subst : any) : void;	
-	/** Outputs an informational message to the Cocos Creator Console (editor) or Web Console (runtime).
+	export function log(obj : Any, subst : Any) : void;	
+	/** !#en
+	Outputs an informational message to the Cocos Creator Console (editor) or Web Console (runtime).
 	- In Cocos Creator, info is blue.
 	- In Firefox and Chrome, a small "i" icon is displayed next to these items in the Web Console's log.
+	!#zh
+	输出一条信息消息到 Cocos Creator 编辑器的 Console 或运行时 Web 端的 Console 中。
+	- 在 Cocos Creator 中，Info 信息显示是蓝色的。<br/>
+	- 在 Firefox 和  Chrome 中，Info 信息有着小 “i” 图标。
 	@param obj A JavaScript string containing zero or more substitution strings.
 	@param subst JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output. 
 	*/
 	export function info(obj : any, subst : any) : void;	
-	/** !#en
-	Creates the speed action which changes the speed of an action, making it take longer (speed > 1)
-	or less (speed < 1) time. <br/>
-	Useful to simulate 'slow motion' or 'fast forward' effect.
-	!#zh 修改目标动作的速率。
-	
-	@example 
-	```js
-	// change the target action speed;
-	var action = cc.scaleTo(0.2, 1, 0.6);
-	var newAction = cc.speed(action, 0.5);
-	``` 
-	*/
-	export function speed(action : ActionInterval, speed : number) : Action;	
-	/** !#en Create a follow action which makes its target follows another node.
-	!#zh 追踪目标节点的位置。
-	
-	@example 
-	```js
-	// example
-	// creates the action with a set boundary
-	var followAction = cc.follow(targetNode, cc.rect(0, 0, screenWidth * 2 - 100, screenHeight));
-	node.runAction(followAction);
-	
-	// creates the action with no boundary set
-	var followAction = cc.follow(targetNode);
-	node.runAction(followAction);
-	``` 
-	*/
-	export function follow(followedNode : Node, rect : Rect) : Action;	
 	/** !#en Creates an action with a Cardinal Spline array of points and tension.
 	!#zh 按基数样条曲线轨迹移动到目标位置。
 	@param points array of control points
@@ -93,6 +83,36 @@ declare module cc {
 	``` 
 	*/
 	export function catmullRomBy(dt : number, points : any[]) : ActionInterval;	
+	/** !#en
+	Creates the speed action which changes the speed of an action, making it take longer (speed > 1)
+	or less (speed < 1) time. <br/>
+	Useful to simulate 'slow motion' or 'fast forward' effect.
+	!#zh 修改目标动作的速率。
+	
+	@example 
+	```js
+	// change the target action speed;
+	var action = cc.scaleTo(0.2, 1, 0.6);
+	var newAction = cc.speed(action, 0.5);
+	``` 
+	*/
+	export function speed(action : ActionInterval, speed : number) : Action;	
+	/** !#en Create a follow action which makes its target follows another node.
+	!#zh 追踪目标节点的位置。
+	
+	@example 
+	```js
+	// example
+	// creates the action with a set boundary
+	var followAction = cc.follow(targetNode, cc.rect(0, 0, screenWidth * 2 - 100, screenHeight));
+	node.runAction(followAction);
+	
+	// creates the action with no boundary set
+	var followAction = cc.follow(targetNode);
+	node.runAction(followAction);
+	``` 
+	*/
+	export function follow(followedNode : Node, rect : Rect) : Action;	
 	/** !#en
 	Creates the action easing object with the rate parameter. <br />
 	From slow to fast.
@@ -695,7 +715,6 @@ declare module cc {
 	
 	// create sequence with array
 	var seq = cc.sequence(actArray);
-	todo: It should be use new
 	``` 
 	*/
 	export function sequence(tempArray : any[]|FiniteTimeAction) : ActionInterval;	
@@ -1792,7 +1811,7 @@ declare module cc {
 	cc.rectIntersection(a, b); // Rect {x: 0, y: 10, width: 10, height: 10};
 	``` 
 	*/
-	export function rectUnion(rectA: (x: number, y: number, w: number, h: number) => void, rectB: (x: number, y: number, w: number, h: number) => void) : Rect;	
+	export function rectIntersection(rectA: (x: number, y: number, w: number, h: number) => void, rectB: (x: number, y: number, w: number, h: number) => void) : Rect;	
 	export function V3F_C4B_T2F_QuadZero() : V3F_C4B_T2F_Quad;	
 	/**  
 	*/
@@ -1839,9 +1858,10 @@ declare module cc {
 	构造函数，可查看 {{#crossLink "cc/vec2:method"}}cc.v2{{/crossLink}} 或者 {{#crossLink "cc/p:method"}}cc.p{{/crossLink}} 
 	*/
 	export function pointEqualToPoint(point1: (x: number, y: number) => void, point2: (x: number, y: number) => void) : boolean;	
-	/** Enum for debug modes. */
+	/** !#en Enum for debug modes.
+	!#zh 调试模式 */
 	export enum DebugMode {		
-		NONE = 0,
+		NONE. = 0,
 		INFO = 0,
 		WARN = 0,
 		ERROR = 0,
@@ -2108,6 +2128,7 @@ declare module cc {
 		注意：音乐播放接口不支持多音轨，同一时间只能播放一个音乐。
 		@param url The path of the music file without filename extension.
 		@param loop Whether the music loop or not.
+		@param immediate Whether immediately play music.
 		
 		@example 
 		```js
@@ -2115,7 +2136,7 @@ declare module cc {
 		cc.audioEngine.playMusic(path, false);
 		``` 
 		*/
-		playMusic(url : string, loop : boolean) : void;		
+		playMusic(url : string, loop : boolean, immediate : boolean) : void;		
 		/** !#en Stop playing music.
 		!#zh 停止当前音乐。
 		@param releaseData If release the music data or not.As default value is false.
@@ -2206,7 +2227,7 @@ declare module cc {
 		var soundId = cc.audioEngine.playEffect(path);
 		``` 
 		*/
-		playEffect(url : string, loop : boolean) : number;		
+		playEffect(url : string, loop : boolean, volume : boolean) : number;		
 		/** !#en Set the volume of sound effects.
 		!#zh 设置音效音量（0.0 ~ 1.0）。
 		@param volume Volume must be in 0.0~1.0 .
@@ -2300,64 +2321,150 @@ declare module cc {
 		*/
 		end() : void;	
 	}		
-		/** cc.ActionManager is a class that can manage actions.<br/>
+		/** !#en
+		cc.MotionStreak manages a Ribbon based on it's motion in absolute space.                 <br/>
+		You construct it with a fadeTime, minimum segment size, texture path, texture            <br/>
+		length and color. The fadeTime controls how long it takes each vertex in                 <br/>
+		the streak to fade out, the minimum segment size it how many pixels the                  <br/>
+		streak will move before adding a new ribbon segment, and the texture                     <br/>
+		length is the how many pixels the texture is stretched across. The texture               <br/>
+		is vertically aligned along the streak segment.
+		!#zh 运动轨迹，用于游戏对象的运动轨迹上实现拖尾渐隐效果。 */
+		export class MotionStreak extends Component {		
+		/** !#en
+		!#zh 在编辑器模式下预览拖尾效果。 */
+		preview : boolean;		
+		/** !#en The fade time to fade.
+		!#zh 拖尾的渐隐时间，以秒为单位。 */
+		fadeTime : number;		
+		/** !#en The minimum segment size.
+		!#zh 拖尾之间最小距离。 */
+		minSeg : number;		
+		/** !#en The stroke's width.
+		!#zh 拖尾的宽度。 */
+		stroke : number;		
+		/** !#en The texture of the MotionStreak.
+		!#zh 拖尾的贴图。 */
+		texture : Texture2D;		
+		/** !#en The color of the MotionStreak.
+		!#zh 拖尾的颜色 */
+		color : Color;		
+		/** !#en The fast Mode.
+		!#zh 是否启用了快速模式。当启用快速模式，新的点会被更快地添加，但精度较低。 */
+		fastMode : boolean;		
+		/** !#en Remove all living segments of the ribbon.
+		!#zh 删除当前所有的拖尾片段。
+		
+		@example 
+		```js
+		// stop particle system.
+		myParticleSystem.stopSystem();
+		``` 
+		*/
+		reset() : void;	
+	}		
+		/** !#en
+		cc.ActionManager is a class that can manage actions.<br/>
 		Normally you won't need to use this class directly. 99% of the cases you will use the CCNode interface,
 		which uses this class's singleton object.
 		But there are some cases where you might need to use this class. <br/>
 		Examples:<br/>
 		- When you want to run an action where the target is different from a CCNode.<br/>
-		- When you want to pause / resume the actions<br/> */
+		- When you want to pause / resume the actions<br/>
+		!#zh
+		cc.ActionManager 是可以管理动作的单例类。<br/>
+		通常你并不需要直接使用这个类，99%的情况您将使用 CCNode 的接口。<br/>
+		但也有一些情况下，您可能需要使用这个类。 <br/>
+		例如：
+		 - 当你想要运行一个动作，但目标不是 CCNode 类型时。 <br/>
+		 - 当你想要暂停/恢复动作时。 <br/> */
 		export class ActionManager {		
-		/** If the target is already present, then the action will be added to the existing target.
+		/** !#en
+		Adds an action with a target.<br/>
+		If the target is already present, then the action will be added to the existing target.
 		If the target is not present, a new instance of this target will be created either paused or not, and the action will be added to the newly created target.
-		When the target is paused, the queued actions won't be 'ticked'. 
+		When the target is paused, the queued actions won't be 'ticked'.
+		!#zh
+		增加一个动作，同时还需要提供动作的目标对象，目标对象是否暂停作为参数。<br/>
+		如果目标已存在，动作将会被直接添加到现有的节点中。<br/>
+		如果目标不存在，将为这一目标创建一个新的实例，并将动作添加进去。<br/>
+		当目标状态的 paused 为 true，动作将不会被执行 
 		*/
 		addAction(action : Action, target : Node, paused : boolean) : void;		
-		/** Removes all actions from all the targets. 
+		/** !#en Removes all actions from all the targets.
+		!#zh 移除所有对象的所有动作。 
 		*/
 		removeAllActions() : void;		
-		/** All the actions that belongs to the target will be removed. 
+		/** !#en
+		Removes all actions from a certain target. <br/>
+		All the actions that belongs to the target will be removed.
+		!#zh
+		移除指定对象上的所有动作。<br/>
+		属于该目标的所有的动作将被删除。 
 		*/
 		removeAllActionsFromTarget(target : any, forceDelete : boolean) : void;		
-		/**  
+		/** !#en Removes an action given an action reference.
+		!#zh 移除指定的动作。 
 		*/
 		removeAction(action : Action) : void;		
-		/**  
+		/** !#en Removes an action given its tag and the target.
+		!#zh 删除指定对象下特定标签的一个动作，将删除首个匹配到的动作。 
 		*/
 		removeActionByTag(tag : number, target : any) : void;		
-		/**  
+		/** !#en Gets an action given its tag an a target.
+		!#zh 通过目标对象和标签获取一个动作。 
 		*/
 		getActionByTag(tag : number, target : any) : Action;		
-		/** Composable actions are counted as 1 action. <br/>
+		/** !#en
+		Returns the numbers of actions that are running in a certain target. <br/>
+		Composable actions are counted as 1 action. <br/>
 		Example: <br/>
 		- If you are running 1 Sequence of 7 actions, it will return 1. <br/>
-		- If you are running 7 Sequences of 2 actions, it will return 7. 
+		- If you are running 7 Sequences of 2 actions, it will return 7.
+		!#zh
+		返回指定对象下所有正在运行的动作数量。 <br/>
+		组合动作被算作一个动作。<br/>
+		例如：<br/>
+		 - 如果您正在运行 7 个动作组成的序列动作（Sequence），这个函数将返回 1。<br/>
+		 - 如果你正在运行 2 个序列动作（Sequence）和 5 个普通动作，这个函数将返回 7。<br/> 
 		*/
 		numberOfRunningActionsInTarget(target : any) : number;		
-		/**  
+		/** !#en Pauses the target: all running actions and newly added actions will be paused.
+		!#zh 暂停指定对象：所有正在运行的动作和新添加的动作都将会暂停。 
 		*/
 		pauseTarget(target : any) : void;		
-		/**  
+		/** !#en Resumes the target. All queued actions will be resumed.
+		!#zh 让指定目标恢复运行。在执行序列中所有被暂停的动作将重新恢复运行。 
 		*/
 		resumeTarget(target : any) : void;		
-		/** Pauses all running actions, returning a list of targets whose actions were paused. 
+		/** !#en Pauses all running actions, returning a list of targets whose actions were paused.
+		!#zh 暂停所有正在运行的动作，返回一个包含了那些动作被暂停了的目标对象的列表。 
 		*/
 		pauseAllRunningActions() : any[];		
-		/** Resume a set of targets (convenience function to reverse a pauseAllRunningActions or pauseTargets call) 
+		/** !#en Resume a set of targets (convenience function to reverse a pauseAllRunningActions or pauseTargets call).
+		!#zh 让一组指定对象恢复运行（用来逆转 pauseAllRunningActions 效果的便捷函数）。 
 		*/
 		resumeTargets(targetsToResume : any[]) : void;		
-		/** Pause a set of targets 
+		/** !#en Pause a set of targets.
+		!#zh 暂停一组指定对象。 
 		*/
 		pauseTargets(targetsToPause : any[]) : void;		
-		/** because it uses this, so it can not be static 
+		/** !#en
+		purges the shared action manager. It releases the retained instance. <br/>
+		because it uses this, so it can not be static.
+		!#zh
+		清除共用的动作管理器。它释放了持有的实例。 <br/>
+		因为它使用 this，因此它不能是静态的。 
 		*/
 		purgeSharedManager() : void;		
-		/** 
+		/** !#en The ActionManager update。
+		!#zh ActionManager 主循环。
 		@param dt delta time in seconds 
 		*/
 		update(dt : number) : void;	
 	}		
-		/** <p>
+		/** !#en
+		<p>
 		   ATTENTION: USE cc.director INSTEAD OF cc.Director.<br/>
 		   cc.director is a singleton object which manage your game's logic flow.<br/>
 		   Since the cc.director is a singleton, you don't need to call any constructor or create functions,<br/>
@@ -2369,9 +2476,8 @@ declare module cc {
 		   The cc.director is also responsible for:<br/>
 		     - initializing the OpenGL context<br/>
 		     - setting the OpenGL pixel format (default on is RGB565)<br/>
-		     - setting the OpenGL pixel format (default on is RGB565)<br/>
-		     - setting the OpenGL buffer depth (default one is 0-bit)<br/>
-		- setting the color for clear screen (default one is BLACK)<br/>
+		     - setting the OpenGL buffer depth (default on is 0-bit)<br/>
+		     - setting the color for clear screen (default one is BLACK)<br/>
 		     - setting the projection (default one is 3D)<br/>
 		     - setting the orientation (default one is Portrait)<br/>
 		     <br/>
@@ -2387,114 +2493,160 @@ declare module cc {
 		  Features and Limitations:<br/>
 		     - Scheduled timers & drawing are synchronizes with the refresh rate of the display<br/>
 		     - Only supports animation intervals of 1/60 1/30 & 1/15<br/>
+		</p>
+		
+		!#zh
+		<p>
+		    注意：用 cc.director 代替 cc.Director。<br/>
+		    cc.director 一个管理你的游戏的逻辑流程的单例对象。<br/>
+		    由于 cc.director 是一个单例，你不需要调用任何构造函数或创建函数，<br/>
+		    使用它的标准方法是通过调用：<br/>
+		      - cc.director.methodName();
+		    <br/>
+		    它创建和处理主窗口并且管理什么时候执行场景。<br/>
+		    <br/>
+		    cc.director 还负责：<br/>
+		     - 初始化 OpenGL 环境。<br/>
+		     - 设置OpenGL像素格式。(默认是 RGB565)<br/>
+		     - 设置OpenGL缓冲区深度 (默认是 0-bit)<br/>
+		     - 设置空白场景的颜色 (默认是 黑色)<br/>
+		     - 设置投影 (默认是 3D)<br/>
+		     - 设置方向 (默认是 Portrait)<br/>
+		   <br/>
+		   cc.director 设置了 OpenGL 默认环境 <br/>
+		     - GL_TEXTURE_2D   启用。<br/>
+		     - GL_VERTEX_ARRAY 启用。<br/>
+		     - GL_COLOR_ARRAY  启用。<br/>
+		     - GL_TEXTURE_COORD_ARRAY 启用。<br/>
+		</p>
+		<p>
+		  cc.director 也同步定时器与显示器的刷新速率。
+		  <br/>
+		  特点和局限性: <br/>
+		     - 将计时器 & 渲染与显示器的刷新频率同步。<br/>
+		     - 只支持动画的间隔 1/60 1/30 & 1/15。<br/>
 		</p> */
 		export class Director {		
-		/** Converts a view coordinate to an WebGL coordinate<br/>
-		Useful to convert (multi) touches coordinates to the current layout (portrait or landscape)<br/>
-		Implementation can be found in CCDirectorWebGL. 
-		*/
-		convertToGL(uiPoint : Vec2) : Vec2;		
-		/** Converts an WebGL coordinate to a view coordinate<br/>
+		/** !#en
+		Converts an OpenGL coordinate to a view coordinate<br/>
 		Useful to convert node points to window points for calls such as glScissor<br/>
-		Implementation can be found in CCDirectorWebGL. 
+		Implementation can be found in CCDirectorWebGL.
+		!#zh 将触摸点的 WebGL View 坐标转换为屏幕坐标。 
 		*/
 		convertToUI(glPoint : Vec2) : Vec2;		
-		/** Returns the size in pixels of the surface. It could be different than the screen size.<br/>
-		High-res devices might have a higher surface size than the screen size. 
-		*/
-		getContentScaleFactor() : number;		
-		/** This object will be visited after the main scene is visited.<br/>
-		This object MUST implement the "visit" selector.<br/>
-		Useful to hook a notification object. 
-		*/
-		getNotificationNode() : Node;		
-		/** Returns the size of the WebGL view in points.<br/>
-		It takes into account any possible rotation (device orientation) of the window. 
+		/** !#en
+		Returns the size of the WebGL view in points.<br/>
+		It takes into account any possible rotation (device orientation) of the window.
+		!#zh 获取视图的大小，以点为单位。 
 		*/
 		getWinSize() : Size;		
-		/** Returns the size of the OpenGL view in pixels.<br/>
+		/** !#en
+		Returns the size of the OpenGL view in pixels.<br/>
 		It takes into account any possible rotation (device orientation) of the window.<br/>
-		On Mac winSize and winSizeInPixels return the same value. 
+		On Mac winSize and winSizeInPixels return the same value.
+		!#zh 获取视图大小，以像素为单位。 
 		*/
 		getWinSizeInPixels() : Size;		
-		/** Returns the visible size of the running scene. 
+		/** !#en Returns the visible size of the running scene.
+		!#zh 获取运行场景的可见大小。 
 		*/
 		getVisibleSize() : Size;		
-		/** Returns the visible origin of the running scene. 
+		/** !#en Returns the visible origin of the running scene.
+		!#zh 获取视图在游戏内容中的坐标原点。 
 		*/
 		getVisibleOrigin() : Vec2;		
-		/** Returns the z eye, only available in WebGL mode. 
-		*/
-		getZEye() : number;		
-		/** Pause the director's ticker 
+		/** !#en Pause the director's ticker.
+		!#zh 暂停正在运行的场景。 
 		*/
 		pause() : void;		
-		/** Suspends the execution of the running scene, pushing it on the stack of suspended scenes.<br/>
-		The new scene will be executed.<br/>
-		Try to avoid big stacks of pushed scenes to reduce memory allocation.<br/>
-		ONLY call it if there is a running scene. 
-		*/
-		pushScene(scene : Scene) : void;		
-		/** Run a scene. Replaces the running scene with a new one or enter the first scene.
+		/** !#en
+		Run a scene. Replaces the running scene with a new one or enter the first scene.<br/>
 		The new scene will be launched immediately.
+		!#zh 立刻切换指定场景。
 		@param scene The need run scene.
 		@param onBeforeLoadScene The function invoked at the scene before loading.
 		@param onLaunched The function invoked at the scene after launch. 
 		*/
-		runScene(scene : Scene, onBeforeLoadScene? : Function, onLaunched? : Function) : void;		
-		/** Run a scene. Replaces the running scene with a new one or enter the first scene.
+		runSceneImmediate(scene : Scene, onBeforeLoadScene? : Function, onLaunched? : Function) : void;		
+		/** !#en
+		Run a scene. Replaces the running scene with a new one or enter the first scene.
 		The new scene will be launched at the end of the current frame.
+		!#zh 运行指定场景。
 		@param scene The need run scene.
 		@param onBeforeLoadScene The function invoked at the scene before loading.
 		@param onLaunched The function invoked at the scene after launch. 
 		*/
 		runScene(scene : Scene, onBeforeLoadScene? : Function, onLaunched? : Function) : void;		
-		/** Loads the scene by its name.
+		/** !#en Loads the scene by its name.
+		!#zh 通过场景名称进行加载场景。
 		@param sceneName The name of the scene to load.
 		@param onLaunched callback, will be called after scene launched. 
 		*/
 		loadScene(sceneName : string, onLaunched? : Function) : boolean;		
-		/** Resume director after pause, if the current scene is not paused, nothing will happen. 
+		/** !#en
+		Preloads the scene to reduces loading time. You can call this method at any time you want.
+		After calling this method, you still need to launch the scene by `cc.director.loadScene`.
+		It will be totally fine to call `cc.director.loadScene` at any time even if the preloading is not
+		yet finished, the scene will be launched after loaded automatically.
+		!#zh 预加载场景，你可以在任何时候调用这个方法。
+		调用完后，你仍然需要通过 `cc.director.loadScene` 来启动场景，因为这个方法不会执行场景加载操作。
+		就算预加载还没完成，你也可以直接调用 `cc.director.loadScene`，加载完成后场景就会启动。
+		@param sceneName The name of the scene to preload.
+		@param onLoaded callback, will be called after scene loaded. 
+		*/
+		preloadScene(sceneName : string, onLoaded: (error: Error) => void) : void;		
+		/** !#en Resume director after pause, if the current scene is not paused, nothing will happen.
+		!#zh 恢复暂停场景, 如果当前场景没有暂停将没任何事情发生。 
 		*/
 		resume() : void;		
-		/** Enables or disables WebGL depth test.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js 
+		/** !#en
+		Enables or disables WebGL depth test.<br/>
+		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js
+		!#zh 启用/禁用深度测试（在 Canvas 渲染模式下不会生效）。 
 		*/
 		setDepthTest(on : boolean) : void;		
-		/** set color for clear screen.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js 
+		/** !#en
+		set color for clear screen.<br/>
+		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js
+		!#zh 设置场景的默认擦除颜色（支持白色全透明，但不支持透明度为中间值）。 
 		*/
 		setClearColor(clearColor : Color) : void;		
-		/** Sets the view, where everything is rendered, do not call this function.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js. 
-		*/
-		setOpenGLView(openGLView : View) : void;		
-		/** Sets an OpenGL projection.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js. 
+		/** !#en
+		Sets an OpenGL projection.<br/>
+		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js.
+		!#zh 设置 OpenGL 投影。 
 		*/
 		setProjection(projection : number) : void;		
-		/** Update the view port.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js. 
+		/** !#en
+		Update the view port.<br/>
+		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js.
+		!#zh 设置视窗（请不要主动调用这个接口，除非你知道你在做什么）。 
 		*/
 		setViewport() : void;		
-		/** Get the View, where everything is rendered.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js. 
-		*/
-		getOpenGLView() : View;		
-		/** Sets an OpenGL projection.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js. 
+		/** !#en
+		Sets an OpenGL projection.<br/>
+		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js.
+		!#zh 获取 OpenGL 投影。 
 		*/
 		getProjection() : number;		
-		/** Enables/disables OpenGL alpha blending.<br/>
-		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js. 
+		/** !#en
+		Enables/disables OpenGL alpha blending.<br/>
+		Implementation can be found in CCDirectorCanvas.js/CCDirectorWebGL.js.
+		!#zh 启用/禁用 透明度融合。 
 		*/
 		setAlphaBlending(on : boolean) : void;		
-		/** Returns whether or not the replaced scene will receive the cleanup message.<br>
+		/** !#en
+		Returns whether or not the replaced scene will receive the cleanup message.<br/>
 		If the new scene is pushed, then the old scene won't receive the "cleanup" message.<br/>
-		If the new scene replaces the old one, the it will receive the "cleanup" message. 
+		If the new scene replaces the old one, the it will receive the "cleanup" message.
+		!#zh
+		更换场景时是否接收清理消息。<br>
+		如果新场景是采用 push 方式进入的，那么旧的场景将不会接收到 “cleanup” 消息。<br/>
+		如果新场景取代旧的场景，它将会接收到 “cleanup” 消息。</br> 
 		*/
 		isSendCleanupToScene() : boolean;		
-		/** Returns current logic Scene.
+		/** !#en Returns current logic Scene.
+		!#zh 获取当前逻辑场景。
 		
 		@example 
 		```js
@@ -2503,43 +2655,55 @@ declare module cc {
 		``` 
 		*/
 		getScene() : Scene;		
-		/** Returns the FPS value. 
+		/** !#en Returns the FPS value.
+		!#zh 获取单位帧执行时间。 
 		*/
 		getAnimationInterval() : number;		
-		/** Returns whether or not to display the FPS informations. 
+		/** !#en Returns whether or not to display the FPS informations.
+		!#zh 获取是否显示 FPS 信息。 
 		*/
 		isDisplayStats() : boolean;		
-		/** Sets whether display the FPS on the bottom-left corner. 
+		/** !#en Sets whether display the FPS on the bottom-left corner.
+		!#zh 设置是否在左下角显示 FPS。 
 		*/
 		setDisplayStats(displayStats : boolean) : void;		
-		/** Returns seconds per frame. 
+		/** !#en Returns seconds per frame.
+		!#zh 获取实际记录的上一帧执行时间，可能与单位帧执行时间（AnimationInterval）有出入。 
 		*/
 		getSecondsPerFrame() : number;		
-		/** Returns whether next delta time equals to zero 
+		/** !#en Returns whether next delta time equals to zero.
+		!#zh 返回下一个 “delta time” 是否等于零。 
 		*/
 		isNextDeltaTimeZero() : boolean;		
-		/** Returns whether or not the Director is paused 
+		/** !#en Returns whether or not the Director is paused.
+		!#zh 是否处于暂停状态。 
 		*/
 		isPaused() : boolean;		
-		/** Returns how many frames were called since the director started 
+		/** !#en Returns how many frames were called since the director started.
+		!#zh 获取 director 启动以来游戏运行的总帧数。 
 		*/
 		getTotalFrames() : number;		
-		/** Returns the cc.Scheduler associated with this director. 
+		/** !#en Returns the cc.Scheduler associated with this director.
+		!#zh 获取和 director 相关联的 cc.Scheduler。 
 		*/
 		getScheduler() : Scheduler;		
-		/** Sets the cc.Scheduler associated with this director. 
+		/** !#en Sets the cc.Scheduler associated with this director.
+		!#zh 设置和 director 相关联的 cc.Scheduler。 
 		*/
 		setScheduler(scheduler : Scheduler) : void;		
-		/** Returns the cc.ActionManager associated with this director. 
+		/** !#en Returns the cc.ActionManager associated with this director.
+		!#zh 获取和 director 相关联的 cc.ActionManager（动作管理器）。 
 		*/
 		getActionManager() : ActionManager;		
-		/** Sets the cc.ActionManager associated with this director. 
+		/** !#en Sets the cc.ActionManager associated with this director.
+		!#zh 设置和 director 相关联的 cc.ActionManager（动作管理器）。 
 		*/
 		setActionManager(actionManager : ActionManager) : void;		
-		/** Returns the cc.AnimationManager associated with this director. 
+		/** Returns the cc.CollisionManager associated with this director. 
 		*/
-		getAnimationManager() : AnimationManager;		
-		/** Returns the delta time since last frame. 
+		getCollisionManager() : CollisionManager;		
+		/** !#en Returns the delta time since last frame.
+		!#zh 获取上一帧的 “delta time”。 
 		*/
 		getDeltaTime() : number;	
 	}		
@@ -2690,6 +2854,20 @@ declare module cc {
 		/** !#en Indicates whether this node is active in the scene.
 		!#zh 表示此节点是否在场景中激活。 */
 		activeInHierarchy : boolean;		
+		/** !#en
+		Group index of node.<br/>
+		Which Group this node belongs to will resolve that this node's collision components can collide with which other collision componentns.<br/>
+		!#zh
+		节点的分组索引。<br/>
+		节点的分组将关系到节点的碰撞组件可以与哪些碰撞组件相碰撞。<br/> */
+		groupIndex : Integer;		
+		/** !#en
+		Group of node.<br/>
+		Which Group this node belongs to will resolve that this node's collision components can collide with which other collision componentns.<br/>
+		!#zh
+		节点的分组。<br/>
+		节点的分组将关系到节点的碰撞组件可以与哪些碰撞组件相碰撞。<br/> */
+		group : string;		
 		/** !#en
 		Returns the component of supplied type if the node has one attached, null if it doesn't.<br/>
 		You can also get component in the node by passing in the name of the script.
@@ -3654,12 +3832,9 @@ declare module cc {
 		/** !#en Renders a TMX Tile Map in the scene.
 		!#zh 在场景中渲染一个 tmx 格式的 Tile Map。 */
 		export class TiledMap extends Component {		
-		/** !#en The tmx file.
-		!#zh tmx 文件。 */
-		tmxFile : string;		
-		/** !#en The event handler to be called when the map is loaded.
-		!#zh 在加载在地图时要调用的事件处理程序。 */
-		mapLoaded : Component.EventHandler;		
+		/** !#en The TiledMap Asset.
+		!#zh TiledMap 资源。 */
+		tmxAsset : cc.TiledMapAsset;		
 		/** !#en Gets the map size.
 		!#zh 获取地图大小。
 		
@@ -3812,16 +3987,21 @@ declare module cc {
 		*/
 		getPropertiesForGID(GID : number) : any;	
 	}		
-		/** <p>
+		/** !#en
+		 Attention: In creator, it's strongly not recommended to use cc.pool to manager cc.Node.
+		 We provided {{#crossLink "NodePool"}}cc.NodePool{{/crossLink}} instead.
+		
 		 cc.pool is a singleton object serves as an object cache pool.<br/>
 		 It can helps you to improve your game performance for objects which need frequent release and recreate operations<br/>
-		 Some common use case is :<br/>
-		     1. Bullets in game (die very soon, massive creation and recreation, no side effect on other objects)<br/>
-		     2. Blocks in candy crash (massive creation and recreation)<br/>
-		     etc...
-		</p> */
+		!#zh
+		首先请注意，在 Creator 中我们强烈不建议使用 cc.pool 来管理 cc.Node 节点对象，请使用 {{#crossLink "NodePool"}}cc.NodePool{{/crossLink}} 代替
+		因为 cc.pool 是面向类来设计的，而 cc.Node 中使用 Component 来进行组合，它的类永远都一样，实际却千差万别。
+		
+		cc.pool 是一个单例对象，用作为对象缓存池。<br/>
+		它可以帮助您提高游戏性能，适用于优化对象的反复创建和销毁<br/> */
 		export class pool {		
-		/** Put the obj in pool.
+		/** !#en Put the obj in pool.
+		!#zh 加入对象到对象池中。
 		@param obj The need put in pool object.
 		
 		@example 
@@ -3835,17 +4015,21 @@ declare module cc {
 		``` 
 		*/
 		putInPool(obj : any) : void;		
-		/** Check if this kind of obj has already in pool.
+		/** !#en Check if this kind of obj has already in pool.
+		!#zh 检查对象池中是否有指定对象的存在。
 		@param objClass The check object class. 
 		*/
 		hasObject(objClass : any) : boolean;		
-		/** Remove the obj if you want to delete it. 
+		/** !#en Remove the obj if you want to delete it.
+		!#zh 移除在对象池中指定的对象。 
 		*/
 		removeObject() : void;		
-		/** Get the obj from pool. 
+		/** !#en Get the obj from pool.
+		!#zh 获取对象池中的指定对象。 
 		*/
 		getFromPool() : any;		
-		/** Remove all objs in pool and reset the pool. 
+		/** !#en Remove all objs in pool and reset the pool.
+		!#zh 移除对象池中的所有对象，并且重置对象池。 
 		*/
 		drainAllPools() : void;	
 	}		
@@ -4039,10 +4223,14 @@ declare module cc {
 		@param clip the clip to add 
 		*/
 		addClip(clip : AnimationClip, newName? : string) : AnimationState;		
-		/** !#en Remove clip from the animation list. This will remove the clip and any animation states based on it.
+		/** !#en
+		Remove clip from the animation list. This will remove the clip and any animation states based on it.
+		If there are animation states depand on the clip are playing or clip is defaultClip, it will not delete the clip.
+		But if force is true, then will always remove the clip and any animation states based on it. If clip is defaultClip, defaultClip will be reset to null
 		!#zh
 		从动画列表中移除指定的动画剪辑，<br/>
-		如果动画剪辑正在播放并且 force 参数为 true，这会停止该动画剪辑，然后在移除该动画剪辑，反之为 false，则会停止该动画。
+		如果依赖于 clip 的 AnimationState 正在播放或者 clip 是 defaultClip 的话，默认是不会删除 clip 的。
+		但是如果 force 参数为 true，则会强制停止该动画，然后移除该动画剪辑和相关的动画。这时候如果 clip 是 defaultClip，defaultClip 将会被重置为 null。
 		@param force If force is true, then will always remove the clip and any animation states based on it. 
 		*/
 		removeClip(clip : AnimationClip, force : boolean) : void;		
@@ -4187,13 +4375,17 @@ declare module cc {
 		/** !#zh: 作为 UI 根节点，为所有子节点提供视窗四边的位置信息以供对齐，另外提供屏幕适配策略接口，方便从编辑器设置。
 		注：由于本节点的尺寸会跟随屏幕拉伸，所以 anchorPoint 只支持 (0.5, 0.5)，否则适配不同屏幕时坐标会有偏差。 */
 		export class Canvas extends Component {		
-		/** Current active canvas, the scene should only have one active canvas at the same time. */
+		/** !#en Current active canvas, the scene should only have one active canvas at the same time.
+		!#zh 当前激活的画布组件，场景同一时间只能有一个激活的画布。 */
 		instance : Canvas;		
-		/** The desigin resolution for current scene. */
+		/** !#en The desigin resolution for current scene.
+		!#zh 当前场景设计分辨率。 */
 		designResolution : cc.Size;		
-		/** !#zh: 是否优先将设计分辨率高度撑满视图高度 */
+		/** !#en TODO
+		!#zh: 是否优先将设计分辨率高度撑满视图高度。 */
 		fitHeight : boolean;		
-		/** !#zh: 是否优先将设计分辨率宽度撑满视图宽度 */
+		/** !#en TODO
+		!#zh: 是否优先将设计分辨率宽度撑满视图宽度。 */
 		fitWidth : boolean;	
 	}		
 		/** !#en
@@ -4371,8 +4563,10 @@ declare module cc {
 		
 		@example 
 		```js
-		var squashAction = cc.scaleTo(0.2, 1, 0.6);
-		this.seq = cc.sequence(squashAction);
+		var timeCallback = function (dt) {
+		  cc.log("time: " + dt);
+		}
+		this.schedule(timeCallback, 1);
 		``` 
 		*/
 		schedule(callback : Function, interval? : number, repeat? : number, delay? : number) : void;		
@@ -4383,8 +4577,10 @@ declare module cc {
 		
 		@example 
 		```js
-		var squashAction = cc.scaleTo(0.2, 1, 0.6);
-		this.seq = cc.scheduleOnce(squashAction);
+		var timeCallback = function (dt) {
+		  cc.log("time: " + dt);
+		}
+		this.scheduleOnce(timeCallback, 2);
 		``` 
 		*/
 		scheduleOnce(callback : Function, delay? : number) : void;		
@@ -4486,16 +4682,26 @@ declare module cc {
 		lineHeight : number;		
 		/** !#en Overflow of label.
 		!#zh 文字显示超出范围时的处理方式。 */
-		overFlow : Label.Overflow;		
+		overflow : Label.Overflow;		
 		/** !#en Whether auto wrap label when string width is large than label width.
 		!#zh 是否自动换行。 */
 		enableWrapText : boolean;		
-		/** !#en The font URL of label.
-		!#zh 文本字体的 url。 */
-		file : string;		
+		/** !#en The font of label.
+		!#zh 文本字体。 */
+		font : cc.Font;		
 		/** !#en Whether use system font name or not.
 		!#zh 是否使用系统字体。 */
 		isSystemFontUsed : boolean;	
+	}		
+		/** !#en Outline effect used to change the display, only used for TTF font
+		!#zh 描边效果组件,用于字体描边,只能用于系统字体 */
+		export class LabelOutline extends Component {		
+		/** !#en Change the outline color
+		!#zh 改变描边的颜色 */
+		color : Color;		
+		/** !#en Change the outline width
+		!#zh 改变描边的宽度 */
+		width : number;	
 	}		
 		/** !#en The Layout is a container component, use it to arrange child elements easily.
 		!#zh Layout 组件相当于一个容器，能自动对它的所有子节点进行统一排版。 */
@@ -4633,6 +4839,9 @@ declare module cc {
 		/** !#en The vertical scrollbar reference.
 		!#zh 垂直滚动的 ScrollBar。 */
 		verticalScrollBar : Scrollbar;		
+		/** !#en Scrollview events callback
+		!#zh 滚动视图的事件回调函数 */
+		scrollEvents : Component.EventHandler[];		
 		/** !#en Scroll the content to the bottom boundary of ScrollView.
 		!#zh 视图内容将在规定时间内滚动到视图底部。
 		@param timeInSecond Scroll time in second, if you don't pass timeInSecond,
@@ -4737,6 +4946,30 @@ declare module cc {
 		``` 
 		*/
 		scrollToBottomRight(timeInSecond? : number, attenuated? : boolean) : void;		
+		/** !#en Scroll with an offset related to the ScrollView's top left origin, if timeInSecond is omitted, then it will jump to the
+		      specific offset immediately.
+		!#zh 视图内容在规定时间内将滚动到 ScrollView 相对左上角原点的偏移位置, 如果 timeInSecond参数不传，则立即滚动到指定偏移位置。
+		@param offset A Vec2, the value of which each axis between 0 and maxScrollOffset
+		@param timeInSecond Scroll time in second, if you don't pass timeInSecond,
+		the content will jump to the specific offset of ScrollView immediately.
+		@param attenuated Whether the scroll acceleration attenuated, default is true.
+		
+		@example 
+		```js
+		// Scroll to middle position in 0.1 second in x-axis
+		var maxScrollOffset = this.getMaxScrollOffset();
+		scrollView.scrollToOffset(cc.p(maxScrollOffset.x / 2, 0), 0.1);
+		``` 
+		*/
+		scrollToOffset(offset : Vec2, timeInSecond? : number, attenuated? : boolean) : void;		
+		/** !#en  Get the positive offset value corresponds to the content's top left boundary.
+		!#zh  获取滚动视图相对于左上角原点的当前滚动偏移 
+		*/
+		getScrollOffset() : Vec2;		
+		/** !#en Get the maximize available  scroll offset
+		!#zh 获取滚动视图最大可以滚动的偏移量 
+		*/
+		getMaxScrollOffset() : Vec2;		
 		/** !#en Scroll the content to the horizontal percent position of ScrollView.
 		!#zh 视图内容在规定时间内将滚动到 ScrollView 水平方向的百分比位置上。
 		@param percent A value between 0 and 1.
@@ -4928,6 +5161,41 @@ declare module cc {
 		``` 
 		*/
 		getInsetBottom() : number;	
+	}		
+		/** !#en A distortion used to change the rendering of simple sprite.If will take effect after sprite component is added.
+		!#zh 扭曲效果组件,用于改变SIMPLE类型sprite的渲染,只有当sprite组件已经添加后,才能起作用. */
+		export class SpriteDistortion extends Component {		
+		/** !#en Change the UV offset for distortion rendering.
+		!#zh 在渲染时改变UV的整体偏移. */
+		offset : Vec2;		
+		/** !#en Change the UV scale for distortion rendering.
+		!#zh 在渲染时改变UV的寻址系数 */
+		tiling : Vec2;	
+	}		
+		/** !#en cc.VideoPlayer is a component for playing videos, you can use it for showing videos in your game.
+		!#zh Video 组件，用于在游戏中播放视频 */
+		export class VideoPlayer extends _RendererUnderSG {		
+		/** !#en The resource type of videoplayer, REMOTE for remote url and LOCAL for local file path.
+		!#zh 视频来源：REMOTE 表示远程视频 URL，LOCAL 表示本地视频地址。 */
+		resourceType : VideoPlayer.ResourceType;		
+		/** !#en The remote URL of video.
+		!#zh 远程视频的 URL */
+		remoteURL : string;		
+		/** !#en The local video full path.
+		!#zh 本地视频的 URL */
+		video : string;		
+		/** !#en The current time when video start to play.
+		!#zh  从当前时间点开始播放视频 */
+		currentTime : Float;		
+		/** !#en Whether keep the aspect ration of the original video.
+		!#zh 是否保持视频原来的宽高比 */
+		keepAspectRatio : boolean;		
+		/** !#en Whether play video in fullscreen mode.
+		!#zh 是否全屏播放视频 */
+		isFullscreen : boolean;		
+		/** !#en the video player's callback, it will be triggered when certain event occurs, like: playing, paused, stopped and completed.
+		!#zh 视频播放回调函数，该回调函数会在特定情况被触发，比如播放中，暂时，停止和完成播放。 */
+		videoPlayerEvent : cc.Component.EventHandler[];	
 	}		
 		/** !#en
 		Stores and manipulate the anchoring based on its parent.
@@ -5519,28 +5787,73 @@ declare module cc {
 		<br>
 		Note: All asset urls in Creator use forward slashes, urls using backslashes will not work.
 		@param url Url of the target resource.
-		                       The url is relative to the "resources" folder, extensions must be omitted.
+		                      The url is relative to the "resources" folder, extensions must be omitted.
+		@param type Only asset of type will be loaded if this argument is supplied.
 		@param completeCallback Callback invoked when the resource loaded.
 		
 		@example 
 		```js
-		// load the sprite frame (project/assets/resources/imgs/cocos.png/cocos) from resources folder with no extension
-		cc.loader.loadRes('imgs/cocos/cocos', function (err, spriteFrame) {
+		// load the prefab (project/assets/resources/misc/character/cocos) from resources folder
+		cc.loader.loadRes('misc/character/cocos', function (err, prefab) {
 		    if (err) {
 		        cc.error(err.message || err);
 		        return;
 		    }
-		    cc.log('Result should be a sprite frame: ' + ( spriteFrame instanceof cc.SpriteFrame));
+		    cc.log('Result should be a prefab: ' + (prefab instanceof cc.Prefab));
+		});
+		
+		// load the sprite frame (project/assets/resources/imgs/cocos.png/cocos) from resources folder
+		cc.loader.loadRes('imgs/cocos', cc.SpriteFrame, function (err, spriteFrame) {
+		    if (err) {
+		        cc.error(err.message || err);
+		        return;
+		    }
+		    cc.log('Result should be a sprite frame: ' + (spriteFrame instanceof cc.SpriteFrame));
 		});
 		``` 
 		*/
-		loadRes(url : string, completeCallback: (error: Error, resource: any) => void) : void;		
+		loadRes(url : string, type? : Function, completeCallback: (error: Error, resource: any) => void) : void;		
+		/** Load all assets in a folder inside the "assets/resources" folder of your project.<br>
+		<br>
+		Note: All asset urls in Creator use forward slashes, urls using backslashes will not work.
+		@param url Url of the target folder.
+		                      The url is relative to the "resources" folder, extensions must be omitted.
+		@param type Only asset of type will be loaded if this argument is supplied.
+		@param completeCallback A callback which is called when all assets have been loaded, or an error occurs.
+		
+		@example 
+		```js
+		// load the texture (resources/imgs/cocos.png) and sprite frame (resources/imgs/cocos.png/cocos)
+		cc.loader.loadResAll('imgs/cocos', function (err, assets) {
+		    if (err) {
+		        cc.error(err);
+		        return;
+		    }
+		    var texture = assets[0];
+		    var spriteFrame = assets[1];
+		});
+		
+		// load all textures in "resources/imgs/"
+		cc.loader.loadResAll('imgs', cc.Texture2D, function (err, textures) {
+		    if (err) {
+		        cc.error(err);
+		        return;
+		    }
+		    var texture1 = textures[0];
+		    var texture2 = textures[1];
+		});
+		``` 
+		*/
+		loadResAll(url : string, type? : Function, completeCallback: (error: Error, assets: any[]) => void) : void;		
 		/** Get resource data by id. <br>
 		When you load resources with {{#crossLink "loader/load:method"}}{{/crossLink}} or {{#crossLink "loader/loadRes:method"}}{{/crossLink}},
 		the url will be the unique identity of the resource.
 		After loaded, you can acquire them by passing the url to this API. 
 		*/
 		getRes(url : string) : any;		
+		/** Returns an item in pipeline. 
+		*/
+		getItem() : LoadingItem;		
 		/** Release the cache of resource by url. 
 		*/
 		release(url : string) : void;		
@@ -5554,61 +5867,123 @@ declare module cc {
 		*/
 		releaseAll() : void;	
 	}		
-		/** AssetTable is used to find asset's uuid by url */
-		export class AssetTable {		
-		constructor();		
-		/** Returns all asset paths in the table. 
-		*/
-		getAllPaths() : string[];	
-	}		
-		/** LoadingItems is the manager of items in pipeline.
-		It hold a map of items, each entry in the map is a url to object key value pair.
-		Each item always contains the following property:
-		- id: The identification of the item, usually it's identical to url
-		- url: The url
-		- type: The type, it's the extension name of the url by default, could be specified manually too
-		- error: The error happened in pipeline will be stored in this property
-		- content: The content processed by the pipeline, the final result will also be stored in this property
-		- complete: The flag indicate whether the item is completed by the pipeline
-		- states: An object stores the states of each pipe the item go through, the state can be: Pipeline.ItemState.WORKING | Pipeline.ItemState.ERROR | Pipeline.ItemState.COMPLETE
-		
-		Item can hold other custom properties */
+		/** !#en
+		LoadingItems is the manager of items in pipeline.</br>
+		It hold a map of items, each entry in the map is a url to object key value pair.</br>
+		Each item always contains the following property:</br>
+		- id: The identification of the item, usually it's identical to url</br>
+		- url: The url </br>
+		- type: The type, it's the extension name of the url by default, could be specified manually too.</br>
+		- error: The error happened in pipeline will be stored in this property.</br>
+		- content: The content processed by the pipeline, the final result will also be stored in this property.</br>
+		- complete: The flag indicate whether the item is completed by the pipeline.</br>
+		- states: An object stores the states of each pipe the item go through, the state can be: Pipeline.ItemState.WORKING | Pipeline.ItemState.ERROR | Pipeline.ItemState.COMPLETE</br>
+		</br>
+		Item can hold other custom properties.
+		!#zh
+		LoadingItems 负责管理 pipeline 中的对象</br>
+		它有一个 map 属性用来存放加载项，在 map 对象中已 url 为 key 值。</br>
+		每个对象都会包含下列属性：</br>
+		- id：该对象的标识，通常与 url 相同。</br>
+		- url：路径 </br>
+		- type: 类型，它这是默认的 URL 的扩展名，可以手动指定赋值。</br>
+		- error：pipeline 中发生的错误将被保存在这个属性中。</br>
+		- content: pipeline 中处理的内容时，最终的结果也将被存储在这个属性中。</br>
+		- complete：该标志表明该对象是否通过 pipeline 完成。</br>
+		- states：该对象存储每个管道中对象经历的状态，状态可以是 Pipeline.ItemState.WORKING | Pipeline.ItemState.ERROR | Pipeline.ItemState.COMPLETE</br>
+		</br>
+		对象可容纳其他自定义属性。 */
 		export class LoadingItems extends CallbacksInvoker {		
-		/** The map of all items */
+		/** !#en The map of all items.
+		!#zh 存储所有加载项的对象。 */
 		map : any;		
-		/** The map of completed items */
+		/** !#en The map of completed items.
+		!#zh 存储已经完成的加载项。 */
 		completed : any;		
-		/** Total count of all items */
+		/** !#en Total count of all items.
+		!#zh 所有加载项的总数。 */
 		totalCount : number;		
-		/** Total count of completed items */
+		/** !#en Total count of completed items.
+		!#zh 所有完成加载项的总数。 */
 		completedCount : number;		
-		/** Add a listener for an item, the callback will be invoked when the item is completed.
+		/** !#en Check whether all items are completed.
+		!#zh 检查是否所有加载项都已经完成。 
+		*/
+		isCompleted() : boolean;		
+		/** !#en Check whether an item is completed.
+		!#zh 通过 id 检查指定加载项是否已经加载完成。
+		@param id The item's id. 
+		*/
+		isItemCompleted(id : string) : boolean;		
+		/** !#en Check whether an item exists.
+		!#zh 通过 id 检查加载项是否存在。
+		@param id The item's id. 
+		*/
+		exists(id : string) : boolean;		
+		/** !#en Returns the content of an internal item.
+		!#zh 通过 id 获取指定对象的内容。
+		@param id The item's id. 
+		*/
+		getContent(id : string) : any;		
+		/** !#en Returns the error of an internal item.
+		!#zh 通过 id 获取指定对象的错误信息。
+		@param id The item's id. 
+		*/
+		getError(id : string) : any;		
+		/** !#en Add a listener for an item, the callback will be invoked when the item is completed.
+		!#zh 监听加载项（通过 key 指定）的完成事件。
 		@param callback can be null
 		@param target can be null 
 		*/
 		addListener(key : string, callback : Function, target : any) : boolean;		
-		/** Check if the specified key has any registered callback.
-		If a callback is also specified, it will only return true if the callback is registered. 
+		/** !#en
+		Check if the specified key has any registered callback. </br>
+		If a callback is also specified, it will only return true if the callback is registered.
+		!#zh
+		检查指定的加载项是否有完成事件监听器。</br>
+		如果同时还指定了一个回调方法，并且回调有注册，它只会返回 true。 
 		*/
 		hasListener(key : string, callback? : Function, target? : any) : boolean;		
-		/** Removes a listener.
-		It will only remove when key, callback, target all match correctly. 
+		/** !#en
+		Removes a listener. </br>
+		It will only remove when key, callback, target all match correctly.
+		!#zh
+		移除指定加载项已经注册的完成事件监听器。</br>
+		只会删除 key, callback, target 均匹配的监听器。 
 		*/
 		remove(key : string, callback : Function, target : any) : boolean;		
-		/** Removes all callbacks registered in a certain event type or all callbacks registered with a certain target
+		/** !#en
+		Removes all callbacks registered in a certain event
+		type or all callbacks registered with a certain target.
+		!#zh 删除指定目标的所有完成事件监听器。
 		@param key The event key to be removed or the target to be removed 
 		*/
 		removeAllListeners(key : string|any) : void;	
 	}		
-		/** A pipeline describes a sequence of manipulations, each manipulation is called a pipe.
-		It's designed for loading process, so items should be urls, and the url will be the identity of each item during the process.
-		A list of items can flow in the pipeline and it will output the results of all pipes.
-		They flow in the pipeline like water in tubes, they go through pipe by pipe separately.
-		Finally all items will flow out the pipeline and the process is finished. */
+		/** !#en
+		A pipeline describes a sequence of manipulations, each manipulation is called a pipe.</br>
+		It's designed for loading process. so items should be urls, and the url will be the identity of each item during the process.</br>
+		A list of items can flow in the pipeline and it will output the results of all pipes.</br>
+		They flow in the pipeline like water in tubes, they go through pipe by pipe separately.</br>
+		Finally all items will flow out the pipeline and the process is finished.
+		
+		!#zh
+		pipeline 描述了一系列的操作，每个操作都被称为 pipe。</br>
+		它被设计来做加载过程的流程管理。所以 item 应该是 url，并且该 url 将是在处理中的每个 item 的身份标识。</br>
+		一个 item 列表可以在 pipeline 中流动，它将输出加载项经过所有 pipe 之后的结果。</br>
+		它们穿过 pipeline 就像水在管子里流动，将会按顺序流过每个 pipe。</br>
+		最后当所有加载项都流出 pipeline 时，整个加载流程就结束了。 */
 		export class Pipeline {		
-		/** Constructor, pass an array of pipes to construct a new Pipeline, the pipes will be chained in the given order.
-		A pipe is an object which must contain an `id` in string and a `handle` function, the id must be unique in the pipeline.
+		/** !#en
+		Constructor, pass an array of pipes to construct a new Pipeline,
+		the pipes will be chained in the given order.</br>
+		A pipe is an object which must contain an `id` in string and a `handle` function,
+		the id must be unique in the pipeline.</br>
 		It can also include `async` property to identify whether it's an asynchronous process.
+		!#zh
+		构造函数，通过一系列的 pipe 来构造一个新的 pipeline，pipes 将会在给定的顺序中被锁定。</br>
+		一个 pipe 就是一个对象，它包含了字符串类型的 ‘id’ 和 ‘handle’ 函数，在 pipeline 中 id 必须是唯一的。</br>
+		它还可以包括 ‘async’ 属性以确定它是否是一个异步过程。
 		
 		@example 
 		```js
@@ -5623,23 +5998,39 @@ declare module cc {
 		``` 
 		*/
 		Pipeline(pipes : any[]) : void;		
-		/** Insert a new pipe at the given index of the pipeline.
+		/** !#en
+		Insert a new pipe at the given index of the pipeline. </br>
 		A pipe must contain an `id` in string and a `handle` function, the id must be unique in the pipeline.
+		!#zh
+		在给定的索引位置插入一个新的 pipe。</br>
+		一个 pipe 必须包含一个字符串类型的 ‘id’ 和 ‘handle’ 函数，该 id 在 pipeline 必须是唯一标识。
 		@param pipe The pipe to be inserted
 		@param index The index to insert 
 		*/
 		insertPipe(pipe : any, index : number) : void;		
-		/** Add a new pipe at the end of the pipeline.
+		/** !#en
+		Add a new pipe at the end of the pipeline. </br>
 		A pipe must contain an `id` in string and a `handle` function, the id must be unique in the pipeline.
+		!#zh
+		添加一个新的 pipe 到 pipeline 尾部。 </br>
+		该 pipe 必须包含一个字符串类型 ‘id’ 和 ‘handle’ 函数，该 id 在 pipeline 必须是唯一标识。
 		@param pipe The pipe to be appended 
 		*/
 		appendPipe(pipe : any) : void;		
-		/** Let new items flow into the pipeline.
+		/** !#en
+		Let new items flow into the pipeline. </br>
 		Each item can be a simple url string or an object,
-		if it's an object, it must contain `id` property.
-		You can specify its type by `type` property, by default, the type is the extension name in `src`.
-		By adding a `skips` property including pipe ids, you can skip these pipe.
-		The object can contain any supplementary property as you want.
+		if it's an object, it must contain `id` property. </br>
+		You can specify its type by `type` property, by default, the type is the extension name in url. </br>
+		By adding a `skips` property including pipe ids, you can skip these pipe. </br>
+		The object can contain any supplementary property as you want. </br>
+		!#zh
+		让新的 item 流入 pipeline 中。</br>
+		这里的每个 item 可以是一个简单字符串类型的 url 或者是一个对象,
+		如果它是一个对象的话，他必须要包含 ‘id’ 属性。</br>
+		你也可以指定它的 ‘type’ 属性类型，默认情况下，该类型是 ‘url’ 的后缀名。</br>
+		也通过添加一个 包含 ‘skips’ 属性的 item 对象，你就可以跳过 skips 中包含的 pipe。</br>
+		该对象可以包含任何附加属性。
 		
 		@example 
 		```js
@@ -5655,40 +6046,59 @@ declare module cc {
 		``` 
 		*/
 		flowIn(urlList : any[]) : any[];		
-		/** Let new items flow into the pipeline and give a callback when the list of items are all completed.
-		This is for loading dependencies for an existing item in flow, usually used in a pipe logic.
-		For example, we have a loader for scene configuration file in JSON, the scene will only be fully loaded
-		after all its dependencies are loaded, then you will need to use function to flow in all dependencies
-		found in the configuration file, and finish the loader pipe only after all dependencies are loaded (in the callback). 
+		/** !#en
+		Let new items flow into the pipeline and give a callback when the list of items are all completed. </br>
+		This is for loading dependencies for an existing item in flow, usually used in a pipe logic. </br>
+		For example, we have a loader for scene configuration file in JSON, the scene will only be fully loaded  </br>
+		after all its dependencies are loaded, then you will need to use function to flow in all dependencies  </br>
+		found in the configuration file, and finish the loader pipe only after all dependencies are loaded (in the callback).
+		!#zh
+		让新 items 流入 pipeline 并且当 item 列表完成时进行回调函数。</br>
+		这个 API 的使用通常是为了加载依赖项。</br>
+		例如：</br>
+		我们需要加载一个场景配置的 JSON 文件，该场景会将所有的依赖项全部都加载完毕以后，进行回调表示加载完毕。 
 		*/
 		flowInDeps(urlList : any[], callback : Function) : any[];		
-		/** Copy the item states from one source item to all destination items.
-		It's quite useful when a pipe generate new items from one source item,
-		then you should flowIn these generated items into pipeline,
-		but you probably want them to skip all pipes the source item already go through,
-		you can achieve it with this API.
-		
+		/** !#en
+		Copy the item states from one source item to all destination items. </br>
+		It's quite useful when a pipe generate new items from one source item,</br>
+		then you should flowIn these generated items into pipeline, </br>
+		but you probably want them to skip all pipes the source item already go through,</br>
+		you can achieve it with this API. </br>
+		</br>
 		For example, an unzip pipe will generate more items, but you won't want them to pass unzip or download pipe again.
+		!#zh
+		从一个源 item 向所有目标 item 复制它的 pipe 状态，用于避免重复通过部分 pipe。</br>
+		当一个源 item 生成了一系列新的 items 时很有用，</br>
+		你希望让这些新的依赖项进入 pipeline，但是又不希望它们通过源 item 已经经过的 pipe，</br>
+		但是你可能希望他们源 item 已经通过并跳过所有 pipes，</br>
+		这个时候就可以使用这个 API。
 		@param srcItem The source item
 		@param dstItems A single destination item or an array of destination items 
 		*/
 		copyItemStates(srcItem : any, dstItems : any[]|any) : void;		
-		/** Returns whether the pipeline is flowing (contains item) currently. 
+		/** !#en Returns whether the pipeline is flowing (contains item) currently.
+		!#zh 获取 pipeline 当前是否正在处理中。 
 		*/
 		isFlowing() : boolean;		
-		/** Returns all items in pipeline. 
+		/** !#en Returns all items in pipeline.
+		!#zh 获取 pipeline 中的所有 items。 
 		*/
 		getItems() : LoadingItems;		
-		/** Returns an item in pipeline. 
+		/** !#en Returns an item in pipeline.
+		!#zh 获取指定 item。 
 		*/
-		getItems() : LoadingItems;		
-		/** Removes an item in pipeline, no matter it's in progress or completed. 
+		getItem() : LoadingItems;		
+		/** !#en Removes an item in pipeline, no matter it's in progress or completed.
+		!#zh 移除指定 item，无论是进行时还是已完成。 
 		*/
 		removeItem() : boolean;		
-		/** Clear the current pipeline, this function will clean up the items. 
+		/** !#en Clear the current pipeline, this function will clean up the items.
+		!#zh 清空当前 pipeline，该函数将清理 items。 
 		*/
 		clear() : void;		
-		/** This is a callback which will be invoked while an item flow out the pipeline, you should overwrite this function.
+		/** !#en This is a callback which will be invoked while an item flow out the pipeline, you should overwrite this function.
+		!#zh 这个回调函数将在 item 流出 pipeline 时被调用，你应该重写该函数。
 		@param completedCount The number of the items that are already completed.
 		@param totalCount The total number of the items.
 		@param item The latest item which flow out the pipeline.
@@ -5702,7 +6112,9 @@ declare module cc {
 		``` 
 		*/
 		onProgress(completedCount : number, totalCount : number, item : any) : void;		
-		/** This is a callback which will be invoked while all items flow out the pipeline, you should overwirte this function.
+		/** !#en This is a callback which will be invoked while all items flow out the pipeline,
+		you should overwirte this function.
+		!#zh 该函数将在所有 item 流出 pipeline 时被调用，你应该重写该函数。
 		@param error All errored urls will be stored in this array, if no error happened, then it will be null
 		@param items All items.
 		
@@ -5717,15 +6129,6 @@ declare module cc {
 		``` 
 		*/
 		onComplete(error : any[], items : LoadingItems) : void;	
-	}		
-		/** The asset library which managing loading/unloading assets in project. */
-		export class AssetLibrary {		
-		/**  
-		*/
-		queryAssetInfo(uuid : string, callback: (error: Error, url: string, raw: boolean, ctorInEditor: Function) => void) : void;		
-		/** init the asset library 
-		*/
-		init(options : { libraryPath : string; mountPaths : any; rawAssets? : any; rawAssetsBase? : string; }) : void;	
 	}		
 		/** undefined */
 		export class _ComponentAttributes {		
@@ -5949,11 +6352,9 @@ declare module cc {
 		WEB_ORIENTATION_LANDSCAPE_LEFT = 0,
 		WEB_ORIENTATION_PORTRAIT_UPSIDE_DOWN = 0,
 		WEB_ORIENTATION_LANDSCAPE_RIGHT = 0,
-		DEVICE_ORIENTATION_PORTRAIT = 0,
-		DEVICE_ORIENTATION_LANDSCAPE_LEFT = 0,
-		DEVICE_ORIENTATION_PORTRAIT_UPSIDE_DOWN = 0,
-		DEVICE_ORIENTATION_LANDSCAPE_RIGHT = 0,
-		DEVICE_MAX_ORIENTATIONS = 0,
+		ORIENTATION_PORTRAIT = 0,
+		ORIENTATION_LANDSCAPE = 0,
+		ORIENTATION_AUTO = 0,
 		VERTEX_ATTRIB_FLAG_NONE = 0,
 		VERTEX_ATTRIB_FLAG_POSITION = 0,
 		VERTEX_ATTRIB_FLAG_COLOR = 0,
@@ -6050,20 +6451,7 @@ declare module cc {
 		obj.destroy();
 		``` 
 		*/
-		destroy() : boolean;		
-		/** !#en
-		In fact, Object's "destroy" will not trigger the destruct operation in Firebal Editor.
-		The destruct operation will be executed by Undo system later.
-		!#zh
-		事实上，对象的 “destroy” 不会在编辑器中触发析构操作，
-		析构操作将在 Undo 系统中延后执行。
-		
-		@example 
-		```js
-		cc.log(obj.realDestroyInEditor());
-		``` 
-		*/
-		realDestroyInEditor() : void;	
+		destroy() : boolean;	
 	}		
 		/** Bit mask that controls object states. */
 		export class Flags {		
@@ -6277,6 +6665,14 @@ declare module cc {
 		@param callback The callback function 
 		*/
 		setResizeCallback(callback : Function|void) : void;		
+		/** Sets the orientation of the game, it can be landscape, portrait or auto.
+		When set it to landscape or portrait, and screen w/h ratio doesn't fit,
+		cc.view will automatically rotate the game canvas using CSS.
+		Note that this function doesn't have any effect in native,
+		in native, you need to set the application orientation in native project settings
+		@param orientation Possible values: cc.macro.ORIENTATION_LANDSCAPE | cc.macro.ORIENTATION_PORTRAIT | cc.macro.ORIENTATION_AUTO 
+		*/
+		setOrientation(orientation : number) : void;		
 		/** Sets whether the engine modify the "viewport" meta in your web page.<br/>
 		It's enabled by default, we strongly suggest you not to disable it.<br/>
 		And even when it's enabled, you can still set your own "viewport" meta, it won't be overridden<br/>
@@ -6307,25 +6703,13 @@ declare module cc {
 		/** Get whether render system is ready(no matter opengl or canvas),<br/>
 		this name is for the compatibility with cocos2d-x, subclass must implement this method. 
 		*/
-		isOpenGLReady() : boolean;		
-		/** Open or close IME keyboard , subclass must implement this method. 
-		*/
-		setIMEKeyboardState(isOpen : boolean) : void;		
+		isViewReady() : boolean;		
 		/** Sets the resolution translate on View. 
 		*/
 		setContentTranslateLeftTop(offsetLeft : number, offsetTop : number) : void;		
 		/** Returns the resolution translate on View 
 		*/
 		getContentTranslateLeftTop() : Size;		
-		/** Not support on native.<br/>
-		On web, it sets the size of the canvas. 
-		*/
-		setCanvasSize(width : number, height : number) : void;		
-		/** Returns the canvas size of the view.<br/>
-		On native platforms, it returns the screen size since the view is a fullscreen view.<br/>
-		On web, it returns the size of the canvas element. 
-		*/
-		getCanvasSize() : Size;		
 		/** Returns the frame size of the view.<br/>
 		On native platforms, it returns the screen size since the view is a fullscreen view.<br/>
 		On web, it returns the size of the canvas's outer DOM element. 
@@ -6573,7 +6957,8 @@ declare module cc {
 		*/
 		remove(key : string, callback : Function, target : any) : boolean;	
 	}		
-		/** The callbacks invoker to handle and invoke callbacks by key */
+		/** !#en The callbacks invoker to handle and invoke callbacks by key.
+		!#zh CallbacksInvoker 用来根据 Key 管理并调用回调方法。 */
 		export class CallbacksInvoker extends _CallbacksHandler {		
 		constructor();		
 		/**  
@@ -7834,6 +8219,10 @@ declare module cc {
 		!#zh 应用 Rect 到仿射变换矩阵上。 
 		*/
 		rectApplyAffineTransform(rect : Rect, anAffineTransform : AffineTransform) : Rect;		
+		/** !#en Apply the affine transformation on a rect, and truns to an Oriented Bounding Box.
+		!#zh 应用 Rect 到仿射变换矩阵上, 并转换为有向包围盒 
+		*/
+		obbApplyAffineTransform(rect : Rect, anAffineTransform : AffineTransform, out_bl : Vec2, out_tl : Vec2, out_tr : Vec2, out_br : Vec2) : void;		
 		/** !#en Create a new affine transformation with a base transformation matrix and a translation based on it.
 		!#zh 基于一个基础矩阵加上一个平移操作来创建一个新的矩阵。
 		@param t The base affine transform object.
@@ -8435,27 +8824,6 @@ declare module cc {
 		ONE_MINUS_DST_COLOR = 0,
 		blendFuncDisable = 0,	
 	}		
-		/** Common usage:
-		
-		var fontDef = new cc.FontDefinition();
-		fontDef.fontName = "Arial";
-		fontDef.fontSize = 12;
-		...
-		
-		OR using inline definition usefull for constructor injection
-		
-		var fontDef = new cc.FontDefinition({
-		 fontName: "Arial",
-		 fontSize: 12
-		}); */
-		export class FontDefinition {		
-		constructor();		
-		/** !#en TODO
-		!#zh 定义字体基本属性的结构体。
-		@param properties (OPTIONAL) Allow inline FontDefinition 
-		*/
-		FontDefinition(properties : any) : FontDefinition;	
-	}		
 		/** undefined */
 		export class WebGLColor {		
 		constructor();		
@@ -9004,14 +9372,17 @@ declare module cc {
 			handler : string;			
 			/**  
 			*/
-			emitEvents(events : Component.EventHandler[], params : any) : void;			
+			emitEvents(events : Component.EventHandler[]) : void;			
 			/** !#en Emit event with params
 			!#zh 触发目标组件上的指定 handler 函数，该参数是回调函数的参数值（可不填）。
 			
 			@example 
 			```js
 			// Call Function
-			var eventHandler = cc.Component.EventHandler(target, "MainMenu", "OnClick");
+			var eventHandler = new cc.Component.EventHandler();
+			eventHandler.target = newTarget;
+			eventHandler.component = "MainMenu";
+			eventHandler.handler = "OnClick"
 			eventHandler.emit("This is the argument to the callback function!");
 			``` 
 			*/
@@ -9167,6 +9538,21 @@ declare module cc {
 	}	
 	
 	/****************************************************
+	* Mask
+	*****************************************************/
+	
+	export module Mask {		
+		/** !#en the type for mask.
+		!#zh 遮罩组件的类型 */
+		export enum Type {			
+			RECT = 0,
+			ELLIPSE = 0,
+			type = 0,
+			segements = 0,		
+		}	
+	}	
+	
+	/****************************************************
 	* ProgressBar
 	*****************************************************/
 	
@@ -9189,6 +9575,27 @@ declare module cc {
 		export enum Direction {			
 			HORIZONTAL = 0,
 			VERTICAL = 0,		
+		}	
+	}	
+	
+	/****************************************************
+	* ScrollView
+	*****************************************************/
+	
+	export module ScrollView {		
+		/** !#en Enum for ScrollView event type.
+		!#zh 滚动视图事件类型 */
+		export enum EventType {			
+			SCROLL_TO_TOP = 0,
+			SCROLL_TO_BOTTOM = 0,
+			SCROLL_TO_LEFT = 0,
+			SCROLL_TO_RIGHT = 0,
+			SCROLLING = 0,
+			BOUNCE_TOP = 0,
+			BOUNCE_BOTTOM = 0,
+			BOUNCE_LEFT = 0,
+			BOUNCE_RIGHT = 0,
+			AUTOSCROLL_ENDED = 0,		
 		}	
 	}	
 	
@@ -9232,6 +9639,19 @@ declare module cc {
 			CUSTOM = 0,
 			TRIMMED = 0,
 			RAW = 0,		
+		}	
+	}	
+	
+	/****************************************************
+	* VideoPlayer
+	*****************************************************/
+	
+	export module VideoPlayer {		
+		/** !#en Enum for video resouce type type.
+		!#zh 视频来源 */
+		export enum ResourceType {			
+			REMOTE = 0,
+			LOCAL = 0,		
 		}	
 	}	
 	
@@ -9575,6 +9995,9 @@ declare module sp {
 		多个 Skeleton 可以使用相同的骨骼数据，其中包括所有的动画，皮肤和 attachments。 */
 		export class Skeleton extends cc._RendererUnderSG {		
 		constructor();		
+		/** !#en The skeletal animation is paused?
+		!#zh 该骨骼动画是否暂停。 */
+		paused : boolean;		
 		/** !#en
 		The skeleton data contains the skeleton information (bind pose bones, slots, draw order,
 		attachments, skins, etc) and animations but does not hold any state.<br/>
@@ -9750,24 +10173,16 @@ declare module sp {
 /** This module provides some JavaScript utilities.
 All members can be accessed with cc.js */
 declare module js {	
-	/** Check the obj whether is function or not 
-	*/
-	export function isFunction(obj : any) : boolean;	
-	/** Check the obj whether is number or not 
+	/** Check the obj whether is number or not
+	If a number is created by using 'new Number(10086)', the typeof it will be "object"...
+	Then you can use this function if you care about this case. 
 	*/
 	export function isNumber(obj : any) : boolean;	
-	/** Check the obj whether is string or not 
+	/** Check the obj whether is string or not.
+	If a string is created by using 'new String("blabla")', the typeof it will be "object"...
+	Then you can use this function if you care about this case. 
 	*/
 	export function isString(obj : any) : boolean;	
-	/** Check the obj whether is array or not 
-	*/
-	export function isArray(obj : any) : boolean;	
-	/** Check the obj whether is undefined or not 
-	*/
-	export function isUndefined(obj : any) : boolean;	
-	/** Check the obj whether is object or not 
-	*/
-	export function isObject(obj : any) : boolean;	
 	/** copy all properties not defined in obj from arguments[1...n]
 	@param obj object to extend its properties
 	@param sourceObj source object to copy properties from 
@@ -9828,7 +10243,7 @@ declare module js {
 	export function obsoletes(obj : any, objName : any, props : any, writable? : boolean) : void;	
 	/** A string tool to construct a string with format string.
 	for example:
-	     cc.js.formatStr("a: %d, b: %b", a, b);
+	     cc.js.formatStr("a: %s, b: %s", a, b);
 	     cc.js.formatStr(a, b, c); 
 	*/
 	export function formatStr() : string;		

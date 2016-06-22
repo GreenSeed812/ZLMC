@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "07bf69a0-54ab-47ef-8f76-6f2f7da2680d",
+  "uuid": "f73b8451-86ea-4d21-be8b-06f0998f6bea",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "background": {
+    "wutaishan_main": {
       "ver": "1.0.3",
-      "uuid": "6f8b1bf8-2c78-4954-9df9-6c48df976ae1",
-      "rawTextureUuid": "07bf69a0-54ab-47ef-8f76-6f2f7da2680d",
+      "uuid": "b9d7aa41-6d96-4709-b282-5d1372c0b146",
+      "rawTextureUuid": "f73b8451-86ea-4d21-be8b-06f0998f6bea",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -16,10 +16,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 1920,
-      "height": 1200,
-      "rawWidth": 1920,
-      "rawHeight": 1200,
+      "width": 640,
+      "height": 960,
+      "rawWidth": 640,
+      "rawHeight": 960,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
