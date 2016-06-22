@@ -263,7 +263,7 @@ cc.Class({
                             min=zl;
                         }
                     }
-                    this.heroArry[min].getComponent('hero').addHP( 500);
+                    
                 }else if(this.shuxing_3>0&&this.mastorL.getComponent('Monster').isdie==false)
                 {
                     this.heroArry[2].getComponent('hero').aunchAnOrdinaryAttack( this.mastorL,( this.shuxing_3-3));
@@ -289,21 +289,8 @@ cc.Class({
                     }
                     this.heroArry[min].getComponent('hero').addHP( this.heroArry[2].getComponent('hero').attackPower*0.8);
                 }
-                
-                
-                
-                
-                
             }
-            
-            
             //******************************************************************************************************  
-            
-            
-            
-            
-            
-            
             if( this.heroArry[3].getComponent('hero').isdie==false)
             {
                 if(this.shuxing_4>0&&this.mastorL.getComponent('Monster').isdie==false)
@@ -319,12 +306,6 @@ cc.Class({
                 }
             }
             //******************************************************************************************************
-            
-            
-            
-            
-            
-            
             for(var c2=this.eliminateDuplicateArray.length;c2>0;c2--)
             {
                this.eliminateDuplicateArray.pop();
@@ -338,8 +319,7 @@ cc.Class({
             this.shuxing_2=0;
             this.shuxing_3=0;
             this.shuxing_4=0;
-            
-            
+             this.mastorAtt();
         }
         
      },
@@ -347,36 +327,78 @@ cc.Class({
      {
          if(this.mastor.getComponent('Monster').isdie==false)
          {
-             
+            if(this.heroArry[4].getComponent('hero').isdie==false)
+            {
+                this.mastor.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[4]);
+            }else  if(this.heroArry[3].getComponent('hero').isdie==false)
+            {
+                this.mastor.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[3]);
+            }else  if(this.heroArry[0].getComponent('hero').isdie==false)
+            {
+                this.mastor.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[0]);
+            }else  if(this.heroArry[1].getComponent('hero').isdie==false)
+            {
+                this.mastor.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[1]);
+            }else  if(this.heroArry[2].getComponent('hero').isdie==false)
+            {
+                this.mastor.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[2]);
+            }
          }
-     },
+         if(this.mastorL.getComponent('Monster').isdie==false)
+         {
+            if(this.heroArry[4].getComponent('hero').isdie==false)
+            {
+                this.mastorL.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[4]);
+            }else  if(this.heroArry[3].getComponent('hero').isdie==false)
+            {
+                this.mastorL.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[3]);
+            }else  if(this.heroArry[0].getComponent('hero').isdie==false)
+            {
+                this.mastorL.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[0]);
+            }else  if(this.heroArry[1].getComponent('hero').isdie==false)
+            {
+                this.mastorL.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[1]);
+            }else  if(this.heroArry[2].getComponent('hero').isdie==false)
+            {
+                this.mastorL.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[2]);
+            }
+         }
+          if(this.mastorR.getComponent('Monster').isdie==false)
+         {
+            if(this.heroArry[4].getComponent('hero').isdie==false)
+            {
+                this.mastorR.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[4]);
+            }else  if(this.heroArry[3].getComponent('hero').isdie==false)
+            {
+                this.mastorR.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[3]);
+            }else  if(this.heroArry[0].getComponent('hero').isdie==false)
+            {
+                this.mastorR.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[0]);
+            }else  if(this.heroArry[1].getComponent('hero').isdie==false)
+            {
+                this.mastorR.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[1]);
+            }else  if(this.heroArry[2].getComponent('hero').isdie==false)
+            {
+                this.mastorR.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[2]);
+            }
+         }
+     }, 
     clickFinish:function(event)
     {
-        
         if(!this.timeover){
             this.unschedule(this.callback);
             this.jindutiao.node.width=841.8;
             this.timeover=false;
             this.finish();
         }
-       
-        
     },
      update: function (dt)
     {
-        
-        
-        
         if(this.xialuo)
         {
              this.blockMove();
         }
-        
-        
     },
-    
-    
-    
     eliminate:function()
     {
         for(var t=0;t<5;t++)

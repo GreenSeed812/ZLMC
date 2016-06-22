@@ -12,63 +12,63 @@
             "docks": [
               {
                 "active": 0,
-                "height": 397.5,
+                "height": 375.671875,
                 "panels": [
                   "hierarchy"
                 ],
                 "type": "panel",
-                "width": 375
+                "width": 374.203125
               },
               {
                 "active": 0,
-                "height": 392.5,
+                "height": 370.328125,
                 "panels": [
                   "assets"
                 ],
                 "type": "panel",
-                "width": 375
+                "width": 374.203125
               }
             ],
-            "height": 793,
+            "height": 749,
             "row": false,
             "type": "dock",
-            "width": 375
+            "width": 374.203125
           },
           {
             "docks": [
               {
                 "active": 0,
-                "height": 557.703125,
+                "height": 520.484375,
                 "panels": [
                   "scene"
                 ],
                 "type": "panel",
-                "width": 597
+                "width": 594.984375
               },
               {
                 "active": 0,
-                "height": 232.296875,
+                "height": 225.515625,
                 "panels": [
                   "console",
                   "timeline"
                 ],
                 "type": "panel",
-                "width": 597
+                "width": 594.984375
               }
             ],
-            "height": 793,
+            "height": 749,
             "row": false,
             "type": "dock",
-            "width": 597
+            "width": 594.984375
           },
           {
             "active": 0,
-            "height": 793,
+            "height": 749,
             "panels": [
               "inspector"
             ],
             "type": "panel",
-            "width": 460
+            "width": 458.8125
           }
         ],
         "no-collapse": true,
@@ -76,11 +76,11 @@
         "type": "dock"
       }
     },
-    "window-1466555483398": {
+    "window-1466570223180": {
       "x": -11,
       "y": 12,
       "width": 1456,
-      "height": 919
+      "height": 920
     },
     "worker": {
       "x": 520,

@@ -21,7 +21,7 @@ cc.Class({
     },
      aunchAnOrdinaryAttack:function(hero)
     {
-        this.outPut=this.attackPower;
+       this.outPut=this.attackPower;
        hero.getComponent('hero').injured(this.outPut);
     },
      injured:function(shoushang)
