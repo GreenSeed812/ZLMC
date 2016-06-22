@@ -24,7 +24,7 @@ cc.Class({
     },
     aunchAnOrdinaryAttack:function(monster,blocknum)
     {
-        switch(this.Arms)
+        switch(this.Arms)  
         {
             case 0://金属性的伤害
                    if(monster.getComponent('Monster').Arms==1)
