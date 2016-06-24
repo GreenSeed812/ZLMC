@@ -19,6 +19,7 @@ cc.Class({
         this.Label.string=''+this.HP.toString();
 
     },
+    
      aunchAnOrdinaryAttack:function(hero)
     {
        this.outPut=this.attackPower;

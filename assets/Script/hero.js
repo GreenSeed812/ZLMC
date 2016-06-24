@@ -17,10 +17,24 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+
         this.Label.string=''+this.HP.toString();
-        var str='[{"xlid":"houyuxuan","xldigitid":123456,"topscore":2000,"topplaytime":"2009-08-20"},{"xlid":"YYY","xldigitid":123456,"topscore":2000,"topplaytime":"2009-08-20"}]';
+        
+      cc.loader.loadRes("jsonDate/bb", function (err, clip) {
+          
+          
+          
+        //console.log(clip);
+        var str=clip;
         var obj = eval('(' + str + ')');
         console.log("****************************************" + obj[1]["xlid"]);
+           
+    });
+        
+        
+        
+        
+      
     },
     aunchAnOrdinaryAttack:function(monster,blocknum)
     {

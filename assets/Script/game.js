@@ -29,7 +29,10 @@ cc.Class({
     },
     onLoad: function ()
     {
-        
+         this.gameMain();
+    },
+    gameMain:function()
+    {
 //**************************创建二维数组并将预制物存入*************************//
         this.blockArray=new Array();
         for(var i=0;i<5;i++)
