@@ -75,18 +75,6 @@
         "row": true,
         "type": "dock"
       }
-    },
-    "window-1467247105072": {
-      "x": -8,
-      "y": 0,
-      "width": 1456,
-      "height": 860
-    },
-    "worker": {
-      "x": 520,
-      "y": 280,
-      "width": 400,
-      "height": 300
     }
   }
 }

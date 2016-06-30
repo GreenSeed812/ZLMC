@@ -572,6 +572,7 @@ cc.Class({
                                 if (this.count == 3)
                                 {
                                       this.jindutiao.node.stopAllActions();
+                                       this.pingBidianji.node.active=false;
                                     // 在第六次执行回调时取消这个计时器
                                     this.finish();
                                     this.jishiqi=true;
