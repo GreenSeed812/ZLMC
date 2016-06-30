@@ -24,7 +24,10 @@ cc.Class({
         jisuanshangh:            {    default:false                 },
         mastor:                  {    default:null,  type:cc.Sprite },
         mastorL:                 {    default:null,  type:cc.Sprite },
-        mastorR:                 {    default:null,  type:cc.Sprite }
+        mastorR:                 {    default:null,  type:cc.Sprite },
+        blockNode:               {    default:null,  type:cc.Node   },
+        pingBidianji:            {    default:null,  type:cc.Button },
+        velea:                   {    default:22 },
         
     },
     onLoad: function ()
@@ -33,6 +36,9 @@ cc.Class({
     },
     gameMain:function()
     {
+        this.pingBidianji.node.active=false;
+        console.log("asdfasdfadf::::::::::::::::::"+this.pingBidianji.active);
+       
 //**************************创建二维数组并将预制物存入*************************//
         this.blockArray=new Array();
         for(var i=0;i<5;i++)
@@ -41,9 +47,9 @@ cc.Class({
             for(var j=0;j<6;j++)
             {
                 var block = cc.instantiate(this.blockPre);
-                block.setPosition(j*180-450,i*-180-83);
+                block.setPosition(j*180-450,i*-180+360);
                 block.getComponent('fangkuai').setHL(i,j);
-                this.node.addChild(block);
+                this.blockNode.addChild(block);
                 this.blockArray[i][j]=block;
             }
         }
@@ -90,7 +96,7 @@ cc.Class({
 			}
 		}
 		//注册手指开始点击屏幕事件
-		this.node.on('touchstart', function (event) 
+		this.blockNode.on('touchstart', function (event) 
 		{
 		    this.timeover=false;
 		    this.xialuo=false;
@@ -102,13 +108,13 @@ cc.Class({
 		    for(var i=0;i<30;i++)
 		    {
 		        
-		        if(Math.sqrt(Math.pow((event.getLocationY()-960)-this.blockArray[parseInt(i/6)][parseInt(i%6)].y,2)+Math.pow((event.getLocationX()-540)-this.blockArray[parseInt(i/6)][parseInt(i%6)].x,2))<90)
+		        if(Math.sqrt(Math.pow((event.getLocationY()-560)-this.blockArray[parseInt(i/6)][parseInt(i%6)].y,2)+Math.pow((event.getLocationX()-540)-this.blockArray[parseInt(i/6)][parseInt(i%6)].x,2))<90)
 		        {
 		          //  console.log("weizhi::::::::::"+parseInt(i/6),parseInt(i%6));
 		            this.downBlockH=parseInt(i/6);
 		            this.downBlockL=parseInt(i%6);
 		            this.blockArray[parseInt(i/6)][parseInt(i%6)].x=event.getLocationX()-540;
-		            this.blockArray[parseInt(i/6)][parseInt(i%6)].y=event.getLocationY()-960;
+		            this.blockArray[parseInt(i/6)][parseInt(i%6)].y=event.getLocationY()-560;
 		            this.targetX= this.blockArray[parseInt(i/6)][parseInt(i%6)].x;
 		            this.targetY= this.blockArray[parseInt(i/6)][parseInt(i%6)].y;
 		        }
@@ -123,18 +129,19 @@ cc.Class({
 		    if(this.downBlockH!=null&&this.downBlockL!=null)
 		    {
 		      this.blockArray[this.downBlockH][this.downBlockL].x=event.getLocationX()-540;
-		      this.blockArray[this.downBlockH][this.downBlockL].y=event.getLocationY()-960;
+		      this.blockArray[this.downBlockH][this.downBlockL].y=event.getLocationY()-560;
 		    }
 		     this.exchange();
 		}, this);
 		  //注册手指离开屏幕事件
-		 this.node.on('touchend', this.clickFinish, this);
+		 this.blockNode.on('touchend', this.clickFinish, this);
      },
      finish:function()
      {
+        
          if(this.downBlockH!=null&&this.downBlockL!=null)
         {
-            this.blockArray[this.downBlockH][this.downBlockL].y=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getH()*-180-83
+            this.blockArray[this.downBlockH][this.downBlockL].y=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getH()*-180+360
             this.blockArray[this.downBlockH][this.downBlockL].x=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getL()*180-450
 		    this.downBlockH=null;
 		    this.downBlockL=null;
@@ -168,6 +175,7 @@ cc.Class({
             this.Fill();
         }else
         {
+               
             console.log('计算伤害进行攻击'+this.calculatedDamage.length);
              for(var c3=0;c3<this.calculatedDamage.length;c3++)
             {
@@ -214,9 +222,6 @@ cc.Class({
                 }
             }
             //******************************************************************************************************
-            
-            
-            
             if(this.heroArry[4].getComponent('hero').isdie==false){
                 if(this.shuxing_1>0&&this.mastor.getComponent('Monster').isdie==false)
                 {
@@ -230,11 +235,6 @@ cc.Class({
                 }
             }
             //******************************************************************************************************
-            
-            
-            
-            
-            
             if(this.heroArry[0].getComponent('hero').isdie==false){
                 if(this.shuxing_2>0&&this.mastorR.getComponent('Monster').isdie==false)
                 {
@@ -249,10 +249,6 @@ cc.Class({
                 }
             }
             //******************************************************************************************************
-            
-            
-            
-            
             if(this.heroArry[2].getComponent('hero').isdie==false)
             {
                 if(this.shuxing_3>0&&this.mastor.getComponent('Monster').isdie==false)
@@ -323,6 +319,7 @@ cc.Class({
             this.shuxing_3=0;
             this.shuxing_4=0;
              this.mastorAtt();
+             this.pingBidianji.node.active=false;
         }
         
      },
@@ -388,10 +385,14 @@ cc.Class({
      }, 
     clickFinish:function(event)
     {
+         this.pingBidianji.node.active=true;
         if(!this.timeover){
+            console.log('this.timeover'+this.timeover);
+            this.jindutiao.node.stopAllActions();
             this.unschedule(this.callback);
-            this.jindutiao.node.width=841.8;
+            this.jindutiao.node.x=0;
             this.timeover=false;
+             this.velea=0;
             this.finish();
         }
     },
@@ -568,22 +569,27 @@ cc.Class({
                             this.count = 0;
                             this.callback = function ()
                             {
-                                if (this.count == 4)
+                                if (this.count == 3)
                                 {
+                                      this.jindutiao.node.stopAllActions();
                                     // 在第六次执行回调时取消这个计时器
                                     this.finish();
                                     this.jishiqi=true;
                                     this.timeover=true;
-                                    this.jindutiao.node.width=841.8;
+                                    this.jindutiao.node.x=0;
                                     console.log(this.jindutiao.node.width)
                                     this.unschedule(this.callback);
                                 }
-                                if(this.count != 4){
-                                this.jindutiao.node.width-=168.36;
+                                if(this.count != 3){
+                                //this.jindutiao.node.x-=26
+                              
                                 }
                                 console.log(this.count)
                                 this.count++;
                             }
+                            var actionq = cc.moveTo(8, -199, this.jindutiao.node.y);
+                                // 执行动作
+                            this.jindutiao.node.runAction(actionq);
                             this.schedule(this.callback, 1);
                             //console.log("this.jishiqi:::::::::::::"+this.jishiqi);
                         }
@@ -599,7 +605,7 @@ cc.Class({
                              this.blockArray[j][k].getComponent('fangkuai').setHL(j,k);
                             }
                         }
-                        this.blockArray[this.downBlockH][this.downBlockL].y=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getH()*-180-83
+                        this.blockArray[this.downBlockH][this.downBlockL].y=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getH()*-180+360
                         this.blockArray[this.downBlockH][this.downBlockL].x=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getL()*180-450
                         this.downBlockH=parseInt(i/6);
 		                this.downBlockL=parseInt(i%6);
@@ -608,8 +614,6 @@ cc.Class({
             }
         }
     },
-    
-    
      Fill:function()
     {
         var newBlockArray=new Array();
@@ -638,14 +642,11 @@ cc.Class({
              {
                 var newBlock = cc.instantiate(this.blockPre);
                 // 将新增的节点添加到 Canvas 节点下面
-                newBlock.setPosition(yy*180-450,(xiaoIndex-j)*180+5);
-                this.node.addChild(newBlock);
+                newBlock.setPosition(yy*180-450,(xiaoIndex-j)*180+355);
+                this.blockNode.addChild(newBlock);
                 newBlockxia.push(newBlock);
             }
        }
-       
-       
-       
        for(var k=4;k>=0;k--)
         {
             if(this.blockArray[k][yy].getComponent('fangkuai').WhetherToEliminate==true)
@@ -686,33 +687,41 @@ cc.Class({
         
         }
     },
-    
-
+   
     //控制下落的函数
     blockMove:function()
     {
         var snm=0;
+        
         for(var i=0; i<5; i++)
  		{
  			for(var j=0; j<6; j++)
  			{
-				if(this.blockArray[i][j].getComponent('fangkuai').WhetherToEliminate!= true && this.blockArray[i][j].y>(this.blockArray[i][j].getComponent('fangkuai').getH()*-180-83))
+				if(this.blockArray[i][j].getComponent('fangkuai').WhetherToEliminate!= true && this.blockArray[i][j].y>(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360))
 				{
-						this.blockArray[i][j].y-=22;
-						if(this.blockArray[i][j].y<(this.blockArray[i][j].getComponent('fangkuai').getH()*-180-83))
+				        // console.log("123456"+this.velea);
+						this.blockArray[i][j].y-=18;
+						if(this.blockArray[i][j].y<(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360))
 						{
-						    this.blockArray[i][j].y=(this.blockArray[i][j].getComponent('fangkuai').getH()*-180-83)
+						    this.blockArray[i][j].y=(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360)
+						}else
+						{
+						  //  this.velea+=1.55;
 						}
+						
+						
 				}else
 				{
 				    snm++;
 				    if(snm==30)
 				    {
+				         this.velea=1;
 				        this.xialuo=false;
 				        this.finish();
 				         snm=0;
 				    }
 				}
+				
  			}
  		}
     }
