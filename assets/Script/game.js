@@ -29,6 +29,7 @@ cc.Class({
         pingBidianji:            {    default:null,  type:cc.Button },
         velea:                   {    default:22 },
         
+        
     },
     onLoad: function ()
     {
@@ -385,8 +386,9 @@ cc.Class({
      }, 
     clickFinish:function(event)
     {
-         this.pingBidianji.node.active=true;
+        
         if(!this.timeover){
+             this.pingBidianji.node.active=true;
             console.log('this.timeover'+this.timeover);
             this.jindutiao.node.stopAllActions();
             this.unschedule(this.callback);
@@ -571,8 +573,8 @@ cc.Class({
                             {
                                 if (this.count == 3)
                                 {
-                                      this.jindutiao.node.stopAllActions();
-                                       this.pingBidianji.node.active=false;
+                                    this.jindutiao.node.stopAllActions();
+                                    this.pingBidianji.node.active=false;
                                     // 在第六次执行回调时取消这个计时器
                                     this.finish();
                                     this.jishiqi=true;

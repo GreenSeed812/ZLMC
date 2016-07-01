@@ -14,27 +14,15 @@ cc.Class({
        Label:          {   default: null,type: cc.Label},
        isdie:          {   default:false  },//是否死亡
     },
-
     // use this for initialization
     onLoad: function () {
-
         this.Label.string=''+this.HP.toString();
-        
-      cc.loader.loadRes("jsonDate/bb", function (err, clip) {
-          
-          
-          
-        //console.log(clip);
-        var str=clip;
-        var obj = eval('(' + str + ')');
-        console.log("****************************************" + obj[1]["xlid"]);
-           
-    });
-        
-        
-        
-        
-      
+            cc.loader.loadRes("jsonDate/bb", function (err, clip) {
+            //console.log(clip);
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            console.log("****************************************" + obj[1]["xlid"]);
+        });
     },
     aunchAnOrdinaryAttack:function(monster,blocknum)
     {
@@ -80,8 +68,6 @@ cc.Class({
                 }
                 monster.getComponent('Monster').injured(this.outPut);
                 break;
-                
-                
             case 3://火属性的伤害
                 if(monster.getComponent('Monster').Arms==0)
                 {

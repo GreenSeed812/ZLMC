@@ -1,267 +1,522 @@
-2016-06-30T00:29:19.756Z - normal: Load ~/.CocosCreator/settings.json
-2016-06-30T00:29:19.764Z - normal: checking language setting...
-2016-06-30T00:29:19.765Z - normal: Language: zh
-2016-06-30T00:29:20.846Z - success: protocol editor-framework registerred
-2016-06-30T00:29:20.846Z - success: protocol app registerred
-2016-06-30T00:29:20.847Z - success: protocol packages registerred
-2016-06-30T00:29:20.847Z - success: protocol unpack registerred
-2016-06-30T00:29:20.952Z - normal: connected!
-2016-06-30T00:29:20.959Z - normal: Check project E:\ZLMC
-2016-06-30T00:29:20.965Z - normal: Initializing Cocos Creator Editor
-2016-06-30T00:29:21.844Z - normal: Initializing Cocos2d
-2016-06-30T00:29:22.209Z - normal: Initializing Asset Database
-2016-06-30T00:29:22.286Z - success: protocol uuid registerred
-2016-06-30T00:29:22.286Z - success: protocol uuid registerred
-2016-06-30T00:29:22.286Z - success: protocol thumbnail registerred
-2016-06-30T00:29:22.286Z - normal: Loading editor/builtin packages
-2016-06-30T00:29:22.582Z - success: assets loaded
-2016-06-30T00:29:22.586Z - success: builder loaded
-2016-06-30T00:29:22.595Z - success: hierarchy loaded
-2016-06-30T00:29:22.603Z - success: inspector loaded
-2016-06-30T00:29:22.606Z - success: keystore loaded
-2016-06-30T00:29:22.614Z - success: node-library loaded
-2016-06-30T00:29:22.621Z - success: preferences loaded
-2016-06-30T00:29:22.678Z - success: project-importer loaded
-2016-06-30T00:29:22.683Z - success: project-settings loaded
-2016-06-30T00:29:22.687Z - success: ui-kit loaded
-2016-06-30T00:29:22.693Z - success: ui-grid loaded
-2016-06-30T00:29:22.704Z - success: scene loaded
-2016-06-30T00:29:22.708Z - success: sprite-editor loaded
-2016-06-30T00:29:22.723Z - success: timeline loaded
-2016-06-30T00:29:22.726Z - success: ui-kit-extra loaded
-2016-06-30T00:29:22.727Z - normal: Loading builtin packages
-2016-06-30T00:29:22.734Z - success: asset-db-debugger loaded
-2016-06-30T00:29:22.738Z - success: code-editor loaded
-2016-06-30T00:29:22.748Z - success: color-picker loaded
-2016-06-30T00:29:22.756Z - success: console loaded
-2016-06-30T00:29:22.761Z - success: package-manager loaded
-2016-06-30T00:29:22.768Z - success: tester loaded
-2016-06-30T00:29:22.772Z - success: ui-tree loaded
-2016-06-30T00:29:22.854Z - normal: Initializing project E:\ZLMC
-2016-06-30T00:29:22.858Z - normal: Loading packages
-2016-06-30T00:29:22.863Z - normal: Run Application
-2016-06-30T00:29:26.964Z - success: preview server running at http://localhost:7456
-2016-06-30T00:29:26.964Z - normal: Compiling scripts...
-2016-06-30T00:29:29.731Z - normal: Compiled successfully
-2016-06-30T00:29:35.517Z - normal: 1.1.1
-2016-06-30T00:59:35.869Z - normal: Compiled successfully
-2016-06-30T02:03:33.284Z - normal: Compiled successfully
-2016-06-30T02:04:54.545Z - normal: Compiled successfully
-2016-06-30T02:05:24.936Z - normal: Compiled successfully
-2016-06-30T02:08:04.203Z - normal: Compiled successfully
-2016-06-30T02:09:36.507Z - normal: Compiled successfully
-2016-06-30T02:10:56.603Z - normal: Compiled successfully
-2016-06-30T02:11:36.011Z - normal: Compiled successfully
-2016-06-30T02:12:03.081Z - normal: Compiled successfully
-2016-06-30T02:12:20.170Z - normal: Compiled successfully
-2016-06-30T02:12:43.368Z - normal: Compiled successfully
-2016-06-30T02:13:21.307Z - normal: Compiled successfully
-2016-06-30T02:13:50.619Z - normal: Compiled successfully
-2016-06-30T02:14:30.929Z - normal: Compiled successfully
-2016-06-30T02:15:14.884Z - normal: Compiled successfully
-2016-06-30T02:16:57.657Z - normal: Compiled successfully
-2016-06-30T02:17:26.372Z - normal: Compiled successfully
-2016-06-30T02:18:08.837Z - normal: Compiled successfully
-2016-06-30T02:21:29.177Z - normal: Compiled successfully
-2016-06-30T02:22:14.952Z - normal: Compiled successfully
-2016-06-30T02:24:30.936Z - normal: Compiled successfully
-2016-06-30T02:26:28.824Z - normal: Compiled successfully
-2016-06-30T02:26:33.147Z - normal: Compiled successfully
-2016-06-30T02:30:10.487Z - normal: Compiled successfully
-2016-06-30T02:33:19.062Z - normal: Compiled successfully
-2016-06-30T02:34:07.590Z - normal: Compiled successfully
-2016-06-30T02:34:45.289Z - normal: Compiled successfully
-2016-06-30T02:35:39.151Z - normal: Compiled successfully
-2016-06-30T02:35:58.115Z - normal: Compiled successfully
-2016-06-30T02:36:17.818Z - normal: Compiled successfully
-2016-06-30T02:36:34.656Z - normal: Compiled successfully
-2016-06-30T02:36:58.125Z - normal: Compiled successfully
-2016-06-30T02:37:19.061Z - normal: Compiled successfully
-2016-06-30T02:38:00.111Z - normal: Compiled successfully
-2016-06-30T02:40:00.319Z - normal: Compiled successfully
-2016-06-30T04:01:30.250Z - normal: Compiled successfully
-2016-06-30T04:01:52.260Z - normal: Compiled successfully
-2016-06-30T04:02:22.355Z - normal: Compiled successfully
-2016-06-30T04:07:45.185Z - normal: Compiled successfully
-2016-06-30T04:08:02.822Z - normal: Compiled successfully
-2016-06-30T04:11:08.361Z - normal: Compiled successfully
-2016-06-30T04:11:56.313Z - normal: Compiled successfully
-2016-06-30T04:12:29.256Z - normal: Compiled successfully
-2016-06-30T04:12:55.362Z - normal: Compiled successfully
-2016-06-30T04:13:22.765Z - normal: Compiled successfully
-2016-06-30T04:13:29.019Z - normal: Compiled successfully
-2016-06-30T04:13:57.239Z - normal: Compiled successfully
-2016-06-30T04:14:25.499Z - normal: Compiled successfully
-2016-06-30T04:14:58.922Z - normal: Compiled successfully
-2016-06-30T04:15:22.537Z - normal: Compiled successfully
-2016-06-30T04:15:39.852Z - normal: Compiled successfully
-2016-06-30T05:15:42.004Z - normal: Compiled successfully
-2016-06-30T07:19:23.061Z - normal: Compiled successfully
-2016-06-30T07:24:27.602Z - normal: Compiled successfully
-2016-06-30T07:24:55.225Z - normal: Compiled successfully
-2016-06-30T07:31:55.245Z - normal: Compiled successfully
-2016-06-30T07:32:58.548Z - normal: Compiled successfully
-2016-06-30T07:34:12.337Z - normal: Compiled successfully
-2016-06-30T07:34:59.833Z - normal: Compiled successfully
-2016-06-30T07:37:49.785Z - normal: Compiled successfully
-2016-06-30T07:38:22.906Z - normal: Compiled successfully
-2016-06-30T08:20:24.413Z - normal: Compiled successfully
-2016-06-30T08:22:25.112Z - failed: [db-task][update] failed!
-2016-06-30T08:22:25.113Z - error: Failed to update asset db://assets/Script/game.js, messages: SyntaxError: unknown: Unexpected token (684:8)
-        }
-    },
-    this.a=0
-    //控制下落的函数
-    blockMove:function()
-    {
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseObj (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:596:12)
-    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:392:19)
-    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
-    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
-    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
-    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
-    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
-    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-06-30T08:22:40.265Z - failed: [db-task][update] failed!
-2016-06-30T08:22:40.265Z - error: Failed to update asset db://assets/Script/game.js, messages: SyntaxError: unknown: Unexpected token (684:8)
-        }
-    },
-    this.a=0
-    //控制下落的函数
-    blockMove:function()
-    {
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseObj (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:596:12)
-    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:392:19)
-    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
-    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
-    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
-    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
-    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
-    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-06-30T08:22:49.335Z - failed: [db-task][update] failed!
-2016-06-30T08:22:49.336Z - error: Failed to update asset db://assets/Script/game.js, messages: SyntaxError: unknown: Unexpected token (684:9)
-        }
-    },
-    this a=0
-    //控制下落的函数
-    blockMove:function()
-    {
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseObj (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:596:12)
-    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:392:19)
-    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
-    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
-    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
-    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
-    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
-    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-06-30T08:22:59.322Z - failed: [db-task][update] failed!
-2016-06-30T08:22:59.323Z - error: Failed to update asset db://assets/Script/game.js, messages: SyntaxError: unknown: Unexpected token (684:8)
-        }
-    },
-    var a=0
-    //控制下落的函数
-    blockMove:function()
-    {
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseObj (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:596:12)
-    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:392:19)
-    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
-    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
-    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
-    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
-    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
-    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-06-30T08:24:01.331Z - normal: Compiled successfully
-2016-06-30T08:24:36.841Z - normal: Compiled successfully
-2016-06-30T08:25:12.276Z - normal: Compiled successfully
-2016-06-30T08:26:41.365Z - normal: Compiled successfully
-2016-06-30T08:26:52.721Z - normal: Compiled successfully
-2016-06-30T08:28:23.295Z - normal: Compiled successfully
-2016-06-30T08:28:39.194Z - normal: Compiled successfully
-2016-06-30T08:29:07.465Z - normal: Compiled successfully
-2016-06-30T08:30:15.766Z - normal: Compiled successfully
-2016-06-30T08:30:26.575Z - normal: Compiled successfully
-2016-06-30T08:30:48.770Z - normal: Compiled successfully
-2016-06-30T08:31:33.410Z - normal: Compiled successfully
-2016-06-30T08:32:06.125Z - normal: Compiled successfully
-2016-06-30T08:32:15.039Z - normal: Compiled successfully
-2016-06-30T08:32:51.334Z - normal: Compiled successfully
-2016-06-30T08:33:22.477Z - normal: Compiled successfully
-2016-06-30T08:34:08.653Z - normal: Compiled successfully
-2016-06-30T08:34:26.828Z - normal: Compiled successfully
-2016-06-30T08:35:14.294Z - normal: Compiled successfully
-2016-06-30T08:35:44.062Z - normal: Compiled successfully
-2016-06-30T08:36:10.954Z - normal: Compiled successfully
-2016-06-30T08:36:36.802Z - normal: Compiled successfully
-2016-06-30T08:37:00.313Z - normal: Compiled successfully
-2016-06-30T08:37:31.934Z - normal: Compiled successfully
-2016-06-30T08:38:26.080Z - normal: Compiled successfully
-2016-06-30T08:39:04.607Z - normal: Compiled successfully
-2016-06-30T08:39:27.966Z - normal: Compiled successfully
-2016-06-30T08:39:58.173Z - normal: Compiled successfully
-2016-06-30T08:40:48.218Z - normal: Compiled successfully
-2016-06-30T08:41:16.939Z - normal: Compiled successfully
-2016-06-30T08:42:19.059Z - normal: Compiled successfully
-2016-06-30T08:42:54.985Z - normal: Compiled successfully
-2016-06-30T08:44:17.579Z - normal: Compiled successfully
-2016-06-30T08:44:41.547Z - normal: Compiled successfully
-2016-06-30T08:46:12.733Z - normal: Compiled successfully
-2016-06-30T08:49:17.765Z - normal: Compiled successfully
-2016-06-30T08:54:02.955Z - normal: Compiled successfully
-2016-06-30T08:55:50.642Z - normal: Compiled successfully
-2016-06-30T08:58:23.144Z - normal: Compiled successfully
-2016-06-30T08:58:52.928Z - normal: Compiled successfully
-2016-06-30T09:00:31.220Z - normal: Compiled successfully
-2016-06-30T09:04:00.096Z - normal: Compiled successfully
-2016-06-30T09:05:18.355Z - normal: Compiled successfully
-2016-06-30T09:08:06.273Z - normal: Compiled successfully
-2016-06-30T09:08:43.443Z - normal: Compiled successfully
-2016-06-30T09:09:37.733Z - normal: Compiled successfully
-2016-06-30T09:09:49.268Z - normal: Compiled successfully
-2016-06-30T09:10:35.486Z - normal: Compiled successfully
-2016-06-30T09:10:41.966Z - normal: Compiled successfully
-2016-06-30T09:26:42.025Z - normal: Compiled successfully
-2016-06-30T09:27:30.484Z - info: shutdown preview server
+2016-07-01T01:16:35.256Z - normal: Load ~/.CocosCreator/settings.json
+2016-07-01T01:16:35.265Z - normal: checking language setting...
+2016-07-01T01:16:35.265Z - normal: Language: zh
+2016-07-01T01:16:36.366Z - success: protocol editor-framework registerred
+2016-07-01T01:16:36.366Z - success: protocol app registerred
+2016-07-01T01:16:36.366Z - success: protocol packages registerred
+2016-07-01T01:16:36.367Z - success: protocol unpack registerred
+2016-07-01T01:16:36.559Z - normal: connected!
+2016-07-01T01:16:36.566Z - normal: Check project E:\ZLMC
+2016-07-01T01:16:36.572Z - normal: Initializing Cocos Creator Editor
+2016-07-01T01:16:37.505Z - normal: Initializing Cocos2d
+2016-07-01T01:16:38.711Z - normal: Initializing Asset Database
+2016-07-01T01:16:38.878Z - success: protocol uuid registerred
+2016-07-01T01:16:38.879Z - success: protocol uuid registerred
+2016-07-01T01:16:38.879Z - success: protocol thumbnail registerred
+2016-07-01T01:16:38.879Z - normal: Loading editor/builtin packages
+2016-07-01T01:16:39.262Z - success: assets loaded
+2016-07-01T01:16:39.267Z - success: builder loaded
+2016-07-01T01:16:39.276Z - success: hierarchy loaded
+2016-07-01T01:16:39.283Z - success: inspector loaded
+2016-07-01T01:16:39.285Z - success: keystore loaded
+2016-07-01T01:16:39.293Z - success: node-library loaded
+2016-07-01T01:16:39.300Z - success: preferences loaded
+2016-07-01T01:16:39.381Z - success: project-importer loaded
+2016-07-01T01:16:39.385Z - success: project-settings loaded
+2016-07-01T01:16:39.388Z - success: ui-kit loaded
+2016-07-01T01:16:39.395Z - success: ui-grid loaded
+2016-07-01T01:16:39.406Z - success: scene loaded
+2016-07-01T01:16:39.409Z - success: sprite-editor loaded
+2016-07-01T01:16:39.423Z - success: timeline loaded
+2016-07-01T01:16:39.426Z - success: ui-kit-extra loaded
+2016-07-01T01:16:39.426Z - normal: Loading builtin packages
+2016-07-01T01:16:39.436Z - success: asset-db-debugger loaded
+2016-07-01T01:16:39.439Z - success: code-editor loaded
+2016-07-01T01:16:39.440Z - success: color-picker loaded
+2016-07-01T01:16:39.446Z - success: console loaded
+2016-07-01T01:16:39.450Z - success: package-manager loaded
+2016-07-01T01:16:39.458Z - success: tester loaded
+2016-07-01T01:16:39.461Z - success: ui-tree loaded
+2016-07-01T01:16:39.603Z - normal: Initializing project E:\ZLMC
+2016-07-01T01:16:39.607Z - normal: Loading packages
+2016-07-01T01:16:39.611Z - normal: Run Application
+2016-07-01T01:16:44.830Z - success: preview server running at http://localhost:7456
+2016-07-01T01:16:44.830Z - normal: Compiling scripts...
+2016-07-01T01:16:47.693Z - normal: Compiled successfully
+2016-07-01T01:16:54.980Z - normal: 1.1.1
+2016-07-01T02:16:55.573Z - normal: Compiled successfully
+2016-07-01T02:40:04.775Z - normal: Compiled successfully
+2016-07-01T02:40:15.207Z - normal: Compiled successfully
+2016-07-01T02:57:01.437Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T02:57:01.441Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T02:57:01.441Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T02:57:01.442Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T02:57:01.870Z - normal: Simulator : Ready for GLSL
+2016-07-01T02:57:01.870Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T02:57:01.870Z - normal: Simulator : 
+2016-07-01T02:57:01.871Z - normal: Simulator : {
+2016-07-01T02:57:01.871Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T02:57:01.871Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T02:57:01.871Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T02:57:01.872Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T02:57:01.872Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T02:57:01.872Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T02:57:01.873Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T02:57:01.873Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T02:57:01.873Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T02:57:01.874Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T02:57:01.875Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T02:57:01.875Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T02:57:01.875Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T02:57:01.876Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T02:57:01.876Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T02:57:01.876Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T02:57:01.877Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T02:57:01.877Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T02:57:01.878Z - normal: Simulator : }
+2016-07-01T02:57:01.878Z - normal: Simulator : 
+2016-07-01T02:57:01.878Z - normal: Simulator : 
+2016-07-01T02:57:01.878Z - normal: Simulator : Project Config:
+2016-07-01T02:57:01.879Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T02:57:01.879Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T02:57:01.879Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T02:57:01.879Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T02:57:01.879Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T02:57:01.879Z - normal: Simulator :     show console: NO
+2016-07-01T02:57:01.880Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T02:57:01.880Z - normal: Simulator :     listen: 
+2016-07-01T02:57:01.880Z - normal: Simulator :     debugger: none
+2016-07-01T02:57:01.880Z - normal: Simulator :     add searching path:
+2016-07-01T02:57:01.880Z - normal: Simulator : 
+2016-07-01T02:57:01.881Z - normal: Simulator : 
+2016-07-01T02:57:01.881Z - normal: Simulator : 
+2016-07-01T02:57:01.881Z - normal: Simulator : ------------------------------------------------
+2016-07-01T02:57:01.881Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T02:57:01.882Z - normal: Simulator : ------------------------------------------------
+2016-07-01T02:57:02.327Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T02:57:02.446Z - normal: Simulator : iShow!
+2016-07-01T02:57:02.527Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T02:57:02.631Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:02.653Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:02.654Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:02.654Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:09.886Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T02:57:09.889Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T02:57:09.891Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T02:57:09.891Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T02:57:10.160Z - normal: Simulator : Ready for GLSL
+2016-07-01T02:57:10.160Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T02:57:10.160Z - normal: Simulator : 
+2016-07-01T02:57:10.161Z - normal: Simulator : {
+2016-07-01T02:57:10.161Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T02:57:10.162Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T02:57:10.162Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T02:57:10.162Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T02:57:10.163Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T02:57:10.163Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T02:57:10.164Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T02:57:10.164Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T02:57:10.164Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T02:57:10.165Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T02:57:10.166Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T02:57:10.166Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T02:57:10.166Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T02:57:10.166Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T02:57:10.167Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T02:57:10.167Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T02:57:10.167Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T02:57:10.167Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T02:57:10.168Z - normal: Simulator : }
+2016-07-01T02:57:10.168Z - normal: Simulator : 
+2016-07-01T02:57:10.168Z - normal: Simulator : 
+2016-07-01T02:57:10.170Z - normal: Simulator : Project Config:
+2016-07-01T02:57:10.171Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T02:57:10.171Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T02:57:10.172Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T02:57:10.173Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T02:57:10.173Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T02:57:10.173Z - normal: Simulator :     show console: NO
+2016-07-01T02:57:10.173Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T02:57:10.174Z - normal: Simulator :     listen: 
+2016-07-01T02:57:10.174Z - normal: Simulator :     debugger: none
+2016-07-01T02:57:10.174Z - normal: Simulator :     add searching path:
+2016-07-01T02:57:10.174Z - normal: Simulator : 
+2016-07-01T02:57:10.175Z - normal: Simulator : 
+2016-07-01T02:57:10.175Z - normal: Simulator : 
+2016-07-01T02:57:10.176Z - normal: Simulator : ------------------------------------------------
+2016-07-01T02:57:10.177Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T02:57:10.177Z - normal: Simulator : ------------------------------------------------
+2016-07-01T02:57:10.647Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T02:57:10.749Z - normal: Simulator : iShow!
+2016-07-01T02:57:10.854Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T02:57:10.884Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:10.911Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:10.911Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:10.911Z - normal: Simulator : ****************************************YYY
+2016-07-01T02:57:11.625Z - normal: Simulator : this.timeoverfalse
+2016-07-01T02:57:11.628Z - normal: Simulator : �����˺����й���0
+2016-07-01T02:57:11.628Z - normal: Simulator : this.shuxing_00
+2016-07-01T02:57:11.628Z - normal: Simulator : this.shuxing_10
+2016-07-01T02:57:11.628Z - normal: Simulator : this.shuxing_20
+2016-07-01T02:57:11.629Z - normal: Simulator : this.shuxing_30
+2016-07-01T02:57:11.629Z - normal: Simulator : this.shuxing_40
+2016-07-01T02:57:11.660Z - error: Simulator : 821:TypeError: this.heroArry[3] is null
+    at a (E:\ZLMC\library\bundle.project.js?009:NaN:0)
+2016-07-01T02:57:11.661Z - normal: Simulator : ScriptingCore::callFunctionName error:__errorHandler wasn't found!
+2016-07-01T02:57:52.860Z - error: Failed to open panel console.panel, panel info not found.
+    at Object.Panel.open (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\panel.js:1:820)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\panel.js:1:3192)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\atom.asar\browser\api\web-contents.js:134:25)
+    at emitTwo (events.js:87:13)
+    at EventEmitter.emit (events.js:172:7)
+2016-07-01T03:02:25.438Z - error: Failed to open panel console.panel, panel info not found.
+    at Object.Panel.open (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\panel.js:1:820)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\panel.js:1:3192)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\atom.asar\browser\api\web-contents.js:134:25)
+    at emitTwo (events.js:87:13)
+    at EventEmitter.emit (events.js:172:7)
+2016-07-01T03:02:38.315Z - normal: Compiled successfully
+2016-07-01T03:08:16.278Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T03:08:16.280Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T03:08:16.281Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T03:08:16.282Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T03:08:16.538Z - normal: Simulator : Ready for GLSL
+2016-07-01T03:08:16.538Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T03:08:16.538Z - normal: Simulator : 
+2016-07-01T03:08:16.539Z - normal: Simulator : {
+2016-07-01T03:08:16.539Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T03:08:16.539Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T03:08:16.539Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T03:08:16.539Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T03:08:16.540Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T03:08:16.540Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T03:08:16.540Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T03:08:16.540Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T03:08:16.540Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T03:08:16.540Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T03:08:16.541Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T03:08:16.541Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T03:08:16.541Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T03:08:16.541Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T03:08:16.541Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T03:08:16.541Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T03:08:16.542Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T03:08:16.542Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T03:08:16.542Z - normal: Simulator : }
+2016-07-01T03:08:16.542Z - normal: Simulator : 
+2016-07-01T03:08:16.542Z - normal: Simulator : 
+2016-07-01T03:08:16.555Z - normal: Simulator : Project Config:
+2016-07-01T03:08:16.557Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T03:08:16.557Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T03:08:16.558Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T03:08:16.558Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T03:08:16.558Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T03:08:16.558Z - normal: Simulator :     show console: NO
+2016-07-01T03:08:16.558Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T03:08:16.560Z - normal: Simulator :     listen: 
+2016-07-01T03:08:16.560Z - normal: Simulator :     debugger: none
+2016-07-01T03:08:16.560Z - normal: Simulator :     add searching path:
+2016-07-01T03:08:16.560Z - normal: Simulator : 
+2016-07-01T03:08:16.561Z - normal: Simulator : 
+2016-07-01T03:08:16.561Z - normal: Simulator : 
+2016-07-01T03:08:16.561Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:08:16.561Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T03:08:16.561Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:08:17.024Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T03:08:17.138Z - normal: Simulator : iShow!
+2016-07-01T03:08:17.222Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T03:08:17.258Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:08:17.299Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:08:17.299Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:08:17.299Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:08:17.299Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:02.174Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T03:09:02.176Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T03:09:02.178Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T03:09:02.179Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T03:09:02.449Z - normal: Simulator : Ready for GLSL
+2016-07-01T03:09:02.449Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T03:09:02.449Z - normal: Simulator : 
+2016-07-01T03:09:02.450Z - normal: Simulator : {
+2016-07-01T03:09:02.450Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T03:09:02.450Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T03:09:02.450Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T03:09:02.450Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T03:09:02.451Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T03:09:02.451Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T03:09:02.451Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T03:09:02.451Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T03:09:02.451Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T03:09:02.452Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T03:09:02.452Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T03:09:02.452Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T03:09:02.452Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T03:09:02.453Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T03:09:02.453Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T03:09:02.453Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T03:09:02.453Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T03:09:02.453Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T03:09:02.454Z - normal: Simulator : }
+2016-07-01T03:09:02.454Z - normal: Simulator : 
+2016-07-01T03:09:02.454Z - normal: Simulator : 
+2016-07-01T03:09:02.457Z - normal: Simulator : Project Config:
+2016-07-01T03:09:02.458Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T03:09:02.458Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T03:09:02.458Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T03:09:02.458Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T03:09:02.459Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T03:09:02.459Z - normal: Simulator :     show console: NO
+2016-07-01T03:09:02.459Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T03:09:02.459Z - normal: Simulator :     listen: 
+2016-07-01T03:09:02.459Z - normal: Simulator :     debugger: none
+2016-07-01T03:09:02.460Z - normal: Simulator :     add searching path:
+2016-07-01T03:09:02.460Z - normal: Simulator : 
+2016-07-01T03:09:02.460Z - normal: Simulator : 
+2016-07-01T03:09:02.460Z - normal: Simulator : 
+2016-07-01T03:09:02.461Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:09:02.461Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T03:09:02.461Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:09:02.921Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T03:09:03.033Z - normal: Simulator : iShow!
+2016-07-01T03:09:03.134Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T03:09:03.166Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:03.222Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:03.222Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:03.222Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:03.223Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:47.331Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T03:09:47.334Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T03:09:47.336Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T03:09:47.336Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T03:09:47.642Z - normal: Simulator : Ready for GLSL
+2016-07-01T03:09:47.642Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T03:09:47.642Z - normal: Simulator : 
+2016-07-01T03:09:47.642Z - normal: Simulator : {
+2016-07-01T03:09:47.643Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T03:09:47.643Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T03:09:47.643Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T03:09:47.643Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T03:09:47.643Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T03:09:47.644Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T03:09:47.644Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T03:09:47.644Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T03:09:47.644Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T03:09:47.645Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T03:09:47.645Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T03:09:47.645Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T03:09:47.646Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T03:09:47.646Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T03:09:47.646Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T03:09:47.646Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T03:09:47.647Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T03:09:47.647Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T03:09:47.647Z - normal: Simulator : }
+2016-07-01T03:09:47.647Z - normal: Simulator : 
+2016-07-01T03:09:47.648Z - normal: Simulator : 
+2016-07-01T03:09:47.652Z - normal: Simulator : Project Config:
+2016-07-01T03:09:47.653Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T03:09:47.653Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T03:09:47.653Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T03:09:47.653Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T03:09:47.654Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T03:09:47.654Z - normal: Simulator :     show console: NO
+2016-07-01T03:09:47.654Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T03:09:47.654Z - normal: Simulator :     listen: 
+2016-07-01T03:09:47.654Z - normal: Simulator :     debugger: none
+2016-07-01T03:09:47.655Z - normal: Simulator :     add searching path:
+2016-07-01T03:09:47.655Z - normal: Simulator : 
+2016-07-01T03:09:47.655Z - normal: Simulator : 
+2016-07-01T03:09:47.655Z - normal: Simulator : 
+2016-07-01T03:09:47.656Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:09:47.656Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T03:09:47.656Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:09:48.136Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T03:09:48.272Z - normal: Simulator : iShow!
+2016-07-01T03:09:48.377Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T03:09:48.389Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:48.413Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:48.413Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:48.413Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:09:48.414Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:10:07.808Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T03:10:07.812Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T03:10:07.814Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T03:10:07.815Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T03:10:08.094Z - normal: Simulator : Ready for GLSL
+2016-07-01T03:10:08.094Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T03:10:08.095Z - normal: Simulator : 
+2016-07-01T03:10:08.095Z - normal: Simulator : {
+2016-07-01T03:10:08.095Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T03:10:08.095Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T03:10:08.095Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T03:10:08.096Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T03:10:08.096Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T03:10:08.096Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T03:10:08.096Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T03:10:08.097Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T03:10:08.097Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T03:10:08.097Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T03:10:08.097Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T03:10:08.097Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T03:10:08.098Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T03:10:08.098Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T03:10:08.098Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T03:10:08.098Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T03:10:08.098Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T03:10:08.099Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T03:10:08.099Z - normal: Simulator : }
+2016-07-01T03:10:08.099Z - normal: Simulator : 
+2016-07-01T03:10:08.099Z - normal: Simulator : 
+2016-07-01T03:10:08.099Z - normal: Simulator : Project Config:
+2016-07-01T03:10:08.100Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T03:10:08.100Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T03:10:08.100Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T03:10:08.100Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T03:10:08.100Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T03:10:08.101Z - normal: Simulator :     show console: NO
+2016-07-01T03:10:08.101Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T03:10:08.101Z - normal: Simulator :     listen: 
+2016-07-01T03:10:08.101Z - normal: Simulator :     debugger: none
+2016-07-01T03:10:08.101Z - normal: Simulator :     add searching path:
+2016-07-01T03:10:08.102Z - normal: Simulator : 
+2016-07-01T03:10:08.102Z - normal: Simulator : 
+2016-07-01T03:10:08.102Z - normal: Simulator : 
+2016-07-01T03:10:08.102Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:10:08.102Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T03:10:08.103Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:10:08.569Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T03:10:08.711Z - normal: Simulator : iShow!
+2016-07-01T03:10:08.839Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T03:10:08.840Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:10:08.856Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:10:08.856Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:10:08.856Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:10:08.856Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:11:37.415Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T03:11:37.419Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T03:11:37.422Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T03:11:37.422Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T03:11:37.834Z - normal: Simulator : Ready for GLSL
+2016-07-01T03:11:37.834Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T03:11:37.839Z - normal: Simulator : 
+2016-07-01T03:11:37.840Z - normal: Simulator : {
+2016-07-01T03:11:37.840Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T03:11:37.841Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T03:11:37.841Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T03:11:37.842Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T03:11:37.843Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T03:11:37.843Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T03:11:37.844Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T03:11:37.845Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T03:11:37.845Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T03:11:37.845Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T03:11:37.845Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T03:11:37.845Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T03:11:37.846Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T03:11:37.846Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T03:11:37.846Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T03:11:37.846Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T03:11:37.846Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T03:11:37.847Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T03:11:37.847Z - normal: Simulator : }
+2016-07-01T03:11:37.847Z - normal: Simulator : 
+2016-07-01T03:11:37.847Z - normal: Simulator : 
+2016-07-01T03:11:37.875Z - normal: Simulator : Project Config:
+2016-07-01T03:11:37.875Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T03:11:37.876Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T03:11:37.876Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T03:11:37.876Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T03:11:37.876Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T03:11:37.876Z - normal: Simulator :     show console: NO
+2016-07-01T03:11:37.877Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T03:11:37.877Z - normal: Simulator :     listen: 
+2016-07-01T03:11:37.877Z - normal: Simulator :     debugger: none
+2016-07-01T03:11:37.877Z - normal: Simulator :     add searching path:
+2016-07-01T03:11:37.877Z - normal: Simulator : 
+2016-07-01T03:11:37.878Z - normal: Simulator : 
+2016-07-01T03:11:37.878Z - normal: Simulator : 
+2016-07-01T03:11:37.878Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:11:37.879Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T03:11:37.879Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:11:38.393Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T03:11:38.572Z - normal: Simulator : iShow!
+2016-07-01T03:11:38.607Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T03:11:38.722Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:11:38.723Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:11:38.723Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:11:38.723Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:11:38.724Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:11:40.626Z - normal: Simulator : this.timeoverfalse
+2016-07-01T03:11:40.670Z - normal: Simulator : �����˺����й���0
+2016-07-01T03:11:40.671Z - normal: Simulator : this.shuxing_00
+2016-07-01T03:11:40.671Z - normal: Simulator : this.shuxing_10
+2016-07-01T03:11:40.671Z - normal: Simulator : this.shuxing_20
+2016-07-01T03:11:40.672Z - normal: Simulator : this.shuxing_30
+2016-07-01T03:11:40.672Z - normal: Simulator : this.shuxing_40
+2016-07-01T03:11:42.263Z - normal: Simulator : this.timeoverfalse
+2016-07-01T03:11:42.263Z - normal: Simulator : �����˺����й���0
+2016-07-01T03:11:42.263Z - normal: Simulator : this.shuxing_00
+2016-07-01T03:11:42.264Z - normal: Simulator : this.shuxing_10
+2016-07-01T03:11:42.264Z - normal: Simulator : this.shuxing_20
+2016-07-01T03:11:42.264Z - normal: Simulator : this.shuxing_30
+2016-07-01T03:11:42.264Z - normal: Simulator : this.shuxing_40
+2016-07-01T03:12:07.072Z - normal: Simulator : Get data from file(C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/cocos2d-x/simulator/config.json) failed, error code is 2
+2016-07-01T03:12:07.075Z - normal: Simulator : SCREEN DPI = 96, SCREEN SCALE = 1.00
+2016-07-01T03:12:07.076Z - normal: Simulator : WORKAREA WIDTH 1432.00, HEIGHT 810.00
+2016-07-01T03:12:07.076Z - normal: Simulator : FRAME SCALE = 1.00
+2016-07-01T03:12:07.351Z - normal: Simulator : Ready for GLSL
+2016-07-01T03:12:07.352Z - normal: Simulator : Ready for OpenGL 2.0
+2016-07-01T03:12:07.358Z - normal: Simulator : 
+2016-07-01T03:12:07.359Z - normal: Simulator : {
+2016-07-01T03:12:07.359Z - normal: Simulator : 	gl.version: 4.5.0 NVIDIA 359.06
+2016-07-01T03:12:07.359Z - normal: Simulator : 	gl.supports_NPOT: true
+2016-07-01T03:12:07.362Z - normal: Simulator : 	cocos2d.x.build_time: 09:55:52 Jun  7 2016
+2016-07-01T03:12:07.363Z - normal: Simulator : 	cocos2d.x.version: cocos2d-x-3.10-lite
+2016-07-01T03:12:07.363Z - normal: Simulator : 	cocos2d.x.compiled_with_profiler: false
+2016-07-01T03:12:07.363Z - normal: Simulator : 	cocos2d.x.build_type: DEBUG
+2016-07-01T03:12:07.363Z - normal: Simulator : 	cocos2d.x.compiled_with_gl_state_cache: true
+2016-07-01T03:12:07.363Z - normal: Simulator : 	gl.max_texture_size: 16384
+2016-07-01T03:12:07.364Z - normal: Simulator : 	gl.supports_OES_packed_depth_stencil: false
+2016-07-01T03:12:07.364Z - normal: Simulator : 	gl.vendor: NVIDIA Corporation
+2016-07-01T03:12:07.364Z - normal: Simulator : 	gl.renderer: GeForce GT 630/PCIe/SSE2
+2016-07-01T03:12:07.364Z - normal: Simulator : 	gl.max_texture_units: 192
+2016-07-01T03:12:07.364Z - normal: Simulator : 	gl.supports_ETC1: false
+2016-07-01T03:12:07.365Z - normal: Simulator : 	gl.supports_PVRTC: false
+2016-07-01T03:12:07.365Z - normal: Simulator : 	gl.supports_BGRA8888: false
+2016-07-01T03:12:07.365Z - normal: Simulator : 	gl.supports_discard_framebuffer: false
+2016-07-01T03:12:07.365Z - normal: Simulator : 	gl.supports_vertex_array_object: true
+2016-07-01T03:12:07.365Z - normal: Simulator : 	gl.supports_OES_depth24: false
+2016-07-01T03:12:07.366Z - normal: Simulator : }
+2016-07-01T03:12:07.366Z - normal: Simulator : 
+2016-07-01T03:12:07.366Z - normal: Simulator : 
+2016-07-01T03:12:07.378Z - normal: Simulator : Project Config:
+2016-07-01T03:12:07.378Z - normal: Simulator :     project dir: C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\cocos2d-x\simulator\win32\
+2016-07-01T03:12:07.379Z - normal: Simulator :     writable path: $(PROJDIR)\
+2016-07-01T03:12:07.379Z - normal: Simulator :     script file: $(PROJDIR)\main.js
+2016-07-01T03:12:07.379Z - normal: Simulator :     frame size: 960 x 640
+2016-07-01T03:12:07.380Z - normal: Simulator :     frame scale: 1.00
+2016-07-01T03:12:07.380Z - normal: Simulator :     show console: NO
+2016-07-01T03:12:07.380Z - normal: Simulator :     write debug log: NO ()
+2016-07-01T03:12:07.381Z - normal: Simulator :     listen: 
+2016-07-01T03:12:07.381Z - normal: Simulator :     debugger: none
+2016-07-01T03:12:07.381Z - normal: Simulator :     add searching path:
+2016-07-01T03:12:07.381Z - normal: Simulator : 
+2016-07-01T03:12:07.383Z - normal: Simulator : 
+2016-07-01T03:12:07.384Z - normal: Simulator : 
+2016-07-01T03:12:07.384Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:12:07.384Z - normal: Simulator : LOAD Js FILE: main.js
+2016-07-01T03:12:07.385Z - normal: Simulator : ------------------------------------------------
+2016-07-01T03:12:07.881Z - normal: Simulator : Cocos2d-JS v3.9
+2016-07-01T03:12:08.064Z - normal: Simulator : iShow!
+2016-07-01T03:12:08.089Z - normal: Simulator : asdfasdfadf::::::::::::::::::undefined
+2016-07-01T03:12:08.234Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:12:08.234Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:12:08.234Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:12:08.235Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:12:08.235Z - normal: Simulator : ****************************************YYY
+2016-07-01T03:16:50.167Z - normal: Compiled successfully
+2016-07-01T03:18:13.195Z - normal: Compiled successfully
