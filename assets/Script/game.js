@@ -319,8 +319,8 @@ cc.Class({
             this.shuxing_2=0;
             this.shuxing_3=0;
             this.shuxing_4=0;
-             this.mastorAtt();
-             this.pingBidianji.node.active=false;
+            this.mastorAtt();
+            this.pingBidianji.node.active=false;
         }
         
      },
