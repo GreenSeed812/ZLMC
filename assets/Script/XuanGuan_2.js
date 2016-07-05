@@ -16,7 +16,7 @@ cc.Class({
     onLoad: function () {
         //获取常驻节点  
         var node = cc.director.getScene().getChildByName('data');  
-        //获取节点的node脚本组件，并调用脚本里面的函数  
+        //获取节点的node脚本组件，并调用脚本里面的函数   
         var data = node.getComponent('NewScript').getdata();  
         cc.log('常驻节点的data值为'+data);  
         this.GuanK=data;
@@ -33,8 +33,6 @@ cc.Class({
                 this.ID2='201604003';
                 break;
             case 2:
-                
-                
                 this.ID='201604004';
                 this.ID1='201604005';
                 this.ID2='201604006';

@@ -1,105 +1,76 @@
-2016-07-04T00:10:30.878Z - normal: Load ~/.CocosCreator/settings.json
-2016-07-04T00:10:30.887Z - normal: checking language setting...
-2016-07-04T00:10:30.887Z - normal: Language: zh
-2016-07-04T00:10:31.981Z - success: protocol editor-framework registerred
-2016-07-04T00:10:31.981Z - success: protocol app registerred
-2016-07-04T00:10:31.982Z - success: protocol packages registerred
-2016-07-04T00:10:31.982Z - success: protocol unpack registerred
-2016-07-04T00:10:32.117Z - normal: connected!
-2016-07-04T00:10:32.124Z - normal: Check project E:\ZLMC
-2016-07-04T00:10:32.129Z - normal: Initializing Cocos Creator Editor
-2016-07-04T00:10:32.699Z - normal: Initializing Cocos2d
-2016-07-04T00:10:33.897Z - normal: Initializing Asset Database
-2016-07-04T00:10:34.097Z - success: protocol uuid registerred
-2016-07-04T00:10:34.098Z - success: protocol uuid registerred
-2016-07-04T00:10:34.098Z - success: protocol thumbnail registerred
-2016-07-04T00:10:34.098Z - normal: Loading editor/builtin packages
-2016-07-04T00:10:34.565Z - success: assets loaded
-2016-07-04T00:10:34.569Z - success: builder loaded
-2016-07-04T00:10:34.578Z - success: hierarchy loaded
-2016-07-04T00:10:34.585Z - success: inspector loaded
-2016-07-04T00:10:34.588Z - success: keystore loaded
-2016-07-04T00:10:34.596Z - success: node-library loaded
-2016-07-04T00:10:34.602Z - success: preferences loaded
-2016-07-04T00:10:34.658Z - success: project-importer loaded
-2016-07-04T00:10:34.662Z - success: project-settings loaded
-2016-07-04T00:10:34.666Z - success: ui-kit loaded
-2016-07-04T00:10:34.673Z - success: ui-grid loaded
-2016-07-04T00:10:34.683Z - success: scene loaded
-2016-07-04T00:10:34.686Z - success: sprite-editor loaded
-2016-07-04T00:10:34.700Z - success: timeline loaded
-2016-07-04T00:10:34.703Z - success: ui-kit-extra loaded
-2016-07-04T00:10:34.703Z - normal: Loading builtin packages
-2016-07-04T00:10:34.714Z - success: asset-db-debugger loaded
-2016-07-04T00:10:34.717Z - success: code-editor loaded
-2016-07-04T00:10:34.718Z - success: color-picker loaded
-2016-07-04T00:10:34.724Z - success: console loaded
-2016-07-04T00:10:34.728Z - success: package-manager loaded
-2016-07-04T00:10:34.738Z - success: tester loaded
-2016-07-04T00:10:34.741Z - success: ui-tree loaded
-2016-07-04T00:10:34.925Z - normal: Initializing project E:\ZLMC
-2016-07-04T00:10:34.952Z - normal: Loading packages
-2016-07-04T00:10:34.957Z - normal: Run Application
-2016-07-04T00:10:39.830Z - success: preview server running at http://localhost:7456
-2016-07-04T00:10:39.830Z - normal: Compiling scripts...
-2016-07-04T00:10:42.240Z - normal: Compiled successfully
-2016-07-04T00:10:49.565Z - normal: 1.1.1
-2016-07-04T02:18:33.795Z - normal: Compiled successfully
-2016-07-04T02:29:58.343Z - normal: Compiled successfully
-2016-07-04T02:31:37.325Z - normal: Compiled successfully
-2016-07-04T03:07:37.308Z - normal: Compiled successfully
-2016-07-04T03:07:57.838Z - normal: Compiled successfully
-2016-07-04T03:13:38.233Z - normal: Compiled successfully
-2016-07-04T03:22:53.878Z - normal: Compiled successfully
-2016-07-04T03:23:07.479Z - normal: Compiled successfully
-2016-07-04T03:23:37.089Z - normal: Compiled successfully
-2016-07-04T03:51:11.746Z - normal: Compiled successfully
-2016-07-04T06:19:27.086Z - normal: Compiled successfully
-2016-07-04T06:19:52.945Z - normal: Compiled successfully
-2016-07-04T06:22:03.921Z - normal: Compiled successfully
-2016-07-04T06:22:46.601Z - normal: Compiled successfully
-2016-07-04T06:45:22.598Z - normal: Compiled successfully
-2016-07-04T06:46:26.067Z - normal: Compiled successfully
-2016-07-04T06:46:42.214Z - normal: Compiled successfully
-2016-07-04T06:46:56.191Z - normal: Compiled successfully
-2016-07-04T06:48:23.024Z - normal: Compiled successfully
-2016-07-04T06:52:58.084Z - normal: Compiled successfully
-2016-07-04T06:53:47.388Z - normal: Compiled successfully
-2016-07-04T06:56:03.743Z - normal: Compiled successfully
-2016-07-04T06:57:19.978Z - normal: Compiled successfully
-2016-07-04T06:57:24.716Z - normal: Compiled successfully
-2016-07-04T06:57:25.465Z - error: TypeError: Cannot read property 'sourcesContent' of null
-    at e._createClass.value (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\source-maps.js:1:6136)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\source-maps.js:1:3748
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:380:13
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:269:32
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:377:17
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\source-maps.js:1:3265
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:361:13
-2016-07-04T06:59:37.860Z - normal: Compiled successfully
-2016-07-04T07:05:52.393Z - normal: Compiled successfully
-2016-07-04T07:14:30.693Z - normal: Compiled successfully
-2016-07-04T07:21:09.093Z - failed: [db-task][update] failed!
-2016-07-04T07:21:09.094Z - error: Failed to update asset db://assets/Script/XuanGuan_2.js, messages: SyntaxError: unknown: Unexpected token (52:5)
-        
-    }
-     jinruzhandou2:function()
-    {
-        
-    }
+2016-07-05T00:39:29.009Z - normal: Load ~/.CocosCreator/settings.json
+2016-07-05T00:39:29.016Z - normal: checking language setting...
+2016-07-05T00:39:29.017Z - normal: Language: zh
+2016-07-05T00:39:30.087Z - success: protocol editor-framework registerred
+2016-07-05T00:39:30.087Z - success: protocol app registerred
+2016-07-05T00:39:30.087Z - success: protocol packages registerred
+2016-07-05T00:39:30.087Z - success: protocol unpack registerred
+2016-07-05T00:39:30.184Z - normal: connected!
+2016-07-05T00:39:30.189Z - normal: Check project E:\ZLMC
+2016-07-05T00:39:30.195Z - normal: Initializing Cocos Creator Editor
+2016-07-05T00:39:30.898Z - normal: Initializing Cocos2d
+2016-07-05T00:39:31.223Z - normal: Initializing Asset Database
+2016-07-05T00:39:31.321Z - success: protocol uuid registerred
+2016-07-05T00:39:31.321Z - success: protocol uuid registerred
+2016-07-05T00:39:31.321Z - success: protocol thumbnail registerred
+2016-07-05T00:39:31.321Z - normal: Loading editor/builtin packages
+2016-07-05T00:39:31.618Z - success: assets loaded
+2016-07-05T00:39:31.628Z - success: builder loaded
+2016-07-05T00:39:31.637Z - success: hierarchy loaded
+2016-07-05T00:39:31.646Z - success: inspector loaded
+2016-07-05T00:39:31.648Z - success: keystore loaded
+2016-07-05T00:39:31.656Z - success: node-library loaded
+2016-07-05T00:39:31.662Z - success: preferences loaded
+2016-07-05T00:39:31.747Z - success: project-importer loaded
+2016-07-05T00:39:31.752Z - success: project-settings loaded
+2016-07-05T00:39:31.756Z - success: ui-kit loaded
+2016-07-05T00:39:31.765Z - success: ui-grid loaded
+2016-07-05T00:39:31.775Z - success: scene loaded
+2016-07-05T00:39:31.778Z - success: sprite-editor loaded
+2016-07-05T00:39:31.792Z - success: timeline loaded
+2016-07-05T00:39:31.795Z - success: ui-kit-extra loaded
+2016-07-05T00:39:31.795Z - normal: Loading builtin packages
+2016-07-05T00:39:31.805Z - success: asset-db-debugger loaded
+2016-07-05T00:39:31.808Z - success: code-editor loaded
+2016-07-05T00:39:31.810Z - success: color-picker loaded
+2016-07-05T00:39:31.816Z - success: console loaded
+2016-07-05T00:39:31.820Z - success: package-manager loaded
+2016-07-05T00:39:31.828Z - success: tester loaded
+2016-07-05T00:39:31.831Z - success: ui-tree loaded
+2016-07-05T00:39:31.912Z - normal: Initializing project E:\ZLMC
+2016-07-05T00:39:31.916Z - normal: Loading packages
+2016-07-05T00:39:31.920Z - normal: Run Application
+2016-07-05T00:39:36.828Z - success: preview server running at http://localhost:7456
+2016-07-05T00:39:36.829Z - normal: Compiling scripts...
+2016-07-05T00:39:39.350Z - normal: Compiled successfully
+2016-07-05T00:39:44.057Z - normal: 1.1.1
+2016-07-05T06:38:34.421Z - normal: Compiled successfully
+2016-07-05T06:39:27.778Z - normal: Compiled successfully
+2016-07-05T06:42:08.833Z - normal: Compiled successfully
+2016-07-05T06:44:04.130Z - normal: Compiled successfully
+2016-07-05T06:44:33.270Z - normal: Compiled successfully
+2016-07-05T06:46:31.096Z - normal: Compiled successfully
+2016-07-05T06:46:56.223Z - normal: Compiled successfully
+2016-07-05T06:48:06.538Z - normal: Compiled successfully
+2016-07-05T06:50:43.690Z - normal: Compiled successfully
+2016-07-05T06:51:03.634Z - failed: [db-task][update] failed!
+2016-07-05T06:51:03.636Z - error: Failed to update asset db://assets/Script/game.js, messages: SyntaxError: unknown: Unexpected token (44:69)
+            var obj = eval('(' + str + ')');
+            console.log("cc****************" + obj[3]["N1"]);
+            console.log("cc****************" + parseInt(obj[3]["N2"]);
+            if(parseInt(obj[3]["N2"])==0)
+            {
+                  console.log("cc1****************" + obj[3]["N3"]);
     at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
     at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
     at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseObj (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:596:12)
-    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:392:19)
-    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
-    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
+    at Parser.pp.parseExprList (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:785:12)
+    at Parser.pp.parseSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:270:29)
+    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:240:17)
     at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
     at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
     at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
+    at Parser.pp.parseMaybeAssign (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:112:19)
     at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
     at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
     at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
@@ -109,28 +80,169 @@
     at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
     at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
     at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-07-04T07:28:06.201Z - error: Failed to create field Number. type not the same Number:undefined
-    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
-    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
-    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
-2016-07-04T07:28:18.919Z - error: Failed to create field Number. type not the same Number:undefined
-    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
-    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
-    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
-2016-07-04T07:28:37.435Z - normal: Compiled successfully
-2016-07-04T07:29:33.470Z - normal: Compiled successfully
-2016-07-04T07:32:26.390Z - normal: Compiled successfully
-2016-07-04T07:35:20.798Z - normal: Compiled successfully
-2016-07-04T07:38:10.833Z - normal: Compiled successfully
-2016-07-04T07:41:17.898Z - normal: Compiled successfully
-2016-07-04T07:59:57.263Z - normal: Compiled successfully
-2016-07-04T08:03:02.118Z - normal: Compiled successfully
-2016-07-04T08:03:24.478Z - normal: Compiled successfully
-2016-07-04T08:21:29.664Z - normal: Compiled successfully
-2016-07-04T08:21:38.947Z - normal: Compiled successfully
-2016-07-04T08:46:25.996Z - normal: Compiled successfully
-2016-07-04T08:47:30.989Z - normal: Compiled successfully
-2016-07-04T08:48:06.374Z - normal: Compiled successfully
-2016-07-04T08:48:55.156Z - normal: Compiled successfully
-2016-07-04T08:49:16.322Z - normal: Compiled successfully
-2016-07-04T08:49:32.634Z - normal: Compiled successfully
+2016-07-05T06:51:34.555Z - normal: Compiled successfully
+2016-07-05T06:52:01.476Z - normal: Compiled successfully
+2016-07-05T06:52:19.832Z - normal: Compiled successfully
+2016-07-05T06:54:26.840Z - normal: Compiled successfully
+2016-07-05T06:55:08.773Z - normal: Compiled successfully
+2016-07-05T06:56:03.181Z - normal: Compiled successfully
+2016-07-05T07:18:55.000Z - normal: Compiled successfully
+2016-07-05T08:17:59.484Z - normal: Compiled successfully
+2016-07-05T08:54:57.494Z - normal: Compiled successfully
+2016-07-05T08:56:57.901Z - normal: Compiled successfully
+2016-07-05T08:58:47.233Z - normal: Compiled successfully
+2016-07-05T08:59:19.824Z - normal: Compiled successfully
+2016-07-05T09:00:51.576Z - normal: Compiled successfully
+2016-07-05T09:01:49.447Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:01:49.450Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:01:49.450Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:01:49.451Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:01:49.451Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:01:49.451Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:16.338Z - normal: Compiled successfully
+2016-07-05T09:02:19.316Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:19.316Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:19.317Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:19.317Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:19.318Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:47.576Z - normal: Compiled successfully
+2016-07-05T09:02:50.494Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:50.495Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:50.495Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:50.496Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:02:50.496Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:32.394Z - normal: Compiled successfully
+2016-07-05T09:03:34.945Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.945Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.946Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.946Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.946Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.946Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.947Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.947Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.947Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.947Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:03:34.948Z - error: TypeError: Cannot read property 'name' of undefined
+    at app://editor/page/ui/node/node.js:1:2912
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5204)
+    at emitThree (events.js:97:13)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-05T09:05:47.417Z - normal: Compiled successfully
+2016-07-05T09:06:47.618Z - normal: Compiled successfully
+2016-07-05T09:07:23.562Z - normal: Compiled successfully
+2016-07-05T09:08:04.308Z - normal: Compiled successfully
+2016-07-05T09:09:33.263Z - normal: Compiled successfully
+2016-07-05T09:09:40.628Z - normal: Compiled successfully
+2016-07-05T09:12:34.216Z - normal: Compiled successfully
+2016-07-05T09:12:40.203Z - normal: Compiled successfully
+2016-07-05T09:20:53.447Z - normal: Compiled successfully
+2016-07-05T09:20:57.486Z - normal: Compiled successfully
+2016-07-05T09:22:12.206Z - normal: Compiled successfully
+2016-07-05T09:22:22.748Z - normal: Compiled successfully
+2016-07-05T09:22:33.811Z - normal: Compiled successfully
+2016-07-05T09:23:03.947Z - normal: Compiled successfully
+2016-07-05T09:30:19.748Z - info: shutdown preview server

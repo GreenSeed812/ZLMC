@@ -16,6 +16,16 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
         this.Label.string=''+this.HP.toString();
 
     },

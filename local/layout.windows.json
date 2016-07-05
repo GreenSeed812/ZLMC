@@ -2,7 +2,7 @@
   "version": "1.1.1",
   "windows": {
     "main": {
-      "x": -8,
+      "x": 3,
       "y": 0,
       "width": 1456,
       "height": 876,
@@ -75,18 +75,6 @@
         "row": true,
         "type": "dock"
       }
-    },
-    "window-1467615426375": {
-      "x": 0,
-      "y": 0,
-      "width": 1456,
-      "height": 920
-    },
-    "worker": {
-      "x": 520,
-      "y": 280,
-      "width": 400,
-      "height": 300
     }
   }
 }

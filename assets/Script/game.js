@@ -27,19 +27,45 @@ cc.Class({
         mastorR:                 {    default:null,  type:cc.Sprite },
         blockNode:               {    default:null,  type:cc.Node   },
         pingBidianji:            {    default:null,  type:cc.Button },
-        velea:                   {    default:22 },
-        
-        
+        velea:                   {    default:22                    },
+        mastornumber:            {    default:0                     },
+        boShu:                   {    default:3                     },
     },
     onLoad: function ()
     {
-         this.gameMain();
+      
+        console.log("cc333****************" + this.boShu);
+         this.fubiaoGk();
+    },
+    
+    
+    fubiaoGk:function()
+    {
+        let self = this;
+        cc.loader.loadRes("jsonDate/gq_table", function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            console.log("cc333****************" + self.boShu );
+            console.log("cc****************" + obj[self.boShu]["N1"]);
+            console.log("cc11****************" + parseInt(obj[self.boShu]["N2"]));
+            if(parseInt(obj[self.boShu]["N3"])==0)
+            {
+                self.mastornumber=2;
+                self.mastor.getComponent('Monster').isdie=true;
+            }else
+            {
+                self.mastornumber=3;
+                self.mastor.getComponent('Monster').isdie=false;
+            }
+            console.log("cc****************" + self.mastornumber );
+              self.gameMain();
+        });
     },
     gameMain:function()
     {
+        console.log("c1223233c****************" + this.mastornumber );
         this.pingBidianji.node.active=false;
         console.log("asdfasdfadf::::::::::::::::::"+this.pingBidianji.active);
-       
 //**************************创建二维数组并将预制物存入*************************//
         this.blockArray=new Array();
         for(var i=0;i<5;i++)
@@ -206,7 +232,6 @@ cc.Class({
             console.log('this.shuxing_2'+this.shuxing_2);
             console.log('this.shuxing_3'+this.shuxing_3);
             console.log('this.shuxing_4'+this.shuxing_4);
-            
             if( this.heroArry[1].getComponent('hero').isdie==false){
                 if(this.shuxing_0>0&&this.mastor.getComponent('Monster').isdie==false)
                 {
@@ -263,7 +288,6 @@ cc.Class({
                             min=zl;
                         }
                     }
-                    
                 }else if(this.shuxing_3>0&&this.mastorL.getComponent('Monster').isdie==false)
                 {
                     this.heroArry[2].getComponent('hero').aunchAnOrdinaryAttack( this.mastorL,( this.shuxing_3-3));
@@ -319,10 +343,16 @@ cc.Class({
             this.shuxing_2=0;
             this.shuxing_3=0;
             this.shuxing_4=0;
-            this.mastorAtt();
+            //this.mastorAtt();
+            
+            
+            if(this.mastorL.getComponent('Monster').isdie==true&&this.mastor.getComponent('Monster').isdie==true&&this.mastorR.getComponent('Monster').isdie==true)
+            {
+             console.log('第一波结束');   
+            }
+            
             this.pingBidianji.node.active=false;
         }
-        
      },
      mastorAtt:function()
      {
@@ -386,7 +416,6 @@ cc.Class({
      }, 
     clickFinish:function(event)
     {
-        
         if(!this.timeover){
              this.pingBidianji.node.active=true;
             console.log('this.timeover'+this.timeover);
@@ -426,7 +455,6 @@ cc.Class({
                         {
                         this.columnLookup.pop();
                         }
-                        
                     }else
                     {
                         //  console.log("********************");
