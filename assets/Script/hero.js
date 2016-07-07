@@ -26,6 +26,13 @@ cc.Class({
     },
     aunchAnOrdinaryAttack:function(monster,blocknum)
     {
+        
+        
+       
+        
+     
+        
+        
         switch(this.Arms)  
         {
             case 0://金属性的伤害

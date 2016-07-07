@@ -70,7 +70,7 @@ cc.Class({
         console.log("进入第"+this.ID+"关");
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
-        node.setdata( this.ID);  
+        node.setDiJiGuan(this.ID);  
         this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
@@ -80,7 +80,7 @@ cc.Class({
         console.log("进入第"+this.ID1+"关");
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
-        node.setdata( this.ID1);  
+        node.setDiJiGuan(this.ID1);  
         this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
@@ -90,7 +90,7 @@ cc.Class({
         console.log("进入第"+this.ID2+"关");
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
-        node.setdata( this.ID2);  
+        node.setDiJiGuan(this.ID2);  
         this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));

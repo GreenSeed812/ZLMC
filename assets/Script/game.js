@@ -29,37 +29,48 @@ cc.Class({
         pingBidianji:            {    default:null,  type:cc.Button },
         velea:                   {    default:22                    },
         mastornumber:            {    default:0                     },
-        boShu:                   {    default:3                     },
+        boShu:                   {    default:0                     },
+        background:              {    default:null,  type:cc.Node   },
     },
     onLoad: function ()
     {
-      
-        console.log("cc333****************" + this.boShu);
          this.fubiaoGk();
     },
-    
-    
     fubiaoGk:function()
     {
-        let self = this;
-        cc.loader.loadRes("jsonDate/gq_table", function (err, clip) {
-            var str=clip;
-            var obj = eval('(' + str + ')');
-            console.log("cc333****************" + self.boShu );
-            console.log("cc****************" + obj[self.boShu]["N1"]);
-            console.log("cc11****************" + parseInt(obj[self.boShu]["N2"]));
-            if(parseInt(obj[self.boShu]["N3"])==0)
-            {
-                self.mastornumber=2;
-                self.mastor.getComponent('Monster').isdie=true;
-            }else
-            {
-                self.mastornumber=3;
-                self.mastor.getComponent('Monster').isdie=false;
-            }
-            console.log("cc****************" + self.mastornumber );
-              self.gameMain();
-        });
+         var node = cc.director.getScene().getChildByName('data');  
+         //获取节点的node脚本组件，并调用脚本里面的函数   
+         var guanka = node.getComponent('NewScript').getDiJiGuan();  
+         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);  
+         //cc.log('常驻节点的data值为'+data);
+         console.log("dijige"+GKnode.N3);
+         if(GKnode.N3==0)
+         {
+            this.mastornumber=2;
+            console.log("怪物数量：：：：：：：：：:"+ this.mastornumber);
+            this.mastor.getComponent('Monster').isdie=true;
+            this.mastor.getComponent('Monster').HP=" ";
+            this.mastorL.getComponent('Monster').id=GKnode.N1;
+            this.mastorR.getComponent('Monster').id=GKnode.N2;
+            this.mastorL.getComponent('Monster').fubiaoGk();
+            this.mastorR.getComponent('Monster').fubiaoGk();
+            this.mastor.getComponent(cc.Sprite).setVisible(false);
+         }else
+         {
+            this.mastornumber=3;
+            console.log("怪物数量：：：：：：：：：:"+ this.mastornumber);
+            this.mastor.getComponent('Monster').isdie=false;
+            this.mastorL.getComponent('Monster').isdie=true;
+            this.mastorR.getComponent('Monster').isdie=true;
+            this.mastorR.getComponent('Monster').HP=" ";
+            this.mastorL.getComponent('Monster').HP=" ";
+            this.mastor.getComponent('Monster').id=GKnode.N3;
+            this.mastor.getComponent('Monster').fubiaoGk();
+            this.mastor.getComponent(cc.Sprite).setVisible(true);
+            this.mastorR.getComponent(cc.Sprite).setVisible(false);
+            this.mastorL.getComponent(cc.Sprite).setVisible(false);
+         }
+         this.gameMain();
     },
     gameMain:function()
     {
@@ -338,21 +349,103 @@ cc.Class({
             {
                this.calculatedDamage.pop();
             }
-            this.shuxing_0=0;
-            this.shuxing_1=0;
-            this.shuxing_2=0;
-            this.shuxing_3=0;
-            this.shuxing_4=0;
+                this.shuxing_0=0;
+                this.shuxing_1=0;
+                this.shuxing_2=0;
+                this.shuxing_3=0;
+                this.shuxing_4=0;
             //this.mastorAtt();
             
             
             if(this.mastorL.getComponent('Monster').isdie==true&&this.mastor.getComponent('Monster').isdie==true&&this.mastorR.getComponent('Monster').isdie==true)
             {
-             console.log('第一波结束');   
+                console.log('第一波结束'+this.boShu);
+                if(this.boShu<2)
+                {
+                    console.log('第2波结束'+this.boShu);
+                    this.pingBidianji.node.active=true; 
+                    this.mastorL.getComponent(cc.Sprite).setVisible(false);
+                    this.mastor.getComponent(cc.Sprite).setVisible(false);
+                    this.mastorR.getComponent(cc.Sprite).setVisible(false);
+                    this.mastor.getComponent('Monster').Label.string="";
+                    this.mastorL.getComponent('Monster').Label.string="";
+                    this.mastorR.getComponent('Monster').Label.string="";
+                    var action = cc.moveTo(2, this.background.x, this.background.y-1280);
+                    var finished = cc.callFunc(this.call33, this);
+                    var myAction = cc.sequence(action,finished); 
+                    this.background.runAction(myAction);
+                }else
+                {
+                    console.log('第22222波结束'+this.boShu);
+                    // this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+                    // cc.director.loadScene('xuanguan')
+                }
+
+
+
+            }else
+            {
+                
+                this.pingBidianji.node.active=false;
             }
-            
-            this.pingBidianji.node.active=false;
+            console.log('第333波结束'+this.boShu);
         }
+     },
+     call33:function()
+     {
+         
+         
+          this.pingBidianji.node.active=false;
+          this.mastorL.getComponent(cc.Sprite).setVisible(true);
+          //this.mastor.getComponent(cc.Sprite).setVisible(true);
+          this.mastorR.getComponent(cc.Sprite).setVisible(true);
+          
+           this.mastorL.getComponent('Monster').isdie=false;
+          //this.mastor.getComponent(cc.Sprite).setVisible(true);
+          this.mastorR.getComponent('Monster').isdie=false;
+          console.log("执行回调");
+          console.log("波数：：：：：：：" + this.boShu );
+          this.boShu+=1;
+          console.log("波数：：：：：：：" + this.boShu );
+          this.nextBo();
+     },
+     
+     nextBo:function()
+     {
+         
+         var node = cc.director.getScene().getChildByName('data');  
+         //获取节点的node脚本组件，并调用脚本里面的函数   
+         var guanka = node.getComponent('NewScript').getDiJiGuan();  
+         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);  
+         //cc.log('常驻节点的data值为'+data);
+         console.log("dijige"+GKnode.N3);
+         if(GKnode.N3==0)
+         {
+            this.mastornumber=2;
+            console.log("怪物数量：：：：：：：：：:"+ this.mastornumber);
+            this.mastor.getComponent('Monster').isdie=true;
+            this.mastor.getComponent('Monster').HP=" ";
+            this.mastorL.getComponent('Monster').id=GKnode.N1;
+            this.mastorR.getComponent('Monster').id=GKnode.N2;
+            this.mastorL.getComponent('Monster').fubiaoGk();
+            this.mastorR.getComponent('Monster').fubiaoGk();
+            this.mastor.getComponent(cc.Sprite).setVisible(false);
+         }else
+         {
+            this.mastornumber=3;
+            console.log("怪物数量：：：：：：：：：:"+ this.mastornumber);
+            this.mastor.getComponent('Monster').isdie=false;
+            this.mastorL.getComponent('Monster').isdie=true;
+            this.mastorR.getComponent('Monster').isdie=true;
+            this.mastorR.getComponent('Monster').HP=" ";
+            this.mastorL.getComponent('Monster').HP=" ";
+            this.mastor.getComponent('Monster').id=GKnode.N3;
+            this.mastor.getComponent('Monster').fubiaoGk();
+            this.mastor.getComponent(cc.Sprite).setVisible(true);
+            this.mastorR.getComponent(cc.Sprite).setVisible(false);
+            this.mastorL.getComponent(cc.Sprite).setVisible(false);
+         }
+    
      },
      mastorAtt:function()
      {

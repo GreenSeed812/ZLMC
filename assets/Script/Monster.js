@@ -10,26 +10,27 @@ cc.Class({
         buffPlacer:     {   default:0   },//技能
         propertyDamage: {   default:0   },//属性增伤
         outPut:         {   default:0   },//计算后的输出伤害
-        Label:          {  default: null,type: cc.Label},
+        Label:          {   default: null,type: cc.Label    },
         isdie:          {   default:false  },//是否死亡
+        id:             {   default:0      },
+        POCI:           {   default:0      }
     },
 
     // use this for initialization
     onLoad: function () {
-        
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        this.Label.string=''+this.HP.toString();
-
-    },
     
+        this.Label.string=''+this.HP.toString();
+    },
+    fubiaoGk:function()
+    {   
+        var node = cc.director.getScene().getChildByName('data');  
+        var GKnode = node.getComponent('NewScript').ChaNPC(this.id); 
+        this.Arms=GKnode.IPT_APT;
+        this.HP=GKnode.IPT_LF;
+        this.defenseForce=GKnode.IPT_DEF;
+        this.attackPower=GKnode.IPT_ATK;
+        this.Label.string=''+this.HP.toString();
+    },
      aunchAnOrdinaryAttack:function(hero)
     {
        this.outPut=this.attackPower;
@@ -45,8 +46,6 @@ cc.Class({
         }
         this.Label.string=''+this.HP.toString();
     }
-
-
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 
