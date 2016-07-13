@@ -65,7 +65,7 @@ cc.Class({
         }
     },
     
-    jinruzhandou1:function()
+    jinruzhandou1:function() 
     {
         console.log("进入第"+this.ID+"关");
         var node = cc.find('data').getComponent('NewScript');  
@@ -94,8 +94,13 @@ cc.Class({
         this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
+    },
+    back:function()
+    {
+         this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+        cc.director.loadScene('GuanQia')
+        })));
     }
-    
     
     
     

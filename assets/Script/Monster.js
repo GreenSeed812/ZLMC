@@ -38,6 +38,7 @@ cc.Class({
     },
      injured:function(shoushang)
     {
+        console.log("进入怪物受伤")
          this. HP= this. HP-(shoushang-this.defenseForce*1.2);
         if( this.HP<=0)
         {

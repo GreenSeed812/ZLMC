@@ -1,67 +1,244 @@
-2016-07-07T02:30:00.365Z - normal: Load ~/.CocosCreator/settings.json
-2016-07-07T02:30:00.381Z - normal: checking language setting...
-2016-07-07T02:30:00.381Z - normal: Language: zh
-2016-07-07T02:30:01.535Z - success: protocol editor-framework registerred
-2016-07-07T02:30:01.535Z - success: protocol app registerred
-2016-07-07T02:30:01.535Z - success: protocol packages registerred
-2016-07-07T02:30:01.535Z - success: protocol unpack registerred
-2016-07-07T02:30:01.644Z - normal: connected!
-2016-07-07T02:30:01.644Z - normal: Check project E:\ZLMC
-2016-07-07T02:30:01.660Z - normal: Initializing Cocos Creator Editor
-2016-07-07T02:30:02.299Z - normal: Initializing Cocos2d
-2016-07-07T02:30:03.813Z - normal: Initializing Asset Database
-2016-07-07T02:30:03.953Z - success: protocol uuid registerred
-2016-07-07T02:30:03.953Z - success: protocol uuid registerred
-2016-07-07T02:30:03.953Z - success: protocol thumbnail registerred
-2016-07-07T02:30:03.953Z - normal: Loading editor/builtin packages
-2016-07-07T02:30:04.343Z - success: assets loaded
-2016-07-07T02:30:04.343Z - success: builder loaded
-2016-07-07T02:30:04.343Z - success: hierarchy loaded
-2016-07-07T02:30:04.359Z - success: inspector loaded
-2016-07-07T02:30:04.359Z - success: keystore loaded
-2016-07-07T02:30:04.374Z - success: node-library loaded
-2016-07-07T02:30:04.374Z - success: preferences loaded
-2016-07-07T02:30:04.468Z - success: project-importer loaded
-2016-07-07T02:30:04.468Z - success: project-settings loaded
-2016-07-07T02:30:04.468Z - success: ui-kit loaded
-2016-07-07T02:30:04.483Z - success: ui-grid loaded
-2016-07-07T02:30:04.499Z - success: scene loaded
-2016-07-07T02:30:04.499Z - success: sprite-editor loaded
-2016-07-07T02:30:04.515Z - success: timeline loaded
-2016-07-07T02:30:04.515Z - success: ui-kit-extra loaded
-2016-07-07T02:30:04.515Z - normal: Loading builtin packages
-2016-07-07T02:30:04.530Z - success: asset-db-debugger loaded
-2016-07-07T02:30:04.530Z - success: code-editor loaded
-2016-07-07T02:30:04.530Z - success: color-picker loaded
-2016-07-07T02:30:04.530Z - success: console loaded
-2016-07-07T02:30:04.546Z - success: package-manager loaded
-2016-07-07T02:30:04.546Z - success: tester loaded
-2016-07-07T02:30:04.546Z - success: ui-tree loaded
-2016-07-07T02:30:04.717Z - normal: Initializing project E:\ZLMC
-2016-07-07T02:30:04.733Z - normal: Loading packages
-2016-07-07T02:30:04.749Z - normal: Run Application
-2016-07-07T02:30:13.734Z - success: preview server running at http://localhost:7456
-2016-07-07T02:30:13.734Z - normal: Compiling scripts...
-2016-07-07T02:30:16.705Z - normal: Compiled successfully
-2016-07-07T02:30:25.769Z - normal: 1.1.1
-2016-07-07T02:43:00.067Z - failed: [db-task][update] failed!
-2016-07-07T02:43:00.069Z - error: Failed to update asset db://assets/Script/NewScript.js, messages: SyntaxError: unknown: Unexpected token (31:20)
-        
-        
-        for(var i=0 ){ 
-            
-            var node=[];
-        }
+2016-07-13T00:21:06.382Z - normal: Load ~/.CocosCreator/settings.json
+2016-07-13T00:21:06.389Z - normal: checking language setting...
+2016-07-13T00:21:06.389Z - normal: Language: zh
+2016-07-13T00:21:07.472Z - success: protocol editor-framework registerred
+2016-07-13T00:21:07.473Z - success: protocol app registerred
+2016-07-13T00:21:07.473Z - success: protocol packages registerred
+2016-07-13T00:21:07.473Z - success: protocol unpack registerred
+2016-07-13T00:21:07.559Z - normal: connected!
+2016-07-13T00:21:07.562Z - normal: Check project E:\ZLMC
+2016-07-13T00:21:07.565Z - normal: Initializing Cocos Creator Editor
+2016-07-13T00:21:08.396Z - normal: Initializing Cocos2d
+2016-07-13T00:21:08.726Z - normal: Initializing Asset Database
+2016-07-13T00:21:08.804Z - success: protocol uuid registerred
+2016-07-13T00:21:08.804Z - success: protocol uuid registerred
+2016-07-13T00:21:08.804Z - success: protocol thumbnail registerred
+2016-07-13T00:21:08.805Z - normal: Loading editor/builtin packages
+2016-07-13T00:21:09.090Z - success: assets loaded
+2016-07-13T00:21:09.094Z - success: builder loaded
+2016-07-13T00:21:09.102Z - success: hierarchy loaded
+2016-07-13T00:21:09.109Z - success: inspector loaded
+2016-07-13T00:21:09.112Z - success: keystore loaded
+2016-07-13T00:21:09.120Z - success: node-library loaded
+2016-07-13T00:21:09.126Z - success: preferences loaded
+2016-07-13T00:21:09.188Z - success: project-importer loaded
+2016-07-13T00:21:09.192Z - success: project-settings loaded
+2016-07-13T00:21:09.196Z - success: ui-kit loaded
+2016-07-13T00:21:09.204Z - success: ui-grid loaded
+2016-07-13T00:21:09.214Z - success: scene loaded
+2016-07-13T00:21:09.218Z - success: sprite-editor loaded
+2016-07-13T00:21:09.231Z - success: timeline loaded
+2016-07-13T00:21:09.234Z - success: ui-kit-extra loaded
+2016-07-13T00:21:09.235Z - normal: Loading builtin packages
+2016-07-13T00:21:09.245Z - success: asset-db-debugger loaded
+2016-07-13T00:21:09.248Z - success: code-editor loaded
+2016-07-13T00:21:09.249Z - success: color-picker loaded
+2016-07-13T00:21:09.256Z - success: console loaded
+2016-07-13T00:21:09.261Z - success: package-manager loaded
+2016-07-13T00:21:09.268Z - success: tester loaded
+2016-07-13T00:21:09.271Z - success: ui-tree loaded
+2016-07-13T00:21:09.350Z - normal: Initializing project E:\ZLMC
+2016-07-13T00:21:09.353Z - normal: Loading packages
+2016-07-13T00:21:09.357Z - normal: Run Application
+2016-07-13T00:21:16.985Z - success: preview server running at http://localhost:7456
+2016-07-13T00:21:16.988Z - normal: Compiling scripts...
+2016-07-13T00:21:19.689Z - normal: Compiled successfully
+2016-07-13T00:21:25.125Z - normal: 1.1.1
+2016-07-13T01:38:43.735Z - normal: Compiled successfully
+2016-07-13T01:39:25.345Z - normal: Compiled successfully
+2016-07-13T01:40:21.532Z - normal: Compiled successfully
+2016-07-13T01:41:21.961Z - normal: Compiled successfully
+2016-07-13T01:41:22.096Z - warn: The "type" attribute of "KaiPaiJIeMian.kaiDi" is undefined when loading script.
+2016-07-13T01:41:48.279Z - normal: Compiled successfully
+2016-07-13T01:44:17.857Z - normal: Compiled successfully
+2016-07-13T01:45:11.810Z - normal: Compiled successfully
+2016-07-13T01:46:34.815Z - normal: Compiled successfully
+2016-07-13T01:49:27.210Z - normal: Compiled successfully
+2016-07-13T01:50:01.986Z - normal: Compiled successfully
+2016-07-13T01:52:43.815Z - normal: Compiled successfully
+2016-07-13T01:52:44.614Z - error: Failed to create field cc.Sprite. type not the same cc.Sprite:cc.Prefab
+    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
+    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
+    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
+2016-07-13T01:53:12.529Z - normal: Compiled successfully
+2016-07-13T01:53:32.068Z - normal: Compiled successfully
+2016-07-13T01:53:57.710Z - normal: Compiled successfully
+2016-07-13T01:54:08.523Z - normal: Compiled successfully
+2016-07-13T01:54:30.301Z - normal: Compiled successfully
+2016-07-13T01:54:39.341Z - normal: Compiled successfully
+2016-07-13T01:54:49.778Z - normal: Compiled successfully
+2016-07-13T01:55:04.393Z - normal: Compiled successfully
+2016-07-13T01:55:15.965Z - normal: Compiled successfully
+2016-07-13T01:55:33.309Z - normal: Compiled successfully
+2016-07-13T01:55:44.378Z - normal: Compiled successfully
+2016-07-13T01:55:53.737Z - normal: Compiled successfully
+2016-07-13T01:56:03.873Z - normal: Compiled successfully
+2016-07-13T01:56:07.965Z - normal: Compiled successfully
+2016-07-13T01:56:18.451Z - normal: Compiled successfully
+2016-07-13T01:57:20.218Z - normal: Compiled successfully
+2016-07-13T01:57:37.712Z - normal: Compiled successfully
+2016-07-13T01:58:43.130Z - normal: Compiled successfully
+2016-07-13T02:15:51.194Z - normal: Compiled successfully
+2016-07-13T02:20:29.780Z - normal: Compiled successfully
+2016-07-13T02:20:46.996Z - normal: Compiled successfully
+2016-07-13T02:21:23.671Z - normal: Compiled successfully
+2016-07-13T02:22:23.335Z - normal: Compiled successfully
+2016-07-13T02:22:37.153Z - normal: Compiled successfully
+2016-07-13T02:22:56.103Z - normal: Compiled successfully
+2016-07-13T02:24:03.717Z - normal: Compiled successfully
+2016-07-13T02:25:44.552Z - normal: Compiled successfully
+2016-07-13T02:26:03.222Z - normal: Compiled successfully
+2016-07-13T02:26:20.706Z - normal: Compiled successfully
+2016-07-13T02:26:46.452Z - normal: Compiled successfully
+2016-07-13T02:27:13.539Z - normal: Compiled successfully
+2016-07-13T02:27:22.181Z - normal: Compiled successfully
+2016-07-13T02:30:07.911Z - normal: Compiled successfully
+2016-07-13T02:31:23.943Z - normal: Compiled successfully
+2016-07-13T02:51:13.156Z - normal: Compiled successfully
+2016-07-13T02:53:15.805Z - normal: Compiled successfully
+2016-07-13T02:59:54.396Z - normal: Compiled successfully
+2016-07-13T03:00:43.762Z - normal: Compiled successfully
+2016-07-13T03:01:01.113Z - normal: Compiled successfully
+2016-07-13T03:01:12.740Z - normal: Compiled successfully
+2016-07-13T03:03:04.838Z - normal: Compiled successfully
+2016-07-13T03:04:11.165Z - normal: Compiled successfully
+2016-07-13T03:04:38.801Z - normal: Compiled successfully
+2016-07-13T03:05:35.369Z - normal: Compiled successfully
+2016-07-13T03:06:52.043Z - normal: Compiled successfully
+2016-07-13T03:06:56.338Z - normal: Compiled successfully
+2016-07-13T03:07:52.329Z - normal: Compiled successfully
+2016-07-13T03:08:23.470Z - normal: Compiled successfully
+2016-07-13T03:08:44.585Z - normal: Compiled successfully
+2016-07-13T03:09:15.784Z - normal: Compiled successfully
+2016-07-13T03:09:39.039Z - normal: Compiled successfully
+2016-07-13T03:10:21.585Z - normal: Compiled successfully
+2016-07-13T03:10:37.072Z - normal: Compiled successfully
+2016-07-13T03:10:54.444Z - normal: Compiled successfully
+2016-07-13T03:37:52.974Z - normal: Compiled successfully
+2016-07-13T03:44:49.770Z - normal: Compiled successfully
+2016-07-13T03:49:57.064Z - normal: Compiled successfully
+2016-07-13T03:50:01.673Z - normal: Compiled successfully
+2016-07-13T03:51:52.253Z - normal: Compiled successfully
+2016-07-13T04:05:56.411Z - normal: Compiled successfully
+2016-07-13T04:06:37.747Z - normal: Compiled successfully
+2016-07-13T04:07:00.031Z - normal: Compiled successfully
+2016-07-13T04:07:37.225Z - normal: Compiled successfully
+2016-07-13T06:37:46.476Z - normal: Compiled successfully
+2016-07-13T06:39:17.610Z - normal: Compiled successfully
+2016-07-13T06:40:05.825Z - normal: Compiled successfully
+2016-07-13T06:40:51.938Z - normal: Compiled successfully
+2016-07-13T06:41:47.164Z - normal: Compiled successfully
+2016-07-13T06:43:03.529Z - error: Error: Filename conflict, the module "NewScript" both defined in "Script\NewScript.js" and "Scene\NewScript.js"
+    at Stream.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\compile-worker.js:1:3272)
+    at Stream.stream.write (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\through\index.js:26:11)
+    at Stream.ondata (stream.js:31:26)
+    at emitOne (events.js:77:13)
+    at Stream.emit (events.js:169:7)
+    at queueData (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\map-stream\index.js:43:21)
+    at next (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\map-stream\index.js:71:7)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\map-stream\index.js:85:7
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\compile-worker.js:1:2832
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\compile-worker.js:1:2004
+    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\compiler.js:1:601)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
+    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at BrowserWindow.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\compiler.js:1:894)
+    at BrowserWindow.g (events.js:260:16)
+    at emitOne (events.js:82:20)
+    at BrowserWindow.emit (events.js:169:7)
+2016-07-13T06:43:15.359Z - normal: Compiled successfully
+2016-07-13T06:43:22.032Z - normal: Compiled successfully
+2016-07-13T06:48:14.354Z - normal: Compiled successfully
+2016-07-13T06:51:48.818Z - normal: Compiled successfully
+2016-07-13T07:43:16.715Z - normal: Compiled successfully
+2016-07-13T07:44:44.315Z - normal: Compiled successfully
+2016-07-13T07:47:57.008Z - normal: Compiled successfully
+2016-07-13T07:50:20.501Z - normal: Compiled successfully
+2016-07-13T07:50:21.432Z - error: Failed to create field String. type not the same String:Float
+    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
+    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
+    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
+2016-07-13T07:51:22.188Z - error: Failed to create field String. type not the same String:Float
+    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
+    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
+    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
+2016-07-13T07:52:19.577Z - error: Failed to create field String. type not the same String:Float
+    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
+    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
+    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
+2016-07-13T07:52:23.797Z - error: Failed to create field String. type not the same String:Float
+    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
+    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
+    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
+2016-07-13T07:52:26.629Z - error: Failed to create field String. type not the same String:Float
+    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
+    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
+    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
+2016-07-13T07:58:17.238Z - normal: Compiled successfully
+2016-07-13T07:59:32.590Z - normal: Compiled successfully
+2016-07-13T08:00:13.450Z - normal: Compiled successfully
+2016-07-13T08:02:20.930Z - normal: Compiled successfully
+2016-07-13T08:14:08.401Z - normal: Compiled successfully
+2016-07-13T08:16:10.282Z - normal: Compiled successfully
+2016-07-13T08:19:35.419Z - normal: Compiled successfully
+2016-07-13T08:30:07.704Z - normal: Compiled successfully
+2016-07-13T08:30:50.106Z - normal: Compiled successfully
+2016-07-13T08:31:11.369Z - normal: Compiled successfully
+2016-07-13T08:31:30.613Z - normal: Compiled successfully
+2016-07-13T08:32:45.003Z - normal: Compiled successfully
+2016-07-13T08:32:48.893Z - normal: Compiled successfully
+2016-07-13T08:32:49.690Z - error: TypeError: Cannot read property 'sourcesContent' of null
+    at e._createClass.value (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\source-maps.js:1:6136)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\source-maps.js:1:3748
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:380:13
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:269:32
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:377:17
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\source-maps.js:1:3265
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:361:13
+2016-07-13T08:35:14.817Z - normal: Compiled successfully
+2016-07-13T08:36:16.677Z - normal: Compiled successfully
+2016-07-13T08:36:23.756Z - normal: Compiled successfully
+2016-07-13T08:37:38.043Z - normal: Compiled successfully
+2016-07-13T08:39:59.678Z - normal: Compiled successfully
+2016-07-13T08:41:02.635Z - normal: Compiled successfully
+2016-07-13T08:43:21.560Z - normal: Compiled successfully
+2016-07-13T08:43:26.353Z - normal: Compiled successfully
+2016-07-13T08:45:40.122Z - normal: Compiled successfully
+2016-07-13T08:47:25.691Z - normal: Compiled successfully
+2016-07-13T08:52:40.468Z - normal: Compiled successfully
+2016-07-13T08:52:59.019Z - normal: Compiled successfully
+2016-07-13T08:53:16.276Z - normal: Compiled successfully
+2016-07-13T08:59:12.855Z - normal: Compiled successfully
+2016-07-13T09:00:32.704Z - normal: Compiled successfully
+2016-07-13T09:01:07.220Z - normal: Compiled successfully
+2016-07-13T09:02:23.179Z - normal: Compiled successfully
+2016-07-13T09:03:24.104Z - normal: Compiled successfully
+2016-07-13T09:16:38.245Z - normal: Compiled successfully
+2016-07-13T09:16:42.017Z - normal: Compiled successfully
+2016-07-13T09:17:35.509Z - normal: Compiled successfully
+2016-07-13T09:18:36.879Z - failed: [db-task][update] failed!
+2016-07-13T09:18:36.880Z - error: Failed to update asset db://assets/Script/hero.js, messages: SyntaxError: unknown: Unexpected token (40:13)
+        switch(this.Arms)  
+        {
+             console.log("英雄输出伤害RRR"+this.Arms+blocknum);
+            case 0://金属性的伤害
+                  console.log("jin");
+                if(monster.getComponent('Monster').Arms==1)
     at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
     at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseFor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:460:8)
-    at Parser.pp.parseForStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:245:17)
-    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:76:19)
+    at Parser.pp.parseSwitchStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:321:22)
+    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:91:19)
     at Parser.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
     at Parser.pp.parseBlock (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:442:21)
     at Parser.pp.parseFunctionBody (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:747:22)
     at Parser.parseFunctionBody (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:643:20)
+    at Parser.pp.parseFunction (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:524:8)
+    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:397:19)
     at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
     at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
     at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
@@ -71,109 +248,6 @@
     at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
     at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
     at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-07-07T02:45:17.322Z - normal: Compiled successfully
-2016-07-07T02:54:15.094Z - normal: Compiled successfully
-2016-07-07T02:56:32.724Z - normal: Compiled successfully
-2016-07-07T03:16:31.204Z - normal: Compiled successfully
-2016-07-07T03:17:01.564Z - normal: Compiled successfully
-2016-07-07T03:18:09.544Z - normal: Compiled successfully
-2016-07-07T03:22:40.849Z - normal: Compiled successfully
-2016-07-07T03:24:00.970Z - normal: Compiled successfully
-2016-07-07T03:24:18.223Z - normal: Compiled successfully
-2016-07-07T03:27:48.763Z - normal: Compiled successfully
-2016-07-07T03:28:34.757Z - normal: Compiled successfully
-2016-07-07T04:07:16.204Z - normal: Compiled successfully
-2016-07-07T04:13:45.297Z - normal: Compiled successfully
-2016-07-07T06:19:04.313Z - normal: Compiled successfully
-2016-07-07T06:19:55.155Z - normal: Compiled successfully
-2016-07-07T06:20:28.567Z - normal: Compiled successfully
-2016-07-07T06:25:40.194Z - normal: Compiled successfully
-2016-07-07T07:31:36.798Z - normal: Compiled successfully
-2016-07-07T07:34:24.605Z - normal: Compiled successfully
-2016-07-07T07:35:12.545Z - normal: Compiled successfully
-2016-07-07T07:35:47.431Z - normal: Compiled successfully
-2016-07-07T07:36:38.061Z - normal: Compiled successfully
-2016-07-07T07:37:57.563Z - normal: Compiled successfully
-2016-07-07T07:38:31.407Z - normal: Compiled successfully
-2016-07-07T07:40:21.874Z - normal: Compiled successfully
-2016-07-07T07:41:23.923Z - normal: Compiled successfully
-2016-07-07T07:43:10.216Z - normal: Compiled successfully
-2016-07-07T07:43:25.065Z - normal: Compiled successfully
-2016-07-07T07:43:40.681Z - normal: Compiled successfully
-2016-07-07T07:44:20.151Z - normal: Compiled successfully
-2016-07-07T07:44:52.049Z - normal: Compiled successfully
-2016-07-07T07:46:06.066Z - normal: Compiled successfully
-2016-07-07T07:46:22.904Z - normal: Compiled successfully
-2016-07-07T07:48:05.370Z - normal: Compiled successfully
-2016-07-07T07:49:02.863Z - normal: Compiled successfully
-2016-07-07T07:50:15.158Z - normal: Compiled successfully
-2016-07-07T07:51:02.701Z - normal: Compiled successfully
-2016-07-07T07:51:19.223Z - normal: Compiled successfully
-2016-07-07T07:55:34.157Z - normal: Compiled successfully
-2016-07-07T07:56:11.843Z - normal: Compiled successfully
-2016-07-07T07:59:56.465Z - normal: Compiled successfully
-2016-07-07T08:00:47.946Z - normal: Compiled successfully
-2016-07-07T08:03:27.017Z - normal: Compiled successfully
-2016-07-07T08:05:23.267Z - normal: Compiled successfully
-2016-07-07T08:05:43.997Z - normal: Compiled successfully
-2016-07-07T08:06:52.518Z - normal: Compiled successfully
-2016-07-07T08:08:23.741Z - normal: Compiled successfully
-2016-07-07T08:08:44.922Z - normal: Compiled successfully
-2016-07-07T08:14:24.867Z - normal: Compiled successfully
-2016-07-07T08:14:36.594Z - normal: Compiled successfully
-2016-07-07T08:14:47.002Z - normal: Compiled successfully
-2016-07-07T08:24:46.788Z - normal: Compiled successfully
-2016-07-07T08:26:28.620Z - normal: Compiled successfully
-2016-07-07T08:27:47.276Z - normal: Compiled successfully
-2016-07-07T08:29:14.966Z - normal: Compiled successfully
-2016-07-07T08:32:47.064Z - normal: Compiled successfully
-2016-07-07T08:33:31.744Z - normal: Compiled successfully
-2016-07-07T08:38:26.327Z - normal: Compiled successfully
-2016-07-07T08:39:23.407Z - normal: Compiled successfully
-2016-07-07T08:41:24.412Z - normal: Compiled successfully
-2016-07-07T08:42:30.292Z - normal: Compiled successfully
-2016-07-07T08:46:32.275Z - normal: Compiled successfully
-2016-07-07T08:47:15.870Z - normal: Compiled successfully
-2016-07-07T08:53:47.996Z - normal: Compiled successfully
-2016-07-07T08:54:11.860Z - failed: [db-task][sync-changes] Failed to import asset E:\ZLMC\assets\Script\game.js, message: SyntaxError: unknown: Unexpected token (404:26)
-     nextBo:function()
-     {
-         fubiaoGk:function()
-    {
-         var node = cc.director.getScene().getChildByName('data');  
-         //获取节点的node脚本组件，并调用脚本里面的函数   
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.parseIdent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:818:10)
-    at Parser.pp.parseFunction (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:520:20)
-    at Parser.pp.parseFunctionStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:262:15)
-    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:79:19)
-    at Parser.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
-    at Parser.pp.parseLabeledStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:419:20)
-    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:140:21)
-    at Parser.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
-2016-07-07T08:54:31.630Z - failed: [db-task][sync-changes] Failed to import asset E:\ZLMC\assets\Script\game.js, message: SyntaxError: unknown: Unexpected token (404:26)
-     nextBo:function()
-     {
-         fubiaoGk:function()
-    {
-         var node = cc.director.getScene().getChildByName('data');  
-         //获取节点的node脚本组件，并调用脚本里面的函数   
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.parseIdent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:818:10)
-    at Parser.pp.parseFunction (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:520:20)
-    at Parser.pp.parseFunctionStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:262:15)
-    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:79:19)
-    at Parser.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
-    at Parser.pp.parseLabeledStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:419:20)
-    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:140:21)
-    at Parser.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
-2016-07-07T08:54:57.662Z - normal: Compiled successfully
-2016-07-07T08:59:07.923Z - normal: Compiled successfully
-2016-07-07T09:06:10.650Z - normal: Compiled successfully
-2016-07-07T09:10:41.405Z - normal: Compiled successfully
-2016-07-07T09:11:03.792Z - normal: Compiled successfully
-2016-07-07T09:14:09.367Z - normal: Compiled successfully
-2016-07-07T09:16:36.389Z - normal: Compiled successfully
-2016-07-07T09:27:24.700Z - normal: Compiled successfully
+2016-07-13T09:18:55.036Z - normal: Compiled successfully
+2016-07-13T09:19:49.368Z - normal: Compiled successfully
+2016-07-13T09:21:26.779Z - normal: Compiled successfully

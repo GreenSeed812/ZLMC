@@ -16,7 +16,7 @@ cc.Class({
         //加载资源
         this.GKdubiao    ('jsonDate/gq_table',this.GKlist);
         this.Npcdubiao   ('jsonDate/npc_table',this.Npclist);
-        this.Persondubiao('jsonDate/npc_table',this.Personlist);
+        this.Persondubiao('jsonDate/person_table',this.Personlist);
     },
     GKdubiao:function(path,Array)
     {
@@ -83,21 +83,22 @@ cc.Class({
             for(var i=2;i<obj.length;i++ )
             {
                 var node={};
-                node.GKID=obj[i]['ID'];
-                node.GKNAME=obj[i]['NAME'];
-                node.BC=obj[i]['IPT_APT'];
-                node.BJYY=obj[i]['IPT_LF'];
-                node.GKTB=obj[i]['IPT_ATK'];
-                node.GKBJ=obj[i]['IPT_DEF'];
-                node.GKJRJQ=obj[i]['PT_SK1'];
-                node.KSZDJQ=obj[i]['PT_SK2'];
-                node.ZDJSJQ=obj[i]['SK'];
-                node.DL=obj[i]['SUR1'];
-                node.N1=obj[i]['SUR2'];
-                node.N3=obj[i]['SUR3'];
-                node.N2=obj[i]['SUR4'];
-                node.N2=obj[i]['SUR5'];
-                node.N2=obj[i]['SUR6'];
+                node.ID=obj[i]['ID'];
+                node.NAME=obj[i]['NAME'];
+                node.IPT_APT=obj[i]['IPT_APT'];
+                node.IPT_LF=obj[i]['IPT_LF'];
+                node.IPT_ATK=obj[i]['IPT_ATK'];
+                node.IPT_DEF=obj[i]['IPT_DEF'];
+                node.PT_SK1=obj[i]['PT_SK1'];
+                node.PT_SK2=obj[i]['PT_SK2'];
+                node.SK=obj[i]['SK'];
+                node.SUR1=obj[i]['SUR1'];
+                node.SUR2=obj[i]['SUR2'];
+                node.SUR3=obj[i]['SUR3'];
+                node.SUR4=obj[i]['SUR4'];
+                node.SUR5=obj[i]['SUR5'];
+                node.SUR6=obj[i]['SUR6'];
+                
                 Array.push(node);
             }
         });
@@ -115,11 +116,23 @@ cc.Class({
     },
     ChaNPC:function(ID)
     {
+        
         for(var i=0;i<this.Npclist.length;i++)
         {
             if(this.Npclist[i].ID==ID)
             { 
                 return this.Npclist[i];
+            }
+        }
+    },
+    ChaPerson:function(ID)
+    {
+        console.log("tttttttttt：：：：：：：：：：：：：：");
+        for(var i=0;i<this.Personlist.length;i++)
+        {
+            if(this.Personlist[i].ID==ID)
+            { 
+                return this.Personlist[i];
             }
         }
     },

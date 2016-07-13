@@ -81,6 +81,12 @@ cc.Class({
         cc.director.loadScene('xuanguan')
         })));
     },
+    back:function()
+    {
+         this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+        cc.director.loadScene('menu')
+        })));
+    }
    
     
   

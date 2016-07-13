@@ -31,10 +31,14 @@ cc.Class({
         mastornumber:            {    default:0                     },
         boShu:                   {    default:0                     },
         background:              {    default:null,  type:cc.Node   },
+        shezhiviwe:              {    default:null,  type:cc.Node   },
+        bzview:                  {    default:null,  type:cc.Node   }
     },
     onLoad: function ()
     {
+        
          this.fubiaoGk();
+        
     },
     fubiaoGk:function()
     {
@@ -76,6 +80,8 @@ cc.Class({
     {
         console.log("c1223233c****************" + this.mastornumber );
         this.pingBidianji.node.active=false;
+        this.shezhiviwe.active=false;
+         this.bzview.active=false;
         console.log("asdfasdfadf::::::::::::::::::"+this.pingBidianji.active);
 //**************************创建二维数组并将预制物存入*************************//
         this.blockArray=new Array();
@@ -244,8 +250,10 @@ cc.Class({
             console.log('this.shuxing_3'+this.shuxing_3);
             console.log('this.shuxing_4'+this.shuxing_4);
             if( this.heroArry[1].getComponent('hero').isdie==false){
+                
                 if(this.shuxing_0>0&&this.mastor.getComponent('Monster').isdie==false)
                 {
+                   
                     this.heroArry[1].getComponent('hero').aunchAnOrdinaryAttack( this.mastor,( this.shuxing_0-3));
                     this.heroArry[1].getComponent('hero').aunchAnOrdinaryAttack( this.mastor,( this.shuxing_0-3));
                 }else if(this.shuxing_0>0&&this.mastorL.getComponent('Monster').isdie==false)
@@ -301,6 +309,7 @@ cc.Class({
                     }
                 }else if(this.shuxing_3>0&&this.mastorL.getComponent('Monster').isdie==false)
                 {
+                     console.log('this.shuxing_222222222'+this.shuxing_4);
                     this.heroArry[2].getComponent('hero').aunchAnOrdinaryAttack( this.mastorL,( this.shuxing_3-3));
                     var min=0;
                     for(var zl=0;zl<this.heroArry.length-1;zl++)
@@ -354,7 +363,7 @@ cc.Class({
                 this.shuxing_2=0;
                 this.shuxing_3=0;
                 this.shuxing_4=0;
-            //this.mastorAtt();
+            this.mastorAtt();
             
             
             if(this.mastorL.getComponent('Monster').isdie==true&&this.mastor.getComponent('Monster').isdie==true&&this.mastorR.getComponent('Monster').isdie==true)
@@ -377,8 +386,9 @@ cc.Class({
                 }else
                 {
                     console.log('第22222波结束'+this.boShu);
-                    // this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
-                    // cc.director.loadScene('xuanguan')
+                    this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+                    cc.director.loadScene('win')
+                    })));
                 }
 
 
@@ -506,6 +516,17 @@ cc.Class({
                 this.mastorR.getComponent('Monster').aunchAnOrdinaryAttack(this.heroArry[2]);
             }
          }
+         
+       if(this.heroArry[0].getComponent('hero').isdie==true&&this.heroArry[1].getComponent('hero').isdie==true&&this.heroArry[2].getComponent('hero').isdie==true&&this.heroArry[3].getComponent('hero').isdie==true&&this.heroArry[4].getComponent('hero').isdie==true)
+       {
+           console.log('失败');
+            this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+            cc.director.loadScene('lose')
+            })));
+       }
+         
+         
+         
      }, 
     clickFinish:function(event)
     {
@@ -811,7 +832,30 @@ cc.Class({
         
         }
     },
-   
+  //点击帮主按钮响应函数
+   tohelp:function()
+   {
+        this.shezhiviwe.active=true;
+   },
+   //点击帮主里的帮助按钮响应函数
+   tohelp_1:function()
+   {
+        this.bzview.active=true;
+   },
+    tohelp_2:function()
+    {
+         this.bzview.active=false;
+    },
+    tohelp_3:function()
+    {
+        this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+        cc.director.loadScene('menu')
+        })));
+    },
+     tohelp_4:function()
+    {
+        this.shezhiviwe.active=false;
+    },
     //控制下落的函数
     blockMove:function()
     {
