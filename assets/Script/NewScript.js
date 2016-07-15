@@ -8,6 +8,7 @@ cc.Class({
         GKlist:    {  default:[]    },
         Npclist:   {  default:[]    },
         Personlist:{  default:[]    },
+        diaoluo:   {  default:[]    },
     },
     // use this for initialization
     onLoad: function () {
@@ -17,6 +18,7 @@ cc.Class({
         this.GKdubiao    ('jsonDate/gq_table',this.GKlist);
         this.Npcdubiao   ('jsonDate/npc_table',this.Npclist);
         this.Persondubiao('jsonDate/person_table',this.Personlist);
+        //this.diaoluo.push("123");
     },
     GKdubiao:function(path,Array)
     {
@@ -148,6 +150,14 @@ cc.Class({
     getDiJiGuan : function(){  
         return this.DiJiGuan;    
     },
+    setDiaoluo:function(name)
+    {
+        this.diaoluo.push(name);
+    },
+    getDiaoluo:function()
+    {
+        return this.diaoluo;
+    }
     
     
     

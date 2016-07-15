@@ -369,9 +369,15 @@ cc.Class({
             if(this.mastorL.getComponent('Monster').isdie==true&&this.mastor.getComponent('Monster').isdie==true&&this.mastorR.getComponent('Monster').isdie==true)
             {
                 console.log('第一波结束'+this.boShu);
+                
+                 var node = cc.director.getScene().getChildByName('data');  
+                    var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(parseInt(Math.random())*(1-10)+10));
+                 console.log(":::::::::::::::::::wocao"+parseInt(Math.random())*(1-10)+10);
+                
                 if(this.boShu<2)
                 {
                     console.log('第2波结束'+this.boShu);
+                    
                     this.pingBidianji.node.active=true; 
                     this.mastorL.getComponent(cc.Sprite).setVisible(false);
                     this.mastor.getComponent(cc.Sprite).setVisible(false);
@@ -399,6 +405,8 @@ cc.Class({
                 this.pingBidianji.node.active=false;
             }
             console.log('第333波结束'+this.boShu);
+            
+            
         }
      },
      call33:function()

@@ -1,5 +1,7 @@
+let res = {};
 cc.Class({
     extends: cc.Component,
+        
 
     properties: {
         kaiDi:{default:null,type:cc.Prefab},
@@ -12,6 +14,7 @@ cc.Class({
       
         
     },
+    
     // use this for initialization
     onLoad: function () {
         
@@ -30,11 +33,50 @@ cc.Class({
                 }
             }
         }
-        
-        
         this.mask.on('touchstart', this.clickstart, this);
         this.mask.on('touchend', this.clickend, this);
-       
+       this.HuanTUpian();
+    },
+    HuanTUpian:function()
+    {
+        var self=this;
+        var node = cc.director.getScene().getChildByName('data');  
+        var GKnode = node.getComponent('NewScript').getDiaoluo(); 
+        // node.getComponent('NewScript').setDiaoluo("guaiwu_01"); 
+        // node.getComponent('NewScript').setDiaoluo("guaiwu_01"); 
+        // node.getComponent('NewScript').setDiaoluo("guaiwu_01"); 
+        // node.getComponent('NewScript').setDiaoluo("guaiwu_01");
+        console.log("eeeeeeeeeeeeeeeeeeeeeeeee"+GKnode);
+        var tCount = 0;
+        if(GKnode==" ")
+        {
+            for(var i=0;i<GKnode.length;i++ )
+            {
+                //console.log("test assets/"+i);
+                var sprite = self.kaiDiArray[i].getComponent(cc.Sprite);
+                cc.loader.loadRes("jsonDate/"+GKnode[i], cc.SpriteFrame, function (err, spriteFrame) 
+                {
+                    res[spriteFrame.name] = spriteFrame;
+                    tCount++;
+                    if(tCount == GKnode.length)
+                    {
+                        self.onLoaded(GKnode);
+                    }
+                });
+            }
+        }else
+        {
+            console.log("掉落表为空");
+        }
+    },
+    onLoaded:function(GKnode)
+    {
+        var self=this;
+        for(var i=0;i<GKnode.length;i++ )
+        {
+            var sprite = self.kaiDiArray[i].getComponent(cc.Sprite);
+            sprite.spriteFrame = res[GKnode[i]];
+        }
     },
     clickstart:function(event)
     {
@@ -51,17 +93,17 @@ cc.Class({
            switch( this.Dindex)
            {
                 case 0:
-                    var action = cc.moveTo(2, this.kaiback.x-480, this.kaiback.y);
+                    var action = cc.moveTo(1, this.kaiback.x-480, this.kaiback.y);
                     this.kaiback.runAction(action);
                     this.Dindex++;
                    break;
                 case 1:
-                    var action = cc.moveTo(2, this.kaiback.x-490, this.kaiback.y);
+                    var action = cc.moveTo(1, this.kaiback.x-490, this.kaiback.y);
                     this.kaiback.runAction(action);
                     this.Dindex++;
                    break;
                 case 2:
-                    var action = cc.moveTo(2, this.kaiback.x-480, this.kaiback.y);
+                    var action = cc.moveTo(1, this.kaiback.x-480, this.kaiback.y);
                     this.kaiback.runAction(action);
                     this.Dindex++;
                    break;
@@ -74,17 +116,17 @@ cc.Class({
            switch( this.Dindex)
            {
                 case 1:
-                    var action = cc.moveTo(2, this.kaiback.x+480, this.kaiback.y);
+                    var action = cc.moveTo(1, this.kaiback.x+480, this.kaiback.y);
                     this.kaiback.runAction(action);
                     this.Dindex--;
                    break;
                 case 2:
-                    var action = cc.moveTo(2, this.kaiback.x+490, this.kaiback.y);
+                    var action = cc.moveTo(1, this.kaiback.x+490, this.kaiback.y);
                     this.kaiback.runAction(action);
                     this.Dindex--;
                    break;
                 case 3:
-                    var action = cc.moveTo(2, this.kaiback.x+480, this.kaiback.y);
+                    var action = cc.moveTo(1, this.kaiback.x+480, this.kaiback.y);
                     this.kaiback.runAction(action);
                     this.Dindex--;
                    break;

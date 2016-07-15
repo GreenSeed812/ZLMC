@@ -4,8 +4,8 @@ cc.Class({
     properties: {
         
         
-        
-        
+        yinxiao:{default:null,type:cc.Sprite},
+        yinyue:{default:null,type:cc.Sprite}
         
         
     },
@@ -57,10 +57,29 @@ cc.Class({
         cc.director.loadScene('shezhi')
         })));
     },
+    guanBiKaiQiYinXiao:function()
+    {
+        if(this.yinxiao.node.active==false)
+        {
+            this.yinxiao.node.active=true;
+        }else if(this.yinxiao.node.active==true)
+        {
+            this.yinxiao.node.active=false;
+        }
     
-
-
-
+    },
+     guanYinXiao:function()
+    {
+        if(this.yinyue.node.active==false)
+        {
+            this.yinyue.node.active=true;
+        }else if(this.yinyue.node.active==true)
+        {
+            this.yinyue.node.active=false;
+            
+        }
+        
+    }
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 
