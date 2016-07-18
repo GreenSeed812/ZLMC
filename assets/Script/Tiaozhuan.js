@@ -4,8 +4,9 @@ cc.Class({
     properties: {
         
         
-        yinxiao:{default:null,type:cc.Sprite},
-        yinyue:{default:null,type:cc.Sprite}
+        yinxiao:       { default:null,type:cc.Sprite },
+        yinyue:        { default:null,type:cc.Sprite },
+        tishengjimina: { default:null,type:cc.Node   }
         
         
     },
@@ -66,7 +67,6 @@ cc.Class({
         {
             this.yinxiao.node.active=false;
         }
-    
     },
      guanYinXiao:function()
     {
@@ -79,7 +79,17 @@ cc.Class({
             
         }
         
-    }
+    },
+    tishengjiemian:function()
+    {
+        // this.pingBidianji.node.active=false;
+       this. tishengjimina.active=true;
+    },
+    tishengjiemian2:function()
+    {
+        // this.pingBidianji.node.active=false;
+       this. tishengjimina.active=false;
+    },
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 

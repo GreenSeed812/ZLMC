@@ -364,20 +364,18 @@ cc.Class({
                 this.shuxing_3=0;
                 this.shuxing_4=0;
             this.mastorAtt();
-            
-            
             if(this.mastorL.getComponent('Monster').isdie==true&&this.mastor.getComponent('Monster').isdie==true&&this.mastorR.getComponent('Monster').isdie==true)
             {
                 console.log('第一波结束'+this.boShu);
                 
                  var node = cc.director.getScene().getChildByName('data');  
-                    var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(parseInt(Math.random())*(1-10)+10));
-                 console.log(":::::::::::::::::::wocao"+parseInt(Math.random())*(1-10)+10);
+                 console.log("Math.random()*9+1"+(Math.random()*9+1));
+                 var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(Math.round(Math.random()*9+1)));
+                 console.log(":::::::::::::::::::wocao"+(Math.round(Math.random()*9+1)));
                 
                 if(this.boShu<2)
                 {
                     console.log('第2波结束'+this.boShu);
-                    
                     this.pingBidianji.node.active=true; 
                     this.mastorL.getComponent(cc.Sprite).setVisible(false);
                     this.mastor.getComponent(cc.Sprite).setVisible(false);
@@ -396,23 +394,15 @@ cc.Class({
                     cc.director.loadScene('win')
                     })));
                 }
-
-
-
             }else
             {
-                
                 this.pingBidianji.node.active=false;
             }
             console.log('第333波结束'+this.boShu);
-            
-            
         }
      },
      call33:function()
      {
-         
-         
           this.pingBidianji.node.active=false;
           this.mastorL.getComponent(cc.Sprite).setVisible(true);
           //this.mastor.getComponent(cc.Sprite).setVisible(true);
@@ -427,10 +417,8 @@ cc.Class({
           console.log("波数：：：：：：：" + this.boShu );
           this.nextBo();
      },
-     
      nextBo:function()
      {
-         
          var node = cc.director.getScene().getChildByName('data');  
          //获取节点的node脚本组件，并调用脚本里面的函数   
          var guanka = node.getComponent('NewScript').getDiJiGuan();  
@@ -532,9 +520,6 @@ cc.Class({
             cc.director.loadScene('lose')
             })));
        }
-         
-         
-         
      }, 
     clickFinish:function(event)
     {
@@ -885,7 +870,6 @@ cc.Class({
 						  //  this.velea+=1.55;
 						}
 						
-						
 				}else
 				{
 				    snm++;
@@ -897,7 +881,6 @@ cc.Class({
 				         snm=0;
 				    }
 				}
-				
  			}
  		}
     }
