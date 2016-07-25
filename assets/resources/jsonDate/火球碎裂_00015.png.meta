@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "9a4ee821-40a8-40b1-8a3a-4dc7eb321a3b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "火球碎裂_00015": {
+      "ver": "1.0.3",
+      "uuid": "c19b7717-9268-4d18-84c9-f56d74725288",
+      "rawTextureUuid": "9a4ee821-40a8-40b1-8a3a-4dc7eb321a3b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -8.5,
+      "offsetY": -3.5,
+      "trimX": 101,
+      "trimY": 36,
+      "width": 421,
+      "height": 415,
+      "rawWidth": 640,
+      "rawHeight": 480,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

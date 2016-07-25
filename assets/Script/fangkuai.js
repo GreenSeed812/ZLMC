@@ -1,4 +1,4 @@
-﻿cc.Class({
+cc.Class({
     extends: cc.Component,
 
     properties: {
@@ -11,6 +11,10 @@
     },
 
     // use this for initialization
+    onEffectEnd: function (string) {
+        console.log('onEffectEnd: param1[%s]', string);
+        this.getComponent(cc.Sprite).setVisible(false);
+    },
     onLoad: function ()
     {
         var sprite = this.getComponent(cc.Sprite);

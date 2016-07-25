@@ -7,10 +7,6 @@ cc.Class({
         ID:   { default:null },
         ID1:  { default:null },
         ID2:  { default:null },
-        
-        
-        
-        
     },
     // use this for initialization
     onLoad: function () {
@@ -20,7 +16,7 @@ cc.Class({
         var data = node.getComponent('NewScript').getdata();  
         cc.log('常驻节点的data值为'+data);  
         this.GuanK=data;
-        cc.log('常驻节点的data值为'+ this.GuanK); 
+        cc.log('常驻节点的data值为11'+ this.GuanK); 
         this.GKnum();
     },
     GKnum:function()
@@ -64,14 +60,13 @@ cc.Class({
                 break;
         }
     },
-    
     jinruzhandou1:function() 
     {
         console.log("进入第"+this.ID+"关");
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID);  
-        this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
     },
@@ -81,7 +76,7 @@ cc.Class({
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID1);  
-        this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
     },
@@ -91,21 +86,17 @@ cc.Class({
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID2);  
-        this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
     },
     back:function()
     {
-         this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+         this.node.runAction(cc.sequence(cc.fadeOut(0.1),cc.callFunc(function(){
         cc.director.loadScene('GuanQia')
         })));
     }
-    
-    
-    
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
-
     // },
 });

@@ -46,7 +46,7 @@
                 "width": 672
               },
               {
-                "active": 0,
+                "active": 1,
                 "height": 293,
                 "panels": [
                   "console",
@@ -75,6 +75,12 @@
         "row": true,
         "type": "dock"
       }
+    },
+    "window-1469405490041": {
+      "x": -8,
+      "y": -8,
+      "width": 1456,
+      "height": 920
     }
   }
 }

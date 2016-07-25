@@ -29,7 +29,6 @@ cc.Class({
         this.HP=GKnode.IPT_LF;
         this.defenseForce=GKnode.IPT_DEF;
         this.attackPower=GKnode.IPT_ATK;
-        
         this.Label.string=''+this.HP.toString();
     },
     aunchAnOrdinaryAttack:function(monster,blocknum)

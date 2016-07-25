@@ -205,7 +205,9 @@ cc.Class({
             {
                 // console.log("this.eliminateDuplicateArray"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getL()+','+ "linshitest数组中的元素"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getH());
                 this.eliminateDuplicateArray[c].getComponent('fangkuai').WhetherToEliminate=true;
-                this.eliminateDuplicateArray[c].getComponent(cc.Sprite).setVisible(false);
+               // this.eliminateDuplicateArray[c].getComponent(cc.Sprite).setVisible(false);
+                this.eliminateDuplicateArray[c].getComponent(cc.Animation).play();
+                
             }
               for(var c1=0;c1<this.eliminateDuplicateArray.length;c1++)
             {
