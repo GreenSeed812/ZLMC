@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>10000.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{633,315},{73,73}}</string>
+				<key>offset</key>
+				<string>{0,-15}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{832,675},{107,106}}</string>
+				<key>offset</key>
+				<string>{-5,-12}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{832,531},{144,151}}</string>
+				<key>offset</key>
+				<string>{-12,-14}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10003.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{633,531},{181,199}}</string>
+				<key>offset</key>
+				<string>{-22,-18}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10004.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{706,317},{214,240}}</string>
+				<key>offset</key>
+				<string>{-31,-22}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10005.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{355,315},{246,278}}</string>
+				<key>offset</key>
+				<string>{-39,-26}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10006.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{715,0},{279,317}}</string>
+				<key>offset</key>
+				<string>{-48,-31}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10007.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{355,0},{315,360}}</string>
+				<key>offset</key>
+				<string>{-57,-40}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+			<key>10008.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{355,322}}</string>
+				<key>offset</key>
+				<string>{-68,-8}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,480}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>teXiao_jin.png</string>
+			<key>realTextureFileName</key>
+			<string>teXiao_jin.png</string>
+			<key>size</key>
+			<string>{994,781}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>994</integer>
+			<key>height</key>
+			<integer>781</integer>
+		</dict>
+	</dict>
+</plist>

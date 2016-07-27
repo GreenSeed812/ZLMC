@@ -32,7 +32,8 @@ cc.Class({
         boShu:                   {    default:0                     },
         background:              {    default:null,  type:cc.Node   },
         shezhiviwe:              {    default:null,  type:cc.Node   },
-        bzview:                  {    default:null,  type:cc.Node   }
+        bzview:                  {    default:null,  type:cc.Node   },
+        animation:               {  default:null}
     },
     onLoad: function ()
     {
@@ -206,7 +207,7 @@ cc.Class({
                 // console.log("this.eliminateDuplicateArray"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getL()+','+ "linshitest数组中的元素"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getH());
                 this.eliminateDuplicateArray[c].getComponent('fangkuai').WhetherToEliminate=true;
                // this.eliminateDuplicateArray[c].getComponent(cc.Sprite).setVisible(false);
-                this.eliminateDuplicateArray[c].getComponent(cc.Animation).play();
+               this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play();
                 
             }
               for(var c1=0;c1<this.eliminateDuplicateArray.length;c1++)
@@ -391,10 +392,18 @@ cc.Class({
                     this.background.runAction(myAction);
                 }else
                 {
+                    
+ ////////////////////////////////////////////////////胜利的时候走这里/////////////////////////////////////////////////////////////////////////////                   
                     console.log('第22222波结束'+this.boShu);
-                    this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
-                    cc.director.loadScene('win')
-                    })));
+                    
+                    
+                    // this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+                    // cc.director.loadScene('GuanQia');
+                    // })));
+                    
+                    
+                    
+                    
                 }
             }else
             {
@@ -517,10 +526,45 @@ cc.Class({
          
        if(this.heroArry[0].getComponent('hero').isdie==true&&this.heroArry[1].getComponent('hero').isdie==true&&this.heroArry[2].getComponent('hero').isdie==true&&this.heroArry[3].getComponent('hero').isdie==true&&this.heroArry[4].getComponent('hero').isdie==true)
        {
-           console.log('失败');
-            this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
-            cc.director.loadScene('lose')
-            })));
+           
+           
+           
+           
+///////////////////////////////////////这里是失败的/////////////////////////////////////////////////////////////////////////////           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+        //   console.log('失败');
+        //     this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
+        //     cc.director.loadScene('lose')
+        //     })));
+            
+            
+            
+            
+            
+            
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
        }
      }, 
     clickFinish:function(event)
@@ -854,36 +898,39 @@ cc.Class({
     //控制下落的函数
     blockMove:function()
     {
-        var snm=0;
-        
-        for(var i=0; i<5; i++)
- 		{
- 			for(var j=0; j<6; j++)
- 			{
-				if(this.blockArray[i][j].getComponent('fangkuai').WhetherToEliminate!= true && this.blockArray[i][j].y>(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360))
-				{
-				        // console.log("123456"+this.velea);
-						this.blockArray[i][j].y-=18;
-						if(this.blockArray[i][j].y<(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360))
-						{
-						    this.blockArray[i][j].y=(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360)
-						}else
-						{
-						  //  this.velea+=1.55;
-						}
-						
-				}else
-				{
-				    snm++;
-				    if(snm==30)
-				    {
-				         this.velea=1;
-				        this.xialuo=false;
-				        this.finish();
-				         snm=0;
-				    }
-				}
- 			}
- 		}
+        console.log(":::::::"+this.animation.isPlaying);
+        if( this.animation!=null&& this.animation.isPlaying==false){
+            var snm=0;
+            
+            for(var i=0; i<5; i++)
+     		{
+     			for(var j=0; j<6; j++)
+     			{
+    				if(this.blockArray[i][j].getComponent('fangkuai').WhetherToEliminate!= true && this.blockArray[i][j].y>(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360))
+    				{
+    				        // console.log("123456"+this.velea);
+    						this.blockArray[i][j].y-=128;
+    						if(this.blockArray[i][j].y<(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360))
+    						{
+    						    this.blockArray[i][j].y=(this.blockArray[i][j].getComponent('fangkuai').getH()*-180+360)
+    						}else
+    						{
+    						  //  this.velea+=1.55;
+    						}
+    						
+    				}else
+    				{
+    				    snm++;
+    				    if(snm==30)
+    				    {
+    				         this.velea=1;
+    				        this.xialuo=false;
+    				        this.finish();
+    				         snm=0;
+    				    }
+    				}
+     			}
+     		}
+        }
     }
 });

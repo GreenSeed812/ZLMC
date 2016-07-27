@@ -1,240 +1,50 @@
-2016-07-24T23:38:25.328Z - normal: Load ~/.CocosCreator/settings.json
-2016-07-24T23:38:25.337Z - normal: checking language setting...
-2016-07-24T23:38:25.337Z - normal: Language: zh
-2016-07-24T23:38:26.410Z - success: protocol editor-framework registerred
-2016-07-24T23:38:26.410Z - success: protocol app registerred
-2016-07-24T23:38:26.410Z - success: protocol packages registerred
-2016-07-24T23:38:26.410Z - success: protocol unpack registerred
-2016-07-24T23:38:26.560Z - normal: connected!
-2016-07-24T23:38:26.566Z - normal: Check project E:\ZLMC
-2016-07-24T23:38:26.572Z - normal: Initializing Cocos Creator Editor
-2016-07-24T23:38:27.465Z - normal: Initializing Cocos2d
-2016-07-24T23:38:28.787Z - normal: Initializing Asset Database
-2016-07-24T23:38:28.913Z - success: protocol uuid registerred
-2016-07-24T23:38:28.913Z - success: protocol uuid registerred
-2016-07-24T23:38:28.914Z - success: protocol thumbnail registerred
-2016-07-24T23:38:28.914Z - normal: Loading editor/builtin packages
-2016-07-24T23:38:29.311Z - success: assets loaded
-2016-07-24T23:38:29.315Z - success: builder loaded
-2016-07-24T23:38:29.324Z - success: hierarchy loaded
-2016-07-24T23:38:29.332Z - success: inspector loaded
-2016-07-24T23:38:29.334Z - success: keystore loaded
-2016-07-24T23:38:29.343Z - success: node-library loaded
-2016-07-24T23:38:29.349Z - success: preferences loaded
-2016-07-24T23:38:29.407Z - success: project-importer loaded
-2016-07-24T23:38:29.412Z - success: project-settings loaded
-2016-07-24T23:38:29.416Z - success: ui-kit loaded
-2016-07-24T23:38:29.422Z - success: ui-grid loaded
-2016-07-24T23:38:29.433Z - success: scene loaded
-2016-07-24T23:38:29.436Z - success: sprite-editor loaded
-2016-07-24T23:38:29.452Z - success: timeline loaded
-2016-07-24T23:38:29.455Z - success: ui-kit-extra loaded
-2016-07-24T23:38:29.455Z - normal: Loading builtin packages
-2016-07-24T23:38:29.463Z - success: asset-db-debugger loaded
-2016-07-24T23:38:29.466Z - success: code-editor loaded
-2016-07-24T23:38:29.467Z - success: color-picker loaded
-2016-07-24T23:38:29.474Z - success: console loaded
-2016-07-24T23:38:29.477Z - success: package-manager loaded
-2016-07-24T23:38:29.486Z - success: tester loaded
-2016-07-24T23:38:29.489Z - success: ui-tree loaded
-2016-07-24T23:38:29.674Z - normal: Initializing project E:\ZLMC
-2016-07-24T23:38:29.679Z - normal: Loading packages
-2016-07-24T23:38:29.683Z - normal: Run Application
-2016-07-24T23:38:41.792Z - success: preview server running at http://localhost:7456
-2016-07-24T23:38:41.795Z - normal: Compiling scripts...
-2016-07-24T23:38:45.009Z - normal: Compiled successfully
-2016-07-24T23:38:52.060Z - normal: 1.1.1
-2016-07-25T01:12:29.630Z - normal: Compiled successfully
-2016-07-25T01:12:52.199Z - normal: Compiled successfully
-2016-07-25T01:14:05.052Z - normal: Compiled successfully
-2016-07-25T01:14:51.782Z - normal: Compiled successfully
-2016-07-25T01:15:10.003Z - normal: Compiled successfully
-2016-07-25T01:15:46.224Z - normal: Compiled successfully
-2016-07-25T01:15:57.100Z - normal: Compiled successfully
-2016-07-25T01:18:06.582Z - normal: Compiled successfully
-2016-07-25T01:18:31.428Z - normal: Compiled successfully
-2016-07-25T01:19:31.958Z - normal: Compiled successfully
-2016-07-25T01:20:41.476Z - normal: Compiled successfully
-2016-07-25T01:20:41.552Z - warn: The "type" attribute of "XuanGuan.fanhui" is undefined when loading script.
-2016-07-25T01:21:32.170Z - normal: Compiled successfully
-2016-07-25T01:21:32.254Z - warn: The "type" attribute of "XuanGuan.fanhui" is undefined when loading script.
-2016-07-25T01:22:28.347Z - normal: Compiled successfully
-2016-07-25T01:29:11.794Z - normal: Compiled successfully
-2016-07-25T01:49:17.717Z - normal: Compiled successfully
-2016-07-25T01:50:44.172Z - normal: Compiled successfully
-2016-07-25T01:52:14.289Z - normal: Compiled successfully
-2016-07-25T01:53:56.964Z - normal: Compiled successfully
-2016-07-25T02:52:25.252Z - normal: Compiled successfully
-2016-07-25T02:58:33.694Z - normal: Compiled successfully
-2016-07-25T02:59:07.752Z - normal: Compiled successfully
-2016-07-25T03:00:01.908Z - normal: Compiled successfully
-2016-07-25T03:04:54.519Z - normal: Compiled successfully
-2016-07-25T03:05:33.221Z - normal: Compiled successfully
-2016-07-25T03:40:12.296Z - error: TypeError: DC.event.updateEvents is not a function
-    at file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/timeline/panel/widget/event-bar/event-bar.js:1:5458
-    at HTMLDocument._ (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ui\utils\dom-utils.js:1:3729)
-2016-07-25T03:40:25.871Z - error: Error: unexpected key undefined
-    at Polymer.Collection._parseKey (app://bower_components/polymer/polymer.html:3771:7)
-    at Polymer.Collection.removeKey (app://bower_components/polymer/polymer.html:3735:12)
-    at Polymer.Collection._applySplices (app://bower_components/polymer/polymer.html:3817:6)
-    at Function.Polymer.Collection.applySplices (app://bower_components/polymer/polymer.html:3835:20)
-    at editor-timeline-event-item.Polymer.Base._addFeature._notifySplices (app://bower_components/polymer/polymer.html:2149:32)
-    at editor-timeline-event-item.Polymer.Base._addFeature._notifySplice (app://bower_components/polymer/polymer.html:2165:6)
-    at editor-timeline-event-item.Polymer.Base._addFeature.splice (app://bower_components/polymer/polymer.html:2210:6)
-    at editor-timeline-event-item.Editor.polymerElement._onParamDeleted (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/timeline/panel/event/event-item.js:1:508)
-    at editor-timeline-event-item.handler (app://bower_components/polymer/polymer.html:471:17)
-    at editor-timeline-event-item-param.Polymer.Base._addFeature.fire (app://bower_components/polymer/polymer.html:1306:6)
-2016-07-25T03:41:01.573Z - failed: [db-task][update] failed!
-2016-07-25T03:41:01.574Z - error: Failed to update asset db://assets/Script/fangkuai.js, messages: SyntaxError: unknown: Unexpected token (17:4)
-        console.log('onAnimCompleted: param1[%s], param2[%s]', num, string);
-    }
-    onLoad: function ()
-    {
-        var sprite = this.getComponent(cc.Sprite);
-        this.index=parseInt(Math.random()*(5-0)+0);
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseObj (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:596:12)
-    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:392:19)
-    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
-    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
-    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
-    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
-    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
-    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-07-25T03:41:11.319Z - failed: [db-task][update] failed!
-2016-07-25T03:41:11.319Z - error: Failed to update asset db://assets/Script/fangkuai.js, messages: SyntaxError: unknown: Unexpected token (17:4)
-        console.log('onAnimCompleted: param1[%s], param2[%s]', num, string);
-    }
-    onLoad: function ()
-    {
-        var sprite = this.getComponent(cc.Sprite);
-        this.index=parseInt(Math.random()*(5-0)+0);
-    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
-    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
-    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
-    at Parser.pp.parseObj (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:596:12)
-    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:392:19)
-    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
-    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
-    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
-    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
-    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
-    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-2016-07-25T03:41:15.755Z - normal: Compiled successfully
-2016-07-25T03:41:16.908Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.changeCurrentClip (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3119)
-    at Object.AnimUtils.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:7084)
-    at Object.EditMode.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:976)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:1351
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\sandbox.js:1:2194
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-    at Immediate._onImmediate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:1206:34)
-    at processImmediate [as _immediateCallback] (timers.js:383:17)
-2016-07-25T03:41:16.918Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4203)
-    at Object.defineProperties.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:15783)
-    at editor-scene.Editor.polymerPanel.messages.selection:activated (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:11317)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:713)
-    at emitThree (events.js:102:20)
-    at EventEmitter.emit (events.js:175:7)
-2016-07-25T03:41:28.589Z - normal: Compiled successfully
-2016-07-25T03:41:29.719Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.changeCurrentClip (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3119)
-    at Object.AnimUtils.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:7084)
-    at Object.EditMode.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:976)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:1351
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\sandbox.js:1:2194
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-    at Immediate._onImmediate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:1206:34)
-    at processImmediate [as _immediateCallback] (timers.js:383:17)
-2016-07-25T03:41:29.720Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4203)
-    at Object.defineProperties.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:15783)
-    at editor-scene.Editor.polymerPanel.messages.selection:activated (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:11317)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:713)
-    at emitThree (events.js:102:20)
-    at EventEmitter.emit (events.js:175:7)
-2016-07-25T03:41:32.472Z - normal: Compiled successfully
-2016-07-25T03:41:33.232Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.changeCurrentClip (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3119)
-    at Object.AnimUtils.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:7084)
-    at Object.EditMode.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:976)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:1351
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\sandbox.js:1:2194
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-    at Immediate._onImmediate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:1206:34)
-    at processImmediate [as _immediateCallback] (timers.js:383:17)
-2016-07-25T03:41:33.237Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4203)
-    at Object.defineProperties.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:15783)
-    at editor-scene.Editor.polymerPanel.messages.selection:activated (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:11317)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:713)
-    at emitThree (events.js:102:20)
-    at EventEmitter.emit (events.js:175:7)
-2016-07-25T03:41:37.598Z - normal: Compiled successfully
-2016-07-25T03:41:38.509Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.changeCurrentClip (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3119)
-    at Object.AnimUtils.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:7084)
-    at Object.EditMode.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:976)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:1351
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\sandbox.js:1:2194
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
-    at Immediate._onImmediate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:1206:34)
-    at processImmediate [as _immediateCallback] (timers.js:383:17)
-2016-07-25T03:41:38.513Z - error: Can't generate child path for node.
-    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
-    at Object.AnimUtils.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4203)
-    at Object.defineProperties.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:15783)
-    at editor-scene.Editor.polymerPanel.messages.selection:activated (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:11317)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:713)
-    at emitThree (events.js:102:20)
-    at EventEmitter.emit (events.js:175:7)
-2016-07-25T03:42:01.816Z - error: The thing you want to instantiate is destroyed
-    at Object.instantiate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\instantiate.js:56:12)
-    at Object.PrefabUtils.getDumpableNode (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:2186)
-    at Object.PrefabUtils.createAppliedPrefab (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:2858)
-    at Object.defineProperties.applyPrefab (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:14277)
-    at Object.PrefabEditor.save (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:2094)
-    at Object.PrefabEditor.close (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:1802)
-    at Object.EditMode.pop (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:585)
-    at Object.EditMode.close (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:817)
-    at editor-scene.Editor.polymerPanel.confirmCloseScene (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:1945)
-2016-07-25T03:42:01.817Z - error: TypeError: Cannot read property '_components' of null
-    at visitObjTypeProperties (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:525)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:2225
-    at visitNode (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:123)
-    at Object.PrefabUtils.getDumpableNode (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:2201)
-    at Object.PrefabUtils.createAppliedPrefab (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:2858)
-    at Object.defineProperties.applyPrefab (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:14277)
-    at Object.PrefabEditor.save (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:2094)
-    at Object.PrefabEditor.close (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:1802)
-    at Object.EditMode.pop (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:585)
-    at Object.EditMode.close (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:817)
-2016-07-25T03:56:11.187Z - normal: Compiled successfully
-2016-07-25T03:56:15.502Z - normal: Compiled successfully
-2016-07-25T04:01:32.538Z - info: shutdown preview server
+2016-07-27T00:25:39.730Z - normal: Load ~/.CocosCreator/settings.json
+2016-07-27T00:25:39.736Z - normal: checking language setting...
+2016-07-27T00:25:39.737Z - normal: Language: zh
+2016-07-27T00:25:40.898Z - success: protocol editor-framework registerred
+2016-07-27T00:25:40.898Z - success: protocol app registerred
+2016-07-27T00:25:40.898Z - success: protocol packages registerred
+2016-07-27T00:25:40.898Z - success: protocol unpack registerred
+2016-07-27T00:25:40.993Z - normal: connected!
+2016-07-27T00:25:41.000Z - normal: Check project E:\ZLMC
+2016-07-27T00:25:41.007Z - normal: Initializing Cocos Creator Editor
+2016-07-27T00:25:41.945Z - normal: Initializing Cocos2d
+2016-07-27T00:25:42.282Z - normal: Initializing Asset Database
+2016-07-27T00:25:42.400Z - success: protocol uuid registerred
+2016-07-27T00:25:42.400Z - success: protocol uuid registerred
+2016-07-27T00:25:42.400Z - success: protocol thumbnail registerred
+2016-07-27T00:25:42.400Z - normal: Loading editor/builtin packages
+2016-07-27T00:25:42.843Z - success: assets loaded
+2016-07-27T00:25:42.847Z - success: builder loaded
+2016-07-27T00:25:42.857Z - success: hierarchy loaded
+2016-07-27T00:25:42.867Z - success: inspector loaded
+2016-07-27T00:25:42.870Z - success: keystore loaded
+2016-07-27T00:25:42.879Z - success: node-library loaded
+2016-07-27T00:25:42.885Z - success: preferences loaded
+2016-07-27T00:25:42.978Z - success: project-importer loaded
+2016-07-27T00:25:42.984Z - success: project-settings loaded
+2016-07-27T00:25:42.988Z - success: ui-kit loaded
+2016-07-27T00:25:43.020Z - success: ui-grid loaded
+2016-07-27T00:25:43.053Z - success: scene loaded
+2016-07-27T00:25:43.058Z - success: sprite-editor loaded
+2016-07-27T00:25:43.077Z - success: timeline loaded
+2016-07-27T00:25:43.080Z - success: ui-kit-extra loaded
+2016-07-27T00:25:43.080Z - normal: Loading builtin packages
+2016-07-27T00:25:43.094Z - success: asset-db-debugger loaded
+2016-07-27T00:25:43.097Z - success: code-editor loaded
+2016-07-27T00:25:43.108Z - success: color-picker loaded
+2016-07-27T00:25:43.115Z - success: console loaded
+2016-07-27T00:25:43.119Z - success: package-manager loaded
+2016-07-27T00:25:43.127Z - success: tester loaded
+2016-07-27T00:25:43.130Z - success: ui-tree loaded
+2016-07-27T00:25:43.216Z - normal: Initializing project E:\ZLMC
+2016-07-27T00:25:43.220Z - normal: Loading packages
+2016-07-27T00:25:43.224Z - normal: Run Application
+2016-07-27T00:25:58.548Z - success: preview server running at http://localhost:7456
+2016-07-27T00:25:58.550Z - normal: Compiling scripts...
+2016-07-27T00:26:01.671Z - normal: Compiled successfully
+2016-07-27T00:26:07.435Z - normal: 1.1.1
+2016-07-27T02:07:28.908Z - normal: Compiled successfully
+2016-07-27T02:08:55.203Z - normal: Compiled successfully
+2016-07-27T02:09:24.928Z - normal: Compiled successfully
+2016-07-27T02:18:24.490Z - normal: Compiled successfully

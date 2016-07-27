@@ -38,28 +38,28 @@
             "docks": [
               {
                 "active": 0,
-                "height": 453,
+                "height": 487,
                 "panels": [
                   "scene"
                 ],
                 "type": "panel",
-                "width": 672
+                "width": 895
               },
               {
-                "active": 1,
-                "height": 293,
+                "active": 0,
+                "height": 259,
                 "panels": [
                   "console",
                   "timeline"
                 ],
                 "type": "panel",
-                "width": 672
+                "width": 895
               }
             ],
             "height": 749,
             "row": false,
             "type": "dock",
-            "width": 672
+            "width": 895
           },
           {
             "active": 0,
@@ -68,7 +68,7 @@
               "inspector"
             ],
             "type": "panel",
-            "width": 523
+            "width": 300
           }
         ],
         "no-collapse": true,
@@ -76,7 +76,7 @@
         "type": "dock"
       }
     },
-    "window-1469405490041": {
+    "window-1469583947936": {
       "x": -8,
       "y": -8,
       "width": 1456,
