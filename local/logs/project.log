@@ -48,3 +48,92 @@
 2016-07-27T02:08:55.203Z - normal: Compiled successfully
 2016-07-27T02:09:24.928Z - normal: Compiled successfully
 2016-07-27T02:18:24.490Z - normal: Compiled successfully
+2016-07-27T02:47:32.511Z - normal: Compiled successfully
+2016-07-27T02:51:03.724Z - normal: Compiled successfully
+2016-07-27T02:51:21.032Z - normal: Compiled successfully
+2016-07-27T02:51:30.700Z - normal: Compiled successfully
+2016-07-27T02:55:11.876Z - failed: [db-task][update] failed!
+2016-07-27T02:55:11.877Z - error: Failed to update asset db://assets/Script/NewScript.js, messages: SyntaxError: unknown: Unexpected token (60:35)
+            {
+                var node={};
+                node.ID=obj[i]['ID';
+                node.NAME=obj[i]['NAME'];
+                node.IPT_APT=obj[i]['IPT_APT'];
+                node.IPT_LF=obj[i]['IPT_LF'];
+    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
+    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
+    at Parser.pp.expect (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:76:33)
+    at Parser.pp.parseSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:262:12)
+    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:240:17)
+    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
+    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
+    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
+    at Parser.pp.parseMaybeAssign (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:112:19)
+    at Parser.pp.parseMaybeAssign (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:132:23)
+    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
+    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
+    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+2016-07-27T02:55:39.537Z - normal: Compiled successfully
+2016-07-27T02:59:45.927Z - normal: Compiled successfully
+2016-07-27T03:02:49.738Z - normal: Compiled successfully
+2016-07-27T03:36:38.216Z - normal: Compiled successfully
+2016-07-27T03:36:39.298Z - error: Can't generate child path for node.
+    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
+    at Object.AnimUtils.changeCurrentClip (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3119)
+    at Object.AnimUtils.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:7084)
+    at Object.EditMode.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:976)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:1351
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\sandbox.js:1:2194
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at Immediate._onImmediate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:1206:34)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+2016-07-27T03:36:39.311Z - error: Can't generate child path for node.
+    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
+    at Object.AnimUtils.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4203)
+    at Object.defineProperties.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:15783)
+    at editor-scene.Editor.polymerPanel.messages.selection:activated (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:11317)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:713)
+    at emitThree (events.js:102:20)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-27T03:38:46.361Z - error: Can't generate child path for node.
+    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
+    at Object.AnimUtils.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4203)
+    at Object.defineProperties.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:15783)
+    at editor-scene.Editor.polymerPanel.messages.selection:activated (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:11317)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:713)
+    at emitThree (events.js:102:20)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-27T03:40:31.695Z - normal: Compiled successfully
+2016-07-27T03:40:32.554Z - error: Can't generate child path for node.
+    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
+    at Object.AnimUtils.changeCurrentClip (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3119)
+    at Object.AnimUtils.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:7084)
+    at Object.EditMode.softReload (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:976)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:1351
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\sandbox.js:1:2194
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at Immediate._onImmediate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:1206:34)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+2016-07-27T03:40:32.576Z - error: Can't generate child path for node.
+    at Object.AnimUtils.showTrajectoryGizmo (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3525)
+    at Object.AnimUtils.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4203)
+    at Object.defineProperties.activate (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:15783)
+    at editor-scene.Editor.polymerPanel.messages.selection:activated (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:11317)
+    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:713)
+    at emitThree (events.js:102:20)
+    at EventEmitter.emit (events.js:175:7)
+2016-07-27T03:42:14.252Z - normal: Compiled successfully
+2016-07-27T03:42:26.530Z - normal: Compiled successfully
+2016-07-27T03:44:14.543Z - normal: Compiled successfully
+2016-07-27T03:46:57.796Z - normal: Compiled successfully
+2016-07-27T03:47:58.351Z - normal: Compiled successfully
+2016-07-27T03:49:00.347Z - normal: Compiled successfully
+2016-07-27T03:49:58.088Z - normal: Compiled successfully
+2016-07-27T03:50:58.434Z - normal: Compiled successfully
+2016-07-27T04:02:44.232Z - info: shutdown preview server

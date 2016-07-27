@@ -9,15 +9,18 @@ cc.Class({
         Npclist:   {  default:[]    },
         Personlist:{  default:[]    },
         diaoluo:   {  default:[]    },
+        item:{  default:[]    },
     },
     // use this for initialization
     onLoad: function () {
+        
         cc.game.addPersistRootNode(this.node);
         console.log("is Persist node " + cc.game.isPersistRootNode(this.node));
         //加载资源
         this.GKdubiao    ('jsonDate/gq_table',this.GKlist);
         this.Npcdubiao   ('jsonDate/npc_table',this.Npclist);
         this.Persondubiao('jsonDate/person_table',this.Personlist);
+        this.item_table  ('jsonDate/item_table',this.item);
         //this.diaoluo.push("123");
     },
     GKdubiao:function(path,Array)
@@ -104,6 +107,65 @@ cc.Class({
                 Array.push(node);
             }
         });
+    },
+     Npcdubiao:function(path,Array)
+    {
+        let self = this;
+        cc.loader.loadRes(path, function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            for(var i=2;i<obj.length;i++ )
+            {
+                var node={};
+                node.ID=obj[i]['ID'];
+                node.NAME=obj[i]['NAME'];
+                node.IPT_APT=obj[i]['IPT_APT'];
+                node.IPT_LF=obj[i]['IPT_LF'];
+                node.IPT_ATK=obj[i]['IPT_ATK'];
+                node.IPT_DEF=obj[i]['IPT_DEF'];
+                node.IPT_CRIT=obj[i]['IPT_CRIT'];
+                node.IPT_IDEF=obj[i]['IPT_IDEF'];
+                node.PT_SK=obj[i]['PT_SK'];
+                node.PT_SK=obj[i]['PT_SK'];
+                node.SK1=obj[i]['SK1'];
+                node.SK2=obj[i]['SK2'];
+                node.SK3=obj[i]['SK3'];
+                node.SK4=obj[i]['SK4'];
+                node.SUR=obj[i]['SUR'];
+                node.PositionX=obj[i]['PositionX'];
+                node.PositionY=obj[i]['PositionY'];
+                Array.push(node);
+            }
+        });
+    }, 
+    item_table:function(path,Array)
+    {
+        let self = this;
+        cc.loader.loadRes(path, function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            for(var i=2;i<obj.length;i++ )
+            {
+                var node={};
+                node.ID=obj[i]['ID'];
+                node.NAME=obj[i]['NAME'];
+                node.INS=obj[i]['INS'];
+                node.IPT_QUA=obj[i]['IPT_QUA'];
+                node.ICO=obj[i]['ICO'];
+                node.jy=obj[i]['jy'];
+                Array.push(node);
+            }
+        });
+    },
+    ChaItem:function(ID)
+    {
+        for(var i=0;i<this.item_table.length;i++)
+        {
+            if(this.item_table[i].ID==ID)
+            { 
+                return this.item_table[i];
+            }
+        }
     },
     ChaGK:function(ID,boCi)
     {

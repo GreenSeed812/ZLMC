@@ -29,11 +29,11 @@
       "id": "4734c20c-0db8-4eb2-92ea-e692f4d70934"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "7b81d4e8-ec84-4716-968d-500ac1d78a54"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "12bf6bd7-9e59-46b2-92b3-43a66e0e33e7"
     },
     {
@@ -57,7 +57,7 @@
       "id": "2b803885-5f41-4fc2-8c44-3feefc64f71d"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "7d62a4c0-fe5f-473d-b55f-4d6a4cbf29a6"
     },
     {
@@ -511,10 +511,6 @@
     {
       "folded": true,
       "id": "e5de3790-c848-40d7-a6f3-175fc6faa76f"
-    },
-    {
-      "folded": true,
-      "id": "7a0bb1ca-a402-4b17-96dd-4bdf3f9f8b32"
     },
     {
       "folded": true,

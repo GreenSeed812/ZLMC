@@ -207,7 +207,31 @@ cc.Class({
                 // console.log("this.eliminateDuplicateArray"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getL()+','+ "linshitest数组中的元素"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getH());
                 this.eliminateDuplicateArray[c].getComponent('fangkuai').WhetherToEliminate=true;
                // this.eliminateDuplicateArray[c].getComponent(cc.Sprite).setVisible(false);
-               this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play();
+               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==0)
+               {
+                     this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_mu');
+               }
+                if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==1)
+               {
+                   this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_tu');
+                  
+               }
+               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==2)
+               {
+                   this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_jin');
+                   
+                
+               }
+               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==3)
+               {
+                      this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_shui');
+               }
+               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==4)
+               {
+                    this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('txiao');
+                  
+               }
+               
                 
             }
               for(var c1=0;c1<this.eliminateDuplicateArray.length;c1++)
