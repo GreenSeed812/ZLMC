@@ -4,12 +4,17 @@ cc.Class({
     properties: {
         
         Gk:        {  default:null  },
-        DiJiGuan:  {  default:null  },
-        GKlist:    {  default:[]    },
-        Npclist:   {  default:[]    },
-        Personlist:{  default:[]    },
-        diaoluo:   {  default:[]    },
-        item:{  default:[]    },
+        DiJiGuan:   {  default:null  },
+        GKlist:     {  default:[]    },
+        Npclist:    {  default:[]    },
+        Personlist: {  default:[]    },
+        diaoluo:    {  default:[]    },
+        itemlist:   {  default:[]    },
+        skilllist:  {  default:[]    },
+        tpSkilllist:{  default:[]    },
+        jqList:     {  default:[]    },
+        dlList:     {  default:[]    },
+        exList:     {  default:[]    }
     },
     // use this for initialization
     onLoad: function () {
@@ -17,10 +22,15 @@ cc.Class({
         cc.game.addPersistRootNode(this.node);
         console.log("is Persist node " + cc.game.isPersistRootNode(this.node));
         //加载资源
-        this.GKdubiao    ('jsonDate/gq_table',this.GKlist);
-        this.Npcdubiao   ('jsonDate/npc_table',this.Npclist);
-        this.Persondubiao('jsonDate/person_table',this.Personlist);
-        this.item_table  ('jsonDate/item_table',this.item);
+        this.GKdubiao      ('jsonDate/gq_table',this.GKlist           );
+        this.Npcdubiao     ('jsonDate/npc_table',this.Npclist         );
+        this.Persondubiao  ('jsonDate/person_table',this.Personlist   );
+        this.item_table    ('jsonDate/item_table',this.itemlist       );
+        this.skill_table   ('jsonDate/skill_table',this.skilllist     );
+        this.tp_skill_table('jsonDate/tp-skill_table',this.tpSkilllist);
+        this.jq_table      ('jsonDate/jq_table',this.jqList           );
+        this.dl_table      ('jsonDate/dl_table',this.dlList           );
+        this.ex_table      ('jsonDate/ex',this.exList           );
         //this.diaoluo.push("123");
     },
     GKdubiao:function(path,Array)
@@ -103,7 +113,6 @@ cc.Class({
                 node.SUR4=obj[i]['SUR4'];
                 node.SUR5=obj[i]['SUR5'];
                 node.SUR6=obj[i]['SUR6'];
-                
                 Array.push(node);
             }
         });
@@ -138,6 +147,112 @@ cc.Class({
             }
         });
     }, 
+    tp_skill_table:function(path,Array)
+    {
+        let self = this;
+        cc.loader.loadRes(path, function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            for(var i=2;i<obj.length;i++ )
+            {
+                var node={};
+                node.ID=obj[i]['ID'];
+                node.NAME=obj[i]['NAME'];
+                node.INS=obj[i]['INS'];
+                node.TTYPE=obj[i]['TTYPE'];
+                node.FORM=obj[i]['FORM'];
+                node.PB=obj[i]['CD'];
+                node.SSUND=obj[i]['SSUND'];
+                node.SPSD=obj[i]['SPSD'];
+                node.CAF=obj[i]['CAF'];
+                node.FF=obj[i]['FF'];
+                node.FET=obj[i]['FET'];
+                node.TSUND=obj[i]['TSUND'];
+                node.FIV=obj[i]['FIV'];
+                node.FFV=obj[i]['FFV'];
+                node.FUNT=obj[i]['FUNT'];
+                Array.push(node);
+            }
+        });
+    },
+    skill_table:function(path,Array)
+    {
+        let self = this;
+        cc.loader.loadRes(path, function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            for(var i=2;i<obj.length;i++ )
+            {
+                var node={};
+                node.ID=obj[i]['ID'];
+                node.NAME=obj[i]['NAME'];
+                node.INS=obj[i]['INS'];
+                node.TNUM=obj[i]['TNUM'];
+                node.FUNC=obj[i]['FUNC'];
+                node.CD=obj[i]['CD'];
+                node.SSUND=obj[i]['SSUND'];
+                node.SPSD=obj[i]['SPSD'];
+                node.CAF=obj[i]['CAF'];
+                node.FF=obj[i]['FF'];
+                node.FET=obj[i]['FET'];
+                node.TSUND=obj[i]['TSUND'];
+                node.FIV=obj[i]['FIV'];
+                node.FFV=obj[i]['FFV'];
+                node.FUNT=obj[i]['FUNT'];
+                Array.push(node);
+            }
+        });
+    },
+     ex_table:function(path,Array)
+    {
+        let self = this;
+        cc.loader.loadRes(path, function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            for(var i=2;i<obj.length;i++ )
+            {
+                var node={};
+                node.LV=obj[i]['LV'];
+                node.exp=obj[i]['exp'];
+                Array.push(node);
+            }
+        });
+    },
+     dl_table:function(path,Array)
+    {
+        let self = this;
+        cc.loader.loadRes(path, function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            for(var i=2;i<obj.length;i++ )
+            {
+                var node={};
+                node.ID=obj[i]['ID'];
+                node.WID=obj[i]['WID'];
+                node.NUM=obj[i]['NUM'];
+                Array.push(node);
+            }
+        });
+    },
+    jq_table:function(path,Array)
+    {
+        let self = this;
+        cc.loader.loadRes(path, function (err, clip) {
+            var str=clip;
+            var obj = eval('(' + str + ')');
+            for(var i=2;i<obj.length;i++ )
+            {
+                var node={};
+                node.ID=obj[i]['ID'];
+                node.NR=obj[i]['NR'];
+                node.LR=obj[i]['LR'];
+                node.RR=obj[i]['RR'];
+                node.BR=obj[i]['BR'];
+                node.SE=obj[i]['SE'];
+                Array.push(node);
+            }
+        });
+    },
     item_table:function(path,Array)
     {
         let self = this;
@@ -156,6 +271,56 @@ cc.Class({
                 Array.push(node);
             }
         });
+    },
+     Chaex:function(ID)
+    {
+        for(var i=0;i<this.exList.length;i++)
+        {
+            if(this.exList[i].ID==ID)
+            { 
+                return this.exList[i];
+            }
+        }
+    },
+    ChatpSkill:function(ID)
+    {
+        for(var i=0;i<this.tpSkilllist.length;i++)
+        {
+            if(this.tpSkilllist[i].ID==ID)
+            { 
+                return this.tpSkilllist[i];
+            }
+        }
+    },
+    Chadl:function(ID)
+    {
+        for(var i=0;i<this.dl_table.length;i++)
+        {
+            if(this.dl_table[i].ID==ID)
+            { 
+                return this.dl_table[i];
+            }
+        }
+    },
+    Chaskill:function(ID)
+    {
+        for(var i=0;i<this.item_table.length;i++)
+        {
+            if(this.item_table[i].ID==ID)
+            { 
+                return this.item_table[i];
+            }
+        }
+    },
+    Chajq:function(ID)
+    {
+        for(var i=0;i<this.item_table.length;i++)
+        {
+            if(this.item_table[i].ID==ID)
+            { 
+                return this.item_table[i];
+            }
+        }
     },
     ChaItem:function(ID)
     {

@@ -14,6 +14,10 @@ cc.Class({
        cont:
        {
            default:0
+       },
+       isHuaDong:
+       {
+           default:true
        }
     },
 
@@ -30,13 +34,18 @@ cc.Class({
     },
     clickend:function(event)
     {
+        if(this.isHuaDong)
+        {
+            this.isHuaDong=false;
+        
        
             if(this.dx-event.getLocationX()>0)
             {
                 console.log("   " +this.cont%3);
-                var action = cc.moveTo(1, this.bangzhujiemian[this.cont%3].node.x-1080, this.bangzhujiemian[this.cont%3].node.y);
+                var action = cc.moveTo(0.3, this.bangzhujiemian[this.cont%3].node.x-1080, this.bangzhujiemian[this.cont%3].node.y);
                 var finished = cc.callFunc(function () {
-                     this.bangzhujiemian[this.cont%3].node.x=1080
+                    this.isHuaDong=true;
+                     this.bangzhujiemian[this.cont%3].node.x=1630
                      this.cont++;
                 }, this);
                 var myAction = cc.sequence(action, finished);
@@ -46,13 +55,13 @@ cc.Class({
                 if(this.cont%3+1==3){
                 
                 console.log("   " +(this.cont%3));
-                var action = cc.moveTo(1, this.bangzhujiemian[0].node.x-1080, this.bangzhujiemian[0].node.y);
+                var action = cc.moveTo(0.3, this.bangzhujiemian[0].node.x-1080, this.bangzhujiemian[0].node.y);
                 this.bangzhujiemian[0].node.runAction(action);
                
                 }else
                 {
                     console.log("   " +(this.cont%3+1));
-                    var action = cc.moveTo(1, this.bangzhujiemian[this.cont%3+1].node.x-1080, this.bangzhujiemian[this.cont%3+1].node.y);
+                    var action = cc.moveTo(0.3, this.bangzhujiemian[this.cont%3+1].node.x-1080, this.bangzhujiemian[this.cont%3+1].node.y);
                     this.bangzhujiemian[this.cont%3+1].node.runAction(action);
                 }
                 // console.log("   " +this.cont);
@@ -77,7 +86,7 @@ cc.Class({
                  
                  
              }
-        
+        }
      
     },
     // called every frame, uncomment this function to activate update callback

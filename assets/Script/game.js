@@ -33,12 +33,16 @@ cc.Class({
         background:              {    default:null,  type:cc.Node   },
         shezhiviwe:              {    default:null,  type:cc.Node   },
         bzview:                  {    default:null,  type:cc.Node   },
-        animation:               {  default:null}
+        animation:               {    default:null},
+        
+        losebutton:              {    default:null,  type :cc.Node },
+        winbutton:              {    default:null,  type :cc.Node }
     },
     onLoad: function ()
     {
-        
-         this.fubiaoGk();
+        this.losebutton.active = false;
+        this.winbutton.active = false;
+        this.fubiaoGk();
         
     },
     fubiaoGk:function()
@@ -82,7 +86,9 @@ cc.Class({
         console.log("c1223233c****************" + this.mastornumber );
         this.pingBidianji.node.active=false;
         this.shezhiviwe.active=false;
-         this.bzview.active=false;
+        this.bzview.active=false;
+        //-------------------------------------------------------------------------------------AAABBB
+        //this.losebutton.active = false;
         console.log("asdfasdfadf::::::::::::::::::"+this.pingBidianji.active);
 //**************************创建二维数组并将预制物存入*************************//
         this.blockArray=new Array();
@@ -207,32 +213,28 @@ cc.Class({
                 // console.log("this.eliminateDuplicateArray"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getL()+','+ "linshitest数组中的元素"+this.eliminateDuplicateArray[c].getComponent('fangkuai').getH());
                 this.eliminateDuplicateArray[c].getComponent('fangkuai').WhetherToEliminate=true;
                // this.eliminateDuplicateArray[c].getComponent(cc.Sprite).setVisible(false);
-               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==0)
-               {
-                     this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_mu');
-               }
+              if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==0)
+              {
+                    this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_mu');
+              }
                 if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==1)
-               {
-                   this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_tu');
+              {
+                  this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_tu');
                   
-               }
-               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==2)
-               {
-                   this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_jin');
-                   
-                
-               }
-               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==3)
-               {
-                      this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_shui');
-               }
-               if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==4)
-               {
+              }
+              if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==2)
+              {
+                  this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_jin');
+              }
+              if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==3)
+              {
+                    this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('teXiao_shui');
+              }
+              if(this.eliminateDuplicateArray[c].getComponent('fangkuai').index==4)
+              {
                     this.animation=this.eliminateDuplicateArray[c].getComponent(cc.Animation).play('txiao');
                   
-               }
-               
-                
+              }
             }
               for(var c1=0;c1<this.eliminateDuplicateArray.length;c1++)
             {
@@ -419,7 +421,7 @@ cc.Class({
                     
  ////////////////////////////////////////////////////胜利的时候走这里/////////////////////////////////////////////////////////////////////////////                   
                     console.log('第22222波结束'+this.boShu);
-                    
+                    this.winbutton.active = true;
                     
                     // this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
                     // cc.director.loadScene('GuanQia');
@@ -558,9 +560,8 @@ cc.Class({
            
            
            
-           
-           
-           
+          
+        this.losebutton.active = true;
            
            
            
@@ -922,7 +923,7 @@ cc.Class({
     //控制下落的函数
     blockMove:function()
     {
-        console.log(":::::::"+this.animation.isPlaying);
+       // console.log(":::::::"+this.animation.isPlaying);
         if( this.animation!=null&& this.animation.isPlaying==false){
             var snm=0;
             

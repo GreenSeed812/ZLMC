@@ -1,17 +1,17 @@
-[
+锘縖
     {
         "ID": "int",
         "WID": "int",
         "NUM": "int"
     },
     {
-        "ID": "组ID",
-        "WID": "奖励物品的ID",
-        "NUM": "该物品的数量"
+        "ID": "缁処D",
+        "WID": "濂栧姳鐗╁搧鐨処D",
+        "NUM": "璇ョ墿鍝佺殑鏁伴噺"
     },
     {
-        "ID": "怪ID",
-        "WID": "道具ID",
+        "ID": "鎬狪D",
+        "WID": "閬撳叿ID",
         "NUM": "1"
     },
     {
