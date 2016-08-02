@@ -1,6 +1,6 @@
 {
-  "buildPath": "E:\\ee",
-  "debug": false,
+  "buildPath": "E:\\zlmcApp",
+  "debug": true,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
   "keystorePassword": "",
@@ -8,7 +8,7 @@
   "platform": "android",
   "previewHeight": "720",
   "previewWidth": "1280",
-  "sourceMaps": false,
+  "sourceMaps": true,
   "template": "default",
   "useDebugKeystore": true
 }
