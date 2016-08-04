@@ -3,6 +3,9 @@ cc.Class({
 
     properties: {
         tisheng:{default:null,type:cc.Prefab},
+        chakan:{default:null,type:cc.Prefab},
+        genghuan:{default:null,type:cc.Prefab},
+        zhuanhuan:{default:null,type:cc.Prefab},
         // genghuan:{default:null,type:cc.Node},
         // chakan:{default:null,type:cc.Node},
         // zhuanhuan:{default:null,type:cc.Node},
@@ -13,22 +16,27 @@ cc.Class({
     },
     showTisheng:function()
     {
-       
-         var tiShengFace=cc.instantiate(this.tisheng);
-         tiShengFace.setPosition(0,0);
-         this.node.addChild(tiShengFace); 
+        var tiShengFace=cc.instantiate(this.tisheng);
+        tiShengFace.setPosition(0,0);
+        this.node.addChild(tiShengFace); 
     },
     showGenghuan:function()
     {
-         this.genghuan.active=true;
+        var gengHuanFace=cc.instantiate(this.genghuan);
+        gengHuanFace.setPosition(0,0);
+        this.node.addChild(gengHuanFace); 
     },
     showChaKan:function()
     {
-         this.chakan.active=true;
+        var chakanFace = cc.instantiate(this.chakan);
+        chakanFace.setPosition(0,0);
+        this.node.addChild(chakanFace); 
     },
     showZhuanHuan:function()
     {
-         this.zhuanhuan.active=true;
+        var zhuanHuanFace = cc.instantiate(this.zhuanhuan);
+        zhuanHuanFace.setPosition(0,0);
+        this.node.addChild(zhuanHuanFace);
     },
     closeTisheng:function()
     {
@@ -36,11 +44,11 @@ cc.Class({
     },
     closeGenghuan:function()
     {
-         this.genghuan.active=false;
+        this.node.removeChild(gengHuanFace); 
     },
     closeChaKan:function()
     {
-         this.chakan.active=false;
+        this.node.removeChild(chakanFace);
     },
     closeZhuanHuan:function()
     {

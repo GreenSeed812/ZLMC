@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "5fb5e9b4-a821-4c48-976d-a77422077ca2",
+  "uuid": "d61b8d8e-8c75-47c0-923c-af9abc95ed11",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "kapaikongwei": {
       "ver": "1.0.3",
-      "uuid": "afc71206-774a-48c5-9a5d-a0a1711703f1",
-      "rawTextureUuid": "5fb5e9b4-a821-4c48-976d-a77422077ca2",
+      "uuid": "98b71965-5359-464a-9712-8063de9bbf5c",
+      "rawTextureUuid": "d61b8d8e-8c75-47c0-923c-af9abc95ed11",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

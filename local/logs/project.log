@@ -1,540 +1,275 @@
-2016-08-01T23:56:31.914Z - normal: Load ~/.CocosCreator/settings.json
-2016-08-01T23:56:31.920Z - normal: checking language setting...
-2016-08-01T23:56:31.921Z - normal: Language: zh
-2016-08-01T23:56:33.009Z - success: protocol editor-framework registerred
-2016-08-01T23:56:33.010Z - success: protocol app registerred
-2016-08-01T23:56:33.010Z - success: protocol packages registerred
-2016-08-01T23:56:33.010Z - success: protocol unpack registerred
-2016-08-01T23:56:33.113Z - normal: connected!
-2016-08-01T23:56:33.119Z - normal: Check project E:\ZLMC
-2016-08-01T23:56:33.125Z - normal: Initializing Cocos Creator Editor
-2016-08-01T23:56:33.989Z - normal: Initializing Cocos2d
-2016-08-01T23:56:35.272Z - normal: Initializing Asset Database
-2016-08-01T23:56:35.424Z - success: protocol uuid registerred
-2016-08-01T23:56:35.425Z - success: protocol uuid registerred
-2016-08-01T23:56:35.425Z - success: protocol thumbnail registerred
-2016-08-01T23:56:35.425Z - normal: Loading editor/builtin packages
-2016-08-01T23:56:35.946Z - success: assets loaded
-2016-08-01T23:56:35.950Z - success: builder loaded
-2016-08-01T23:56:35.959Z - success: hierarchy loaded
-2016-08-01T23:56:35.967Z - success: inspector loaded
-2016-08-01T23:56:35.969Z - success: keystore loaded
-2016-08-01T23:56:35.977Z - success: node-library loaded
-2016-08-01T23:56:35.984Z - success: preferences loaded
-2016-08-01T23:56:36.039Z - success: project-importer loaded
-2016-08-01T23:56:36.044Z - success: project-settings loaded
-2016-08-01T23:56:36.048Z - success: ui-kit loaded
-2016-08-01T23:56:36.054Z - success: ui-grid loaded
-2016-08-01T23:56:36.064Z - success: scene loaded
-2016-08-01T23:56:36.067Z - success: sprite-editor loaded
-2016-08-01T23:56:36.082Z - success: timeline loaded
-2016-08-01T23:56:36.085Z - success: ui-kit-extra loaded
-2016-08-01T23:56:36.085Z - normal: Loading builtin packages
-2016-08-01T23:56:36.095Z - success: asset-db-debugger loaded
-2016-08-01T23:56:36.098Z - success: code-editor loaded
-2016-08-01T23:56:36.109Z - success: color-picker loaded
-2016-08-01T23:56:36.116Z - success: console loaded
-2016-08-01T23:56:36.119Z - success: package-manager loaded
-2016-08-01T23:56:36.128Z - success: tester loaded
-2016-08-01T23:56:36.131Z - success: ui-tree loaded
-2016-08-01T23:56:36.282Z - normal: Initializing project E:\ZLMC
-2016-08-01T23:56:36.286Z - normal: Loading packages
-2016-08-01T23:56:36.290Z - normal: Run Application
-2016-08-01T23:56:53.493Z - success: preview server running at http://localhost:7456
-2016-08-01T23:56:53.495Z - normal: Compiling scripts...
-2016-08-01T23:56:57.401Z - normal: Compiled successfully
-2016-08-01T23:57:06.870Z - normal: 1.1.1
-2016-08-02T00:36:40.853Z - normal: Compiled successfully
-2016-08-02T00:36:41.100Z - error: Property "juesejimianm.tisheng" must define at least one of "default", "get" or "set".
-    at module.exports (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\preprocess-attrs.js:207:24)
-    at declareProperties (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:646:9)
-    at Object.CCClass [as Class] (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:838:9)
-    at Object.require.juesejimianm (assets/Script/juesejimianm.js:1)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?002:1:451
-2016-08-02T00:36:41.101Z - error: Property "juesejimianm.genghuan" must define at least one of "default", "get" or "set".
-    at module.exports (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\preprocess-attrs.js:207:24)
-    at declareProperties (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:646:9)
-    at Object.CCClass [as Class] (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:838:9)
-    at Object.require.juesejimianm (assets/Script/juesejimianm.js:1)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?002:1:451
-2016-08-02T00:36:41.101Z - error: Property "juesejimianm.chakan" must define at least one of "default", "get" or "set".
-    at module.exports (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\preprocess-attrs.js:207:24)
-    at declareProperties (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:646:9)
-    at Object.CCClass [as Class] (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:838:9)
-    at Object.require.juesejimianm (assets/Script/juesejimianm.js:1)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?002:1:451
-2016-08-02T00:36:41.102Z - warn: The "type" attribute of "juesejimianm.zhuanhuan" is undefined when loading script.
-2016-08-02T00:37:03.160Z - normal: Compiled successfully
-2016-08-02T00:37:03.353Z - error: Property "juesejimianm.tisheng" must define at least one of "default", "get" or "set".
-    at module.exports (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\preprocess-attrs.js:207:24)
-    at declareProperties (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:646:9)
-    at Object.CCClass [as Class] (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:838:9)
-    at Object.require.juesejimianm (assets/Script/juesejimianm.js:1)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?003:1:451
-2016-08-02T00:37:03.354Z - error: Property "juesejimianm.genghuan" must define at least one of "default", "get" or "set".
-    at module.exports (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\preprocess-attrs.js:207:24)
-    at declareProperties (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:646:9)
-    at Object.CCClass [as Class] (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:838:9)
-    at Object.require.juesejimianm (assets/Script/juesejimianm.js:1)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?003:1:451
-2016-08-02T00:37:03.354Z - error: Property "juesejimianm.chakan" must define at least one of "default", "get" or "set".
-    at module.exports (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\preprocess-attrs.js:207:24)
-    at declareProperties (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:646:9)
-    at Object.CCClass [as Class] (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\platform\CCClass.js:838:9)
-    at Object.require.juesejimianm (assets/Script/juesejimianm.js:1)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?003:1:451
-2016-08-02T00:38:43.355Z - normal: Compiled successfully
-2016-08-02T00:59:21.655Z - normal: Compiled successfully
-2016-08-02T01:00:16.299Z - normal: Compiled successfully
-2016-08-02T01:43:49.407Z - normal: Checked Python Version [2.7.5]
-2016-08-02T01:43:52.510Z - normal: Creating native cocos project to  E:\zlmcApp\jsb-default
-2016-08-02T01:44:40.326Z - normal: Compiled successfully
-2016-08-02T01:44:42.774Z - normal: 1.1.1
-2016-08-02T01:44:45.470Z - normal: Checked Python Version [2.7.5]
-2016-08-02T01:44:50.390Z - error: Build Failed: Error: Failed to compile js files [E:\zlmcApp\jsb-default\src] with exitCode : 14
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:13956)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:6160)
-    at emitTwo (events.js:87:13)
-    at ChildProcess.emit (events.js:172:7)
-    at maybeClose (internal/child_process.js:818:16)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\builder.js:1:1583
-    at Gulp.doneCallback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\gulp-build.js:1:8110)
-    at Gulp.Orchestrator.stop (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\index.js:150:9)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\index.js:277:22
-    at finish (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\lib\runTask.js:21:8)
-    at cb (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\lib\runTask.js:29:3)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:13954)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:6160)
-    at emitTwo (events.js:87:13)
-    at ChildProcess.emit (events.js:172:7)
-2016-08-02T01:47:51.028Z - normal: Checked Python Version [2.7.5]
-2016-08-02T01:47:55.794Z - normal: Compiled successfully
-2016-08-02T01:47:58.263Z - normal: 1.1.1
-2016-08-02T01:48:00.973Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-02T01:48:13.173Z - normal: Checked Python Version [2.7.5]
-2016-08-02T01:48:14.653Z - normal: Start to compile native project. Please wait...
-2016-08-02T01:48:14.654Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T01:53:44.694Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T01:55:32.273Z - failed: [Error: Compile failed. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]]
-2016-08-02T01:56:13.463Z - normal: Compiled successfully
-2016-08-02T01:56:14.573Z - warn: The "type" attribute of "juesejimianm.tisheng" is undefined when loading script.
-2016-08-02T01:56:16.741Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:56:35.344Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:56:35.450Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:56:36.515Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:56:36.620Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:56:37.063Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:56:37.174Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:56:37.658Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:56:37.765Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:56:57.795Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:01.010Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:16.327Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:16.449Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:16.527Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:16.627Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:19.904Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:20.006Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:20.312Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:20.420Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:20.764Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:20.873Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:21.241Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:21.358Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:21.656Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:21.762Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:28.192Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:28.307Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:28.717Z - warn: Failed to set property Canvas<juesejimianm> to [object Object] at tisheng, Cannot set property uuid of #<CCClass> which has only a getter
-2016-08-02T01:57:28.821Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:46.505Z - normal: Compiled successfully
-2016-08-02T01:57:46.676Z - warn: The "type" attribute of "juesejimianm.tisheng" is undefined when loading script.
-2016-08-02T01:57:48.291Z - error: getComponent: Type must be non-nil
-    at getConstructor (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:259:12)
-    at cc_Node.cc.Class.getComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\engine\cocos2d\core\CCNode.js:603:27)
-    at editor-scene.Editor.polymerPanel.messages.scene:query-node-info (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:6318)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T01:57:52.634Z - normal: Compiled successfully
-2016-08-02T01:57:54.221Z - error: Failed to create field cc.Node. type not the same cc.Node:cc.Prefab
-    at editor-field.Editor.polymerElement._rebuild (app://editor/page/ui/props/field/field.js:1:1737)
-    at editor-field.<anonymous> (app://editor/page/ui/props/field/field.js:1:598)
-    at Object.Debouncer.complete (app://bower_components/polymer/polymer.html:1203:15)
-2016-08-02T01:59:10.154Z - normal: Compiled successfully
-2016-08-02T02:00:00.319Z - normal: Compiled successfully
-2016-08-02T02:00:32.079Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:00:39.268Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:00:40.037Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:00:40.235Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:01:35.280Z - normal: Compiled successfully
-2016-08-02T02:03:51.903Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:52.875Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:53.422Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:53.617Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:53.813Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:54.015Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:54.185Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:54.377Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:54.552Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:54.737Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:54.942Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:55.099Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:03:55.258Z - info: Reference "0" of "tishengjiemian" to external scene object "Canvas" will not be saved in prefab.
-2016-08-02T02:08:15.528Z - normal: Compiled successfully
-2016-08-02T02:08:34.087Z - normal: Compiled successfully
-2016-08-02T02:12:26.118Z - normal: Compiled successfully
-2016-08-02T02:12:26.277Z - error: ReferenceError: Prefab is not defined
-    at Object.require.Back: "myself:{default:null,type:Prefab}" (assets/Script/Back.js:5:8)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?015:1:451
-2016-08-02T02:13:04.099Z - normal: Compiled successfully
-2016-08-02T02:13:04.257Z - error: ReferenceError: Prefab is not defined
-    at Object.require.Back: "myself:{default:null,type:Prefab}" (assets/Script/Back.js:5:8)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?016:1:451
-2016-08-02T02:22:01.032Z - error: Can not find cc.Component in the script 9ef69jyU81M5LEmeC7ibWXU.
-    at Object.defineProperties.addComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:9873)
-    at editor-scene.Editor.polymerPanel.messages.scene:add-component (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:7691)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T02:22:23.882Z - normal: Compiled successfully
-2016-08-02T02:22:24.081Z - error: ReferenceError: Prefab is not defined
-    at Object.require.Back: "myself:{default:null,type:Prefab}" (assets/Script/Back.js:5:8)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?017:1:451
-2016-08-02T02:22:37.269Z - error: Can not find cc.Component in the script 9ef69jyU81M5LEmeC7ibWXU.
-    at Object.defineProperties.addComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:9873)
-    at editor-scene.Editor.polymerPanel.messages.scene:add-component (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:7691)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T02:22:49.763Z - normal: Compiled successfully
-2016-08-02T02:22:50.004Z - error: ReferenceError: Prefab is not defined
-    at Object.require.Backww: "myself:{default:null,type:Prefab}" (assets/Script/Backww.js:5:8)
-    at s (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///E:/ZLMC/library/bundle.project.js?018:1:451
-2016-08-02T02:22:56.921Z - error: Can not find cc.Component in the script 9ef69jyU81M5LEmeC7ibWXU.
-    at Object.defineProperties.addComponent (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\page\scene-utils\index.js:1:9873)
-    at editor-scene.Editor.polymerPanel.messages.scene:add-component (file:///C:/Users/Administrator/AppData/Local/CocosCreator/app-1.1.1/resources/app.asar/editor/builtin/scene/panel/scene.js:1:7691)
-    at Object.Panel._dispatch (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\panel.js:1:4729)
-    at EventEmitter.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4731)
-    at emitMany (events.js:108:13)
-    at EventEmitter.emit (events.js:182:7)
-2016-08-02T02:23:21.051Z - normal: Compiled successfully
-2016-08-02T02:24:40.587Z - normal: Compiled successfully
-2016-08-02T03:07:18.225Z - failed: [db-task][move] failed!
-2016-08-02T03:11:36.929Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/背板.png.meta
-2016-08-02T03:11:36.977Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/等级背板.png.meta
-2016-08-02T03:11:36.999Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/防御背板.png.meta
-2016-08-02T03:11:37.033Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/攻击背板.png.meta
-2016-08-02T03:11:37.081Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/火属性.png.meta
-2016-08-02T03:11:37.106Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/技能说明.png.meta
-2016-08-02T03:11:37.126Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/角色说明背板.png.meta
-2016-08-02T03:11:37.145Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/金属性.png.meta
-2016-08-02T03:11:37.176Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/经验条 (2).png.meta
-2016-08-02T03:11:37.198Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/经验条.png.meta
-2016-08-02T03:11:37.221Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/名称背板.png.meta
-2016-08-02T03:11:37.248Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/木属性.png.meta
-2016-08-02T03:11:37.270Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/生命背板.png.meta
-2016-08-02T03:11:37.294Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/水属性.png.meta
-2016-08-02T03:11:37.316Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/chakanjiemian/土属性.png.meta
-2016-08-02T03:11:58.150Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:12:04.952Z - normal: Compiled successfully
-2016-08-02T03:12:08.259Z - normal: 1.1.1
-2016-08-02T03:12:11.431Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-02T03:12:14.036Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:12:15.590Z - normal: Start to compile native project. Please wait...
-2016-08-02T03:12:15.591Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T03:13:40.715Z - failed: [Error: Compile failed. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]]
-2016-08-02T03:26:58.717Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/tishengjiemian/金 属性.png.meta
-2016-08-02T03:27:08.996Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:27:14.217Z - normal: Compiled successfully
-2016-08-02T03:27:16.839Z - normal: 1.1.1
-2016-08-02T03:27:19.316Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-02T03:27:27.429Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:27:28.946Z - normal: Start to compile native project. Please wait...
-2016-08-02T03:27:28.946Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T03:28:23.067Z - failed: [Error: Compile failed. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]]
-2016-08-02T03:29:12.992Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/zhuanhuanjiemian/绿.png.meta
-2016-08-02T03:29:13.019Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/zhuanhuanjiemian/土 属性.png.meta
-2016-08-02T03:29:13.039Z - warn: [db-task][sync-changes] Delete unused meta file: db://assets/resources/zhuanhuanjiemian/土.png.meta
-2016-08-02T03:29:32.273Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:29:37.698Z - normal: Compiled successfully
-2016-08-02T03:29:40.199Z - normal: 1.1.1
-2016-08-02T03:29:42.286Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-02T03:29:44.867Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:29:46.342Z - normal: Start to compile native project. Please wait...
-2016-08-02T03:29:46.342Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T03:30:29.447Z - normal: Compile native project successfully.
-2016-08-02T03:42:56.254Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:43:02.165Z - normal: Compiled successfully
-2016-08-02T03:43:04.668Z - normal: 1.1.1
-2016-08-02T03:43:06.725Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:43:10.108Z - error: Build Failed: Error: Failed to compile js files [E:\zlmcApp\jsb-default\src] with exitCode : 14
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:13956)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:6160)
-    at emitTwo (events.js:87:13)
-    at ChildProcess.emit (events.js:172:7)
-    at maybeClose (internal/child_process.js:818:16)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\builder.js:1:1583
-    at Gulp.doneCallback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\gulp-build.js:1:8110)
-    at Gulp.Orchestrator.stop (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\index.js:150:9)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\index.js:277:22
-    at finish (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\lib\runTask.js:21:8)
-    at cb (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\lib\runTask.js:29:3)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:13954)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:6160)
-    at emitTwo (events.js:87:13)
-2016-08-02T03:43:27.064Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:43:28.549Z - normal: Start to compile native project. Please wait...
-2016-08-02T03:43:28.549Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T03:51:29.295Z - normal: Compile native project exited normal
-2016-08-02T03:52:42.185Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:52:48.858Z - normal: Compiled successfully
-2016-08-02T03:52:51.362Z - normal: 1.1.1
-2016-08-02T03:52:52.837Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:52:57.453Z - error: Build Failed: Error: Failed to compile js files [E:\zlmcApp\jsb-default\src] with exitCode : 14
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:13956)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:6160)
-    at emitTwo (events.js:87:13)
-    at ChildProcess.emit (events.js:172:7)
-    at maybeClose (internal/child_process.js:818:16)
-    at Socket.<anonymous> (internal/child_process.js:319:11)
-    at emitOne (events.js:77:13)
-    at Socket.emit (events.js:169:7)
-    at Pipe._onclose (net.js:469:12)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\builder.js:1:1583
-    at Gulp.doneCallback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\gulp-build.js:1:8110)
-    at Gulp.Orchestrator.stop (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\index.js:150:9)
-    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\index.js:277:22
-    at finish (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\lib\runTask.js:21:8)
-    at cb (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\orchestrator\lib\runTask.js:29:3)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:13954)
-    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\native-utils.js:1:6160)
-    at emitTwo (events.js:87:13)
-2016-08-02T03:53:14.079Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:53:18.276Z - normal: Compiled successfully
-2016-08-02T03:53:20.734Z - normal: 1.1.1
-2016-08-02T03:53:21.555Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-02T03:53:25.055Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:53:26.531Z - normal: Start to compile native project. Please wait...
-2016-08-02T03:53:26.532Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T03:54:34.510Z - normal: Compile native project successfully.
-2016-08-02T03:54:58.365Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:54:59.933Z - normal: Start to compile native project. Please wait...
-2016-08-02T03:54:59.934Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T03:55:31.743Z - normal: Compile native project successfully.
-2016-08-02T03:57:14.815Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:57:19.266Z - normal: Compiled successfully
-2016-08-02T03:57:21.906Z - normal: 1.1.1
-2016-08-02T03:57:22.866Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-02T03:57:34.857Z - normal: Checked Python Version [2.7.5]
-2016-08-02T03:57:36.332Z - normal: Start to compile native project. Please wait...
-2016-08-02T03:57:36.333Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-02T03:58:09.886Z - normal: Compile native project successfully.
-2016-08-02T04:04:38.711Z - info: shutdown preview server
-2016-08-02T04:04:39.622Z - error: Error: Object has been destroyed
-    at Error (native)
-    at EventEmitter.webContents.send (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\atom.asar\browser\api\web-contents.js:83:17)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:3657)
-    at null._onTimeout (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:426)
-    at Timer.listOnTimeout (timers.js:92:15)
-    at process.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\editor-init.js:1:205)
-    at emitOne (events.js:82:20)
-    at process.emit (events.js:169:7)
-    at process._fatalException (node.js:247:26)
-2016-08-02T04:04:39.628Z - error: Error: Object has been destroyed
-    at Error (native)
-    at EventEmitter.webContents.send (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\atom.asar\browser\api\web-contents.js:83:17)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:3657)
-    at null._onTimeout (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:426)
-    at Timer.listOnTimeout (timers.js:92:15)
-    at listOnTimeoutNT (timers.js:118:19)
-    at doNTCallback1 (node.js:454:9)
-    at Immediate._tickDomainCallback [as _onImmediate] (node.js:417:17)
-    at processImmediate [as _immediateCallback] (timers.js:383:17)
-    at process.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\editor-init.js:1:205)
-    at emitOne (events.js:82:20)
-    at process.emit (events.js:169:7)
-    at process._fatalException (node.js:247:26)
-2016-08-02T04:04:39.656Z - error: Error: Object has been destroyed
-    at Error (native)
-    at EventEmitter.webContents.send (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\atom.asar\browser\api\web-contents.js:83:17)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:3657)
-    at null._onTimeout (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:426)
-    at Timer.listOnTimeout (timers.js:92:15)
-    at listOnTimeoutNT (timers.js:118:19)
-    at doNTCallback1 (node.js:454:9)
-    at process._tickDomainCallback (node.js:417:17)
-    at process.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\editor-init.js:1:205)
-    at emitOne (events.js:82:20)
-    at process.emit (events.js:169:7)
-    at process._fatalException (node.js:247:26)
-2016-08-02T04:04:39.659Z - error: Error: Object has been destroyed
-    at Error (native)
-    at EventEmitter.webContents.send (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\atom.asar\browser\api\web-contents.js:83:17)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:3657)
-    at null._onTimeout (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:426)
-    at Timer.listOnTimeout (timers.js:92:15)
-    at listOnTimeoutNT (timers.js:118:19)
-    at doNTCallback1 (node.js:454:9)
-    at process._tickDomainCallback (node.js:417:17)
-    at TLSSocket._start (_tls_wrap.js:614:16)
-    at TLSSocket.<anonymous> (_tls_wrap.js:1030:14)
-    at process.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\editor-init.js:1:205)
-    at emitOne (events.js:82:20)
-    at process.emit (events.js:169:7)
-    at process._fatalException (node.js:247:26)
-    at TLSSocket._start (_tls_wrap.js:614:16)
-    at TLSSocket.<anonymous> (_tls_wrap.js:1030:14)
-    at TLSSocket.g (events.js:260:16)
-    at emitNone (events.js:72:20)
-    at TLSSocket.emit (events.js:166:7)
-2016-08-02T04:04:39.687Z - error: Error: Object has been destroyed
-    at Error (native)
-    at EventEmitter.webContents.send (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\atom.asar\browser\api\web-contents.js:83:17)
-    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:3657)
-    at null._onTimeout (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor-framework\lib\main\ipc.js:1:426)
-    at Timer.listOnTimeout (timers.js:92:15)
-    at listOnTimeoutNT (timers.js:118:19)
-    at doNTCallback1 (node.js:454:9)
-    at process._tickDomainCallback (node.js:417:17)
-    at process.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\editor\core\editor-init.js:1:205)
-    at emitOne (events.js:82:20)
-    at process.emit (events.js:169:7)
-    at process._fatalException (node.js:247:26)
+2016-08-04T00:42:43.499Z - normal: Load ~/.CocosCreator/settings.json
+2016-08-04T00:42:43.514Z - normal: checking language setting...
+2016-08-04T00:42:43.514Z - normal: Language: zh
+2016-08-04T00:42:44.622Z - success: protocol editor-framework registerred
+2016-08-04T00:42:44.622Z - success: protocol app registerred
+2016-08-04T00:42:44.622Z - success: protocol packages registerred
+2016-08-04T00:42:44.622Z - success: protocol unpack registerred
+2016-08-04T00:42:44.731Z - normal: connected!
+2016-08-04T00:42:44.731Z - normal: Check project E:\ZLMC
+2016-08-04T00:42:44.731Z - normal: Initializing Cocos Creator Editor
+2016-08-04T00:42:45.308Z - normal: Initializing Cocos2d
+2016-08-04T00:42:45.636Z - normal: Initializing Asset Database
+2016-08-04T00:42:45.745Z - success: protocol uuid registerred
+2016-08-04T00:42:45.745Z - success: protocol uuid registerred
+2016-08-04T00:42:45.745Z - success: protocol thumbnail registerred
+2016-08-04T00:42:45.745Z - normal: Loading editor/builtin packages
+2016-08-04T00:42:46.042Z - success: assets loaded
+2016-08-04T00:42:46.042Z - success: builder loaded
+2016-08-04T00:42:46.057Z - success: hierarchy loaded
+2016-08-04T00:42:46.057Z - success: inspector loaded
+2016-08-04T00:42:46.057Z - success: keystore loaded
+2016-08-04T00:42:46.073Z - success: node-library loaded
+2016-08-04T00:42:46.073Z - success: preferences loaded
+2016-08-04T00:42:46.135Z - success: project-importer loaded
+2016-08-04T00:42:46.135Z - success: project-settings loaded
+2016-08-04T00:42:46.135Z - success: ui-kit loaded
+2016-08-04T00:42:46.151Z - success: ui-grid loaded
+2016-08-04T00:42:46.151Z - success: scene loaded
+2016-08-04T00:42:46.151Z - success: sprite-editor loaded
+2016-08-04T00:42:46.166Z - success: timeline loaded
+2016-08-04T00:42:46.182Z - success: ui-kit-extra loaded
+2016-08-04T00:42:46.182Z - normal: Loading builtin packages
+2016-08-04T00:42:46.182Z - success: asset-db-debugger loaded
+2016-08-04T00:42:46.182Z - success: code-editor loaded
+2016-08-04T00:42:46.182Z - success: color-picker loaded
+2016-08-04T00:42:46.198Z - success: console loaded
+2016-08-04T00:42:46.198Z - success: package-manager loaded
+2016-08-04T00:42:46.213Z - success: tester loaded
+2016-08-04T00:42:46.213Z - success: ui-tree loaded
+2016-08-04T00:42:46.291Z - normal: Initializing project E:\ZLMC
+2016-08-04T00:42:46.291Z - normal: Loading packages
+2016-08-04T00:42:46.291Z - normal: Run Application
+2016-08-04T00:43:01.517Z - success: preview server running at http://localhost:7456
+2016-08-04T00:43:01.532Z - normal: Compiling scripts...
+2016-08-04T00:43:03.957Z - normal: Compiled successfully
+2016-08-04T00:43:09.958Z - normal: 1.1.1
+2016-08-04T01:11:56.904Z - normal: Compiled successfully
+2016-08-04T01:12:57.445Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:13:02.351Z - normal: Compiled successfully
+2016-08-04T01:13:04.767Z - normal: 1.1.1
+2016-08-04T01:13:05.587Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:13:08.595Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T01:13:39.560Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:13:41.034Z - normal: Start to compile native project. Please wait...
+2016-08-04T01:13:41.035Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T01:14:58.573Z - normal: Compile native project successfully.
+2016-08-04T01:30:35.855Z - normal: Compiled successfully
+2016-08-04T01:30:35.920Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:30:40.721Z - normal: Compiled successfully
+2016-08-04T01:30:43.096Z - normal: 1.1.1
+2016-08-04T01:30:43.916Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:30:46.809Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T01:30:48.849Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:30:50.325Z - normal: Start to compile native project. Please wait...
+2016-08-04T01:30:50.326Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T01:31:34.781Z - normal: Compile native project successfully.
+2016-08-04T01:31:52.903Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:31:57.566Z - normal: Compiled successfully
+2016-08-04T01:31:59.919Z - normal: 1.1.1
+2016-08-04T01:32:00.740Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:32:04.605Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T01:32:51.391Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:32:52.885Z - normal: Start to compile native project. Please wait...
+2016-08-04T01:32:52.886Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T01:33:39.574Z - normal: Compile native project successfully.
+2016-08-04T01:38:35.605Z - normal: Compiled successfully
+2016-08-04T01:38:50.107Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:38:54.939Z - normal: Compiled successfully
+2016-08-04T01:38:57.436Z - normal: 1.1.1
+2016-08-04T01:38:58.296Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:39:02.241Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T01:39:05.360Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:39:06.830Z - normal: Start to compile native project. Please wait...
+2016-08-04T01:39:06.831Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T01:39:50.296Z - normal: Compile native project successfully.
+2016-08-04T01:41:07.275Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:41:08.791Z - normal: Creating native cocos project to  E:\zlmcApp\jsb-default
+2016-08-04T01:41:57.890Z - normal: Compiled successfully
+2016-08-04T01:42:00.384Z - normal: 1.1.1
+2016-08-04T01:42:01.235Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:42:04.104Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T01:42:12.607Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:42:14.070Z - normal: Start to compile native project. Please wait...
+2016-08-04T01:42:14.070Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T01:50:57.801Z - normal: Compile native project successfully.
+2016-08-04T01:55:39.823Z - normal: Compiled successfully
+2016-08-04T01:55:44.440Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:55:48.786Z - normal: Compiled successfully
+2016-08-04T01:55:52.229Z - normal: 1.1.1
+2016-08-04T01:55:53.177Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T01:55:58.741Z - normal: Checked Python Version [2.7.5]
+2016-08-04T01:56:00.201Z - normal: Start to compile native project. Please wait...
+2016-08-04T01:56:00.201Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T02:02:26.500Z - normal: Compile native project successfully.
+2016-08-04T02:07:35.092Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:07:39.462Z - normal: Compiled successfully
+2016-08-04T02:07:41.906Z - normal: 1.1.1
+2016-08-04T02:07:42.648Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:08:01.412Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:08:02.883Z - normal: Start to compile native project. Please wait...
+2016-08-04T02:08:02.883Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T02:08:37.339Z - normal: Compile native project successfully.
+2016-08-04T02:12:17.531Z - normal: Compiled successfully
+2016-08-04T02:12:24.335Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:12:28.505Z - normal: Compiled successfully
+2016-08-04T02:12:30.885Z - normal: 1.1.1
+2016-08-04T02:12:31.600Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:13:10.500Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:13:14.680Z - normal: Compiled successfully
+2016-08-04T02:13:17.035Z - normal: 1.1.1
+2016-08-04T02:13:17.729Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:16:18.379Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:16:22.641Z - normal: Compiled successfully
+2016-08-04T02:16:25.130Z - normal: 1.1.1
+2016-08-04T02:16:25.848Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:16:52.521Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:16:53.981Z - normal: Start to compile native project. Please wait...
+2016-08-04T02:16:53.981Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T02:17:28.167Z - normal: Compile native project successfully.
+2016-08-04T02:21:39.091Z - normal: Compiled successfully
+2016-08-04T02:21:39.817Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:21:43.976Z - normal: Compiled successfully
+2016-08-04T02:21:46.331Z - normal: 1.1.1
+2016-08-04T02:21:47.039Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:21:54.666Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:21:58.733Z - normal: Compiled successfully
+2016-08-04T02:22:01.086Z - normal: 1.1.1
+2016-08-04T02:22:01.780Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:23:38.842Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:23:43.040Z - normal: Compiled successfully
+2016-08-04T02:23:45.476Z - normal: 1.1.1
+2016-08-04T02:23:46.200Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:23:50.032Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:23:51.512Z - normal: Start to compile native project. Please wait...
+2016-08-04T02:23:51.512Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T02:24:24.617Z - normal: Compile native project successfully.
+2016-08-04T02:35:04.276Z - normal: Compiled successfully
+2016-08-04T02:35:09.719Z - normal: Compiled successfully
+2016-08-04T02:35:29.006Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:35:33.194Z - normal: Compiled successfully
+2016-08-04T02:35:35.626Z - normal: 1.1.1
+2016-08-04T02:35:36.375Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T02:38:56.015Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:38:57.505Z - normal: Start to compile native project. Please wait...
+2016-08-04T02:38:57.505Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T02:39:31.847Z - normal: Compile native project successfully.
+2016-08-04T02:57:59.692Z - normal: Compiled successfully
+2016-08-04T02:58:13.411Z - normal: Compiled successfully
+2016-08-04T02:58:21.333Z - normal: Checked Python Version [2.7.5]
+2016-08-04T02:58:25.559Z - normal: Compiled successfully
+2016-08-04T02:58:27.956Z - normal: 1.1.1
+2016-08-04T02:58:28.862Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:01:17.874Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:01:22.160Z - normal: Compiled successfully
+2016-08-04T03:01:24.665Z - normal: 1.1.1
+2016-08-04T03:01:25.414Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:01:36.738Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:01:38.198Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:01:38.198Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:02:13.559Z - normal: Compile native project successfully.
+2016-08-04T03:05:30.729Z - normal: Compiled successfully
+2016-08-04T03:05:39.982Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:05:44.209Z - normal: Compiled successfully
+2016-08-04T03:05:46.648Z - normal: 1.1.1
+2016-08-04T03:05:47.415Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:06:35.680Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:06:37.153Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:06:37.153Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:07:11.053Z - normal: Compile native project successfully.
+2016-08-04T03:13:56.752Z - normal: Compiled successfully
+2016-08-04T03:14:05.166Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:14:09.401Z - normal: Compiled successfully
+2016-08-04T03:14:11.806Z - normal: 1.1.1
+2016-08-04T03:14:12.561Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:15:16.560Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:15:18.040Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:15:18.040Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:15:56.757Z - normal: Compile native project successfully.
+2016-08-04T03:30:01.443Z - normal: Compiled successfully
+2016-08-04T03:30:02.273Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:30:06.971Z - normal: Compiled successfully
+2016-08-04T03:30:09.367Z - normal: 1.1.1
+2016-08-04T03:30:10.247Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:30:14.277Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:30:18.507Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:30:22.633Z - normal: Compiled successfully
+2016-08-04T03:30:25.012Z - normal: 1.1.1
+2016-08-04T03:30:25.750Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:30:28.816Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:30:30.310Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:30:30.310Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:31:05.740Z - normal: Compile native project successfully.
+2016-08-04T03:31:31.983Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:31:36.636Z - normal: Compiled successfully
+2016-08-04T03:31:39.154Z - normal: 1.1.1
+2016-08-04T03:31:39.900Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:31:44.105Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:31:45.603Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:31:45.603Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:32:22.989Z - normal: Compile native project successfully.
+2016-08-04T03:35:00.607Z - normal: Compiled successfully
+2016-08-04T03:35:17.047Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:35:21.806Z - normal: Compiled successfully
+2016-08-04T03:35:24.246Z - normal: 1.1.1
+2016-08-04T03:35:25.082Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:35:28.096Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:35:31.582Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:35:35.749Z - normal: Compiled successfully
+2016-08-04T03:35:38.161Z - normal: 1.1.1
+2016-08-04T03:35:38.930Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:36:00.260Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:36:01.758Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:36:01.759Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:36:38.857Z - normal: Compile native project successfully.
+2016-08-04T03:37:07.943Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:37:12.213Z - normal: Compiled successfully
+2016-08-04T03:37:14.727Z - normal: 1.1.1
+2016-08-04T03:37:17.331Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:37:32.432Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:37:37.697Z - normal: Compiled successfully
+2016-08-04T03:37:40.186Z - normal: 1.1.1
+2016-08-04T03:37:42.449Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:37:46.510Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:37:51.783Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:37:56.524Z - normal: Compiled successfully
+2016-08-04T03:37:59.011Z - normal: 1.1.1
+2016-08-04T03:38:01.012Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:38:04.732Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:38:06.239Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:38:06.239Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:38:43.649Z - normal: Compile native project successfully.
+2016-08-04T03:39:05.112Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:39:09.818Z - normal: Compiled successfully
+2016-08-04T03:39:12.242Z - normal: 1.1.1
+2016-08-04T03:39:14.417Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:39:29.556Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:39:31.081Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:39:31.082Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:39:55.258Z - normal: Compiled successfully
+2016-08-04T03:40:11.408Z - normal: Compile native project successfully.
+2016-08-04T03:41:19.963Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:41:24.724Z - normal: Compiled successfully
+2016-08-04T03:41:27.116Z - normal: 1.1.1
+2016-08-04T03:41:29.180Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:41:33.414Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:41:35.080Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:41:35.081Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:42:16.094Z - normal: Compile native project successfully.
+2016-08-04T03:46:35.830Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:46:41.442Z - normal: Compiled successfully
+2016-08-04T03:46:44.784Z - normal: 1.1.1
+2016-08-04T03:46:47.832Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:46:52.896Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:46:54.463Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:46:54.463Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:47:37.168Z - normal: Compile native project successfully.
+2016-08-04T03:47:51.792Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:47:57.074Z - normal: Compiled successfully
+2016-08-04T03:47:59.931Z - normal: 1.1.1
+2016-08-04T03:48:02.811Z - normal: Built to "E:\zlmcApp" successfully
+2016-08-04T03:48:57.207Z - normal: Checked Python Version [2.7.5]
+2016-08-04T03:48:58.815Z - normal: Start to compile native project. Please wait...
+2016-08-04T03:48:58.815Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-08-04T03:49:41.928Z - normal: Compile native project successfully.
+2016-08-04T04:11:48.488Z - info: shutdown preview server

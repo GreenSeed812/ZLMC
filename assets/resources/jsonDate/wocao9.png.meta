@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "104f9ceb-cca8-4f69-88e7-20c0b4d7b588",
+  "uuid": "66e3ec4e-2967-4be7-a077-0b62d8b61939",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "wocao9": {
       "ver": "1.0.3",
-      "uuid": "c2a5e98c-fce7-46b5-9460-8c488bd2c361",
-      "rawTextureUuid": "104f9ceb-cca8-4f69-88e7-20c0b4d7b588",
+      "uuid": "a498b23c-dd8a-42c4-8a43-142997577469",
+      "rawTextureUuid": "66e3ec4e-2967-4be7-a077-0b62d8b61939",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

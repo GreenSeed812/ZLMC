@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "d0c4fdf0-13b1-406b-8d03-5c6a38a82b80",
+  "uuid": "4f37aadb-59ff-48ca-b34e-162f2a72b76e",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "wenZi": {
       "ver": "1.0.3",
-      "uuid": "d9f25173-3a6d-4614-9ed4-e3bb67571788",
-      "rawTextureUuid": "d0c4fdf0-13b1-406b-8d03-5c6a38a82b80",
+      "uuid": "7d61c9c1-3332-4b19-bb92-ff2aabfcbd07",
+      "rawTextureUuid": "4f37aadb-59ff-48ca-b34e-162f2a72b76e",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

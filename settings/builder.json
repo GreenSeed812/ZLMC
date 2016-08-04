@@ -1,24 +1,13 @@
 {
-  "excludeScenes": [
-    "f3f69f5f-b267-4578-8c1d-08761ca048bb",
-    "0c3f1706-34a5-47ba-bbf5-615950c6e8df",
-    "2d2f792f-a40c-49bb-a189-ed176a246e49",
-    "6488c8ae-023a-4191-976c-c6c15d611fc1",
-    "3f36ff05-ca1c-43cf-bc45-18748f3f80f7",
-    "a7483b2e-d256-49fa-b626-fadb31cce872",
-    "ba2eda69-85c8-45bd-a9ad-db8c135bf612",
-    "4880e401-19e4-460a-b07d-cedb8c7c10d6",
-    "5da59ab3-a991-43b8-815c-7d74081089f6",
-    "f89431c8-33b2-4b15-a672-cb7b55c418b9"
-  ],
+  "excludeScenes": [],
   "orientation": {
     "landscapeLeft": false,
     "landscapeRight": false,
     "portrait": true,
     "upsideDown": false
   },
-  "packageName": "org.cocos2d.hello_world",
-  "startScene": "71ff5820-e11c-4c8b-9cfa-99ad92494e4c",
-  "title": "Mygame3",
+  "packageName": "org.cocos2d.Green",
+  "startScene": "ba2eda69-85c8-45bd-a9ad-db8c135bf612",
+  "title": "ZLMCTest_14",
   "webOrientation": "auto"
 }

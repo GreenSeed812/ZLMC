@@ -379,10 +379,7 @@
     "node": {
       "__id__": 2
     },
-    "_enabled": true,
-    "yinxiao": null,
-    "yinyue": null,
-    "tishengjimina": null
+    "_enabled": true
   },
   {
     "__type__": "cc.Node",
@@ -428,7 +425,7 @@
     "_opacityModifyRGB": false,
     "_reorderChildDirty": false,
     "_id": "26fcaBI4MJIH49Lv4W02PPX",
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 13
@@ -438,7 +435,7 @@
     "groupIndex": 0
   },
   {
-    "__type__": "5f936rQfWtFz7Tn7YF0Yywj",
+    "__type__": "d0c06bNswdPQYxK6OSdOTUb",
     "_name": "",
     "_objFlags": 0,
     "node": {

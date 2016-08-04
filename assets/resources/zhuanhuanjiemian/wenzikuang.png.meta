@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "5a61610b-41b3-4003-824e-c5153d9469e6",
+  "uuid": "47038748-1229-4bf9-bfc9-f6d1414e74b2",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "wenzikuang": {
       "ver": "1.0.3",
-      "uuid": "e8be3cc9-d49c-4534-a3d4-1c6cf8bcab89",
-      "rawTextureUuid": "5a61610b-41b3-4003-824e-c5153d9469e6",
+      "uuid": "0ce6586b-b155-45de-bfb6-f3de1e303b78",
+      "rawTextureUuid": "47038748-1229-4bf9-bfc9-f6d1414e74b2",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

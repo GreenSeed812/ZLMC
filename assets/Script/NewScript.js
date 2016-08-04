@@ -2,7 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        
         Gk:        {  default:null  },
         DiJiGuan:   {  default:null  },
         GKlist:     {  default:[]    },
@@ -16,27 +15,24 @@ cc.Class({
         dlList:     {  default:[]    },
         exList:     {  default:[]    }
     },
+
     // use this for initialization
     onLoad: function () {
-        
-        cc.game.addPersistRootNode(this.node);
+         cc.game.addPersistRootNode(this.node);
         console.log("is Persist node " + cc.game.isPersistRootNode(this.node));
-        //加载资源
-        this.GKdubiao      ('jsonDate/gq_table',this.GKlist           );
-        this.Npcdubiao     ('jsonDate/npc_table',this.Npclist         );
-        this.Persondubiao  ('jsonDate/person_table',this.Personlist   );
-        this.item_table    ('jsonDate/item_table',this.itemlist       );
-        this.skill_table   ('jsonDate/skill_table',this.skilllist     );
-        this.tp_skill_table('jsonDate/tp-skill_table',this.tpSkilllist);
-        this.jq_table      ('jsonDate/jq_table',this.jqList           );
-        this.dl_table      ('jsonDate/dl_table',this.dlList           );
-        this.ex_table      ('jsonDate/ex',this.exList           );
-        //this.diaoluo.push("123");
+         this.GKdubiao('jsonDate/gq_table',this.GKlist);
+         this.Npcdubiao     ('jsonDate/npc_table',this.Npclist         );
+           this.Persondubiao  ('jsonDate/person_table',this.Personlist   );
+            this.tp_skill_table('jsonDate/tp-skill_table',this.tpSkilllist);
+             this.skill_table   ('jsonDate/skill_table',this.skilllist     );
+                this.ex_table      ('jsonDate/ex',this.exList           );
+                 this.dl_table      ('jsonDate/dl_table',this.dlList           );
     },
-    GKdubiao:function(path,Array)
+GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+            console.log("关卡：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -61,8 +57,10 @@ cc.Class({
     },
     Npcdubiao:function(path,Array)
     {
+         
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+            console.log("NPC：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -89,10 +87,13 @@ cc.Class({
             }
         });
     },
+    
     Persondubiao:function(path,Array)
     {
+     
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+            console.log("Persondubiao：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -117,40 +118,11 @@ cc.Class({
             }
         });
     },
-     Npcdubiao:function(path,Array)
+      tp_skill_table:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-            var str=clip;
-            var obj = eval('(' + str + ')');
-            for(var i=2;i<obj.length;i++ )
-            {
-                var node={};
-                node.ID=obj[i]['ID'];
-                node.NAME=obj[i]['NAME'];
-                node.IPT_APT=obj[i]['IPT_APT'];
-                node.IPT_LF=obj[i]['IPT_LF'];
-                node.IPT_ATK=obj[i]['IPT_ATK'];
-                node.IPT_DEF=obj[i]['IPT_DEF'];
-                node.IPT_CRIT=obj[i]['IPT_CRIT'];
-                node.IPT_IDEF=obj[i]['IPT_IDEF'];
-                node.PT_SK=obj[i]['PT_SK'];
-                node.PT_SK=obj[i]['PT_SK'];
-                node.SK1=obj[i]['SK1'];
-                node.SK2=obj[i]['SK2'];
-                node.SK3=obj[i]['SK3'];
-                node.SK4=obj[i]['SK4'];
-                node.SUR=obj[i]['SUR'];
-                node.PositionX=obj[i]['PositionX'];
-                node.PositionY=obj[i]['PositionY'];
-                Array.push(node);
-            }
-        });
-    }, 
-    tp_skill_table:function(path,Array)
-    {
-        let self = this;
-        cc.loader.loadRes(path, function (err, clip) {
+               console.log("tp_skill_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -175,10 +147,11 @@ cc.Class({
             }
         });
     },
-    skill_table:function(path,Array)
+     skill_table:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+             console.log("skill_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -207,6 +180,7 @@ cc.Class({
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+               console.log("ex_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -218,10 +192,11 @@ cc.Class({
             }
         });
     },
-     dl_table:function(path,Array)
+      dl_table:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+             console.log("dl_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -234,10 +209,11 @@ cc.Class({
             }
         });
     },
-    jq_table:function(path,Array)
+     jq_table:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+             console.log("jq_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -257,6 +233,7 @@ cc.Class({
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
+             console.log("item_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -272,6 +249,11 @@ cc.Class({
             }
         });
     },
+    
+    
+    
+    
+    
      Chaex:function(ID)
     {
         for(var i=0;i<this.exList.length;i++)
@@ -385,6 +367,12 @@ cc.Class({
     {
         return this.diaoluo;
     }
+    
+    
+    
+    
+    
+    
     
     
     

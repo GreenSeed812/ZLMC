@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "8dc57036-feea-4e20-a482-3da1a3502a94",
+  "uuid": "e584d4fc-e8e5-49b8-adfc-c59d4d08a6eb",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "beiBan": {
       "ver": "1.0.3",
-      "uuid": "60c81aa5-c355-4976-87b9-49fa3c985fcf",
-      "rawTextureUuid": "8dc57036-feea-4e20-a482-3da1a3502a94",
+      "uuid": "27577df0-229d-4173-9101-9b198c21f002",
+      "rawTextureUuid": "e584d4fc-e8e5-49b8-adfc-c59d4d08a6eb",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
