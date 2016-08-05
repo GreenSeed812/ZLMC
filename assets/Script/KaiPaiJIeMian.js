@@ -41,12 +41,6 @@ cc.Class({
     {
         var self=this;
         var node = cc.director.getScene().getChildByName('data'); 
-        //node.getComponent('NewScript').setDiaoluo("wocao10"); 
-        var GKnode = node.getComponent('NewScript').getDiaoluo(); 
-         
-        // node.getComponent('NewScript').setDiaoluo("guaiwu_01"); 
-        // node.getComponent('NewScript').setDiaoluo("guaiwu_01"); 
-        // node.getComponent('NewScript').setDiaoluo("guaiwu_01");
         console.log("eeeeeeeeeeeeeeeeeeeeeeeee"+GKnode);
         var tCount = 0;
         if(GKnode.length!=0)

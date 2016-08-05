@@ -34,7 +34,6 @@ cc.Class({
         shezhiviwe:              {    default:null,  type:cc.Node   },
         bzview:                  {    default:null,  type:cc.Node   },
         animation:               {    default:null},
-        
         losebutton:              {    default:null,  type :cc.Node },
         winbutton:              {    default:null,  type :cc.Node }
     },
@@ -50,7 +49,7 @@ cc.Class({
          var node = cc.director.getScene().getChildByName('data');  
          //获取节点的node脚本组件，并调用脚本里面的函数   
          var guanka = node.getComponent('NewScript').getDiJiGuan();  
-         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);  
+         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
          //cc.log('常驻节点的data值为'+data);
          console.log("dijige"+GKnode.N3);
          if(GKnode.N3==0)
@@ -81,6 +80,22 @@ cc.Class({
          }
          this.gameMain();
     },
+    
+    chuangJianJuQing:function()
+    {
+        
+        
+        
+         var node = cc.director.getScene().getChildByName('data');  
+         //获取节点的node脚本组件，并调用脚本里面的函数   
+         var guanka = node.getComponent('NewScript').getDiJiGuan(); 
+         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
+         console.log("GKnode.GKJRJQ"+GKnode.GKJRJQ);
+         node.getComponent('NewScript').load(GKnode.GKJRJQ,this.node);
+    },
+    
+    
+    
     gameMain:function()
     {
         console.log("c1223233c****************" + this.mastornumber );
@@ -138,6 +153,38 @@ cc.Class({
                 }
 		    }
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		this.chuangJianJuQing();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		//在控制台打印index是和显示的一样
 		for (var  k1=0; k1<5; k1++)
 		{

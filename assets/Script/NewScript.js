@@ -13,21 +13,132 @@ cc.Class({
         tpSkilllist:{  default:[]    },
         jqList:     {  default:[]    },
         dlList:     {  default:[]    },
-        exList:     {  default:[]    }
+        exList:     {  default:[]    },
+        szduihua: { default: [] },
+        szqiege: { default: [] },
+        sztouxiang: { default: [] },
+        shuzu: { default: [] },
+        juqingPrefab: { default: null, type: cc.Prefab },
+
     },
 
     // use this for initialization
     onLoad: function () {
          cc.game.addPersistRootNode(this.node);
         console.log("is Persist node " + cc.game.isPersistRootNode(this.node));
-         this.GKdubiao('jsonDate/gq_table',this.GKlist);
-         this.Npcdubiao     ('jsonDate/npc_table',this.Npclist         );
-           this.Persondubiao  ('jsonDate/person_table',this.Personlist   );
-            this.tp_skill_table('jsonDate/tp-skill_table',this.tpSkilllist);
-             this.skill_table   ('jsonDate/skill_table',this.skilllist     );
-                this.ex_table      ('jsonDate/ex',this.exList           );
-                 this.dl_table      ('jsonDate/dl_table',this.dlList           );
+        this.GKdubiao('jsonDate/gq_table',this.GKlist);
+        this.Npcdubiao     ('jsonDate/npc_table',this.Npclist         );
+        this.Persondubiao  ('jsonDate/person_table',this.Personlist   );
+        this.tp_skill_table('jsonDate/tp-skill_table',this.tpSkilllist);
+        this.skill_table   ('jsonDate/skill_table',this.skilllist     );
+        this.ex_table      ('jsonDate/ex',this.exList           );
+        this.dl_table      ('jsonDate/dl_table',this.dlList           );
+        this.loadJuQing("jsonDate/jq_table");
+        this.loadQieGe("jsonDate/juqingqiege");
+        this.loadTouXiang("jsonDate/IDtouxiang"); 
     },
+    
+    
+    load: function (juqingID, node) {
+        for (var i = 0; i < this.szqiege.length; i++ ) {
+            if (juqingID == this.szqiege[i].ID) { 
+                console.log("剧情ID" + this.szqiege[i].ID + "dangqian" + i);
+                 this.juqingNum = this.szqiege[i].NUM;
+                 this.juqingBegan = this.szqiege[i].BEGAN;
+            }
+        }
+        for (var j = 0; j < this.juqingNum; j++ ) {
+            var canshu = {};
+            canshu.Num = this.juqingNum;
+            canshu.NR = this.szduihua[this.juqingBegan].NR;
+            canshu.LR = this.szduihua[this.juqingBegan].LR;
+            canshu.RR = this.szduihua[this.juqingBegan].RR;
+            for (var i = 0; i < this.sztouxiang.length; i++ ) {
+                if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].LR) {
+                    canshu.PATH = this.sztouxiang[i].NAME;
+                    console.log(canshu.PATH);
+                } else if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].RR) {
+                    canshu.PATH = this.sztouxiang[i].NAME;
+                    console.log(canshu.PATH);
+                }
+            }
+            this.shuzu.push(canshu);
+            this.juqingBegan++;
+        }
+        console.log("显示剧情数组准备完成");
+        this.CreateJuQing(this.shuzu,node);
+    }, 
+    
+    CreateJuQing: function (arr, node ) {
+        var JuQing = cc.instantiate(this.juqingPrefab);
+        node.addChild(JuQing);
+        JuQing.setPosition(0,0);
+        JuQing.getComponent('JuQing').changjing = this;
+        JuQing.getComponent('JuQing').ShowJuQing(arr);
+        console.log("预制件创建成功");
+    }, 
+    loadJuQing: function (path) {
+        let self = this;
+        cc.loader.loadRes(path, 
+        function (err, clip) {
+            var str = clip;
+            var obj = eval('(' + str + ')');
+            var lenght = obj.length;
+            console.log(lenght);
+            for (var i = 2; i < lenght; i++ ) {
+                var duihua = {};
+                duihua.ID = obj[i]["ID"];
+                duihua.NR = obj[i]["NR"];
+                duihua.LR = obj[i]["LR"];
+                duihua.RR = obj[i]["RR"];
+                duihua.BR = obj[i]["BR"];
+                duihua.SE = obj[i]["SE"];
+                self.szduihua.push(duihua);
+            }
+            self.szduihuaCC = 104;
+            console.log("piupiupiu" + self.szduihuaCC);
+            console.log("剧情加载完成");
+        });
+    },
+    
+    loadTouXiang: function (path) {
+        let self = this;
+        cc.loader.loadRes(path,
+        function (err, clip) {
+            var str = clip;
+            var obj = eval('(' + str + ')');
+            var lenght = obj.length;
+            for (var i = 0; i < lenght; i++ ) {
+                var touxiang = {};
+                touxiang.ID = obj[i]["ID"];
+                touxiang.NAME = obj[i]["NAME"];
+                self.sztouxiang.push(touxiang);
+            }
+        });
+        console.log("人物头像加载完成");
+    },
+    loadQieGe: function (path) {
+        let self = this;
+        cc.loader.loadRes(path,
+        function (err, clip) {
+            var str = clip;
+            var obj = eval('(' + str + ')');
+            var lenght = obj.length;
+            for (var i = 1 ; i < lenght; i++ ) {
+                var qiege = {};
+                qiege.ID = obj[i]["ID"];
+                qiege.NUM = obj[i]["NUM"];
+                qiege.BEGAN = obj[i]["BEGAN"];
+                qiege.END = obj[i]["END"];
+                self.szqiege.push(qiege);
+            }
+        });
+        console.log("剧情切割加载完成");
+    },
+    
+    
+    
+    
 GKdubiao:function(path,Array)
     {
         let self = this;

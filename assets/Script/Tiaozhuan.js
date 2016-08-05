@@ -24,6 +24,7 @@ cc.Class({
     },
     toMenu:function()
     {
+       
          this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
         cc.director.loadScene('menu')
         })));
