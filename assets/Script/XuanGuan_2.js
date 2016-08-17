@@ -66,8 +66,18 @@ cc.Class({
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID);  
-        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
-        cc.director.loadScene('helloworld')
+        this.node.runAction(cc.sequence(cc.fadeOut(0.3),cc.callFunc(function(){
+        cc.director.loadScene('helloworld');
+
+
+        // var guanka = node.getComponent('NewScript').getDiJiGuan(); 
+        // var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
+        // var nodegl = cc.find('data').getComponent('juqingguanli');  
+        // nodegl.playjq();
+
+
+
+
         })));
     },
      jinruzhandou2:function()
@@ -76,7 +86,7 @@ cc.Class({
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID1);  
-        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
+        this.node.runAction(cc.sequence(cc.fadeOut(0.3),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
     },
@@ -86,7 +96,7 @@ cc.Class({
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID2);  
-        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
+        this.node.runAction(cc.sequence(cc.fadeOut(0.3),cc.callFunc(function(){
         cc.director.loadScene('helloworld')
         })));
     },

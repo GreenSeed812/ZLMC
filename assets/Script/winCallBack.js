@@ -15,10 +15,14 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-
+        this.zIndex=100;
+        console.log("胜利界面的弹出：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：");
     },
     
     winCallBack: function () {
+        
+        
+        console.log("shenglianniu:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         cc.director.loadScene('GuanQia');
     }
 

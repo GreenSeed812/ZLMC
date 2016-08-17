@@ -1,3 +1,4 @@
+
 cc.Class({
     extends: cc.Component,
 
@@ -8,39 +9,89 @@ cc.Class({
         // yinyue:        { default:null,type:cc.Sprite },
         // tishengjimina: { default:null,type:cc.Node   }
         
-        
+        CardPrefab: { default: null, type: cc.Prefab },
+        HelpPrefab: { default: null, type: cc.Prefab },
+        StopPrefab: { default: null, type: cc.Prefab },
+        ShowNode: { default: null, type: cc.Node },
+        juQingNum: 0,
     },
 
     // use this for initialization
     onLoad: function () {
-
-
+        
     },
     toXuanGuan:function()
     {
-         this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
-            cc.director.loadScene('GuanQia')
+        //////////  加入剧情
+
+        var self = this;
+        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function () 
+        {
+            //nodea.getComponent('juqingguanli').play(0, this.node, null, function(){cc.director.loadScene('GuanQia')});
+            
+            var quanju = cc.find('data').getComponent('QuanJuNum'); 
+            if (quanju.jishuNum1 == 0) {
+                var dian = cc.find('data').getComponent('juqingguanli');
+                dian.getComponent('juqingguanli').play(0, self.ShowNode, null, function () { cc.director.loadScene('GuanQia')});
+                quanju.jishuNum1 = 1;
+                console.log(self.juQingNum);
+            } else if (quanju.jishuNum1 == 1) {
+                console.log("piupiupiuaaaaaaaaaaaaaaaaaaaaaaaaa");
+                cc.director.loadScene('GuanQia');
+            }
+            //cc.director.loadScene('GuanQia');
+            
         })));
     },
     toMenu:function()
     {
        
-         this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
-        cc.director.loadScene('menu')
+        this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
+            cc.director.loadScene('menu')
         })));
     },
+    
+    ///////   弹出help预制件
     tohelp:function()
     {
-         this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
-        cc.director.loadScene('help')
-        })));
+        var Help = cc.instantiate(this.HelpPrefab);
+        this.node.addChild(Help);
+        Help.setPosition(0,0);
+        
+        //  this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
+        // cc.director.loadScene('help')
+        // })));
     },
+    
+    
+    
+    
+    
+    ///// 弹出card预制件  跳转到卡牌界面 
+    
     toCard:function()
     {
-         this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
-        cc.director.loadScene('card')
-        })));
+        var Card = cc.instantiate(this.CardPrefab);
+        this.node.addChild(Card);
+        Card.setPosition(0,0);
+        
+        // this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
+        // cc.director.loadScene('card')
+        // })));
     },
+    
+    
+    /////////////////////////////////
+    
+    
+    ///////////  弹出暂停框 预制件 //////////
+    toZanTing: function () {
+        var ZanTing = cc.instantiate(this.StopPrefab);
+        this.node.addChild(ZanTing);
+        ZanTing.setPosition(0,0);
+    },
+    ///////////////////////////////////////
+    
     toJueSe:function()
     {
         this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function(){
@@ -63,7 +114,7 @@ cc.Class({
             this.yinxiao.node.active=false;
         }
     },
-     guanYinXiao:function()
+    guanYinXiao:function()
     {
         if(this.yinyue.node.active===false)
         {
@@ -71,9 +122,7 @@ cc.Class({
         }else if(this.yinyue.node.active===true)
         {
             this.yinyue.node.active=false;
-            
         }
-        
     },
     tishengjiemian:function()
     {

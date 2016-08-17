@@ -43,7 +43,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                    this. outPut= this.attackPower*(1+blocknum*0.1)*(1+0.5);//金属性对木属性多造成50%的伤害
+                    this. outPut= this.attackPower*(40+blocknum*0.1)*(1+0.5);//金属性对木属性多造成50%的伤害
                     console.log("英雄输出伤害"+this. outPut);
                     }
                     
@@ -52,7 +52,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                   this. outPut= this.attackPower*(1+blocknum*0.1)*(1-0.5);;//金属性对火属性少造成50%的伤
+                   this. outPut= this.attackPower*(40+blocknum*0.1)*(1-0.5);;//金属性对火属性少造成50%的伤
                     console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
@@ -60,7 +60,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                    this. outPut= this.attackPower*(1+blocknum*0.1);
+                    this. outPut= this.attackPower*(40+blocknum*0.1);
                      console.log("英雄输出伤害"+this. outPut);
                     }
                 }
@@ -73,7 +73,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                    this. outPut= this.attackPower*(1+blocknum*0.1)*(1+0.5);//木属性对土属性多造成50%的伤害
+                    this. outPut= this.attackPower*(40+blocknum*0.1)*(1+0.5);//木属性对土属性多造成50%的伤害
                      console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==0)
@@ -81,7 +81,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                   this. outPut= this.attackPower*(1+blocknum*0.1)*(1-0.5);//木属性对金属性少造成50%的伤
+                   this. outPut= this.attackPower*(40+blocknum*0.1)*(1-0.5);//木属性对金属性少造成50%的伤
                     console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
@@ -89,7 +89,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                   this. outPut= this.attackPower*(1+blocknum*0.1);
+                   this. outPut= this.attackPower*(40+blocknum*0.1);
                     }
                 }
                 monster.getComponent('Monster').injured(this.outPut);
@@ -102,7 +102,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                    this. outPut= this.attackPower*(1+blocknum*0.1)*(1+0.5);//水属性对火属性多造成50%的伤害
+                    this. outPut= this.attackPower*(40+blocknum*0.1)*(1+0.5);//水属性对火属性多造成50%的伤害
                      console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==1)
@@ -110,7 +110,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                    this. outPut= this.attackPower*(1+blocknum*0.1)*(1-0.5);//水属性对木属性少造成50%的伤
+                    this. outPut= this.attackPower*(40+blocknum*0.1)*(1-0.5);//水属性对木属性少造成50%的伤
                      console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
@@ -118,7 +118,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                        this. outPut= this.attackPower*(1+blocknum*0.1);
+                        this. outPut= this.attackPower*(40+blocknum*0.1);
                     }
                 }
                 monster.getComponent('Monster').injured(this.outPut);
@@ -130,7 +130,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                   this. outPut= this.attackPower*(1+blocknum*0.1)*(1+0.5);//火属性对金属性多造成50%的伤害
+                   this. outPut= this.attackPower*(40+blocknum*0.1)*(1+0.5);//火属性对金属性多造成50%的伤害
                     console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==2)
@@ -138,7 +138,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                   this. outPut= this.attackPower*(1+blocknum*0.1)*(1-0.5);//火属性对水属性少造成50%的伤
+                   this. outPut= this.attackPower*(40+blocknum*0.1)*(1-0.5);//火属性对水属性少造成50%的伤
                     console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
@@ -147,7 +147,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                         
-                    this. outPut= this.attackPower*(1+blocknum*0.1);
+                    this. outPut= this.attackPower*(40+blocknum*0.1);
                     }
                 }
                 monster.getComponent('Monster').injured(this.outPut);
@@ -159,7 +159,7 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                    this. outPut= this.attackPower*(1+blocknum*0.1)*(1+0.5);//土属性对水属性多造成50%的伤害
+                    this. outPut= this.attackPower*(40+blocknum*0.1)*(1+0.5);//土属性对水属性多造成50%的伤害
                      console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==1)
@@ -167,14 +167,14 @@ cc.Class({
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
-                   this. outPut= this.attackPower*(1+blocknum*0.1)*(1-0.5);//土属性对木属性少造成50%的伤
+                   this. outPut= this.attackPower*(40+blocknum*0.1)*(1-0.5);//土属性对木属性少造成50%的伤
                     console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
                 {if(blocknum<0){
                         blocknum=0;
                     } else{  
-                    this. outPut= this.attackPower*(1+blocknum*0.1);
+                    this. outPut= this.attackPower*(40+blocknum*0.1);
                     }
                 }
                 monster.getComponent('Monster').injured(this.outPut);

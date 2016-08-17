@@ -1,146 +1,47 @@
-2016-08-05T00:25:30.719Z - normal: Load ~/.CocosCreator/settings.json
-2016-08-05T00:25:30.735Z - normal: checking language setting...
-2016-08-05T00:25:30.735Z - normal: Language: zh
-2016-08-05T00:25:31.905Z - success: protocol editor-framework registerred
-2016-08-05T00:25:31.905Z - success: protocol app registerred
-2016-08-05T00:25:31.905Z - success: protocol packages registerred
-2016-08-05T00:25:31.905Z - success: protocol unpack registerred
-2016-08-05T00:25:32.045Z - normal: connected!
-2016-08-05T00:25:32.045Z - normal: Check project E:\ZLMC
-2016-08-05T00:25:32.045Z - normal: Initializing Cocos Creator Editor
-2016-08-05T00:25:32.638Z - normal: Initializing Cocos2d
-2016-08-05T00:25:32.981Z - normal: Initializing Asset Database
-2016-08-05T00:25:33.090Z - success: protocol uuid registerred
-2016-08-05T00:25:33.090Z - success: protocol uuid registerred
-2016-08-05T00:25:33.090Z - success: protocol thumbnail registerred
-2016-08-05T00:25:33.090Z - normal: Loading editor/builtin packages
-2016-08-05T00:25:33.387Z - success: assets loaded
-2016-08-05T00:25:33.387Z - success: builder loaded
-2016-08-05T00:25:33.402Z - success: hierarchy loaded
-2016-08-05T00:25:33.402Z - success: inspector loaded
-2016-08-05T00:25:33.402Z - success: keystore loaded
-2016-08-05T00:25:33.418Z - success: node-library loaded
-2016-08-05T00:25:33.418Z - success: preferences loaded
-2016-08-05T00:25:33.465Z - success: project-importer loaded
-2016-08-05T00:25:33.465Z - success: project-settings loaded
-2016-08-05T00:25:33.465Z - success: ui-kit loaded
-2016-08-05T00:25:33.480Z - success: ui-grid loaded
-2016-08-05T00:25:33.496Z - success: scene loaded
-2016-08-05T00:25:33.496Z - success: sprite-editor loaded
-2016-08-05T00:25:33.512Z - success: timeline loaded
-2016-08-05T00:25:33.512Z - success: ui-kit-extra loaded
-2016-08-05T00:25:33.512Z - normal: Loading builtin packages
-2016-08-05T00:25:33.527Z - success: asset-db-debugger loaded
-2016-08-05T00:25:33.527Z - success: code-editor loaded
-2016-08-05T00:25:33.527Z - success: color-picker loaded
-2016-08-05T00:25:33.543Z - success: console loaded
-2016-08-05T00:25:33.543Z - success: package-manager loaded
-2016-08-05T00:25:33.543Z - success: tester loaded
-2016-08-05T00:25:33.558Z - success: ui-tree loaded
-2016-08-05T00:25:33.636Z - normal: Initializing project E:\ZLMC
-2016-08-05T00:25:33.652Z - normal: Loading packages
-2016-08-05T00:25:33.668Z - normal: Run Application
-2016-08-05T00:25:56.202Z - success: preview server running at http://localhost:7456
-2016-08-05T00:25:56.203Z - normal: Compiling scripts...
-2016-08-05T00:26:06.241Z - normal: Compiled successfully
-2016-08-05T00:26:13.665Z - normal: 1.1.1
-2016-08-05T00:49:14.842Z - normal: Compiled successfully
-2016-08-05T00:49:25.593Z - normal: Checked Python Version [2.7.5]
-2016-08-05T00:49:30.651Z - normal: Compiled successfully
-2016-08-05T00:49:33.052Z - normal: 1.1.1
-2016-08-05T00:49:35.190Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-05T00:53:59.824Z - normal: Checked Python Version [2.7.5]
-2016-08-05T00:54:04.569Z - normal: Compiled successfully
-2016-08-05T00:54:07.020Z - normal: 1.1.1
-2016-08-05T00:54:08.969Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-05T00:54:21.003Z - normal: Checked Python Version [2.7.5]
-2016-08-05T00:54:26.032Z - normal: Compiled successfully
-2016-08-05T00:54:28.425Z - normal: 1.1.1
-2016-08-05T00:54:30.533Z - normal: Checked Python Version [2.7.5]
-2016-08-05T00:54:33.692Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-05T00:57:00.850Z - normal: Checked Python Version [2.7.5]
-2016-08-05T00:57:02.357Z - normal: Start to compile native project. Please wait...
-2016-08-05T00:57:02.358Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T00:58:06.717Z - normal: Compile native project successfully.
-2016-08-05T01:00:34.900Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:00:40.159Z - normal: Compiled successfully
-2016-08-05T01:00:42.595Z - normal: 1.1.1
-2016-08-05T01:00:44.728Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:00:47.756Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-05T01:00:51.039Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:00:52.509Z - normal: Start to compile native project. Please wait...
-2016-08-05T01:00:52.509Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T01:01:38.118Z - normal: Compile native project successfully.
-2016-08-05T01:02:32.735Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:02:34.220Z - normal: Start to compile native project. Please wait...
-2016-08-05T01:02:34.220Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T01:03:17.562Z - normal: Compile native project successfully.
-2016-08-05T01:04:36.255Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:04:41.984Z - normal: Compiled successfully
-2016-08-05T01:04:44.434Z - normal: 1.1.1
-2016-08-05T01:04:46.637Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:04:49.552Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-05T01:06:11.273Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:06:16.584Z - normal: Compiled successfully
-2016-08-05T01:06:18.969Z - normal: 1.1.1
-2016-08-05T01:06:21.240Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:06:25.152Z - normal: Built to "E:\zlmcApp" successfully
-2016-08-05T01:06:27.110Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:06:28.581Z - normal: Start to compile native project. Please wait...
-2016-08-05T01:06:28.581Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T01:07:16.046Z - normal: Compile native project successfully.
-2016-08-05T01:10:13.572Z - normal: Compiled successfully
-2016-08-05T01:20:31.725Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:20:33.323Z - normal: Creating native cocos project to  E:\hehe\jsb-default
-2016-08-05T01:21:20.192Z - normal: Compiled successfully
-2016-08-05T01:21:23.462Z - normal: 1.1.1
-2016-08-05T01:21:26.560Z - normal: Built to "E:\hehe" successfully
-2016-08-05T01:25:46.998Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:25:48.550Z - normal: Start to compile native project. Please wait...
-2016-08-05T01:25:48.550Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T01:33:33.784Z - normal: Compile native project successfully.
-2016-08-05T01:51:56.432Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:52:01.547Z - normal: Compiled successfully
-2016-08-05T01:52:04.177Z - normal: 1.1.1
-2016-08-05T01:52:07.215Z - normal: Built to "E:\hehe" successfully
-2016-08-05T01:52:09.390Z - normal: Checked Python Version [2.7.5]
-2016-08-05T01:52:10.947Z - normal: Start to compile native project. Please wait...
-2016-08-05T01:52:10.947Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T01:52:55.844Z - normal: Compile native project successfully.
-2016-08-05T02:03:25.190Z - normal: Checked Python Version [2.7.5]
-2016-08-05T02:03:30.292Z - normal: Compiled successfully
-2016-08-05T02:03:32.911Z - normal: 1.1.1
-2016-08-05T02:03:35.029Z - normal: Built to "E:\hehe" successfully
-2016-08-05T02:03:48.329Z - normal: Checked Python Version [2.7.5]
-2016-08-05T02:03:49.840Z - normal: Start to compile native project. Please wait...
-2016-08-05T02:03:49.840Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T02:04:46.042Z - normal: Compile native project successfully.
-2016-08-05T02:05:20.413Z - normal: Checked Python Version [2.7.5]
-2016-08-05T02:05:25.111Z - normal: Compiled successfully
-2016-08-05T02:05:27.539Z - normal: 1.1.1
-2016-08-05T02:05:29.678Z - normal: Built to "E:\hehe" successfully
-2016-08-05T02:05:42.512Z - normal: Checked Python Version [2.7.5]
-2016-08-05T02:05:44.228Z - normal: Start to compile native project. Please wait...
-2016-08-05T02:05:44.228Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2016-08-05T02:06:36.508Z - normal: Compile native project successfully.
-2016-08-05T02:09:55.421Z - normal: Compiled successfully
-2016-08-05T03:07:57.470Z - normal: Compiled successfully
-2016-08-05T03:13:15.398Z - normal: Compiled successfully
-2016-08-05T03:14:23.516Z - normal: Compiled successfully
-2016-08-05T03:15:19.684Z - normal: Compiled successfully
-2016-08-05T03:26:19.141Z - normal: Compiled successfully
-2016-08-05T03:26:43.942Z - normal: Compiled successfully
-2016-08-05T03:28:08.589Z - normal: Compiled successfully
-2016-08-05T03:28:24.645Z - normal: Compiled successfully
-2016-08-05T03:32:06.260Z - normal: Compiled successfully
-2016-08-05T03:36:14.980Z - normal: Compiled successfully
-2016-08-05T03:36:44.357Z - normal: Compiled successfully
-2016-08-05T03:37:33.883Z - normal: Compiled successfully
-2016-08-05T03:42:55.704Z - normal: Compiled successfully
-2016-08-05T03:44:07.748Z - normal: Compiled successfully
-2016-08-05T03:49:26.695Z - normal: Compiled successfully
-2016-08-05T03:49:39.410Z - normal: Compiled successfully
-2016-08-05T03:50:12.238Z - normal: Compiled successfully
-2016-08-05T03:50:52.934Z - normal: Compiled successfully
-2016-08-05T03:57:49.000Z - normal: Compiled successfully
-2016-08-05T03:58:49.448Z - info: shutdown preview server
+2016-08-17T00:21:33.501Z - normal: Load ~/.CocosCreator/settings.json
+2016-08-17T00:21:33.501Z - normal: checking language setting...
+2016-08-17T00:21:33.501Z - normal: Language: zh
+2016-08-17T00:21:34.593Z - success: protocol editor-framework registerred
+2016-08-17T00:21:34.593Z - success: protocol app registerred
+2016-08-17T00:21:34.593Z - success: protocol packages registerred
+2016-08-17T00:21:34.593Z - success: protocol unpack registerred
+2016-08-17T00:21:34.687Z - normal: connected!
+2016-08-17T00:21:34.703Z - normal: Check project E:\新建文件夹\ZLMC
+2016-08-17T00:21:34.703Z - normal: Initializing Cocos Creator Editor
+2016-08-17T00:21:35.155Z - normal: Initializing Cocos2d
+2016-08-17T00:21:35.483Z - normal: Initializing Asset Database
+2016-08-17T00:21:35.561Z - success: protocol uuid registerred
+2016-08-17T00:21:35.561Z - success: protocol uuid registerred
+2016-08-17T00:21:35.561Z - success: protocol thumbnail registerred
+2016-08-17T00:21:35.561Z - normal: Loading editor/builtin packages
+2016-08-17T00:21:35.795Z - success: assets loaded
+2016-08-17T00:21:35.810Z - success: builder loaded
+2016-08-17T00:21:35.810Z - success: hierarchy loaded
+2016-08-17T00:21:35.826Z - success: inspector loaded
+2016-08-17T00:21:35.826Z - success: keystore loaded
+2016-08-17T00:21:35.826Z - success: node-library loaded
+2016-08-17T00:21:35.841Z - success: preferences loaded
+2016-08-17T00:21:35.873Z - success: project-importer loaded
+2016-08-17T00:21:35.873Z - success: project-settings loaded
+2016-08-17T00:21:35.873Z - success: ui-kit loaded
+2016-08-17T00:21:35.888Z - success: ui-grid loaded
+2016-08-17T00:21:35.888Z - success: scene loaded
+2016-08-17T00:21:35.888Z - success: sprite-editor loaded
+2016-08-17T00:21:35.904Z - success: timeline loaded
+2016-08-17T00:21:35.904Z - success: ui-kit-extra loaded
+2016-08-17T00:21:35.904Z - normal: Loading builtin packages
+2016-08-17T00:21:35.919Z - success: asset-db-debugger loaded
+2016-08-17T00:21:35.919Z - success: code-editor loaded
+2016-08-17T00:21:35.919Z - success: color-picker loaded
+2016-08-17T00:21:35.919Z - success: console loaded
+2016-08-17T00:21:35.919Z - success: package-manager loaded
+2016-08-17T00:21:35.935Z - success: tester loaded
+2016-08-17T00:21:35.935Z - success: ui-tree loaded
+2016-08-17T00:21:36.013Z - normal: Initializing project E:\新建文件夹\ZLMC
+2016-08-17T00:21:36.029Z - normal: Loading packages
+2016-08-17T00:21:36.029Z - normal: Run Application
+2016-08-17T00:21:47.651Z - success: preview server running at http://localhost:7456
+2016-08-17T00:21:47.651Z - normal: Compiling scripts...
+2016-08-17T00:21:50.037Z - normal: Compiled successfully
+2016-08-17T00:21:55.766Z - normal: 1.1.1
+2016-08-17T00:22:28.817Z - info: shutdown preview server

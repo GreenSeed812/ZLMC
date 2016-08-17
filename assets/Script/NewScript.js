@@ -39,43 +39,65 @@ cc.Class({
     },
     
     
-    load: function (juqingID, node) {
-        for (var i = 0; i < this.szqiege.length; i++ ) {
-            if (juqingID == this.szqiege[i].ID) { 
-                console.log("剧情ID" + this.szqiege[i].ID + "dangqian" + i);
-                 this.juqingNum = this.szqiege[i].NUM;
-                 this.juqingBegan = this.szqiege[i].BEGAN;
-            }
-        }
-        for (var j = 0; j < this.juqingNum; j++ ) {
-            var canshu = {};
-            canshu.Num = this.juqingNum;
-            canshu.NR = this.szduihua[this.juqingBegan].NR;
-            canshu.LR = this.szduihua[this.juqingBegan].LR;
-            canshu.RR = this.szduihua[this.juqingBegan].RR;
-            for (var i = 0; i < this.sztouxiang.length; i++ ) {
-                if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].LR) {
-                    canshu.PATH = this.sztouxiang[i].NAME;
-                    console.log(canshu.PATH);
-                } else if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].RR) {
-                    canshu.PATH = this.sztouxiang[i].NAME;
-                    console.log(canshu.PATH);
+    chuangjianjuqing: function ( ) {
+        
+    },
+    
+    
+    
+    
+    load: function (juqingID, node, face, callback) {
+        if (juqingID != 0) {
+            for (var i = 0; i < this.szqiege.length; i++ ) {
+                if (juqingID == this.szqiege[i].ID) { 
+                    console.log("剧情ID" + this.szqiege[i].ID + "dangqian" + i);
+                    this.juqingNum = this.szqiege[i].NUM;
+                    this.juqingBegan = this.szqiege[i].BEGAN;
                 }
             }
-            this.shuzu.push(canshu);
-            this.juqingBegan++;
+            console.log("xunzhaoNUM" + this.juqingNum );
+            for (var j = 0; j < this.juqingNum; j++ ) {
+                var canshu = {};
+                canshu.Num = this.juqingNum;
+                canshu.NR = this.szduihua[this.juqingBegan].NR;
+                canshu.LR = this.szduihua[this.juqingBegan].LR;
+                canshu.RR = this.szduihua[this.juqingBegan].RR;
+                for (var i = 0; i < this.sztouxiang.length; i++ ) {
+                    if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].LR) {
+                        canshu.PATH = this.sztouxiang[i].NAME;
+                        console.log(canshu.PATH);
+                    } else if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].RR) {
+                        canshu.PATH = this.sztouxiang[i].NAME;
+                        console.log(canshu.PATH);
+                    }
+                }
+                this.shuzu.push(canshu);
+                this.juqingBegan++;
+            }
+            console.log("显示剧情数组准备完成"+face);
+            this.CreateJuQing(this.shuzu, node, face, callback);
+            this.shuzu.splice(0,this.shuzu.length);//清空数组 
+            console.log(this.shuzu); // 输出 []，空数组，即被清空了
+        
+        } else {
+            if(face!=null)
+            {
+                face.getComponent('game').winbutton.active=true;
+            }
+             
         }
-        console.log("显示剧情数组准备完成");
-        this.CreateJuQing(this.shuzu,node);
     }, 
     
-    CreateJuQing: function (arr, node ) {
+    CreateJuQing: function (arr, node ,face, callback2) {
         var JuQing = cc.instantiate(this.juqingPrefab);
         node.addChild(JuQing);
         JuQing.setPosition(0,0);
         JuQing.getComponent('JuQing').changjing = this;
+        console.log("popo::::::::"+face);
         JuQing.getComponent('JuQing').ShowJuQing(arr);
+        JuQing.getComponent('JuQing').faceShow(face,callback2);
         console.log("预制件创建成功");
+        //callback2();
     }, 
     loadJuQing: function (path) {
         let self = this;
@@ -150,6 +172,7 @@ GKdubiao:function(path,Array)
             {
                 var node={};
                 node.GKID=obj[i]['GKID'];
+                node.GKMAP=obj[i]['GKMAP'];
                 node.GKNAME=obj[i]['GKNAME'];
                 node.BC=obj[i]['BC'];
                 node.BJYY=obj[i]['BJYY'];
@@ -168,7 +191,6 @@ GKdubiao:function(path,Array)
     },
     Npcdubiao:function(path,Array)
     {
-         
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
             console.log("NPC：：：："+err);
@@ -365,7 +387,7 @@ GKdubiao:function(path,Array)
     
     
     
-     Chaex:function(ID)
+    Chaex:function(ID)
     {
         for(var i=0;i<this.exList.length;i++)
         {
@@ -425,20 +447,33 @@ GKdubiao:function(path,Array)
             }
         }
     },
+    
+    /////////////////////////////////////
+    // ChaGK:function(ID,boCi)
+    // {
+    //     for(var i=0;i<this.GKlist.length;i++)
+    //     {
+    //         this.GKlist
+    //         if(this.GKlist[i].GKID==ID&&this.GKlist[i].BC==boCi)
+    //         {
+    //             return this.GKlist[i]; 
+    //         0}
+    //     }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    // },
     ChaGK:function(ID,boCi)
     {
         for(var i=0;i<this.GKlist.length;i++)
         {
-            this.GKlist
             if(this.GKlist[i].GKID==ID&&this.GKlist[i].BC==boCi)
             {
                 return this.GKlist[i]; 
-            0}
+            }
         }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     },
+    
+    ////////////////////////////////////
     ChaNPC:function(ID)
     {
-        
         for(var i=0;i<this.Npclist.length;i++)
         {
             if(this.Npclist[i].ID==ID)
@@ -451,9 +486,9 @@ GKdubiao:function(path,Array)
     {
         console.log("tttttttttt：：：：：：：：：：：：：：");
         for(var i=0;i<this.Personlist.length;i++)
-        {
+        { 
             if(this.Personlist[i].ID==ID)
-            { 
+            {
                 return this.Personlist[i];
             }
         }
