@@ -4,28 +4,19 @@ cc.Class({
     properties: {
         
         kongweiPrefab: { default: null, type: cc.Prefab },
-        kaibei: { default: null, type: cc.Node },
         ////////////////// 移动到其他脚本中做成全局变量 ///////////////////////////
         LastKongWeiX: -360, // 最后一张card的x坐标
         LastKongWeiY: -140, // 最后一张card的y坐标
         LineKwNum: 0,       // 横排中card的数量
         ColumnKwNum: 0,     // 竖排中card的数量
         ///////////////////////////////////////////////////////////////////////////
+        
         MyKongWeiX: 0,
         MyKongWeiY: 0,
     },
     // use this for initialization
     onLoad: function () {
-        for(var i=0;i<16;i++)
-        {
-            for(var j=0;j<4;j++)
-            {
-                var KongWei = cc.instantiate(this.kongweiPrefab);
-                KongWei.setPosition(j*220-350,i*245-3760);
-                this.kaibei.addChild(KongWei);
-            }
-        }
-        console.log("卡牌")
+        
     },
     
     // 通过掉落ID创建相应的预制件

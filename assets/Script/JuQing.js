@@ -27,10 +27,8 @@ cc.Class({
     
     faceShow:function(face, callBack)
     {
-       
         this.isEnd=face;
         this.callBack = callBack;
-         console.log("callBack:::::dsfsdfsdfsdf::::::::::::::sdfsdf:::::::::::this.callBack::::"+  this.callBack);
     },
     ShowJuQing: function (arr) {
         console.log("进入剧情显示");
@@ -98,17 +96,7 @@ cc.Class({
                this.isEnd = false;
                 this.node.removeFromParent();
             }
-            if(this.callBack!=null)
-            {
-                  this.callBack();
-                  console.log("qweqweqwe")
-            }
-               
-                   
-                
-               
-            
-            
+            this.callBack();
         }
        
         

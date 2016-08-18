@@ -2,9 +2,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        
-        isGengHuanMap:{default:0},
-        jishuNum1:{default:0} 
+        isGengHuanMap: 0,
+        jishuNum1: 0,
+        kpNum: 0,
+        DLNum: 0,
     },
 
     // use this for initialization

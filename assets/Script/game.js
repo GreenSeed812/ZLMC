@@ -77,63 +77,8 @@ cc.Class({
         var node = cc.director.getScene().getChildByName('data');  
         //获取节点的node脚本组件，并调用脚本里面的函数   
         console.log(node.getComponent('NewScript').getDiJiGuan());
-        var guanka = node.getComponent('NewScript').getDiJiGuan();  
-         
-         
-        //  var IDNum = node.getComponent('NewScript').getdata();
-        //  switch (IDNum) {
-        //     case 1: // 朱雀场景
-        //         var realUrl = cc.url.raw('resources/zhandouChangJing/zhuquechangjing.png');
-        //         var texture = cc.textureCache.addImage(realUrl);
-        //         this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-        //         this.GuanKaMap.node.width = 1380;
-        //         this.GuanKaMap.node.height = 5178;
-        //         break;
-        //     case 2: // 白虎场景
-        //         var realUrl = cc.url.raw('resources/zhandouChangJing/baihuchangjing.png');
-        //         var texture = cc.textureCache.addImage(realUrl);
-        //         this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-        //         this.GuanKaMap.node.width = 1380;
-        //         this.GuanKaMap.node.height = 5178;
-        //         break;
-        //     case 3: // 玄武场景
-        //         var realUrl = cc.url.raw('resources/zhandouChangJing/xuanwuchangjing.png');
-        //         var texture = cc.textureCache.addImage(realUrl);
-        //         this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-        //         this.GuanKaMap.node.width = 1380;
-        //         this.GuanKaMap.node.height = 5178;
-        //         break;
-        //     case 4: // 青龙场景
-        //         var realUrl = cc.url.raw('resources/zhandouChangJing/qinglongchangjing.png');
-        //         var texture = cc.textureCache.addImage(realUrl);
-        //         this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-        //         this.GuanKaMap.node.width = 1380;
-        //         this.GuanKaMap.node.height = 5178;
-        //         break;
-        //     case 5: // 麒麟场景
-        //         var realUrl = cc.url.raw('resources/zhandouChangJing/qilinchangjing.png');
-        //         var texture = cc.textureCache.addImage(realUrl);
-        //         this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-        //         this.GuanKaMap.node.width = 1380;
-        //         this.GuanKaMap.node.height = 5178;
-        //         break;
-        //     case 6: // 刑天场景
-        //         var realUrl = cc.url.raw('resources/zhandouChangJing/xingtianchangjing.png');
-        //         var texture = cc.textureCache.addImage(realUrl);
-        //         this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-        //         this.GuanKaMap.node.width = 1380;
-        //         this.GuanKaMap.node.height = 5178;
-        //         break;
-        //     case 7: // 蚩尤场景
-        //         var realUrl = cc.url.raw('resources/zhandouChangJing/chiyouchangjing.png');
-        //         var texture = cc.textureCache.addImage(realUrl);
-        //         this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-        //         this.GuanKaMap.node.width = 1380;
-        //         this.GuanKaMap.node.height = 5178;
-        //         break;
-        // }
-         
-         
+        var guanka = node.getComponent('NewScript').getDiJiGuan();     
+       
         console.log(guanka);
         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
         //cc.log('常驻节点的data值为'+data);
@@ -294,7 +239,6 @@ cc.Class({
         //注册手指开始在屏幕移动事件
         this.node.on('touchmove', function (event) 
 		{
-		   
 		  //  console.log(this.downBlockH);
 		  //  console.log(this.downBlockL);
 		    if(this.downBlockH!=null&&this.downBlockL!=null)
@@ -309,8 +253,7 @@ cc.Class({
      },
      finish:function()
      {
-        
-         if(this.downBlockH!=null&&this.downBlockL!=null)
+        if(this.downBlockH!=null&&this.downBlockL!=null)
         {
             this.blockArray[this.downBlockH][this.downBlockL].y=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getH()*-180+360
             this.blockArray[this.downBlockH][this.downBlockL].x=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getL()*180-450
@@ -517,10 +460,25 @@ cc.Class({
             {
                 console.log('第一波结束'+this.boShu);
                 
-                 var node = cc.director.getScene().getChildByName('data');  
-                 console.log("Math.random()*9+1"+(Math.random()*9+1));
-                 var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(Math.round(Math.random()*9+1)));
-                 console.log(":::::::::::::::::::wocao"+(Math.round(Math.random()*9+1)));
+
+                var node = cc.director.getScene().getChildByName('data');  
+                console.log("Math.random()*9+1"+(Math.random()*9+1));
+                var guanka1 = node.getComponent('NewScript').getDiJiGuan();  
+                var GK = node.getComponent('NewScript').ChaGK(guanka1,this.boShu); 
+                //////////////////////////////  掉落后物品添加到本地存储与卡牌数组中  ////////////////////////////
+                //、、、、、、、、、、、、、、、、、这里是掉落添加、、、、、、、、、、、、、、、、、、、、、、、、
+                //、、、、、、、、、、、、、、、、、这里是掉落添加、、、、、、、、、、、、、、、、、、、、、、、、
+                //、、、、、、、、、、、、、、、、、这里是掉落添加、、、、、、、、、、、、、、、、、、、、、、、、
+                //sys.localStorage.setItem(node.DLNum, GK.DL); // 掉落后向本地数据中添加
+                //node.DLNum++：
+                node.GWshujuCache.push(GK.DL); // 掉落后向数据数组中添加
+                /////////////////////////////////////////END//////////////////////////////////////////////////////
+                var guanka = node.getComponent('NewScript').setDiaoluo(GK.DL);
+
+                 // var node = cc.director.getScene().getChildByName('data');  
+                 // console.log("Math.random()*9+1"+(Math.random()*9+1));
+                 // var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(Math.round(Math.random()*9+1)));
+                 // console.log(":::::::::::::::::::wocao"+(Math.round(Math.random()*9+1)));
                 
                 if(this.boShu<2)
                 {
@@ -541,41 +499,18 @@ cc.Class({
                     
  ////////////////////////////////////////////////////胜利的时候走这里/////////////////////////////////////////////////////////////////////////////   
  
- 
- 
-                          var node = cc.director.getScene().getChildByName('data');  
-                          //获取节点的node脚本组件，并调用脚本里面的函数   
-                          var guanka = node.getComponent('NewScript').getDiJiGuan(); 
-                          var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
-                          console.log("GKnode.GKJRJQ：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：："+GKnode.ZDJSJQ);
+                    var node = cc.director.getScene().getChildByName('data');  
+                    //获取节点的node脚本组件，并调用脚本里面的函数   
+                    var guanka = node.getComponent('NewScript').getDiJiGuan(); 
+                    var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
+                    console.log("GKnode.GKJRJQ：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：："+GKnode.ZDJSJQ);
                           
-                          node.getComponent('NewScript').load(GKnode.ZDJSJQ,this.node,this);
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+                    node.getComponent('NewScript').load(GKnode.ZDJSJQ,this.node,this);
  
                     console.log('第22222波结束'+this.boShu);
-                  ///  this.winbutton.active = true;
-                    
                     // this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
                     // cc.director.loadScene('GuanQia');
                     // })));
-                    
-                    
-                    
-                    
                 }
             }else
             {
@@ -698,49 +633,10 @@ cc.Class({
          
        if(this.heroArry[0].getComponent('hero').isdie==true&&this.heroArry[1].getComponent('hero').isdie==true&&this.heroArry[2].getComponent('hero').isdie==true&&this.heroArry[3].getComponent('hero').isdie==true&&this.heroArry[4].getComponent('hero').isdie==true)
        {
-           
-           
-           
-           
 ///////////////////////////////////////这里是失败的/////////////////////////////////////////////////////////////////////////////           
            
-            // var node = cc.director.getScene().getChildByName('data');  
-            // //获取节点的node脚本组件，并调用脚本里面的函数   
-            // var guanka = node.getComponent('NewScript').getDiJiGuan(); 
-            // var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
-            // console.log("GKnode.GKJRJQ：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：："+GKnode.ZDJSJQ);
-          
-            // node.getComponent('NewScript').load(GKnode.ZDJSJQ,this.node,this);   
-           
-          
-        this.losebutton.active = true;
-           
-           
-           
-           
-        //   console.log('失败');
-        //     this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
-        //     cc.director.loadScene('lose')
-        //     })));
-            
-            
-            
-            
-            
-            
+            this.losebutton.active = true;  
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
        }
      }, 
@@ -908,7 +804,7 @@ cc.Class({
                 {
                     
                     tmp.push(arr[i]);
-                 }
+                }
         }
         return tmp;
     },

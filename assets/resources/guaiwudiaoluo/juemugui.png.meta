@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "1dae02c5-a08c-4db9-b6b3-468f38f7f0f2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "juemugui": {
+      "ver": "1.0.3",
+      "uuid": "60f37c79-c98c-465b-adc3-b38253a1bfd2",
+      "rawTextureUuid": "1dae02c5-a08c-4db9-b6b3-468f38f7f0f2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 161,
+      "height": 226,
+      "rawWidth": 163,
+      "rawHeight": 227,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

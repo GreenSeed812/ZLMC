@@ -10,7 +10,6 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "gameMain",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -44,7 +43,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": true,
     "_id": "71ff5820-e11c-4c8b-9cfa-99ad92494e4c"
   },
   {
@@ -96,7 +94,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "c5bbeQdULZEZ7o6ujHU1GrL",
     "_active": true,
     "_components": [
@@ -155,7 +152,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "425d8WkR81CCauVSKDCdktt",
     "_active": true,
     "_components": [
@@ -264,7 +260,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "66df3FnXidALrLm0zz/eV91",
     "_active": true,
     "_components": [
@@ -320,7 +315,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "8a43cnSF55LQ5eD+UOHbpKn",
     "_active": true,
     "_components": [
@@ -399,7 +393,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "747f1eAn05DlJSLkkcdgR2K",
     "_active": true,
     "_components": [
@@ -478,7 +471,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "92f5clgKhZN97R2sOx23FO2",
     "_active": true,
     "_components": [
@@ -557,7 +549,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "7e882mbXetCQ7Ueifm7r5ke",
     "_active": true,
     "_components": [
@@ -775,7 +766,6 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
     "_id": "26fcaBI4MJIH49Lv4W02PPX",
     "_active": true,
     "_components": [
@@ -837,7 +827,6 @@
       "__id__": 21
     },
     "_enabled": true,
-    "isGengHuanMap": 0,
     "jishuNum1": 0
   }
 ]

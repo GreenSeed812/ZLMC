@@ -18,8 +18,11 @@ cc.Class({
         szqiege: { default: [] },
         sztouxiang: { default: [] },
         shuzu: { default: [] },
+        szDLtupian: { default: [] }, 
         juqingPrefab: { default: null, type: cc.Prefab },
 
+        JSshujuCache: { default: [] },        // 存储角色本地数据
+        GWshujuCache: { default: [] },        // 存储怪物本地数据
     },
 
     // use this for initialization
@@ -27,23 +30,65 @@ cc.Class({
          cc.game.addPersistRootNode(this.node);
         console.log("is Persist node " + cc.game.isPersistRootNode(this.node));
         this.GKdubiao('jsonDate/gq_table',this.GKlist);
-        this.Npcdubiao     ('jsonDate/npc_table',this.Npclist         );
-        this.Persondubiao  ('jsonDate/person_table',this.Personlist   );
+        this.Npcdubiao('jsonDate/npc_table',this.Npclist);
+        this.Persondubiao('jsonDate/person_table',this.Personlist);
         this.tp_skill_table('jsonDate/tp-skill_table',this.tpSkilllist);
-        this.skill_table   ('jsonDate/skill_table',this.skilllist     );
-        this.ex_table      ('jsonDate/ex',this.exList           );
-        this.dl_table      ('jsonDate/dl_table',this.dlList           );
+        this.skill_table('jsonDate/skill_table',this.skilllist);
+        this.ex_table('jsonDate/ex',this.exList);
+        this.dl_table('jsonDate/dl_table',this.dlList);
         this.loadJuQing("jsonDate/jq_table");
         this.loadQieGe("jsonDate/juqingqiege");
         this.loadTouXiang("jsonDate/IDtouxiang"); 
+        this.loadDiaoLuoTuPian('jsonDate/diaoluotouxiang');
     },
     
     
-    chuangjianjuqing: function ( ) {
+    loadBenDiShuJu: function () {  // 通过本地数据加载
+        // 通过本地数据设置主角色ID 
+        this.JSshujuCache.splice(0,this.JSshujuCache.length);//清空数组 
+        this.GWshujuCache.splice(0,this.GWshujuCache.length);//清空数组 
+
+        var shujuJS = sys.localStorage.getItem(BenDiShuJuJS);
+        var nodeJS = JSON.parse(shujuJS);
+
+        for (var i = 0; i < nodeJS.length; i++ ) {
+            var juese = {};
+            juese.ID = node[i].ID;
+            juese.Level = node[i].Level;
+            juese.nowEXP = node[i].nowEXP;
+            juese.needEXP = node[i].needEXP;
+            this.JSshujuCache.push(juese);
+        }
         
+        // 将卡牌中已获得的卡牌显示
+        var shujuGW = sys.localStorage.getItem(BenDiShuJuGW);
+        var nodeGW = JSON.parse(shujuGW);
+        for (var i = 0; i < nodeGW.length; i++ ) {
+            var ID = nodeGW[i];
+            this.GWshujuCache.push(ID);
+        }
+        // 好像不需要在进入游戏时候加载 = =  所有预制件都是通过对本地数据加载
+        // 这种模式会出问题 应该在游戏中增加一个数组专门存储本地数据 游戏内逻辑从数组中获取数据
     },
-    
-    
+    // 加载掉落物ID与图片对照表
+    loadDiaoLuoTuPian: function (path) {
+        let self = this;
+        cc.loader.loadRes(path, 
+        function (err, clip) {
+            var str = clip;
+            var obj = eval('(' + str + ')');
+            var lenght = obj.length;
+            console.log(lenght);
+            for (var i = 2; i < lenght; i++ ) {
+                var diaoluo = {};
+                diaoluo.ID = obj[i]["ID"];
+                diaoluo.PATH = obj[i]["PATH"];
+                diaoluo.NUM = obj[i]["NUM"];
+                self.szduihua.push(diaoluo);
+            }
+            console.log("掉落图片路径加载完成");
+        });
+    },
     
     
     load: function (juqingID, node, face, callback) {

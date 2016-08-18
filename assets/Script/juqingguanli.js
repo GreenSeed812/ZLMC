@@ -24,7 +24,7 @@ cc.Class({
     playjq: function (IDed, node, face) {
         var nodebb = cc.find('data').getComponent('NewScript');
         //var juqingID = nodebb.szqiege[IDed].ID;
-        nodebb.getComponent('NewScript').load(IDed, node, face,null);
+        nodebb.getComponent('NewScript').load(IDed, node, face);
     }
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {

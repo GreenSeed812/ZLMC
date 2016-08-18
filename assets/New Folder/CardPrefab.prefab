@@ -58,13 +58,10 @@
     "_components": [
       {
         "__id__": 25
-      },
-      {
-        "__id__": 26
       }
     ],
     "_prefab": {
-      "__id__": 27
+      "__id__": 26
     },
     "groupIndex": 0
   },
@@ -625,7 +622,7 @@
     "asset": {
       "__uuid__": "cd9775d7-ccd6-4dda-b4c5-a962e1cf61d1"
     },
-    "fileId": ""
+    "fileId": "89efeAG0+JOpa67jtBliQau"
   },
   {
     "__type__": "cc.Mask",
@@ -785,27 +782,6 @@
       "__id__": 1
     },
     "_enabled": true
-  },
-  {
-    "__type__": "5504eXcKnVEzKJBwqoIehgZ",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "kongweiPrefab": {
-      "__uuid__": "4f0cd98f-4ba1-4046-b1cc-79d4da2ffa73"
-    },
-    "kaibei": {
-      "__id__": 14
-    },
-    "LastKongWeiX": -360,
-    "LastKongWeiY": -140,
-    "LineKwNum": 0,
-    "ColumnKwNum": 0,
-    "MyKongWeiX": 0,
-    "MyKongWeiY": 0
   },
   {
     "__type__": "cc.PrefabInfo",
