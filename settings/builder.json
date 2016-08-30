@@ -8,6 +8,10 @@
   },
   "packageName": "org.cocos2d.Green",
   "startScene": "71ff5820-e11c-4c8b-9cfa-99ad92494e4c",
+<<<<<<< HEAD
   "title": "ZLMCTest_20",
+=======
+  "title": "ZLMCTest_19",
+>>>>>>> 8317eb08dad4b066e8d53439928a47f607d6f117
   "webOrientation": "auto"
 }
