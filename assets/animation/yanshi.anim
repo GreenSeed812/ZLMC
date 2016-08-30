@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "yanshi",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.02,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": 18
+        },
+        {
+          "frame": 0.5,
+          "value": 1184
+        },
+        {
+          "frame": 1,
+          "value": -24
+        }
+      ],
+      "y": [
+        {
+          "frame": 0,
+          "value": -415
+        },
+        {
+          "frame": 0.5,
+          "value": 225
+        },
+        {
+          "frame": 1,
+          "value": -406
+        }
+      ]
+    }
+  },
+  "events": []
+}

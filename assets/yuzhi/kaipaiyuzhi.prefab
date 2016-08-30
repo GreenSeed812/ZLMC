@@ -57,10 +57,13 @@
       },
       {
         "__id__": 3
+      },
+      {
+        "__id__": 5
       }
     ],
     "_prefab": {
-      "__id__": 4
+      "__id__": 6
     },
     "groupIndex": 0
   },
@@ -120,7 +123,11 @@
     "hoverSprite": {
       "__uuid__": "dad74078-ad35-4ed0-bc02-1cc5fc9f7db8"
     },
-    "clickEvents": [],
+    "clickEvents": [
+      {
+        "__id__": 4
+      }
+    ],
     "_N$interactable": true,
     "_N$normalColor": {
       "__type__": "cc.Color",
@@ -145,6 +152,30 @@
     "_N$target": {
       "__id__": 1
     }
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 1
+    },
+    "component": "KongWeiPre",
+    "handler": "TiaoZhuanPanDing"
+  },
+  {
+    "__type__": "94670F+65pNsJTYhKdbKVHd",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "KWshowTuPian": {
+      "__id__": 2
+    },
+    "GWchakanPre": {
+      "__uuid__": "3d30043f-0af9-470e-8a32-b4823e90a12d"
+    },
+    "ShowNode": null
   },
   {
     "__type__": "cc.PrefabInfo",

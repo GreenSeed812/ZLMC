@@ -1288,11 +1288,11 @@
       "__id__": 2
     },
     "_enabled": true,
-    "yinxiao": {
-      "__id__": 29
+    "CardPrefab": {
+      "__uuid__": "cd9775d7-ccd6-4dda-b4c5-a962e1cf61d1"
     },
-    "yinyue": {
-      "__id__": 31
+    "HelpPrefab": {
+      "__uuid__": "d703e35a-971c-47be-b3b6-7794ff1f431d"
     }
   }
 ]

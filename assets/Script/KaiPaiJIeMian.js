@@ -11,8 +11,6 @@ cc.Class({
         mask:{default:null,type:cc.Node},
         dx:{default:0},
         Dindex:{default:0}
-      
-        
     },
     
     // use this for initialization
@@ -35,7 +33,7 @@ cc.Class({
         }
         this.mask.on('touchstart', this.clickstart, this);
         this.mask.on('touchend', this.clickend, this);
-       this.HuanTUpian();
+        this.HuanTUpian();
     },
     HuanTUpian:function()
     {
@@ -60,8 +58,7 @@ cc.Class({
                     }
                 });
             }
-        }else
-        {
+        }else {
             console.log("掉落表为空");
         }
     },
@@ -81,7 +78,7 @@ cc.Class({
     },
     clickend:function(event)
     {
-         console.log("点击结束"+event.getLocationX());
+        console.log("点击结束"+event.getLocationX());
          
        if(event.getLocationX()-this.dx<-50) 
        {

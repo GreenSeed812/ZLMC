@@ -6,13 +6,10 @@ cc.Class({
         chakan:{default:null,type:cc.Prefab},
         genghuan:{default:null,type:cc.Prefab},
         zhuanhuan:{default:null,type:cc.Prefab},
-        // genghuan:{default:null,type:cc.Node},
-        // chakan:{default:null,type:cc.Node},
-        // zhuanhuan:{default:null,type:cc.Node},
     },
     // use this for initialization
     onLoad: function () {
-
+        
     },
     showTisheng:function()
     {

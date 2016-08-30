@@ -35,41 +35,89 @@ cc.Class({
         bzview:                  {    default:null,  type:cc.Node   },
         animation:               {    default:null},
         losebutton:              {    default:null,  type :cc.Node },
-        winbutton:              {    default:null,  type :cc.Node }
+        winbutton:               {    default:null,  type :cc.Node },
+        GuanKaMap:               {    default:null,  type :cc.Sprite },
+        GuanKaMapARRay:          {    default:[] , type:cc.SpriteFrame},
+
+        ShowJuQingNode:          {    default:null,  type :cc.Node },
+        xuetiao1:{default:null,type:cc.Node},
+        xuetiao2:{default:null,type:cc.Node},
+        xuetiao3:{default:null,type:cc.Node}
+        
     },
     onLoad: function ()
     {
         this.losebutton.active = false;
         this.winbutton.active = false;
         this.fubiaoGk();
+        this.qiehuanMap();
+
+        this.isNeedJuQing();
         
     },
+    /////////////////////////////////////////////////////  根据章节不同切换地图  //////////////////////////////////////
+    // 、、、、、、、、、、、、、、、、、、、、、、 这里是切换地图 、、、、、、、、、、、、、、、、、、、、、、
+    // 、、、、、、、、、、、、、、、、、、、、、、 这里是切换地图 、、、、、、、、、、、、、、、、、、、、、、
+    // 、、、、、、、、、、、、、、、、、、、、、、 这里是切换地图 、、、、、、、、、、、、、、、、、、、、、、
+    // 、、、、、、、、、、、、、、、、、、、、、、 这里是切换地图 、、、、、、、、、、、、、、、、、、、、、、
+    // 、、、、、、、、、、、、、、、、、、、、、、 这里是切换地图 、、、、、、、、、、、、、、、、、、、、、、
+    qiehuanMap: function () {
+        let self=this
+        var node = cc.director.getScene().getChildByName('data');  
+        //获取节点的node脚本组件，并调用脚本里面的函数   
+        console.log(node.getComponent('NewScript').getDiJiGuan());
+        var guanka = node.getComponent('NewScript').getDiJiGuan();  
+        var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu); 
+        //   读表  剧情
+        console.log("gMap::::::::::::::::::::"+GKnode.GKMAP);
+        cc.loader.loadRes(GKnode.GKMAP, cc.SpriteFrame, function (err, spriteFrame)
+        {
+            console.log("MAP:::::::::::::::::::::::::::::::::::::::::"+err);
+            self.GuanKaMap.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            self.GuanKaMap.node.width = 1380;
+            self.GuanKaMap.node.height = 5178;
+        });
+       // var texture = cc.textureCache.addImage(realUrl);
+        // this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
+       
+    },
+    /////////////////////////////////////////////////////  切换地图结束  //////////////////////////////////////
     fubiaoGk:function()
     {
-         var node = cc.director.getScene().getChildByName('data');  
-         //获取节点的node脚本组件，并调用脚本里面的函数   
-         var guanka = node.getComponent('NewScript').getDiJiGuan();  
-         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
-         //cc.log('常驻节点的data值为'+data);
-         console.log("dijige"+GKnode.N3);
-         if(GKnode.N3==0)
-         {
+        var node = cc.director.getScene().getChildByName('data');  
+        //获取节点的node脚本组件，并调用脚本里面的函数   
+        console.log(node.getComponent('NewScript').getDiJiGuan());
+        var guanka = node.getComponent('NewScript').getDiJiGuan();     
+       
+        console.log(guanka);
+        var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
+        //cc.log('常驻节点的data值为'+data);
+        console.log("dijige"+GKnode.N3);
+        if(GKnode.N3==0)
+        {
             this.mastornumber=2;
             console.log("怪物数量：：：：：：：：：:"+ this.mastornumber);
             this.mastor.getComponent('Monster').isdie=true;
+            this.xuetiao1.active=false;
+            this.xuetiao2.active=true;
+            this.xuetiao3.active=true;
             this.mastor.getComponent('Monster').HP=" ";
             this.mastorL.getComponent('Monster').id=GKnode.N1;
             this.mastorR.getComponent('Monster').id=GKnode.N2;
             this.mastorL.getComponent('Monster').fubiaoGk();
             this.mastorR.getComponent('Monster').fubiaoGk();
             this.mastor.getComponent(cc.Sprite).setVisible(false);
-         }else
-         {
+        }else
+        {
             this.mastornumber=3;
             console.log("怪物数量：：：：：：：：：:"+ this.mastornumber);
             this.mastor.getComponent('Monster').isdie=false;
             this.mastorL.getComponent('Monster').isdie=true;
             this.mastorR.getComponent('Monster').isdie=true;
+             this.xuetiao1.active=true;
+              this.xuetiao2.active=false;
+               this.xuetiao3.active=false;
+            
             this.mastorR.getComponent('Monster').HP=" ";
             this.mastorL.getComponent('Monster').HP=" ";
             this.mastor.getComponent('Monster').id=GKnode.N3;
@@ -77,25 +125,35 @@ cc.Class({
             this.mastor.getComponent(cc.Sprite).setVisible(true);
             this.mastorR.getComponent(cc.Sprite).setVisible(false);
             this.mastorL.getComponent(cc.Sprite).setVisible(false);
-         }
-         this.gameMain();
+        }
+        this.gameMain();
+    },
+    //////////////////////  创建剧情 /////////////////////////////////////    剧情在这里、、、、、、、、、、、、、、、、、、、、、
+    //、、、、、、、、、、、、、、、、、、、、剧情在这里、、、、、、、、、、、、、、、、、、、、、
+    //、、、、、、、、、、、、、、、、、、、、剧情在这里、、、、、、、、、、、、、、、、、、、、、
+    //、、、、、、、、、、、、、、、、、、、、剧情在这里、、、、、、、、、、、、、、、、、、、、、
+    //、、、、、、、、、、、、、、、、、、、、剧情在这里、、、、、、、、、、、、、、、、、、、、、
+    //、、、、、、、、、、、、、、、、、、、、剧情在这里、、、、、、、、、、、、、、、、、、、、、
+    //  在这里判断gq_table读表后数组中当前位置是否需要播放剧情
+    isNeedJuQing: function () {
+        console.log("调用剧情：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：");
+        //var node = cc.director.getScene().getChildByName('data');  
+        var nodedata = cc.find('data').getComponent('NewScript');
+        //获取节点的node脚本组件，并调用脚本里面的函数   
+        var guanka = nodedata.getComponent('NewScript').getDiJiGuan(); 
+        var GKnode = nodedata.getComponent('NewScript').ChaGK(guanka,this.boShu);
+        if (GKnode.KSZDJQ != 0) {       // 通过开始战斗剧情处ID是否为0 来判断是否需要播出剧情
+            var nodegl = cc.find('data').getComponent('juqingguanli');
+            nodegl.playjq(GKnode.KSZDJQ, this.node, null);
+        }
+        // 战斗结束的剧情  不知道放在哪  = =  侯哥 交给你了  
+        // else if (GKnode.ZDJSJQ != 0) {
+        //     var nodegl = cc.find('data').getComponent('juqingguanli');
+        //     nodegl.playjq(GKnode.ZDJSJQ, this.ShowJuQingNode, null);
+        // }
     },
     
-    chuangJianJuQing:function()
-    {
-        
-        
-        
-         var node = cc.director.getScene().getChildByName('data');  
-         //获取节点的node脚本组件，并调用脚本里面的函数   
-         var guanka = node.getComponent('NewScript').getDiJiGuan(); 
-         var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
-         console.log("GKnode.GKJRJQ"+GKnode.GKJRJQ);
-         node.getComponent('NewScript').load(GKnode.GKJRJQ,this.node);
-    },
-    
-    
-    
+    //////////////////////////////////////////////////////  创建剧情部分代码结束 ///////////////////////////
     gameMain:function()
     {
         console.log("c1223233c****************" + this.mastornumber );
@@ -154,37 +212,14 @@ cc.Class({
 		    }
 		}
 		
+		////////////////////////////////////////
+		
+		//this.fenxijuqing(1, this.node);
 		
 		
+		//this.chuangJianJuQing();
 		
-		
-		
-		
-		
-		
-		
-		
-		this.chuangJianJuQing();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		////////////////////////////////////////
 		//在控制台打印index是和显示的一样
 		for (var  k1=0; k1<5; k1++)
 		{
@@ -221,7 +256,6 @@ cc.Class({
         //注册手指开始在屏幕移动事件
         this.node.on('touchmove', function (event) 
 		{
-		   
 		  //  console.log(this.downBlockH);
 		  //  console.log(this.downBlockL);
 		    if(this.downBlockH!=null&&this.downBlockL!=null)
@@ -236,8 +270,7 @@ cc.Class({
      },
      finish:function()
      {
-        
-         if(this.downBlockH!=null&&this.downBlockL!=null)
+        if(this.downBlockH!=null&&this.downBlockL!=null)
         {
             this.blockArray[this.downBlockH][this.downBlockL].y=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getH()*-180+360
             this.blockArray[this.downBlockH][this.downBlockL].x=this.blockArray[this.downBlockH][this.downBlockL].getComponent('fangkuai').getL()*180-450
@@ -444,10 +477,25 @@ cc.Class({
             {
                 console.log('第一波结束'+this.boShu);
                 
-                 var node = cc.director.getScene().getChildByName('data');  
-                 console.log("Math.random()*9+1"+(Math.random()*9+1));
-                 var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(Math.round(Math.random()*9+1)));
-                 console.log(":::::::::::::::::::wocao"+(Math.round(Math.random()*9+1)));
+
+                var node = cc.director.getScene().getChildByName('data');  
+                console.log("Math.random()*9+1"+(Math.random()*9+1));
+                var guanka1 = node.getComponent('NewScript').getDiJiGuan();  
+                var GK = node.getComponent('NewScript').ChaGK(guanka1,this.boShu); 
+                //////////////////////////////  掉落后物品添加到本地存储与卡牌数组中  ////////////////////////////
+                //、、、、、、、、、、、、、、、、、这里是掉落添加、、、、、、、、、、、、、、、、、、、、、、、、
+                //、、、、、、、、、、、、、、、、、这里是掉落添加、、、、、、、、、、、、、、、、、、、、、、、、
+                //、、、、、、、、、、、、、、、、、这里是掉落添加、、、、、、、、、、、、、、、、、、、、、、、、
+                //sys.localStorage.setItem(node.DLNum, GK.DL); // 掉落后向本地数据中添加
+                //node.DLNum++：
+               // node.GWshujuCache.push(GK.DL); // 掉落后向数据数组中添加
+                /////////////////////////////////////////END//////////////////////////////////////////////////////
+                var guanka = node.getComponent('NewScript').setDiaoluo(GK.DL);
+
+                 // var node = cc.director.getScene().getChildByName('data');  
+                 // console.log("Math.random()*9+1"+(Math.random()*9+1));
+                 // var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(Math.round(Math.random()*9+1)));
+                 // console.log(":::::::::::::::::::wocao"+(Math.round(Math.random()*9+1)));
                 
                 if(this.boShu<2)
                 {
@@ -466,17 +514,20 @@ cc.Class({
                 }else
                 {
                     
- ////////////////////////////////////////////////////胜利的时候走这里/////////////////////////////////////////////////////////////////////////////                   
+ ////////////////////////////////////////////////////胜利的时候走这里/////////////////////////////////////////////////////////////////////////////   
+ 
+                    var node = cc.director.getScene().getChildByName('data');  
+                    //获取节点的node脚本组件，并调用脚本里面的函数   
+                    var guanka = node.getComponent('NewScript').getDiJiGuan(); 
+                    var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
+                    console.log("GKnode.GKJRJQ：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：："+GKnode.ZDJSJQ);
+                          
+                    node.getComponent('NewScript').load(GKnode.ZDJSJQ,this.node,this);
+ 
                     console.log('第22222波结束'+this.boShu);
-                    this.winbutton.active = true;
-                    
                     // this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
                     // cc.director.loadScene('GuanQia');
                     // })));
-                    
-                    
-                    
-                    
                 }
             }else
             {
@@ -599,43 +650,10 @@ cc.Class({
          
        if(this.heroArry[0].getComponent('hero').isdie==true&&this.heroArry[1].getComponent('hero').isdie==true&&this.heroArry[2].getComponent('hero').isdie==true&&this.heroArry[3].getComponent('hero').isdie==true&&this.heroArry[4].getComponent('hero').isdie==true)
        {
-           
-           
-           
-           
 ///////////////////////////////////////这里是失败的/////////////////////////////////////////////////////////////////////////////           
            
-           
-           
-          
-        this.losebutton.active = true;
-           
-           
-           
-           
-        //   console.log('失败');
-        //     this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
-        //     cc.director.loadScene('lose')
-        //     })));
-            
-            
-            
-            
-            
-            
+            this.losebutton.active = true;  
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
        }
      }, 
@@ -803,7 +821,7 @@ cc.Class({
                 {
                     
                     tmp.push(arr[i]);
-                 }
+                }
         }
         return tmp;
     },
@@ -824,7 +842,7 @@ cc.Class({
                             this.count = 0;
                             this.callback = function ()
                             {
-                                if (this.count == 3)
+                                if (this.count == 2000)
                                 {
                                     this.jindutiao.node.stopAllActions();
                                     this.pingBidianji.node.active=false;
@@ -913,7 +931,7 @@ cc.Class({
         }
         for(var z=0;z<xiaIndex;z++)
         {
-             if(this.blockArray[z][yy].getComponent('fangkuai').WhetherToEliminate!=true)
+            if(this.blockArray[z][yy].getComponent('fangkuai').WhetherToEliminate!=true)
             {
                 newBlockxia.push(this.blockArray[z][yy]);
             }
@@ -946,7 +964,9 @@ cc.Class({
   //点击帮主按钮响应函数
    tohelp:function()
    {
-        this.shezhiviwe.active=true;
+        
+       
+        //this.shezhiviwe.active=true;
    },
    //点击帮主里的帮助按钮响应函数
    tohelp_1:function()

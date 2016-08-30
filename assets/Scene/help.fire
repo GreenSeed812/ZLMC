@@ -925,9 +925,9 @@
       "__id__": 2
     },
     "_enabled": true,
-    "yinxiao": null,
-    "yinyue": null,
-    "tishengjimina": null
+    "CardPrefab": {
+      "__uuid__": "cd9775d7-ccd6-4dda-b4c5-a962e1cf61d1"
+    }
   },
   {
     "__type__": "a814fWNJBNDMYSMt96Q4sqW",
@@ -949,6 +949,7 @@
       }
     ],
     "dx": 0,
-    "cont": 0
+    "cont": 0,
+    "isHuaDong": true
   }
 ]

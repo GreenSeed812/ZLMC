@@ -3,72 +3,72 @@
   "windows": {
     "main": {
       "x": -8,
-      "y": -8,
-      "width": 1456,
-      "height": 876,
+      "y": 0,
+      "width": 1451,
+      "height": 860,
       "layout": {
         "docks": [
           {
             "docks": [
               {
                 "active": 0,
-                "height": 337,
+                "height": 365,
                 "panels": [
                   "hierarchy"
                 ],
                 "type": "panel",
-                "width": 310
+                "width": 200
               },
               {
                 "active": 0,
-                "height": 409,
+                "height": 365,
                 "panels": [
                   "assets"
                 ],
                 "type": "panel",
-                "width": 310
+                "width": 200
               }
             ],
-            "height": 749,
+            "height": 733,
             "row": false,
             "type": "dock",
-            "width": 310
+            "width": 200
           },
           {
             "docks": [
               {
                 "active": 0,
-                "height": 546,
+                "height": 413,
                 "panels": [
                   "scene"
                 ],
                 "type": "panel",
-                "width": 700
+                "width": 800
               },
               {
                 "active": 0,
-                "height": 200,
+                "height": 317,
                 "panels": [
                   "console",
                   "timeline"
                 ],
                 "type": "panel",
-                "width": 700
+                "width": 800
               }
             ],
-            "height": 749,
+            "height": 733,
             "row": false,
             "type": "dock",
-            "width": 700
+            "width": 800
           },
           {
             "active": 0,
-            "height": 749,
+            "height": 733,
             "panels": [
               "inspector"
             ],
             "type": "panel",
-            "width": 418
+            "width": 423
           }
         ],
         "no-collapse": true,
@@ -76,27 +76,17 @@
         "type": "dock"
       }
     },
-    "window-1470361897679": {
-      "x": 524,
-      "y": 41,
-      "width": 516,
-      "height": 706,
-      "layout": {
-        "docks": [
-          {
-            "active": 0,
-            "height": 663,
-            "panels": [
-              "builder"
-            ],
-            "type": "panel",
-            "width": 500
-          }
-        ],
-        "no-collapse": true,
-        "row": false,
-        "type": "dock"
-      }
+    "window-1472547106153": {
+      "x": -8,
+      "y": -8,
+      "width": 1456,
+      "height": 916
+    },
+    "worker": {
+      "x": 520,
+      "y": 280,
+      "width": 400,
+      "height": 300
     }
   }
 }

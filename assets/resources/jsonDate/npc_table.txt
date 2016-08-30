@@ -49,7 +49,7 @@
         "SK2": "0",
         "SK3": "0",
         "SK4": "0",
-        "SUR": "guibin",
+        "SUR": "guibing",
         "PositionX": "170",
         "PositionY": "655"
     },
