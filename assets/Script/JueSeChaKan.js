@@ -20,6 +20,16 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         this.JueSeChaKan();
+        
+        var nodeNS = cc.find('data').getComponent('NewScript');
+        var GWshuzu1 = {};
+        GWshuzu1.ID = 201606001;
+        GWshuzu1.Num = 1;
+        nodeNS.GWshujuCache.push(GWshuzu1);
+        
+        var ShuJuGW = JSON.stringify(nodeNS.GWshujuCache);
+        cc.sys.localStorage.setItem('BenDiShuJuGW', ShuJuGW);
+        cc.sys.localStorage.setItem('isFirst', 250);
     },
     
     JueSeChaKan: function () {
@@ -34,35 +44,41 @@ cc.Class({
                     this.FangYuLabel.string = nodeNS.JSshujuCache[i].FY;   // OK
                     this.ShengMingLabel.string = nodeNS.JSshujuCache[i].SM;// OK
                     // //TODO 通过现有经验与升级所需经验比值计算读条
-                    this.JingYanBar.progress = nodeNS.JSshujuCache[i].nowEXP / nodeNS.JSshujuCache[i].needEXP;
+                    // this.JingYanBar.progress = nodeNS.JSshujuCache[i].nowEXP / nodeNS.JSshujuCache[i].needEXP;
                 }
             }
             
             for ( var i = 0; i < nodeNS.Personlist.length; i++ ) {
                 if (nodeQJ.theShowJSID == nodeNS.Personlist[i].ID) {
                     this.NameLabel.string = nodeNS.Personlist[i].NAME;     // OK
-                    console.log("角色说明" +　nodeNS.Personlist[i].INS);
+                    // console.log("角色说明" +　nodeNS.Personlist[i].INS);
                     this.JueSeINSLabel.string = nodeNS.Personlist[i].INS;
-                    console.log("技能ID" +　nodeNS.Personlist[i].SK);
+                    // console.log("技能ID" +　nodeNS.Personlist[i].SK);
                     this.JiNengID = nodeNS.Personlist[i].SK;
-                    console.log("设置图片" + nodeNS.Personlist[i].APT_PATH);
+                    // console.log("设置图片" + nodeNS.Personlist[i].APT_PATH);
                     // var realUrl = cc.url.raw('resources/chakanjiemian/JinShuXing.png');
                     // var texture = cc.textureCache.addImage(realUrl);
                     // this.ShuXingSprite.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-                    var realUrl = cc.url.raw(nodeNS.Personlist[i].APT_PATH);
-                    this.spriteFrame = new cc.SpriteFrame(realUrl);
-                    this.ShuXingSprite.getComponent(cc.Sprite).spriteFrame = this.spriteFrame;
+                    var realName = nodeNS.Personlist[i].APT_PATH;
+                    var self = this;
+                    cc.loader.loadRes("tuji/chakanjiemian/chakanPre", cc.SpriteAtlas, function (err, atlas) {
+                      var frame = atlas.getSpriteFrame(realName);
+                      self.ShuXingSprite.getComponent(cc.Sprite).spriteFrame = frame;
+                      
+                    });
+                    // this.spriteFrame = new cc.SpriteFrame(realUrl);
+                    // this.ShuXingSprite.getComponent(cc.Sprite).spriteFrame = this.spriteFrame;
                 }
             }
             
-            console.log(nodeNS.skilllist.length);
+            // console.log(nodeNS.skilllist.length);
             for ( var i = 0; i < nodeNS.skilllist.length; i++ ) {
                 if (this.JiNengID == nodeNS.skilllist[i].ID) {
                     this.jinengLabel.string = nodeNS.skilllist[i].NAME + " : " + nodeNS.skilllist[i].INS;
                 }
             }
         } else {
-            console.log("请选中角色进行查看");
+            // console.log("请选中角色进行查看");
         }
     }
     

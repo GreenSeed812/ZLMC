@@ -13,7 +13,7 @@ cc.Class({
     },
     close:function()
     {
-        console.log("即将删除当前预制件");
+        // console.log("即将删除当前预制件");
        this.node.removeFromParent();
     }
     // called every frame, uncomment this function to activate update callback

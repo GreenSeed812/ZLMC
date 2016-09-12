@@ -23,16 +23,45 @@ cc.Class({
         
         
         var self=this;
+        
         var node = cc.director.getScene().getChildByName('data');  
-        var GKnode = node.getComponent('NewScript').ChaPerson(this.Id); 
-        console.log(":::::::::::::"+GKnode);
+        //var nodeNS = cc.find('data').getComponent('NerScript');
+        
+        var GKnode = node.getComponent('NewScript').ChaPerson(node.getComponent('NewScript').JSshujuCache[this.Arms].ID ); 
+        var benDi=node.getComponent('NewScript').chaJSshujuCache(node.getComponent('NewScript').JSshujuCache[this.Arms].ID ); 
+        
+        
+        
+        
+        // console.log("查人：：：：：："+this.Id);
+        //  console.log("查数据：：：：："+benDi.SM);
+        // console.log(":::::::::::::"+GKnode);
+        
+        
+        
+        
+        
+        
+        // // shuzu.ID = node.ID;
+        //                 shuzu.GJ = node.IPT_ATK;
+        //                 shuzu.FY = node.IPT_DEF;
+        //                 shuzu.SM = node.IPT_LF;
+        
+        
+        
+        
         
         
         this.Arms=GKnode.IPT_APT;
-        this.HP=GKnode.IPT_LF;
-        this.hpmax=GKnode.IPT_LF;
-        this.defenseForce=GKnode.IPT_DEF;
-        this.attackPower=GKnode.IPT_ATK;
+        this.HP=benDi.SM;
+        this.hpmax=benDi.SM;
+        this.defenseForce=benDi.FY;
+        this.attackPower=benDi.GJ;
+        
+        
+        
+        
+        
         this.Label.string=''+parseInt(this.HP).toString();
         
         
@@ -41,7 +70,7 @@ cc.Class({
         
            cc.loader.loadRes('yingXiong/'+GKnode.SUR1, cc.SpriteFrame, function (err, spriteFrame) 
         {
-            console.log("LLLLL::::::::"+err);
+            // console.log("LLLLL::::::::"+err);
             self.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
             //this.jueseSprite.getComponent(cc.Sprite).spriteFrame._refreshTexture(texture)
         });
@@ -55,18 +84,18 @@ cc.Class({
     },
      aunchAnOrdinaryAttack:function(monster,blocknum)
     {
-        console.log("英雄输出伤害RRR"+this.Arms+blocknum);
+        // console.log("英雄输出伤害RRR"+this.Arms+blocknum);
         switch(parseInt(this.Arms))  
         {
             case 0://金属性的伤害
-                  console.log("jin");
+                //   console.log("jin");
                 if(monster.getComponent('Monster').Arms==1)
                 {
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
                     this. outPut= this.attackPower*(10+blocknum*0.1)*(1+0.5);//金属性对木属性多造成50%的伤害
-                    console.log("英雄输出伤害"+this. outPut);
+                    // console.log("英雄输出伤害"+this. outPut);
                     }
                     
                 }else if(monster.getComponent('Monster').Arms==0)
@@ -75,7 +104,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                    this. outPut= this.attackPower*(10+blocknum*0.1)*(1-0.5);;//金属性对火属性少造成50%的伤
-                    console.log("英雄输出伤害"+this. outPut);
+                    // console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
                 {
@@ -83,20 +112,20 @@ cc.Class({
                         blocknum=0;
                     } else{  
                     this. outPut= this.attackPower*(10+blocknum*0.1);
-                     console.log("英雄输出伤害"+this. outPut);
+                    //  console.log("英雄输出伤害"+this. outPut);
                     }
                 }
                 monster.getComponent('Monster').injured(this.outPut,0);
                 break;
             case 1://木属性的伤害
-             console.log("mu");
+            //  console.log("mu");
                 if(monster.getComponent('Monster').Arms==4)
                 {
                     if(blocknum<0){
                         blocknum=0;
                     } else{  
                     this. outPut= this.attackPower*(10+blocknum*0.1)*(1+0.5);//木属性对土属性多造成50%的伤害
-                     console.log("英雄输出伤害"+this. outPut);
+                    //  console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==0)
                 {
@@ -104,7 +133,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                    this. outPut= this.attackPower*(10+blocknum*0.1)*(1-0.5);//木属性对金属性少造成50%的伤
-                    console.log("英雄输出伤害"+this. outPut,1);
+                    // console.log("英雄输出伤害"+this. outPut,1);
                     }
                 }else
                 {
@@ -117,7 +146,7 @@ cc.Class({
                 monster.getComponent('Monster').injured(this.outPut,1);
                 break;
             case 2://水属性的伤害
-             console.log("shui");
+            //  console.log("shui");
                 
                 if(monster.getComponent('Monster').Arms==3)
                 {
@@ -125,7 +154,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                     this. outPut= this.attackPower*(10+blocknum*0.1)*(1+0.5);//水属性对火属性多造成50%的伤害
-                     console.log("英雄输出伤害"+this. outPut);
+                    //  console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==1)
                 {
@@ -133,7 +162,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                     this. outPut= this.attackPower*(10+blocknum*0.1)*(1-0.5);//水属性对木属性少造成50%的伤
-                     console.log("英雄输出伤害"+this. outPut);
+                    //  console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
                 {
@@ -153,7 +182,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                    this. outPut= this.attackPower*(1+blocknum*0.1)*(1+0.5);//火属性对金属性多造成50%的伤害
-                    console.log("英雄输出伤害"+this. outPut);
+                    // console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==2)
                 {
@@ -161,7 +190,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                    this. outPut= this.attackPower*(10+blocknum*0.1)*(1-0.5);//火属性对水属性少造成50%的伤
-                    console.log("英雄输出伤害"+this. outPut);
+                    // console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
                 {
@@ -182,7 +211,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                     this. outPut= this.attackPower*(10+blocknum*0.1)*(1+0.5);//土属性对水属性多造成50%的伤害
-                     console.log("英雄输出伤害"+this. outPut);
+                    //  console.log("英雄输出伤害"+this. outPut);
                     }
                 }else if(monster.getComponent('Monster').Arms==1)
                 {
@@ -190,7 +219,7 @@ cc.Class({
                         blocknum=0;
                     } else{  
                    this. outPut= this.attackPower*(10+blocknum*0.1)*(1-0.5);//土属性对木属性少造成50%的伤
-                    console.log("英雄输出伤害"+this. outPut);
+                    // console.log("英雄输出伤害"+this. outPut);
                     }
                 }else
                 {if(blocknum<0){
@@ -229,7 +258,7 @@ cc.Class({
     },
     addHP:function(hp)
     {
-        console.log("diaoyongle");
+        // console.log("diaoyongle");
         if( this.HP<this.maxHP){
            this.HP+=hp;
         }

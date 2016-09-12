@@ -1,1 +1,198 @@
-﻿
+2016-09-12T00:55:13.360Z - normal: Load ~/.CocosCreator/settings.json
+2016-09-12T00:55:13.360Z - normal: checking language setting...
+2016-09-12T00:55:13.360Z - normal: Language: zh
+2016-09-12T00:55:14.733Z - success: protocol editor-framework registerred
+2016-09-12T00:55:14.733Z - success: protocol app registerred
+2016-09-12T00:55:14.733Z - success: protocol packages registerred
+2016-09-12T00:55:14.733Z - success: protocol unpack registerred
+2016-09-12T00:55:14.827Z - normal: connected!
+2016-09-12T00:55:14.827Z - normal: Check project E:\ZLMC
+2016-09-12T00:55:14.827Z - normal: Initializing Cocos Creator Editor
+2016-09-12T00:55:15.778Z - normal: Initializing Cocos2d
+2016-09-12T00:55:17.681Z - normal: Initializing Asset Database
+2016-09-12T00:55:17.853Z - success: protocol uuid registerred
+2016-09-12T00:55:17.869Z - success: protocol uuid registerred
+2016-09-12T00:55:17.869Z - success: protocol thumbnail registerred
+2016-09-12T00:55:17.869Z - normal: Loading editor/builtin packages
+2016-09-12T00:55:18.415Z - success: assets loaded
+2016-09-12T00:55:18.415Z - success: builder loaded
+2016-09-12T00:55:18.430Z - success: hierarchy loaded
+2016-09-12T00:55:18.461Z - success: inspector loaded
+2016-09-12T00:55:18.461Z - success: keystore loaded
+2016-09-12T00:55:18.477Z - success: node-library loaded
+2016-09-12T00:55:18.493Z - success: preferences loaded
+2016-09-12T00:55:18.539Z - success: project-importer loaded
+2016-09-12T00:55:18.539Z - success: project-settings loaded
+2016-09-12T00:55:18.539Z - success: ui-kit loaded
+2016-09-12T00:55:18.571Z - success: ui-grid loaded
+2016-09-12T00:55:18.586Z - success: scene loaded
+2016-09-12T00:55:18.586Z - success: sprite-editor loaded
+2016-09-12T00:55:18.602Z - success: timeline loaded
+2016-09-12T00:55:18.602Z - success: ui-kit-extra loaded
+2016-09-12T00:55:18.602Z - normal: Loading builtin packages
+2016-09-12T00:55:18.617Z - success: asset-db-debugger loaded
+2016-09-12T00:55:18.633Z - success: code-editor loaded
+2016-09-12T00:55:18.633Z - success: color-picker loaded
+2016-09-12T00:55:18.633Z - success: console loaded
+2016-09-12T00:55:18.633Z - success: package-manager loaded
+2016-09-12T00:55:18.649Z - success: tester loaded
+2016-09-12T00:55:18.649Z - success: ui-tree loaded
+2016-09-12T00:55:18.789Z - normal: Initializing project E:\ZLMC
+2016-09-12T00:55:18.820Z - normal: Loading packages
+2016-09-12T00:55:18.820Z - normal: Run Application
+2016-09-12T00:56:40.739Z - success: preview server running at http://localhost:7456
+2016-09-12T00:56:40.754Z - normal: Compiling scripts...
+2016-09-12T00:56:43.554Z - normal: Compiled successfully
+2016-09-12T00:56:50.127Z - normal: 1.1.1
+2016-09-12T01:01:13.865Z - failed: [db-task][update] failed!
+2016-09-12T01:01:13.866Z - error: Failed to update asset db://assets/Script/loadingScene.js, messages: SyntaxError: unknown: Unexpected token (36:12)
+        }
+        
+        if () {
+            
+        }
+        
+    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
+    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
+    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:425:12)
+    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
+    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
+    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
+    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
+    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
+    at Parser.pp.parseMaybeAssign (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:112:19)
+    at Parser.pp.parseExpression (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:79:19)
+    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
+    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
+    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+2016-09-12T01:01:33.075Z - failed: [db-task][update] failed!
+2016-09-12T01:01:33.076Z - error: Failed to update asset db://assets/Script/loadingScene.js, messages: SyntaxError: unknown: Unexpected token (37:8)
+        }
+        var 
+        if () {
+            
+        }
+        
+    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
+    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
+    at Parser.pp.parseBindingAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\lval.js:128:12)
+    at Parser.pp.parseVarHead (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:508:18)
+    at Parser.parseVarHead (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:943:13)
+    at Parser.pp.parseVar (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:491:10)
+    at Parser.pp.parseVarStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:370:8)
+    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:99:19)
+    at Parser.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
+    at Parser.pp.parseBlock (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:442:21)
+    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
+    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
+    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+2016-09-12T01:01:33.661Z - failed: [db-task][update] failed!
+2016-09-12T01:01:33.661Z - error: Failed to update asset db://assets/Script/loadingScene.js, messages: SyntaxError: unknown: Unexpected token (37:8)
+        }
+        var 
+        if () {
+            
+        }
+        
+    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
+    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
+    at Parser.pp.parseBindingAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\lval.js:128:12)
+    at Parser.pp.parseVarHead (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:508:18)
+    at Parser.parseVarHead (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:943:13)
+    at Parser.pp.parseVar (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:491:10)
+    at Parser.pp.parseVarStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:370:8)
+    at Parser.pp.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:99:19)
+    at Parser.parseStatement (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\flow.js:655:22)
+    at Parser.pp.parseBlock (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\statement.js:442:21)
+    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
+    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
+    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+2016-09-12T01:01:43.747Z - failed: [db-task][update] failed!
+2016-09-12T01:01:43.747Z - error: Failed to update asset db://assets/Script/loadingScene.js, messages: SyntaxError: unknown: Unexpected token (37:12)
+        }
+        this.time += dt; 
+        if () {
+            
+        }
+        
+    at Parser.pp.raise (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\location.js:24:13)
+    at Parser.pp.unexpected (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\util.js:82:8)
+    at Parser.pp.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:425:12)
+    at Parser.parseExprAtom (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\plugins\jsx\index.js:412:22)
+    at Parser.pp.parseExprSubscripts (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:236:19)
+    at Parser.pp.parseMaybeUnary (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:217:19)
+    at Parser.pp.parseExprOps (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:163:19)
+    at Parser.pp.parseMaybeConditional (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:145:19)
+    at Parser.pp.parseMaybeAssign (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:112:19)
+    at Parser.pp.parseExpression (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\babylon\lib\parser\expression.js:79:19)
+    at s.AssetDB.error (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\utils.js:1:2582)
+    at Object.callback (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\core\ipc.js:1:4154)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:906:35
+    at _arrayEach (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:85:13)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:898:17
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at s.<anonymous> (C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\index.js:1:1393)
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\asset-db\lib\tasks.js:1:17718
+    at C:\Users\Administrator\AppData\Local\CocosCreator\app-1.1.1\resources\app.asar\node_modules\async\lib\async.js:52:16
+2016-09-12T01:01:53.321Z - normal: Compiled successfully
+2016-09-12T01:01:56.235Z - normal: Compiled successfully
+2016-09-12T01:02:04.680Z - normal: Compiled successfully
+2016-09-12T01:03:02.143Z - normal: Checked Python Version [2.7.5]
+2016-09-12T01:03:11.524Z - normal: Compiled successfully
+2016-09-12T01:03:14.310Z - normal: 1.1.1
+2016-09-12T01:03:18.177Z - normal: Built to "E:\hehe" successfully
+2016-09-12T01:05:06.743Z - normal: Checked Python Version [2.7.5]
+2016-09-12T01:05:08.319Z - normal: Start to compile native project. Please wait...
+2016-09-12T01:05:08.319Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-09-12T01:05:12.320Z - failed: [Error: Compile failed. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]]
+2016-09-12T01:05:15.924Z - normal: Checked Python Version [2.7.5]
+2016-09-12T01:05:21.602Z - normal: Compiled successfully
+2016-09-12T01:05:24.025Z - normal: 1.1.1
+2016-09-12T01:05:27.051Z - normal: Built to "E:\hehe" successfully
+2016-09-12T01:05:31.734Z - normal: Checked Python Version [2.7.5]
+2016-09-12T01:05:33.215Z - normal: Start to compile native project. Please wait...
+2016-09-12T01:05:33.216Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2016-09-12T01:07:33.784Z - normal: Compile native project successfully.
+2016-09-12T01:14:06.673Z - normal: Compiled successfully
+2016-09-12T01:14:13.405Z - normal: Compiled successfully
+2016-09-12T01:14:20.077Z - normal: Compiled successfully
+2016-09-12T01:14:26.574Z - normal: Compiled successfully
+2016-09-12T01:15:15.916Z - normal: Compiled successfully
+2016-09-12T01:23:41.075Z - normal: Compiled successfully
+2016-09-12T01:27:41.460Z - normal: Compiled successfully
+2016-09-12T01:29:30.301Z - normal: Compiled successfully
+2016-09-12T01:30:43.910Z - normal: Compiled successfully
+2016-09-12T01:31:24.077Z - normal: Compiled successfully
+2016-09-12T01:31:46.762Z - normal: Compiled successfully
+2016-09-12T01:31:53.376Z - normal: Compiled successfully
+2016-09-12T01:32:01.471Z - normal: Compiled successfully
+2016-09-12T01:32:26.808Z - normal: Compiled successfully
+2016-09-12T01:32:50.520Z - normal: Compiled successfully
+2016-09-12T01:33:04.982Z - normal: Compiled successfully
+2016-09-12T01:34:19.184Z - normal: Compiled successfully
+2016-09-12T01:34:25.420Z - normal: Compiled successfully
+2016-09-12T01:37:51.374Z - normal: Compiled successfully
+2016-09-12T01:44:23.235Z - normal: Compiled successfully
+2016-09-12T01:44:50.306Z - normal: Compiled successfully
+2016-09-12T01:45:34.251Z - normal: Compiled successfully
+2016-09-12T01:45:43.516Z - normal: Compiled successfully
+2016-09-12T01:46:32.087Z - normal: Compiled successfully
+2016-09-12T01:46:42.832Z - normal: Compiled successfully

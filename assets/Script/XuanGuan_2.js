@@ -7,10 +7,16 @@ cc.Class({
         ID:   { default:null },
         ID1:  { default:null },
         ID2:  { default:null },
+        
+        zhedangCHU: { default: null, type: cc.Node },
+        zhedangCI: { default: null, type: cc.Node },
+        zhedangZHONG: { default: null, type: cc.Node },
     },
     // use this for initialization
     onLoad: function () {
         //获取常驻节点  
+        
+        
         var node = cc.director.getScene().getChildByName('data');  
         //获取节点的node脚本组件，并调用脚本里面的函数   
         var data = node.getComponent('NewScript').getdata();  
@@ -18,7 +24,34 @@ cc.Class({
         this.GuanK=data;
         cc.log('常驻节点的data值为11'+ this.GuanK); 
         this.GKnum();
+        this.jiasuoPanDing();
     },
+    
+    jiasuoPanDing: function () {
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum');
+        var nodeNS = cc.find('data').getComponent('NewScript');
+        // console.log("章章章章章" + nodeNS.GuanKaState[0].Zhang);
+        // console.log("节节节节节" + nodeNS.GuanKaState[0].Jie);
+        // console.log("全局章" + nodeQJ.ZhangNum);
+        if (nodeQJ.ZhangNum < nodeNS.GuanKaState[0].Zhang) {
+            this.zhedangCHU.active = false;
+            this.zhedangCI.active = false;
+            this.zhedangZHONG.active = false;
+        } else if (nodeQJ.ZhangNum == nodeNS.GuanKaState[0].Zhang) {
+            if (nodeNS.GuanKaState[0].Jie == 1) {
+                this.zhedangCHU.active = false;
+            } else if (nodeNS.GuanKaState[0].Jie == 2) {
+                this.zhedangCHU.active = false;
+                this.zhedangCI.active = false;
+            } else if (nodeNS.GuanKaState[0].Jie == 3) {
+                this.zhedangCHU.active = false;
+                this.zhedangCI.active = false;
+                this.zhedangZHONG.active = false;
+            }
+        }
+    },
+    
+    
     GKnum:function()
     {
         switch(this.GuanK)
@@ -62,42 +95,39 @@ cc.Class({
     },
     jinruzhandou1:function() 
     {
-        console.log("进入第"+this.ID+"关");
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum');
+        nodeQJ.JieNum = 1;
+        // console.log("进入第"+this.ID+"关");
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID);  
-        this.node.runAction(cc.sequence(cc.fadeOut(0.3),cc.callFunc(function(){
-        cc.director.loadScene('helloworld');
-
-
-        // var guanka = node.getComponent('NewScript').getDiJiGuan(); 
-        // var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
-        // var nodegl = cc.find('data').getComponent('juqingguanli');  
-        // nodegl.playjq();
-
-
-
-
-        })));
+        //this.node.runAction(cc.sequence(cc.fadeOut(0.3),cc.callFunc(function(){
+            cc.director.loadScene('helloworld');
+       // })));
     },
      jinruzhandou2:function()
     {
-        console.log("进入第"+this.ID1+"关");
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum');
+        nodeQJ.JieNum = 2;
+        // console.log("进入第"+this.ID1+"关");
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID1);  
         this.node.runAction(cc.sequence(cc.fadeOut(0.3),cc.callFunc(function(){
-        cc.director.loadScene('helloworld')
+            cc.director.loadScene('helloworld')
         })));
+        
     },
      jinruzhandou3:function()
     {
-        console.log("进入第"+this.ID2+"关");
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum');
+        nodeQJ.JieNum = 3;
+        // console.log("进入第"+this.ID2+"关");
         var node = cc.find('data').getComponent('NewScript');  
         //调用该脚本的函数并传值  
         node.setDiJiGuan(this.ID2);  
         this.node.runAction(cc.sequence(cc.fadeOut(0.3),cc.callFunc(function(){
-        cc.director.loadScene('helloworld')
+            cc.director.loadScene('helloworld')
         })));
     },
     back:function()

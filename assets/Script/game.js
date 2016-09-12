@@ -42,7 +42,12 @@ cc.Class({
         ShowJuQingNode:          {    default:null,  type :cc.Node },
         xuetiao1:{default:null,type:cc.Node},
         xuetiao2:{default:null,type:cc.Node},
-        xuetiao3:{default:null,type:cc.Node}
+        xuetiao3:{default:null,type:cc.Node},
+        
+        DL1Sprite: { default: null, type: cc.Sprite },
+        DL2Sprite: { default: null, type: cc.Sprite },
+        DL3Sprite: { default: null, type: cc.Sprite },
+        DLIDshuzu: { default: [] },
         
     },
     onLoad: function ()
@@ -143,8 +148,12 @@ cc.Class({
         var guanka = nodedata.getComponent('NewScript').getDiJiGuan(); 
         var GKnode = nodedata.getComponent('NewScript').ChaGK(guanka,this.boShu);
         if (GKnode.KSZDJQ != 0) {       // 通过开始战斗剧情处ID是否为0 来判断是否需要播出剧情
-            var nodegl = cc.find('data').getComponent('juqingguanli');
-            nodegl.playjq(GKnode.KSZDJQ, this.node, null);
+            if(GKnode.isShowKs==0)
+            {
+                        var nodegl = cc.find('data').getComponent('juqingguanli');
+                         nodegl.playjq(GKnode.KSZDJQ, this.node, null);
+            }
+            
         }
         // 战斗结束的剧情  不知道放在哪  = =  侯哥 交给你了  
         // else if (GKnode.ZDJSJQ != 0) {
@@ -490,12 +499,28 @@ cc.Class({
                 //node.DLNum++：
                // node.GWshujuCache.push(GK.DL); // 掉落后向数据数组中添加
                 /////////////////////////////////////////END//////////////////////////////////////////////////////
+                console.log("掉落掉落掉落掉落掉落掉落" + GK.DL);
+                var state = 0;
+                var nodeNS = cc.find('data').getComponent('NewScript');
+                for (var i = 0; i < nodeNS.GWshujuCache.length; i++) {
+                    if (GK.DL == nodeNS.GWshujuCache[i].ID) {
+                        nodeNS.GWshujuCache[i].NUM++;
+                        state = 1;
+                    }
+                }
+                if (state == 0) {
+                    var DlguaiwuID = {};
+                    DlguaiwuID.ID = GK.DL;
+                    DlguaiwuID.NUM = 1;
+                    nodeNS.GWshujuCache.push(DlguaiwuID);
+                }
+                this.DLIDshuzu.push(GK.DL);
                 var guanka = node.getComponent('NewScript').setDiaoluo(GK.DL);
 
-                 // var node = cc.director.getScene().getChildByName('data');  
-                 // console.log("Math.random()*9+1"+(Math.random()*9+1));
-                 // var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(Math.round(Math.random()*9+1)));
-                 // console.log(":::::::::::::::::::wocao"+(Math.round(Math.random()*9+1)));
+                //   var node = cc.director.getScene().getChildByName('data');  
+                //   console.log("Math.random()*9+1"+(Math.random()*9+1));
+                //   var guanka = node.getComponent('NewScript').setDiaoluo("wocao"+(Math.round(Math.random()*9+1)));
+                //   console.log(":::::::::::::::::::wocao"+(Math.round(Math.random()*9+1)));
                 
                 if(this.boShu<2)
                 {
@@ -507,27 +532,99 @@ cc.Class({
                     this.mastor.getComponent('Monster').Label.string="";
                     this.mastorL.getComponent('Monster').Label.string="";
                     this.mastorR.getComponent('Monster').Label.string="";
-                    var action = cc.moveTo(2, this.background.x, this.background.y-1280);
+                     this.scheduleOnce(function() {
+                         
+                         
+                         var action = cc.moveTo(2, this.background.x, this.background.y-1280);
+                    
                     var finished = cc.callFunc(this.call33, this);
                     var myAction = cc.sequence(action,finished); 
                     this.background.runAction(myAction);
+                        
+                     }, 1.5);
+                    
                 }else
                 {
                     
  ////////////////////////////////////////////////////胜利的时候走这里/////////////////////////////////////////////////////////////////////////////   
- 
+                    this.scheduleOnce(function() {
+                        
+                        
+                        
+                        var nodeQJ = cc.find('data').getComponent('QuanJuNum');
+                    var nodeNS = cc.find('data').getComponent('NewScript');
+                    var self = this;
+                    for (var i = 0; i < nodeNS.DLIDpaths.length; i++) {
+                        if (this.DLIDshuzu[0] == nodeNS.DLIDpaths[i].ID) {
+                            cc.loader.loadRes(nodeNS.DLIDpaths[i].PATH, cc.SpriteFrame, function (err, spriteFrame)
+                            {
+                                self.DL1Sprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                            });
+                        }
+                        if (this.DLIDshuzu[1] == nodeNS.DLIDpaths[i].ID) {
+                            cc.loader.loadRes(nodeNS.DLIDpaths[i].PATH, cc.SpriteFrame, function (err, spriteFrame)
+                            {
+                                self.DL2Sprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                            });
+                        }
+                        if (this.DLIDshuzu[2] == nodeNS.DLIDpaths[i].ID) {
+                            cc.loader.loadRes(nodeNS.DLIDpaths[i].PATH, cc.SpriteFrame, function (err, spriteFrame)
+                            {
+                                self.DL3Sprite.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                            });
+                        }
+                    }
+                    this.DLIDshuzu.splice(0,this.DLIDshuzu.length);//清空数组 
+                        
+                    console.log("当前章数" + nodeNS.GuanKaState[0].Zhang);
+                    console.log("章" + nodeQJ.ZhangNum);
+                    console.log("节" + nodeQJ.JieNum);
+                    if (nodeQJ.ZhangNum == nodeNS.GuanKaState[0].Zhang && nodeQJ.JieNum == nodeNS.GuanKaState[0].Jie) {
+                        console.log("当前小节数" + nodeNS.GuanKaState[0].Jie);
+                        if (nodeNS.GuanKaState[0].Jie < 3) {
+                            nodeNS.GuanKaState[0].Jie++;
+                        } else {
+                            nodeNS.GuanKaState[0].Zhang++;
+                            console.log("战斗胜利后章数" + nodeNS.GuanKaState[0].Zhang);
+                            nodeNS.GuanKaState[0].Jie = 1;
+                        }
+                    }
                     var node = cc.director.getScene().getChildByName('data');  
                     //获取节点的node脚本组件，并调用脚本里面的函数   
                     var guanka = node.getComponent('NewScript').getDiJiGuan(); 
                     var GKnode = node.getComponent('NewScript').ChaGK(guanka,this.boShu);
                     console.log("GKnode.GKJRJQ：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：："+GKnode.ZDJSJQ);
                           
+                if(GKnode.isShowJs==0)
+                {
+                   // GKnode.isShowJs=1
                     node.getComponent('NewScript').load(GKnode.ZDJSJQ,this.node,this);
- 
+                    
+                }          
+                    
+                    
+                    
+                    
                     console.log('第22222波结束'+this.boShu);
                     // this.node.runAction(cc.sequence(cc.fadeOut(1.0),cc.callFunc(function(){
                     // cc.director.loadScene('GuanQia');
                     // })));
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                     }, 1.5);
+ 
+ 
+                    
                 }
             }else
             {

@@ -15,7 +15,9 @@ cc.Class({
         id:             {   default:0      },
         POCI:           {   default:0      },
         xuetiao:{default:null,type:cc.ProgressBar},
-        hpmax:{default:0}
+        hpmax:{default:0},
+        shoushang:{default:0},
+        shuxing:{default:0},
     },
 
     // use this for initialization
@@ -49,17 +51,6 @@ cc.Class({
             self.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
             //this.jueseSprite.getComponent(cc.Sprite).spriteFrame._refreshTexture(texture)
         });
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     },
      aunchAnOrdinaryAttack:function(hero)
     {
@@ -68,7 +59,9 @@ cc.Class({
     },
     injured:function(shoushang,shuxing)
     {
-         console.log("进入怪物受伤")
+        //  console.log("进入怪物受伤")
+        this.shoushang=shoushang;
+        this.shuxing=shuxing;
          switch(shuxing)
          {
              case 0:
@@ -86,17 +79,27 @@ cc.Class({
              case 4:
                  this.getComponent(cc.Animation).playAdditive('ShouJiTeXiao_tu');
                  break;
-
          }
-        this. HP= this. HP-(shoushang-this.defenseForce*1.2);
+           this. HP= this. HP-( this.shoushang-this.defenseForce*1.2);
         if( this.HP<=0)
         {
-             this.HP=0
-             this.isdie=true;
-             
+            this.HP=0
+            this.isdie=true;
         }
         this.Label.string=''+parseInt(this.HP).toString();
         this.xuetiao.getComponent('xuetiao ').xueShow(this.HP,this.hpmax);
+         
+         
+         
+    },
+    
+    
+    
+    
+    
+    jieshu: function () {
+        console.log("jieshujishujieshujieshu");
+      
     },
     // called every frame, uncomment this function to activate update callback
      update: function () {

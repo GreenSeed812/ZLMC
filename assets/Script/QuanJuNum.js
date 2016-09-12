@@ -8,12 +8,16 @@ cc.Class({
         DLNum: { default: 0 },
         GuaiWuKaPaiID: { default: 0 },
         ShowGuaiWuID: { default: [] },
-        TiShengAndKaPai: { default: 0 }, // 0为卡牌界面进入，1为提升界面进入
+        TiShengAndKaPai: { default:  0 }, // 0为卡牌界面进入，1为提升界面进入
         theShowJSID: { default: 0 },
         CaiLiaoShuZu: { default: [] },
         CaiLiaoNum: { default: 0 },
         CaiLiaoPath: { default: 0 },
         
+        ZhangNum: { default: 1 },
+        JieNum: { default: 1 },
+        
+        ZhuanHuanIDSZ: { default: [] },
         GuaiWuDLID: { default: 0 },
     },
 

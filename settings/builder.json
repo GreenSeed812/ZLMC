@@ -6,12 +6,8 @@
     "portrait": true,
     "upsideDown": false
   },
-  "packageName": "org.cocos2d.Green",
-  "startScene": "71ff5820-e11c-4c8b-9cfa-99ad92494e4c",
-<<<<<<< HEAD
-  "title": "ZLMCTest_20",
-=======
-  "title": "ZLMCTest_19",
->>>>>>> 8317eb08dad4b066e8d53439928a47f607d6f117
+  "packageName": "org.cocos2d.ZLMC",
+  "startScene": "da5ef6ea-4945-49f1-b195-0c62be183dd7",
+  "title": "ZLMClast6",
   "webOrientation": "auto"
 }

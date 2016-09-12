@@ -2,8 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        Gk:        {  default:null  },
-        DiJiGuan:   {  default:null  },
         GKlist:     {  default:[]    },
         Npclist:    {  default:[]    },
         Personlist: {  default:[]    },
@@ -21,12 +19,18 @@ cc.Class({
         szDLtupian: {  default:[]    }, 
         IDOrTexture:{  default:[]    }, 
         JueSeTuPian:{  default:[]    }, 
-        juqingPrefab:{ default: null, type: cc.Prefab },
+        LevelNeedzh:{  default:[]    }, 
+        GuanKaState:{  default:[]    }, 
+        ZHjuesePath:{  default:[]    },
+        DLIDpaths:{  default:[]    },
+        Gk:{default:null},
+        DiJiGuan:{default:null},
+        juqingPrefab:{default: null, type: cc.Prefab },
 
         JSshujuCache: { default: [] },        // 存储角色本地数据
         GWshujuCache: { default: [] },        // 存储怪物本地数据
         
-        isFirst: { default: 0 },
+        //isFirst: { default: 0 },
     },
 
     // use this for initialization
@@ -34,7 +38,7 @@ cc.Class({
         //cc.sys.localStorage.setItem(isFirst, 0);
         
         cc.game.addPersistRootNode(this.node);
-        console.log("is Persist node " + cc.game.isPersistRootNode(this.node));
+        // console.log("is Persist node " + cc.game.isPersistRootNode(this.node));
         this.GKdubiao('jsonDate/gq_table',this.GKlist);
         this.Npcdubiao('jsonDate/npc_table',this.Npclist);
         this.Persondubiao('jsonDate/person_table',this.Personlist);
@@ -47,8 +51,26 @@ cc.Class({
         this.loadTouXiang("jsonDate/IDtouxiang"); 
         this.loadDiaoLuoTuPian('jsonDate/diaoluotouxiang');
         this.loadJSOrTP('jsonDate/JueSeVSTuPian');
-        
+        this.loadlevelneed('jsonDate/levelneed');
         this.item_table('jsonDate/item_table',this.itemlist);
+        this.loadZHjuesePath('jsonDate/ZhuanHuanPath',this.ZHjuesePath);
+        this.loadDLIDpth('jsonDate/DLIDPath',this.DLIDpaths);
+    },
+    // DLIDPath
+    loadDLIDpth: function (path,Array) {
+        cc.loader.loadRes(path, 
+        function (err, clip) {
+            var str = clip;
+            var obj = eval('(' + str + ')');
+            var lenght = obj.length;
+            for (var i = 1; i < lenght; i++ ) {
+                var DLpath = {};
+                DLpath.ID = obj[i]["ID"];
+                DLpath.PATH = obj[i]["PATH"];
+                Array.push(DLpath);
+            }
+            // console.log("主角图片加载完成");
+        });
     },
     
     loadJSOrTP: function (path) {
@@ -58,24 +80,25 @@ cc.Class({
             var str = clip;
             var obj = eval('(' + str + ')');
             var lenght = obj.length;
-            console.log(lenght);
+            // console.log(lenght);
             for (var i = 1; i < lenght; i++ ) {
                 var JStupian = {};
                 JStupian.ID = obj[i]["ID"];
                 JStupian.PATH = obj[i]["PATH"];
                 self.JueSeTuPian.push(JStupian);
             }
-            console.log("主角图片加载完成");
+            // console.log("主角图片加载完成");
         });
     },
     
     loadBenDiShuJu: function () {  // 通过本地数据加载
-        console.log("进入加载本地数据");
-        //var isFirsted = sys.localStorage.getItem(isFirst);
+        // console.log("进入加载本地数据");
+        //sys.localStorage.getItem('isFirst');
         // 如果是第一次进入那么读表加载数组 否则读取本地数据
-        if (this.isFirst == 0) {
+        console.log("这里是提取本地是不是第一次游戏" + cc.sys.localStorage.getItem('isFirstaaa'));
+        if (cc.sys.localStorage.getItem('isFirstaaa') == null) {
             
-            console.log("进入第一次游戏");
+            // console.log("进入第一次游戏");
             //sys.localStorage.setItem(isFirst, 1);
             for ( var i = 0; i < this.Personlist.length; i++ ) {
                 var node = this.Personlist[i];
@@ -92,84 +115,74 @@ cc.Class({
                         shuzu.SM = node.IPT_LF;
                         shuzu.Level = 1;
                         shuzu.nowEXP = 0;
-                        console.log(i + "经验读表前" + this.exList[0].exp);
+                        // console.log(i + "经验读表前" + this.exList[0].exp);
                         shuzu.needEXP = this.exList[0].exp;
-                        console.log(i + "经验读表后" + shuzu.needEXP);
+                        // console.log(i + "经验读表后" + shuzu.needEXP);
                         this.JSshujuCache.push(shuzu);
                         break;
                 }
             }
+            ////////// 第一次游戏加载关卡数据
+            var guanka = {};
+            guanka.Zhang = 1;
+            guanka.Jie = 1;
+            this.GuanKaState.push(guanka);//////////////////////////////////////////////////////////////////////////////////////////////////////////
             
-            var GWshuzu1 = {};
-            GWshuzu1.ID = 201606001;
-            GWshuzu1.Num = 0;
-            this.GWshujuCache.push(GWshuzu1);
-            var GWshuzu2 = {};
-            GWshuzu2.ID = 201606002;
-            GWshuzu2.Num = 1;
-            this.GWshujuCache.push(GWshuzu2);
+            /////////////////////////////////
+            // var GWshuzu1 = {};
+            // GWshuzu1.ID = 201606001;
+            // GWshuzu1.Num = 1;
+            // this.GWshujuCache.push(GWshuzu1);
             
-            var GWshuzu3 = {};
-            GWshuzu3.ID = 201606003;
-            GWshuzu3.Num = 2;
-            this.GWshujuCache.push(GWshuzu3);
-            var GWshuzu4 = {};
-            GWshuzu4.ID = 201606004;
-            GWshuzu4.Num = 3;
-            this.GWshujuCache.push(GWshuzu4);
-            var GWshuzu5 = {};
-            GWshuzu5.ID = 201606005;
-            GWshuzu5.Num = 1;
-            this.GWshujuCache.push(GWshuzu5);
-            var GWshuzu6 = {};
-            GWshuzu6.ID = 201606006;
-            GWshuzu6.Num = 1;
-            this.GWshujuCache.push(GWshuzu6);
-            var GWshuzu7 = {};
-            GWshuzu7.ID = 201606007;
-            GWshuzu7.Num = 1;
-            this.GWshujuCache.push(GWshuzu7);
-            console.log("添加完数据后的数组长度" + this.GWshujuCache.length);
             
         } else {
             
             // 通过本地数据设置主角色ID 
             this.JSshujuCache.splice(0,this.JSshujuCache.length);//清空数组 
             this.GWshujuCache.splice(0,this.GWshujuCache.length);//清空数组 
-    
-            var shujuJS = sys.localStorage.getItem(BenDiShuJuJS);
+            this.GuanKaState.splice(0,this.GuanKaState.length);//清空数组 
+            
+            var shujuJS = cc.sys.localStorage.getItem('BenDiShuJuJS');
             var nodeJS = JSON.parse(shujuJS);
     
             for (var i = 0; i < nodeJS.length; i++ ) {
                 var juese = {};
                 juese.ID = node[i].ID;
                 juese.Level = node[i].Level;
-                juese.nowEXP = node[i].nowEXP;
+                juese.nowEXP = node[i].nowEXP ;
                 juese.needEXP = node[i].needEXP;
                 juese.GJ = node[i].GJ;
                 juese.FY = node[i].FY;
                 juese.SM = node[i].SM;
-                this.JSshujuCache.push(juese);
+                this.JSshujuCache.push(juese);/////////////////////////////////////////////////////////////////////////////////////////////////////////
             }
             
             // 将卡牌中已获得的卡牌显示
-            var shujuGW = sys.localStorage.getItem(BenDiShuJuGW);
+            var shujuGW = cc.sys.localStorage.getItem('BenDiShuJuGW');
             var nodeGW = JSON.parse(shujuGW);
             for (var i = 0; i < nodeGW.length; i++ ) {
                 var ID = nodeGW[i];
-                this.GWshujuCache.push(ID);
+                this.GWshujuCache.push(ID);/////////////////////////////////////////////////////////////////////////////////////////////////////////
+            }
+            
+            var shujuGK = cc.sys.localStorage.getItem('BenDiShuJuGK');
+            var nodeGK = JSON.parse(shujuGK);
+            for (var i = 0; i < nodeGK.length; i++) {
+                var GK = nodeGW[i];
+                this.GuanKaState.push(GK);
             }
         }
     },
     // 加载掉落物ID与图片对照表
     loadDiaoLuoTuPian: function (path) {
+        // console.log("进入掉落图片路径加载");
         let self = this;
         cc.loader.loadRes(path, 
         function (err, clip) {
             var str = clip;
             var obj = eval('(' + str + ')');
             var lenght = obj.length;
-            console.log(lenght);
+            // console.log(lenght);
             for (var i = 1; i < lenght; i++ ) {
                 var diaoluo = {};
                 diaoluo.ID = obj[i]["ID"];
@@ -177,24 +190,74 @@ cc.Class({
                 diaoluo.NUM = obj[i]["NUM"];
                 self.szDLtupian.push(diaoluo);
             }
-            console.log(self.szDLtupian.length);
-            console.log("掉落图片路径加载完成");
+            // console.log(self.szDLtupian.length);
+            // console.log("掉落图片路径加载完成");
+        });
+    },
+    
+    // 加载转换的人物图片路径与ID
+    loadZHjuesePath: function (path,Array) {
+        cc.loader.loadRes(path, 
+        function (err, clip) {
+            var str = clip;
+            var obj = eval('(' + str + ')');
+            var lenght = obj.length;
+            // console.log(lenght);
+            for (var i = 1; i < lenght; i++ ) {
+                var node = {};
+                node.ID = obj[i]["ID"];
+                node.NEXTID = obj[i]["NEXTID"];
+                node.PATH = obj[i]["PATH"];
+                Array.push(node);
+            }
+            // console.log("转换图片路径加载完成");
+        });  
+    },
+    
+    // 加载转换界面角色ID 与转换所需卡片ID
+    loadlevelneed: function (path) {
+            // console.log("进入转化界面转换所需卡牌ID加载");
+        let self = this;
+        cc.loader.loadRes(path, 
+        function (err, clip) {
+            var str = clip;
+            var obj = eval('(' + str + ')');
+            var lenght = obj.length;
+            // console.log(lenght);
+            for (var i = 1; i < lenght; i++ ) {
+                var need = {};
+                need.ID = obj[i]["ID"];
+                need.IPT_QUA = obj[i]["IPT_QUA"];
+                need.LEVELNEED1 = obj[i]["LEVELNEED1"];
+                need.LEVELNEED2 = obj[i]["LEVELNEED2"];
+                need.LEVELNEED3 = obj[i]["LEVELNEED3"];
+                need.LEVELNEED4 = obj[i]["LEVELNEED4"];
+                need.LEVELNEED5 = obj[i]["LEVELNEED5"];
+                need.NEEDNAME1 = obj[i]["NEEDNAME1"];
+                need.NEEDNAME2 = obj[i]["NEEDNAME2"];
+                need.NEEDNAME3 = obj[i]["NEEDNAME3"];
+                need.NAME1NUM = obj[i]["NAME1NUM"];
+                need.NAME2NUM = obj[i]["NAME2NUM"];
+                need.NAME3NUM = obj[i]["NAME3NUM"];
+                self.LevelNeedzh.push(need);
+            }
+            // console.log(self.LevelNeedzh.length);
+            // console.log("转化界面转换所需卡牌ID加载完成");
         });
     },
     
     
     load: function (juqingID, node, face, callback) {
-        
-        console.log("剧情加载通过");
+        // console.log("剧情加载通过");
         if (juqingID != 0) {
             for (var i = 0; i < this.szqiege.length; i++ ) {
                 if (juqingID == this.szqiege[i].ID) { 
-                    console.log("剧情ID" + this.szqiege[i].ID + "dangqian" + i);
+                    // console.log("剧情ID" + this.szqiege[i].ID + "dangqian" + i);
                     this.juqingNum = this.szqiege[i].NUM;
                     this.juqingBegan = this.szqiege[i].BEGAN;
                 }
             }
-            console.log("xunzhaoNUM" + this.juqingNum );
+            // console.log("xunzhaoNUM" + this.juqingNum );
             for (var j = 0; j < this.juqingNum; j++ ) {
                 var canshu = {};
                 canshu.Num = this.juqingNum;
@@ -204,40 +267,40 @@ cc.Class({
                 for (var i = 0; i < this.sztouxiang.length; i++ ) {
                     if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].LR) {
                         canshu.PATH = this.sztouxiang[i].NAME;
-                        console.log(canshu.PATH);
+                        // console.log(canshu.PATH);
                     } else if (this.sztouxiang[i].ID == this.szduihua[this.juqingBegan].RR) {
                         canshu.PATH = this.sztouxiang[i].NAME;
-                        console.log(canshu.PATH);
+                        // console.log("是不是这里");
+                        // console.log(canshu.PATH);
                     }
                 }
                 this.shuzu.push(canshu);
                 this.juqingBegan++;
             }
-            console.log("显示剧情数组准备完成"+face);
+            // console.log("显示剧情数组准备完成"+face);
             this.CreateJuQing(this.shuzu, node, face, callback);
             this.shuzu.splice(0,this.shuzu.length);//清空数组 
-            console.log(this.shuzu); // 输出 []，空数组，即被清空了
+            // console.log(this.shuzu); // 输出 []，空数组，即被清空了
         
         } else {
             if(face!=null)
             {
                 face.getComponent('game').winbutton.active=true;
             }
-             
         }
     }, 
     
     CreateJuQing: function (arr, node ,face, callback2) {
         
-        console.log("剧情创建通过");
+        // console.log("剧情创建通过");
         var JuQing = cc.instantiate(this.juqingPrefab);
         node.addChild(JuQing);
         JuQing.setPosition(0,0);
         JuQing.getComponent('JuQing').changjing = this;
-        console.log("popo::::::::"+face);
+        // console.log("popo::::::::"+face);
         JuQing.getComponent('JuQing').ShowJuQing(arr);
         JuQing.getComponent('JuQing').faceShow(face,callback2);
-        console.log("预制件创建成功");
+        // console.log("预制件创建成功");
         //callback2();
     }, 
     loadJuQing: function (path) {
@@ -247,7 +310,7 @@ cc.Class({
             var str = clip;
             var obj = eval('(' + str + ')');
             var lenght = obj.length;
-            console.log(lenght);
+            // console.log(lenght);
             for (var i = 2; i < lenght; i++ ) {
                 var duihua = {};
                 duihua.ID = obj[i]["ID"];
@@ -259,8 +322,8 @@ cc.Class({
                 self.szduihua.push(duihua);
             }
             self.szduihuaCC = 104;
-            console.log("piupiupiu" + self.szduihuaCC);
-            console.log("剧情加载完成");
+            // console.log("piupiupiu" + self.szduihuaCC);
+            // console.log("剧情加载完成");
         });
     },
     
@@ -278,7 +341,7 @@ cc.Class({
                 self.sztouxiang.push(touxiang);
             }
         });
-        console.log("人物头像加载完成");
+        // console.log("人物头像加载完成");
     },
     loadQieGe: function (path) {
         let self = this;
@@ -296,17 +359,15 @@ cc.Class({
                 self.szqiege.push(qiege);
             }
         });
-        console.log("剧情切割加载完成");
+        // console.log("剧情切割加载完成");
     },
-    
-    
     
     
 GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-            console.log("关卡：：：："+err);
+            // console.log("关卡：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -321,7 +382,9 @@ GKdubiao:function(path,Array)
                 node.GKBJ=obj[i]['GKBJ'];
                 node.GKJRJQ=obj[i]['GKJRJQ'];
                 node.KSZDJQ=obj[i]['KSZDJQ'];
+                node.isShowKs=obj[i]['isShowKs'];
                 node.ZDJSJQ=obj[i]['ZDJSJQ'];
+                node.isShowJs=obj[i]['isShowJs'];
                 node.DL=obj[i]['DL'];
                 node.N1=obj[i]['N1'];
                 node.N3=obj[i]['N3'];
@@ -334,7 +397,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-            console.log("NPC：：：："+err);
+            // console.log("NPC：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -366,7 +429,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-            console.log("Persondubiao：：：："+err);
+            // console.log("Persondubiao：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -376,7 +439,7 @@ GKdubiao:function(path,Array)
                 node.NAME=obj[i]['NAME'];
                 node.INS=obj[i]['INS'];
                 node.IPT_APT=obj[i]['IPT_APT'];
-                node.APT_PATH=obj[i]['APT_PATH'];
+                node.APT_PATH=obj[i]['APT_PATH'];//改成名字
                 node.IPT_LF=obj[i]['IPT_LF'];
                 node.IPT_ATK=obj[i]['IPT_ATK'];
                 node.IPT_DEF=obj[i]['IPT_DEF'];
@@ -394,31 +457,31 @@ GKdubiao:function(path,Array)
                     case 2:
                         var arr = {};
                         arr.ID = obj[i]['ID'];
-                        arr.Num = 1;
+                        arr.Num = 0;
                         self.IDOrTexture.push(arr);
                         break;
                     case 8:
                         var arr = {};
                         arr.ID = obj[i]['ID'];
-                        arr.Num = 0;
+                        arr.Num = 1;
                         self.IDOrTexture.push(arr);
                         break;
                     case 14:
                         var arr = {};
                         arr.ID = obj[i]['ID'];
-                        arr.Num = 4;
+                        arr.Num = 2;
                         self.IDOrTexture.push(arr);
                         break;
                     case 20:
                         var arr = {};
                         arr.ID = obj[i]['ID'];
-                        arr.Num = 2;
+                        arr.Num = 3;
                         self.IDOrTexture.push(arr);
                         break;
                     case 26:
                         var arr = {};
                         arr.ID = obj[i]['ID'];
-                        arr.Num = 3;
+                        arr.Num = 4;
                         self.IDOrTexture.push(arr);
                         break;
                 }
@@ -429,7 +492,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-               console.log("tp_skill_table：：：："+err);
+            //   console.log("tp_skill_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -458,7 +521,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-             console.log("skill_table：：：："+err);
+            //  console.log("skill_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -487,7 +550,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-               console.log("ex_table：：：："+err);
+            //   console.log("ex_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=1;i<obj.length;i++ )
@@ -503,7 +566,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-             console.log("dl_table：：：："+err);
+            //  console.log("dl_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -520,7 +583,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-             console.log("jq_table：：：："+err);
+            //  console.log("jq_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -540,7 +603,7 @@ GKdubiao:function(path,Array)
     {
         let self = this;
         cc.loader.loadRes(path, function (err, clip) {
-            console.log("item_table：：：："+err);
+            // console.log("item_table：：：："+err);
             var str=clip;
             var obj = eval('(' + str + ')');
             for(var i=2;i<obj.length;i++ )
@@ -656,9 +719,19 @@ GKdubiao:function(path,Array)
             }
         }
     },
+    chaJSshujuCache:function(ID)
+    {
+        for(var i=0;i<this.JSshujuCache.length;i++)
+        { 
+            if(this.JSshujuCache[i].ID==ID)
+            {
+                return this.JSshujuCache[i];
+            }
+        }
+    },
     ChaPerson:function(ID)
     {
-        console.log("tttttttttt：：：：：：：：：：：：：：");
+        // console.log("tttttttttt：：：：：：：：：：：：：：");
         for(var i=0;i<this.Personlist.length;i++)
         { 
             if(this.Personlist[i].ID==ID)

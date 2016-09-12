@@ -3,7 +3,7 @@
   "_name": "ShouJiTeXiao_shui",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.688888888888889,
+  "_duration": 0.7555555555555555,
   "sample": 45,
   "speed": 1,
   "wrapMode": 1,
@@ -14,45 +14,51 @@
           "cc.Sprite": {
             "spriteFrame": [
               {
-                "frame": 0,
+                "frame": 0.044444444444444446,
+                "value": {
+                  "__uuid__": "33728068-b3c6-4310-b5d7-4b986868a627"
+                }
+              },
+              {
+                "frame": 0.06666666666666667,
                 "value": {
                   "__uuid__": "3b657238-0a4e-42f6-bde2-25592c06b7b2"
                 }
               },
               {
-                "frame": 0.1111111111111111,
+                "frame": 0.17777777777777778,
                 "value": {
                   "__uuid__": "f8c4e8d9-68f4-4081-9c02-87a800657d2f"
                 }
               },
               {
-                "frame": 0.2222222222222222,
+                "frame": 0.28888888888888886,
                 "value": {
                   "__uuid__": "3d0e0389-dc2f-4d57-98c3-8a0ecb9f7c33"
                 }
               },
               {
-                "frame": 0.3333333333333333,
+                "frame": 0.4,
                 "value": {
                   "__uuid__": "5e08cbdf-c4f5-4be7-90e3-8a9b28ade37a"
                 }
               },
               {
-                "frame": 0.4444444444444444,
+                "frame": 0.5111111111111111,
                 "value": {
                   "__uuid__": "4aec4fbf-ea8b-4c54-b2ef-9f819a7197bf"
                 }
               },
               {
-                "frame": 0.5555555555555556,
+                "frame": 0.6222222222222221,
                 "value": {
                   "__uuid__": "70591860-b836-4f5f-83b0-eb786be6b9ea"
                 }
               },
               {
-                "frame": 0.6666666666666666,
+                "frame": 0.7333333333333333,
                 "value": {
-                  "__uuid__": "52ae0d9c-b0df-4dd8-990a-1b20d5cf113f"
+                  "__uuid__": "33728068-b3c6-4310-b5d7-4b986868a627"
                 }
               }
             ]
@@ -61,5 +67,11 @@
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.6666666666666666,
+      "func": "jieshu",
+      "params": []
+    }
+  ]
 }

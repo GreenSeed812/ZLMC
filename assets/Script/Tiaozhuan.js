@@ -5,16 +5,18 @@ cc.Class({
     properties: {
         
         
-        // yinxiao:       { default:null,type:cc.Sprite },
-        // yinyue:        { default:null,type:cc.Sprite },
+        yinxiao:       { default:null,type:cc.Sprite },
+        yinyue:        { default:null,type:cc.Sprite },
         // tishengjimina: { default:null,type:cc.Node   }
         
         tiseng: { default: null, type: cc.Prefab },
         CardPrefab: { default: null, type: cc.Prefab },
         HelpPrefab: { default: null, type: cc.Prefab },
         StopPrefab: { default: null, type: cc.Prefab },
+        TuJianPrefab: { default: null, type: cc.Prefab },
         ShowNode: { default: null, type: cc.Node },
         juQingNum: 0,
+        ZhiZuoPrefab: { default: null, type: cc.Prefab },
     },
 
     // use this for initialization
@@ -28,15 +30,15 @@ cc.Class({
         this.node.runAction(cc.sequence(cc.fadeOut(0.5),cc.callFunc(function () 
         {
             //nodea.getComponent('juqingguanli').play(0, this.node, null, function(){cc.director.loadScene('GuanQia')});
-            console.log("aaasdfasdf");
+            // console.log("aaasdfasdf");
             var quanju = cc.find('data').getComponent('QuanJuNum');
             if (quanju.jishuNum1 == 0) {
                 var dian = cc.find('data').getComponent('juqingguanli');
                 dian.getComponent('juqingguanli').play(0, self.ShowNode, null, function () { cc.director.loadScene('GuanQia')});
                 quanju.jishuNum1 = 1;
-                console.log(self.juQingNum);
+                // console.log(self.juQingNum);
             } else if (quanju.jishuNum1 == 1) {
-                console.log("piupiupiuaaaaaaaaaaaaaaaaaaaaaaaaa");
+                // console.log("piupiupiuaaaaaaaaaaaaaaaaaaaaaaaaa");
                 cc.director.loadScene('GuanQia');
             }
             //cc.director.loadScene('GuanQia');
@@ -62,16 +64,25 @@ cc.Class({
     },
     
     
-    
+    toZhiZuo:function()
+    {
+        var zhizuo = cc.instantiate(this.ZhiZuoPrefab);
+        this.node.addChild(zhizuo);
+        zhizuo.setPosition(0,0);
+    },
     
     
     ///// 弹出card预制件  跳转到卡牌界面 
     
     toCard:function()
     {
-        var Card = cc.instantiate(this.CardPrefab);
-        this.node.addChild(Card);
-        Card.setPosition(0,0);
+        var tujian = cc.instantiate(this.TuJianPrefab);
+        this.node.addChild(tujian);
+        tujian.setPosition(0,0);
+    },
+    
+    closeTheScene: function () {
+        System.exit(0);
     },
     
     toTisheng:function()

@@ -6,7 +6,7 @@ cc.Class({
         mask2: {default:null,type:cc.Node},
         dy   : {default:0},
         ddy  : {default:0},
-        xuanxiang:{default:null,type:cc.Node},
+        //xuanxiang:{default:null,type:cc.Node},
         fanhui:{default:null,type:cc.Button},
         
         
@@ -17,11 +17,19 @@ cc.Class({
         GuanKa5: {default: null, type: cc.Button },
         GuanKa6: {default: null, type: cc.Button },
         GuanKa7: {default: null, type: cc.Button },
+        
+        JiaSuo2: {default: null, type: cc.Node },
+        JiaSuo3: {default: null, type: cc.Node },
+        JiaSuo4: {default: null, type: cc.Node },
+        JiaSuo5: {default: null, type: cc.Node },
+        JiaSuo6: {default: null, type: cc.Node },
+        JiaSuo7: {default: null, type: cc.Node },
+        
         GuanKaShuZu: {default: [], type: cc.Button },
         XuanGuanXiaoPrefab: { default: null, type: cc.Prefab },
-        num: 0,
-        XuanGuanXiaoCache: null,
-        IDNumCache: 0,
+        num: {default:0},
+        IDNumCache: {default:0},
+        //XuanGuanXiaoCache: {default:null},
         
     },
 
@@ -29,9 +37,15 @@ cc.Class({
     onLoad: function () {
         this.mask.on('touchstart', this.clickstart, this);
         this.mask.on('touchmove', this.clickmove, this);
-        this.xuanxiang.active=false;
-        this.fanhui.node.active=false;
+        //this.xuanxiang.active=false;
+        //this.fanhui.node.active=false;
         
+        this.JiaSuo2.active = true;
+        this.JiaSuo3.active = true;
+        this.JiaSuo4.active = true;
+        this.JiaSuo5.active = true;
+        this.JiaSuo6.active = true;
+        this.JiaSuo7.active = true;
         this.GuanKaShuZu.push(this.GuanKa1);
         this.GuanKaShuZu.push(this.GuanKa2);
         this.GuanKaShuZu.push(this.GuanKa3);
@@ -40,70 +54,36 @@ cc.Class({
         this.GuanKaShuZu.push(this.GuanKa6);
         this.GuanKaShuZu.push(this.GuanKa7);
         
-        
+        this.XuanGuanXiaoCache = null;
     },
     
-    // qiehuanMap: function (IDNum) {
-        
-    //     switch (IDNum) {
-    //         case 1: // 朱雀场景
-    //             var realUrl = cc.url.raw('resources/zhandouChangJing/zhuquechangjing.png');
-    //             var texture = cc.textureCache.addImage(realUrl);
-    //             this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-    //             this.GuanKaMap.node.width = 1380;
-    //             this.GuanKaMap.node.height = 5178;
-    //             break;
-    //         case 2: // 白虎场景
-    //             var realUrl = cc.url.raw('resources/zhandouChangJing/baihuchangjing.png');
-    //             var texture = cc.textureCache.addImage(realUrl);
-    //             this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-    //             this.GuanKaMap.node.width = 1380;
-    //             this.GuanKaMap.node.height = 5178;
-    //             break;
-    //         case 3: // 玄武场景
-    //             var realUrl = cc.url.raw('resources/zhandouChangJing/xuanwuchangjing.png');
-    //             var texture = cc.textureCache.addImage(realUrl);
-    //             this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-    //             this.GuanKaMap.node.width = 1380;
-    //             this.GuanKaMap.node.height = 5178;
-    //             break;
-    //         case 4: // 青龙场景
-    //             var realUrl = cc.url.raw('resources/zhandouChangJing/qinglongchangjing.png');
-    //             var texture = cc.textureCache.addImage(realUrl);
-    //             this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-    //             this.GuanKaMap.node.width = 1380;
-    //             this.GuanKaMap.node.height = 5178;
-    //             break;
-    //         case 5: // 麒麟场景
-    //             var realUrl = cc.url.raw('resources/zhandouChangJing/qilinchangjing.png');
-    //             var texture = cc.textureCache.addImage(realUrl);
-    //             this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-    //             this.GuanKaMap.node.width = 1380;
-    //             this.GuanKaMap.node.height = 5178;
-    //             break;
-    //         case 6: // 刑天场景
-    //             var realUrl = cc.url.raw('resources/zhandouChangJing/xingtianchangjing.png');
-    //             var texture = cc.textureCache.addImage(realUrl);
-    //             this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-    //             this.GuanKaMap.node.width = 1380;
-    //             this.GuanKaMap.node.height = 5178;
-    //             break;
-    //         case 7: // 蚩尤场景
-    //             var realUrl = cc.url.raw('resources/zhandouChangJing/chiyouchangjing.png');
-    //             var texture = cc.textureCache.addImage(realUrl);
-    //             this.GuanKaMap.getComponent(cc.Sprite).spriteFrame.setTexture(texture);
-    //             this.GuanKaMap.node.width = 1380;
-    //             this.GuanKaMap.node.height = 5178;
-    //             break;
-    //     }
-    // },
-
-
+    update: function (dt) {
+        var nodeNS = cc.find('data').getComponent('NewScript');
+        // console.log("这里是关卡界面的更新，当前章数" + nodeNS.GuanKaState[0].Zhang);
+        if (nodeNS.GuanKaState[0].Zhang == 2) {
+            this.JiaSuo2.active = false;
+        }
+        if (nodeNS.GuanKaState[0].Zhang == 3) {
+            this.JiaSuo3.active = false;
+        }
+        if (nodeNS.GuanKaState[0].Zhang == 4) {
+            this.JiaSuo4.active = false;
+        }
+        if (nodeNS.GuanKaState[0].Zhang == 5) {
+            this.JiaSuo5.active = false;
+        }
+        if (nodeNS.GuanKaState[0].Zhang == 6) {
+            this.JiaSuo6.active = false;
+        }
+        if (nodeNS.GuanKaState[0].Zhang == 7) {
+            this.JiaSuo7.active = false;
+        }
+    },
 
     suohui: function () {
         if (this.XuanGuanXiaoCache != null) {
             for (var i = this.IDNumCache; i < 7; i++ ) {
-                console.log("dddd");
+                // console.log("dddd");
                 this.GuanKaShuZu[i].node.y += 90;
             }
             this.XuanGuanXiaoCache.removeFromParent();
@@ -118,8 +98,9 @@ cc.Class({
             this.IDNumCache = IDNum;
             
             var XuanGuanXiao = cc.instantiate(this.XuanGuanXiaoPrefab);
+            XuanGuanXiao.getComponent('XuanGuan_2').jiasuoPanDing();
             this.XuanGuanXiaoCache = XuanGuanXiao;
-            console.log("bbbbbbbbbbbbbbbbbbbbbbb");
+            // console.log("bbbbbbbbbbbbbbbbbbbbbbb");
             this.GuanKaShuZu[IDNum-1].node.addChild(XuanGuanXiao);
             XuanGuanXiao.setPosition(0,-220);
             for (var i = IDNum; i < 7; i++ ) {
@@ -134,11 +115,11 @@ cc.Class({
     clickstart:function(event)
     {
         this.dy=event.getLocationY();  
-        console.log("点击开始"+this.dy);
+        // console.log("点击开始"+this.dy);
     }, 
     clickmove:function(event)
     {
-         console.log("点击"+this.mask2.y);
+        //  console.log("点击"+this.mask2.y);
            if(this.dy-event.getLocationY()>0){
                if(this.mask2.y>=50)
                {
@@ -157,7 +138,9 @@ cc.Class({
     {
         //var node = cc.director.getScene().getChildByName('data');
         //获取常驻节点所绑定的脚本  
-        var node = cc.find('data').getComponent('NewScript');  
+        var node = cc.find('data').getComponent('NewScript'); 
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum'); 
+        nodeQJ.ZhangNum = 1;
         //调用该脚本的函数并传值  
         node.setdata(1); 
         
@@ -179,6 +162,8 @@ cc.Class({
     {
         //获取常驻节点所绑定的脚本  
         var node = cc.find('data').getComponent('NewScript');  
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum'); 
+        nodeQJ.ZhangNum = 2;
         //调用该脚本的函数并传值  
         node.setdata(2); 
         
@@ -196,6 +181,8 @@ cc.Class({
     {
          //获取常驻节点所绑定的脚本  
         var node = cc.find('data').getComponent('NewScript');  
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum'); 
+        nodeQJ.ZhangNum = 3;
         //调用该脚本的函数并传值  
         node.setdata(3);  
         //this.qiehuanMap(3);
@@ -211,6 +198,8 @@ cc.Class({
     {
         //获取常驻节点所绑定的脚本
         var node = cc.find('data').getComponent('NewScript');  
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum'); 
+        nodeQJ.ZhangNum = 4;
         //调用该脚本的函数并传值
         node.setdata(4);
         //this.qiehuanMap(4);
@@ -226,6 +215,8 @@ cc.Class({
     {
          //获取常驻节点所绑定的脚本  
          var node = cc.find('data').getComponent('NewScript');  
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum'); 
+        nodeQJ.ZhangNum = 5;
         //调用该脚本的函数并传值  
         node.setdata(5);  
         //this.qiehuanMap(5);
@@ -241,6 +232,8 @@ cc.Class({
     {
         //获取常驻节点所绑定的脚本  
         var node = cc.find('data').getComponent('NewScript');  
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum'); 
+        nodeQJ.ZhangNum = 6;
         //调用该脚本的函数并传值  
         node.setdata(6);  
         //this.qiehuanMap(6);
@@ -256,6 +249,8 @@ cc.Class({
     {
          //获取常驻节点所绑定的脚本  
        var node = cc.find('data').getComponent('NewScript');  
+        var nodeQJ = cc.find('data').getComponent('QuanJuNum'); 
+        nodeQJ.ZhangNum = 7;
         //调用该脚本的函数并传值  
         node.setdata(7);
         //this.qiehuanMap(7);

@@ -8,7 +8,7 @@
   "platform": "android",
   "previewHeight": "720",
   "previewWidth": "1280",
-  "sourceMaps": true,
+  "sourceMaps": false,
   "template": "default",
   "useDebugKeystore": true
 }

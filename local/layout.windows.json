@@ -2,9 +2,9 @@
   "version": "1.1.1",
   "windows": {
     "main": {
-      "x": -8,
+      "x": -6,
       "y": 0,
-      "width": 1451,
+      "width": 1452,
       "height": 860,
       "layout": {
         "docks": [
@@ -12,7 +12,7 @@
             "docks": [
               {
                 "active": 0,
-                "height": 365,
+                "height": 253,
                 "panels": [
                   "hierarchy"
                 ],
@@ -21,7 +21,7 @@
               },
               {
                 "active": 0,
-                "height": 365,
+                "height": 477,
                 "panels": [
                   "assets"
                 ],
@@ -38,28 +38,28 @@
             "docks": [
               {
                 "active": 0,
-                "height": 413,
+                "height": 530,
                 "panels": [
                   "scene"
                 ],
                 "type": "panel",
-                "width": 800
+                "width": 555
               },
               {
                 "active": 0,
-                "height": 317,
+                "height": 200,
                 "panels": [
                   "console",
                   "timeline"
                 ],
                 "type": "panel",
-                "width": 800
+                "width": 555
               }
             ],
             "height": 733,
             "row": false,
             "type": "dock",
-            "width": 800
+            "width": 555
           },
           {
             "active": 0,
@@ -68,13 +68,47 @@
               "inspector"
             ],
             "type": "panel",
-            "width": 423
+            "width": 669
           }
         ],
         "no-collapse": true,
         "row": true,
         "type": "dock"
       }
+    },
+    "window-1473642059697": {
+      "x": 0,
+      "y": 0,
+      "width": 1452,
+      "height": 920
+    },
+    "window-1473642174461": {
+      "x": -8,
+      "y": -8,
+      "width": 1456,
+      "height": 876,
+      "layout": {
+        "docks": [
+          {
+            "active": 0,
+            "height": 878,
+            "panels": [
+              "builder"
+            ],
+            "type": "panel",
+            "width": 1440
+          }
+        ],
+        "no-collapse": true,
+        "row": false,
+        "type": "dock"
+      }
+    },
+    "worker": {
+      "x": 520,
+      "y": 280,
+      "width": 400,
+      "height": 300
     }
   }
 }

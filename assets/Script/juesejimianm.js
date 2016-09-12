@@ -34,6 +34,7 @@ cc.Class({
         var zhuanHuanFace = cc.instantiate(this.zhuanhuan);
         zhuanHuanFace.setPosition(0,0);
         this.node.addChild(zhuanHuanFace);
+        zhuanHuanFace.getComponent('zhuanhuanPre').JueSe = this;
     },
     closeTisheng:function()
     {

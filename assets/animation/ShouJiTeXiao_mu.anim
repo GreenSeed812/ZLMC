@@ -3,7 +3,7 @@
   "_name": "ShouJiTeXiao_mu",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.9333333333333333,
+  "_duration": 1.15,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -16,73 +16,85 @@
               {
                 "frame": 0,
                 "value": {
-                  "__uuid__": "81709ed5-646c-43fb-abc5-af890d0338cd"
+                  "__uuid__": "33728068-b3c6-4310-b5d7-4b986868a627"
                 }
               },
               {
                 "frame": 0.08333333333333333,
                 "value": {
-                  "__uuid__": "5e59b892-a73a-4cf1-8b34-b897ca1b2b60"
+                  "__uuid__": "81709ed5-646c-43fb-abc5-af890d0338cd"
                 }
               },
               {
                 "frame": 0.16666666666666666,
                 "value": {
-                  "__uuid__": "b0d06ded-4248-46fd-91fe-c14f634b58ef"
+                  "__uuid__": "5e59b892-a73a-4cf1-8b34-b897ca1b2b60"
                 }
               },
               {
                 "frame": 0.25,
                 "value": {
-                  "__uuid__": "99ca68e4-e249-4c3d-9e19-495cf581b340"
+                  "__uuid__": "b0d06ded-4248-46fd-91fe-c14f634b58ef"
                 }
               },
               {
                 "frame": 0.3333333333333333,
                 "value": {
-                  "__uuid__": "0bcdd547-af50-44b6-9031-492a3c12ca01"
+                  "__uuid__": "99ca68e4-e249-4c3d-9e19-495cf581b340"
                 }
               },
               {
                 "frame": 0.4166666666666667,
                 "value": {
-                  "__uuid__": "de51848a-64dc-4fe3-a0bf-2bbca70ec003"
+                  "__uuid__": "0bcdd547-af50-44b6-9031-492a3c12ca01"
                 }
               },
               {
                 "frame": 0.5,
                 "value": {
-                  "__uuid__": "1196b988-218e-4350-b285-eaeca69a737f"
+                  "__uuid__": "de51848a-64dc-4fe3-a0bf-2bbca70ec003"
                 }
               },
               {
                 "frame": 0.5833333333333334,
                 "value": {
-                  "__uuid__": "04380d6c-5eef-4784-9364-0e7bc5595c8b"
+                  "__uuid__": "1196b988-218e-4350-b285-eaeca69a737f"
                 }
               },
               {
                 "frame": 0.6666666666666666,
                 "value": {
-                  "__uuid__": "342a520a-3440-44a4-9cd4-39eb8705bd11"
+                  "__uuid__": "04380d6c-5eef-4784-9364-0e7bc5595c8b"
                 }
               },
               {
                 "frame": 0.75,
                 "value": {
-                  "__uuid__": "472cf8c5-0736-4945-942c-c81afd9090bb"
+                  "__uuid__": "342a520a-3440-44a4-9cd4-39eb8705bd11"
                 }
               },
               {
                 "frame": 0.8333333333333334,
                 "value": {
-                  "__uuid__": "b668d07f-cbb7-474e-8145-b7238c81d4a7"
+                  "__uuid__": "472cf8c5-0736-4945-942c-c81afd9090bb"
                 }
               },
               {
                 "frame": 0.9166666666666666,
                 "value": {
+                  "__uuid__": "b668d07f-cbb7-474e-8145-b7238c81d4a7"
+                }
+              },
+              {
+                "frame": 1,
+                "value": {
                   "__uuid__": "7ade6f09-f286-453d-973f-64bfbc5c553d"
+                }
+              },
+              {
+                "frame": 1.1333333333333333,
+                "value": {
+                  "__uuid__": "33728068-b3c6-4310-b5d7-4b986868a627"
                 }
               }
             ]
@@ -91,5 +103,11 @@
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.9333333333333333,
+      "func": "jieshu",
+      "params": []
+    }
+  ]
 }

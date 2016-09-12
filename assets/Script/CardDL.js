@@ -23,12 +23,12 @@ cc.Class({
 
     ShowGWCard: function () {
         var nodeDL = cc.find('data').getComponent('NewScript');
-        console.log("数组长度" + nodeDL.GWshujuCache.length);
+        // console.log("数组长度" + nodeDL.GWshujuCache.length);
         for (var i = 0; i < nodeDL.GWshujuCache.length; i++) {
             var CardPre = cc.instantiate(this.CardPrefab);
             this.node.addChild(CardPre);
             CardPre.setPosition(0,0);
-            console.log(nodeDL.szDLtupian.length);
+            // console.log(nodeDL.szDLtupian.length);
             for (var j = 0; j < nodeDL.szDLtupian.length; j++ ) {
                 if ( nodeDL.GWshujuCache[i] == nodeDL.szDLtupian[j] ) {
                     CardPre.setTuPian(nodeDL.szDLtupian[j].PATH);

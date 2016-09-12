@@ -39,14 +39,14 @@ cc.Class({
     {
         var self=this;
         var node = cc.director.getScene().getChildByName('data'); 
-        console.log("eeeeeeeeeeeeeeeeeeeeeeeee"+GKnode);
+        // console.log("eeeeeeeeeeeeeeeeeeeeeeeee"+GKnode);
         var tCount = 0;
         if(GKnode.length!=0)
         {
-            console.log("掉落表"+GKnode.length);
+            // console.log("掉落表"+GKnode.length);
             for(var i=0;i<GKnode.length;i++ )
             {
-                //console.log("test assets/"+i);
+                // console.log("test assets/"+i);
                 var sprite = self.kaiDiArray[i].getComponent(cc.Sprite);
                 cc.loader.loadRes("jsonDate/"+GKnode[i], cc.SpriteFrame, function (err, spriteFrame) 
                 {
@@ -59,7 +59,7 @@ cc.Class({
                 });
             }
         }else {
-            console.log("掉落表为空");
+            // console.log("掉落表为空");
         }
     },
     onLoaded:function(GKnode)
@@ -74,15 +74,15 @@ cc.Class({
     clickstart:function(event)
     {
         this.dx=event.getLocationX();
-        console.log("点击开始"+this.dx);
+        // console.log("点击开始"+this.dx);
     },
     clickend:function(event)
     {
-        console.log("点击结束"+event.getLocationX());
+        // console.log("点击结束"+event.getLocationX());
          
        if(event.getLocationX()-this.dx<-50) 
        {
-           console.log(this.Dindex);
+        //   console.log(this.Dindex);
            switch( this.Dindex)
            {
                 case 0:
@@ -100,12 +100,12 @@ cc.Class({
                     this.kaiback.runAction(action);
                     this.Dindex++;
                    break;
-                   console.log(this.Dindex);
+                //   console.log(this.Dindex);
            }
        }
        if(event.getLocationX()-this.dx>50) 
        {
-           console.log(this.Dindex);
+        //   console.log(this.Dindex);
            switch( this.Dindex)
            {
                 case 1:
@@ -123,7 +123,7 @@ cc.Class({
                     this.kaiback.runAction(action);
                     this.Dindex--;
                    break;
-                   console.log(this.Dindex);
+                //   console.log(this.Dindex);
            }
        }
     }
